@@ -14,8 +14,29 @@
   </head>
   <body>
     <main class="page">
+      <div class="search" id="search">
+        <label class="search-field" for="search-input">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.25" />
+            <path d="M16.5 16.5L21 21" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" />
+          </svg>
+          <input
+            id="search-input"
+            class="search-input"
+            type="search"
+            placeholder="Search S&P 500 stocks"
+            autocomplete="off"
+            spellcheck="false"
+            aria-autocomplete="list"
+            aria-controls="search-results"
+            aria-expanded="false"
+          />
+        </label>
+        <ul class="search-results" id="search-results" role="listbox" hidden></ul>
+      </div>
+
       <header class="hero">
-        <h1 class="brand">S&P 500</h1>
+        <h1 class="brand" id="brand">S&P 500</h1>
         <div class="price-row">
           <p class="price" id="price">—</p>
           <p class="change" id="change">—</p>
@@ -34,7 +55,7 @@
         <button type="button" class="range-btn" data-range="max">Max</button>
       </nav>
 
-      <section class="chart-wrap" aria-label="S&P 500 price chart">
+      <section class="chart-wrap" aria-label="Price chart">
         <canvas id="chart"></canvas>
       </section>
     </main>
