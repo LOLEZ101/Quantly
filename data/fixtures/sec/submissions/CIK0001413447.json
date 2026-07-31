@@ -1,0 +1,42 @@
+{
+  "cik": "1413447",
+  "entityType": "operating",
+  "sic": "4812",
+  "sicDescription": "Communications / Technology",
+  "name": "NXP Semiconductors N.V.",
+  "tickers": [
+    "NXPI"
+  ],
+  "exchanges": [
+    "Nasdaq"
+  ],
+  "formerNames": [],
+  "filings": {
+    "recent": {
+      "accessionNumber": [
+        "0001413447-24-0001",
+        "0001413447-24-0002"
+      ],
+      "filingDate": [
+        "2025-02-15",
+        "2025-05-01"
+      ],
+      "reportDate": [
+        "2024-12-31",
+        "2025-03-31"
+      ],
+      "form": [
+        "20-F",
+        "6-K"
+      ],
+      "primaryDocument": [
+        "nxpi-20241231.htm",
+        "nxpi-20250331.htm"
+      ],
+      "isXBRL": [
+        1,
+        1
+      ]
+    }
+  }
+}

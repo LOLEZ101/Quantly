@@ -1,0 +1,193 @@
+{
+  "response_type": "company_classification",
+  "company_key": "nvda",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v4_official",
+  "primary_path": {
+    "node_id": "fabless_compute_and_ai_accelerators",
+    "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_compute_and_ai_accelerators",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "information_technology",
+        "name": "Information Technology",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "semiconductors_and_equipment",
+        "name": "Semiconductors and Semiconductor Equipment",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "semiconductor_devices",
+        "name": "Semiconductor Devices",
+        "node_type": "industry",
+        "depth": 3
+      },
+      {
+        "id": "fabless_chip_design",
+        "name": "Fabless Chip Design",
+        "node_type": "sub_industry",
+        "depth": 4
+      },
+      {
+        "id": "fabless_compute_and_ai_accelerators",
+        "name": "Fabless Compute and AI Accelerators",
+        "node_type": "peer_cluster",
+        "depth": 5
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.775,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [],
+  "evidence": [
+    {
+      "evidence_type": "filing_section_business",
+      "summary": "Item 1. Business NVIDIA Corporation (NVDA) is a registrant under the Securities Exchange Act. NVIDIA designs GPUs and accelerated computing platforms. We are a fabless semiconductor company; wafer manufacturing is performed by foundry partn",
+      "excerpt": "Item 1. Business NVIDIA Corporation (NVDA) is a registrant under the Securities Exchange Act. NVIDIA designs GPUs and accelerated computing platforms. We are a fabless semiconductor company; wafer manufacturing is performed by foundry partners. Principal operations: NVIDIA Corporation. Reported segments include: Compute & Networking (82% of revenue); Graphics (18% of revenue). Our semiconductor bu",
+      "locator": "0001045810-24-0001#business:171",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Compute & Networking (82% of revenue)",
+      "excerpt": "Compute & Networking (82% of revenue)",
+      "locator": "0001045810-24-0001#segments",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Graphics (18% of revenue)",
+      "excerpt": "Graphics (18% of revenue)",
+      "locator": "0001045810-24-0001#segments",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "semiconductor_model_fabless",
+      "summary": "We design semiconductors and outsource manufacturing to foundries.",
+      "excerpt": "We design semiconductors and outsource manufacturing to foundries.",
+      "locator": "0001045810-24-0001#business",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "filing_section_risk_factors",
+      "summary": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "excerpt": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "locator": "0001045810-24-0001#risk_factors:720",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "filing_section_segment_notes",
+      "summary": "Segment Information Revenue by segment: Compute & Networking (82% of revenue); Graphics (18% of revenue).",
+      "excerpt": "Segment Information Revenue by segment: Compute & Networking (82% of revenue); Graphics (18% of revenue).",
+      "locator": "0001045810-24-0001#segment_notes:1071",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Compute & Networking (82% of revenue)",
+      "excerpt": "Compute & Networking (82% of revenue)",
+      "locator": "0001045810-24-0001#segments",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Graphics (18% of revenue)",
+      "excerpt": "Graphics (18% of revenue)",
+      "locator": "0001045810-24-0001#segments",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "filing_section_geographic_information",
+      "summary": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "excerpt": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "locator": "0001045810-24-0001#geographic_information:1216",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=27000000000 USD end=2023-12-31",
+      "excerpt": "Revenues=27000000000 USD end=2023-12-31",
+      "locator": "xbrl:0001045810-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=60900000000 USD end=2024-12-31",
+      "excerpt": "Revenues=60900000000 USD end=2024-12-31",
+      "locator": "xbrl:0001045810-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    },
+    {
+      "evidence_type": "xbrl_operating_income",
+      "summary": "OperatingIncomeLoss=33000000000 USD end=2024-12-31",
+      "excerpt": "OperatingIncomeLoss=33000000000 USD end=2024-12-31",
+      "locator": "xbrl:0001045810-24-0001:OperatingIncomeLoss",
+      "source_document_uri": "fixture://sec/nvda",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "fabless_compute_and_ai_accelerators"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 1,
+      "evidence_completeness": 1,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.775
+    },
+    "coverage_ratio": 1,
+    "unallocated_weight": 0
+  }
+}

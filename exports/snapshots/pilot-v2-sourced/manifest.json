@@ -1,0 +1,57 @@
+{
+  "response_type": "snapshot_manifest",
+  "snapshot_id": "snap_pilot_v2_sourced",
+  "taxonomy_version": "1.0.0",
+  "peer_model_version": "1.1.0",
+  "adjacency_version": "1.0.0",
+  "contract_versions": {
+    "taxonomy": "1.0.0",
+    "company_profile": "1.0.0",
+    "company_classification": "1.0.0",
+    "peer_response": "1.1.0",
+    "snapshot_manifest": "1.0.0"
+  },
+  "created_at": "2026-07-31T00:00:00.000Z",
+  "published_at": "2026-07-31T00:00:00.000Z",
+  "as_of": "2026-06-30",
+  "is_immutable": true,
+  "content_hash": "sha256:8b016e486c9262e9ba44d98f9a5bd2795e0c6a5cef0a0397cf010df0e7b122b7",
+  "counts": {
+    "companies": 30,
+    "taxonomy_nodes": 59,
+    "primary_classifications": 30,
+    "peer_relationships": 1234,
+    "evidence_records": 339
+  },
+  "artifacts": [
+    {
+      "name": "manifest.json",
+      "uri": "exports/snapshots/pilot-v2-sourced/manifest.json",
+      "media_type": "application/json",
+      "content_hash": null,
+      "byte_size": null
+    }
+  ],
+  "pilot_universe": [
+    "telecommunications",
+    "restaurants",
+    "semiconductors_and_equipment"
+  ],
+  "notes": "Phase-3 source-backed pilot. Uses offline SEC-like fixtures unless live ingestion is enabled. Parent snapshot: snap_pilot_v1.",
+  "parent_snapshot_id": "snap_pilot_v1",
+  "source_adapter_version": "1.0.0",
+  "normalization_version": "1.0.0",
+  "fixture_data_version": "1.0.0",
+  "processing_run_id": "run_phase3_2026-07-31T000000000Z",
+  "source_document_count": 90,
+  "structured_fact_count": 150,
+  "illustrative_fallback_count": 153,
+  "review_item_count": 41,
+  "validation_status": "passed",
+  "publication_status": "published",
+  "known_limitations": [
+    "Offline fixtures are compact SEC-like payloads, not full EDGAR archives",
+    "Some peer feature bands remain illustrative",
+    "Segment node mappings remain curated taxonomy judgments"
+  ]
+}

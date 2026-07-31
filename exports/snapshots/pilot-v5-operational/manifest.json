@@ -1,0 +1,62 @@
+{
+  "response_type": "snapshot_manifest",
+  "snapshot_id": "snap_pilot_v5_operational",
+  "taxonomy_version": "1.0.0",
+  "peer_model_version": "1.1.0",
+  "adjacency_version": "1.0.0",
+  "contract_versions": {
+    "taxonomy": "1.0.0",
+    "company_profile": "1.0.0",
+    "company_classification": "1.0.0",
+    "peer_response": "1.1.0",
+    "snapshot_manifest": "1.0.0"
+  },
+  "created_at": "2026-07-31T20:00:00.000Z",
+  "published_at": "2026-07-31T20:00:00.000Z",
+  "as_of": "2026-06-30",
+  "is_immutable": true,
+  "content_hash": "sha256:df7e347e2cfbd46bc0de8e666d0dc2f601f473ffca4f8874cffacfc88971ecc6",
+  "counts": {
+    "companies": 30,
+    "taxonomy_nodes": 59,
+    "primary_classifications": 30,
+    "peer_relationships": 797,
+    "evidence_records": 351
+  },
+  "artifacts": [
+    {
+      "name": "manifest.json",
+      "uri": "exports/snapshots/pilot-v5-operational/manifest.json",
+      "media_type": "application/json",
+      "content_hash": null,
+      "byte_size": null
+    }
+  ],
+  "pilot_universe": [
+    "telecommunications",
+    "restaurants",
+    "semiconductors_and_equipment"
+  ],
+  "notes": "Phase-3.7 operational acceptance. Postgres repository mode and live EDGAR verification required for official statuses.",
+  "parent_snapshot_id": "snap_pilot_v4_official",
+  "source_adapter_version": "1.1.0",
+  "normalization_version": "1.0.0",
+  "processing_run_id": "run_phase37_2026-07-31T200000000Z",
+  "repository_mode": "postgres",
+  "persistence_backend": "postgres",
+  "postgres_e2e_complete": true,
+  "database_host": "localhost",
+  "database_name": "peer_engine",
+  "live_edgar_enabled": true,
+  "live_edgar_full_financial": 5,
+  "live_edgar_acceptance_set": 5,
+  "publication_status": "official_acceptance_set_verified",
+  "publishable": false,
+  "official": true,
+  "validation_status": "passed",
+  "known_limitations": [
+    "Filing HTML section extraction may still use offline verified excerpts",
+    "valuation and market_behavior peer types remain gated",
+    "Segment→taxonomy node mappings remain curated judgments"
+  ]
+}

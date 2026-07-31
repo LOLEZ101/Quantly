@@ -1,0 +1,1340 @@
+{
+  "response_type": "taxonomy_tree",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "root": {
+    "id": "root",
+    "name": "Economy",
+    "description": "Root of the Peer Engine economic taxonomy.",
+    "node_type": "root",
+    "parent_id": null,
+    "path": "root",
+    "depth": 0,
+    "inclusion_criteria": [
+      "All classified companies descend from this node."
+    ],
+    "exclusion_criteria": [
+      "None; this is the universal root."
+    ],
+    "allowed_child_node_types": [
+      "sector",
+      "stub"
+    ],
+    "effective_date": "2026-07-31",
+    "taxonomy_version": "1.0.0",
+    "is_leaf": false,
+    "child_count": 11
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "name": "Economy",
+      "description": "Root of the Peer Engine economic taxonomy.",
+      "node_type": "root",
+      "parent_id": null,
+      "path": "root",
+      "depth": 0,
+      "inclusion_criteria": [
+        "All classified companies descend from this node."
+      ],
+      "exclusion_criteria": [
+        "None; this is the universal root."
+      ],
+      "allowed_child_node_types": [
+        "sector",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 11
+    },
+    {
+      "id": "communication_services",
+      "name": "Communication Services",
+      "description": "Companies providing connectivity, media, and interactive communication services.",
+      "node_type": "sector",
+      "parent_id": "root",
+      "path": "root.communication_services",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Primary economic activity is telecom connectivity, media, or interactive services."
+      ],
+      "exclusion_criteria": [
+        "Pure-play software collaboration without network ownership (prefer software stub until modeled).",
+        "Semiconductor vendors selling into telecom OEMs."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 1
+    },
+    {
+      "id": "telecommunications",
+      "name": "Telecommunications",
+      "description": "Providers of wireless, fixed, enterprise connectivity, and telecom infrastructure.",
+      "node_type": "industry_group",
+      "parent_id": "communication_services",
+      "path": "root.communication_services.telecommunications",
+      "depth": 2,
+      "inclusion_criteria": [
+        "Derive material value from telecom networks, spectrum, connectivity services, or shared telecom infrastructure.",
+        "Pilot focus is United States–listed or US-operating telecom ecosystems."
+      ],
+      "exclusion_criteria": [
+        "Consumer electronics OEMs.",
+        "Cloud hyperscalers whose telecom exposure is incidental."
+      ],
+      "allowed_child_node_types": [
+        "industry",
+        "sub_industry",
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 4
+    },
+    {
+      "id": "wireless_services",
+      "name": "Wireless Services",
+      "description": "Mobile connectivity services delivered over cellular networks.",
+      "node_type": "industry",
+      "parent_id": "telecommunications",
+      "path": "root.communication_services.telecommunications.wireless_services",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Primary offering is retail or wholesale mobile access."
+      ],
+      "exclusion_criteria": [
+        "Tower landlords without subscriber businesses.",
+        "Fixed-only broadband providers without mobile as a primary line."
+      ],
+      "allowed_child_node_types": [
+        "sub_industry",
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 3
+    },
+    {
+      "id": "national_wireless_network_owners",
+      "name": "National Wireless Network Owners",
+      "description": "Nationwide facilities-based wireless carriers that own spectrum and radio access networks.",
+      "node_type": "peer_cluster",
+      "parent_id": "wireless_services",
+      "path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Own or control licensed spectrum and operate a national-scale RAN.",
+        "Consumer wireless is a core economic driver."
+      ],
+      "exclusion_criteria": [
+        "MVNOs that rent network access.",
+        "Regional carriers without national footprint.",
+        "Tower operators."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "regional_wireless_operators",
+      "name": "Regional Wireless Operators",
+      "description": "Facilities-based wireless operators with regional rather than national footprints.",
+      "node_type": "peer_cluster",
+      "parent_id": "wireless_services",
+      "path": "root.communication_services.telecommunications.wireless_services.regional_wireless_operators",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Own spectrum/network assets in a limited geography.",
+        "Mobile service is the primary business."
+      ],
+      "exclusion_criteria": [
+        "National Big-3/Big-4 scale carriers.",
+        "Pure MVNOs."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "wireless_mvno_and_resellers",
+      "name": "Wireless MVNOs and Resellers",
+      "description": "Mobile virtual network operators and resellers that rent host-network capacity.",
+      "node_type": "peer_cluster",
+      "parent_id": "wireless_services",
+      "path": "root.communication_services.telecommunications.wireless_services.wireless_mvno_and_resellers",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Go-to-market is wireless subscriptions without owning the radio network.",
+        "Infrastructure model is renter / reseller."
+      ],
+      "exclusion_criteria": [
+        "Facilities-based national or regional carriers."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "fixed_connectivity",
+      "name": "Fixed Connectivity",
+      "description": "Wireline broadband and voice connectivity to homes and businesses.",
+      "node_type": "industry",
+      "parent_id": "telecommunications",
+      "path": "root.communication_services.telecommunications.fixed_connectivity",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Primary offering is fixed broadband, fiber, cable, or legacy wireline access."
+      ],
+      "exclusion_criteria": [
+        "Wireless-only carriers.",
+        "Pure wholesale dark fiber without retail/access franchise (see wholesale fiber)."
+      ],
+      "allowed_child_node_types": [
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 3
+    },
+    {
+      "id": "cable_broadband_operators",
+      "name": "Cable Broadband Operators",
+      "description": "Hybrid fiber-coax cable operators providing consumer and SMB broadband (often with video).",
+      "node_type": "peer_cluster",
+      "parent_id": "fixed_connectivity",
+      "path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+      "depth": 4,
+      "inclusion_criteria": [
+        "HFC or cable-origin access network is the core asset.",
+        "Consumer broadband is a primary revenue driver."
+      ],
+      "exclusion_criteria": [
+        "Telco FTTH pure-plays without cable heritage when fiber is the defining asset.",
+        "Satellite broadband providers."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "fiber_network_operators",
+      "name": "Fiber Network Operators",
+      "description": "Access providers whose primary last-mile asset is fiber-to-the-premise or fiber-first builds.",
+      "node_type": "peer_cluster",
+      "parent_id": "fixed_connectivity",
+      "path": "root.communication_services.telecommunications.fixed_connectivity.fiber_network_operators",
+      "depth": 4,
+      "inclusion_criteria": [
+        "FTTH/FTTP or fiber-first access is the core commercial identity."
+      ],
+      "exclusion_criteria": [
+        "Cable HFC operators for whom fiber is upgrade path only.",
+        "Wholesale-only backhaul providers."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "integrated_incumbent_telcos",
+      "name": "Integrated Incumbent Telcos",
+      "description": "Legacy ILECs / integrated telcos with mixed wireline, broadband, and often wireless exposures.",
+      "node_type": "peer_cluster",
+      "parent_id": "fixed_connectivity",
+      "path": "root.communication_services.telecommunications.fixed_connectivity.integrated_incumbent_telcos",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Incumbent wireline franchise with multi-product connectivity mix.",
+        "Fixed connectivity remains central even if wireless is present."
+      ],
+      "exclusion_criteria": [
+        "Wireless-first national carriers.",
+        "Pure cable MSOs."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "telecom_infrastructure",
+      "name": "Telecom Infrastructure",
+      "description": "Shared communications infrastructure landlords and wholesale transport providers.",
+      "node_type": "industry",
+      "parent_id": "telecommunications",
+      "path": "root.communication_services.telecommunications.telecom_infrastructure",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Revenue primarily from leasing towers, sites, fiber, or wholesale connectivity to service providers."
+      ],
+      "exclusion_criteria": [
+        "Retail subscriber-facing carriers (primary path elsewhere; infra may be secondary)."
+      ],
+      "allowed_child_node_types": [
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 2
+    },
+    {
+      "id": "tower_and_macro_site_operators",
+      "name": "Tower and Macro Site Operators",
+      "description": "Owners/operators of towers and macro wireless sites leased to carriers.",
+      "node_type": "peer_cluster",
+      "parent_id": "telecom_infrastructure",
+      "path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Tower / site leasing is the primary economic engine."
+      ],
+      "exclusion_criteria": [
+        "Carriers that own towers mainly for self-use.",
+        "Data-center REITs without tower portfolios."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "wholesale_fiber_and_backhaul",
+      "name": "Wholesale Fiber and Backhaul",
+      "description": "Wholesale fiber, backhaul, and transport providers serving carriers and enterprises.",
+      "node_type": "peer_cluster",
+      "parent_id": "telecom_infrastructure",
+      "path": "root.communication_services.telecommunications.telecom_infrastructure.wholesale_fiber_and_backhaul",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Majority economics from wholesale fiber/transport rather than residential retail broadband."
+      ],
+      "exclusion_criteria": [
+        "Retail FTTH operators.",
+        "Tower-only landlords."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "enterprise_communications",
+      "name": "Enterprise Communications",
+      "description": "Connectivity and communications services sold primarily to enterprises.",
+      "node_type": "industry",
+      "parent_id": "telecommunications",
+      "path": "root.communication_services.telecommunications.enterprise_communications",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Customer focus is enterprise/government rather than mass-market consumer.",
+        "Offerings include managed networks, enterprise connectivity, or UCaaS/collaboration with telecom roots."
+      ],
+      "exclusion_criteria": [
+        "Consumer wireless/broadband pure-plays."
+      ],
+      "allowed_child_node_types": [
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 2
+    },
+    {
+      "id": "enterprise_network_and_connectivity",
+      "name": "Enterprise Network and Connectivity",
+      "description": "Enterprise-focused network services, SD-WAN, private networks, and managed connectivity.",
+      "node_type": "peer_cluster",
+      "parent_id": "enterprise_communications",
+      "path": "root.communication_services.telecommunications.enterprise_communications.enterprise_network_and_connectivity",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Enterprise connectivity/network services drive the majority of value."
+      ],
+      "exclusion_criteria": [
+        "Pure collaboration SaaS without network services."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "collaboration_and_ucaas",
+      "name": "Collaboration and UCaaS",
+      "description": "Unified communications and collaboration services with telecom-adjacent delivery models.",
+      "node_type": "peer_cluster",
+      "parent_id": "enterprise_communications",
+      "path": "root.communication_services.telecommunications.enterprise_communications.collaboration_and_ucaas",
+      "depth": 4,
+      "inclusion_criteria": [
+        "UCaaS, CPaaS, or hosted collaboration is the primary product.",
+        "Sold as a communications service rather than general horizontal SaaS suite."
+      ],
+      "exclusion_criteria": [
+        "Broad productivity suites where voice/video is incidental."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "consumer_discretionary",
+      "name": "Consumer Discretionary",
+      "description": "Non-essential consumer goods and services.",
+      "node_type": "sector",
+      "parent_id": "root",
+      "path": "root.consumer_discretionary",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Demand is discretionary and consumer-linked."
+      ],
+      "exclusion_criteria": [
+        "Staples grocery / household essentials (future consumer staples sector)."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 1
+    },
+    {
+      "id": "restaurants",
+      "name": "Restaurants",
+      "description": "Food-away-from-home brands and operators across service formats.",
+      "node_type": "industry_group",
+      "parent_id": "consumer_discretionary",
+      "path": "root.consumer_discretionary.restaurants",
+      "depth": 2,
+      "inclusion_criteria": [
+        "Primary business is restaurant brand ownership and/or restaurant operations."
+      ],
+      "exclusion_criteria": [
+        "Packaged food manufacturers.",
+        "Grocery and convenience retail.",
+        "Pure restaurant technology vendors."
+      ],
+      "allowed_child_node_types": [
+        "industry",
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 4
+    },
+    {
+      "id": "quick_service_restaurants",
+      "name": "Quick-Service Restaurants",
+      "description": "Limited-service restaurants emphasizing speed, value, and standardized menus.",
+      "node_type": "industry",
+      "parent_id": "restaurants",
+      "path": "root.consumer_discretionary.restaurants.quick_service_restaurants",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Counter or drive-thru oriented limited service.",
+        "Average check and labor model consistent with QSR."
+      ],
+      "exclusion_criteria": [
+        "Fast-casual elevated concepts with higher check and made-to-order positioning.",
+        "Full-service table service."
+      ],
+      "allowed_child_node_types": [
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 3
+    },
+    {
+      "id": "qsr_franchise_heavy",
+      "name": "QSR — Franchise-Heavy",
+      "description": "QSR systems where franchised units predominate and franchise economics matter.",
+      "node_type": "peer_cluster",
+      "parent_id": "quick_service_restaurants",
+      "path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy",
+      "depth": 4,
+      "inclusion_criteria": [
+        "At least 70% of system locations are franchised (configurable threshold).",
+        "Material franchise fee / royalty contribution or system growth via franchisees."
+      ],
+      "exclusion_criteria": [
+        "Company-operated-heavy QSR systems (≤30% franchised locations).",
+        "Hybrid franchise models (30%–70% franchised locations)."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "qsr_company_operated",
+      "name": "QSR — Company-Operated",
+      "description": "QSR systems that primarily operate their own restaurants.",
+      "node_type": "peer_cluster",
+      "parent_id": "quick_service_restaurants",
+      "path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_company_operated",
+      "depth": 4,
+      "inclusion_criteria": [
+        "No more than 30% of system locations are franchised (configurable threshold).",
+        "Majority of units or sales from company-operated restaurants."
+      ],
+      "exclusion_criteria": [
+        "Franchise-heavy QSR systems (≥70% franchised locations).",
+        "Hybrid franchise models (30%–70% franchised locations)."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "qsr_hybrid_franchise",
+      "name": "QSR — Hybrid Franchise Model",
+      "description": "QSR systems with a balanced mix of franchised and company-operated locations.",
+      "node_type": "peer_cluster",
+      "parent_id": "quick_service_restaurants",
+      "path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_hybrid_franchise",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Between 30% and 70% of system locations are franchised (exclusive of bounds)."
+      ],
+      "exclusion_criteria": [
+        "Franchise-heavy systems (≥70% franchised locations).",
+        "Company-operated-heavy systems (≤30% franchised locations)."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "fast_casual_restaurants",
+      "name": "Fast-Casual Restaurants",
+      "description": "Limited-service concepts with higher average checks and perceived quality than traditional QSR.",
+      "node_type": "industry",
+      "parent_id": "restaurants",
+      "path": "root.consumer_discretionary.restaurants.fast_casual_restaurants",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Limited service with elevated food quality, customization, or ambiance versus QSR."
+      ],
+      "exclusion_criteria": [
+        "Traditional QSR value chains.",
+        "Full table-service dining."
+      ],
+      "allowed_child_node_types": [
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 3
+    },
+    {
+      "id": "fast_casual_franchise_heavy",
+      "name": "Fast Casual — Franchise-Heavy",
+      "description": "Fast-casual brands scaled primarily through franchise partners.",
+      "node_type": "peer_cluster",
+      "parent_id": "fast_casual_restaurants",
+      "path": "root.consumer_discretionary.restaurants.fast_casual_restaurants.fast_casual_franchise_heavy",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Fast-casual format with franchise-heavy unit mix."
+      ],
+      "exclusion_criteria": [
+        "Company-operated fast-casual majors."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "fast_casual_company_operated",
+      "name": "Fast Casual — Company-Operated",
+      "description": "Fast-casual brands that primarily operate company-owned restaurants.",
+      "node_type": "peer_cluster",
+      "parent_id": "fast_casual_restaurants",
+      "path": "root.consumer_discretionary.restaurants.fast_casual_restaurants.fast_casual_company_operated",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Fast-casual format with ≤30% of locations franchised."
+      ],
+      "exclusion_criteria": [
+        "Franchise-heavy and hybrid fast-casual systems."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "fast_casual_hybrid_franchise",
+      "name": "Fast Casual — Hybrid Franchise Model",
+      "description": "Fast-casual brands with a balanced franchised and company-operated mix.",
+      "node_type": "peer_cluster",
+      "parent_id": "fast_casual_restaurants",
+      "path": "root.consumer_discretionary.restaurants.fast_casual_restaurants.fast_casual_hybrid_franchise",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Between 30% and 70% of system locations are franchised."
+      ],
+      "exclusion_criteria": [
+        "Franchise-heavy and company-operated-heavy fast-casual systems."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "full_service_restaurants",
+      "name": "Full-Service Restaurants",
+      "description": "Table-service restaurants including casual and upscale dining.",
+      "node_type": "industry",
+      "parent_id": "restaurants",
+      "path": "root.consumer_discretionary.restaurants.full_service_restaurants",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Waitstaff table service is core to the format."
+      ],
+      "exclusion_criteria": [
+        "QSR and fast-casual limited-service formats."
+      ],
+      "allowed_child_node_types": [
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 2
+    },
+    {
+      "id": "casual_dining",
+      "name": "Casual Dining",
+      "description": "Full-service casual dining chains with moderate price points.",
+      "node_type": "peer_cluster",
+      "parent_id": "full_service_restaurants",
+      "path": "root.consumer_discretionary.restaurants.full_service_restaurants.casual_dining",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Full service, mid-scale pricing, chain or multi-unit casual brands."
+      ],
+      "exclusion_criteria": [
+        "Fine dining / upscale concepts.",
+        "Limited-service formats."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "fine_dining_and_upscale",
+      "name": "Fine Dining and Upscale",
+      "description": "Upscale and fine-dining restaurant concepts with premium price points.",
+      "node_type": "peer_cluster",
+      "parent_id": "full_service_restaurants",
+      "path": "root.consumer_discretionary.restaurants.full_service_restaurants.fine_dining_and_upscale",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Premium average check and upscale positioning."
+      ],
+      "exclusion_criteria": [
+        "Mainstream casual dining."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "restaurant_franchisors_asset_light",
+      "name": "Restaurant Franchisors (Asset-Light)",
+      "description": "Brand/IP-centric restaurant franchisors with minimal company-operated footprint.",
+      "node_type": "peer_cluster",
+      "parent_id": "restaurants",
+      "path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Economics dominated by royalties, brand licensing, and franchise fees.",
+        "Company-operated restaurants are immaterial to the model."
+      ],
+      "exclusion_criteria": [
+        "Hybrid systems where company ops or majority franchised ops still define unit economics (use format-specific franchise-heavy clusters)."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "information_technology",
+      "name": "Information Technology",
+      "description": "Technology hardware, semiconductors, software, and IT services.",
+      "node_type": "sector",
+      "parent_id": "root",
+      "path": "root.information_technology",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Primary value from technology products or IT services."
+      ],
+      "exclusion_criteria": [
+        "Telecom carriers (communication services).",
+        "Consumer discretionary retailers of tech products."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 2
+    },
+    {
+      "id": "software",
+      "name": "Software (Stub Crosswalk)",
+      "description": "Temporary Phase-2 stub for software-led products. Software-led collaboration, UCaaS, and communications APIs should eventually deepen here rather than under telecommunications. Not a full software taxonomy.\n",
+      "node_type": "stub",
+      "parent_id": "information_technology",
+      "path": "root.information_technology.software",
+      "depth": 2,
+      "inclusion_criteria": [
+        "Placeholder crosswalk for software-led collaboration / UCaaS / CPaaS secondaries."
+      ],
+      "exclusion_criteria": [
+        "Network-led telecom services remain under telecommunications.",
+        "Do not assign pilot semiconductor or restaurant companies here as primary."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "industry",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "semiconductors_and_equipment",
+      "name": "Semiconductors and Semiconductor Equipment",
+      "description": "Semiconductor device designers/manufacturers and the equipment suppliers that enable fabrication and packaging.",
+      "node_type": "industry_group",
+      "parent_id": "information_technology",
+      "path": "root.information_technology.semiconductors_and_equipment",
+      "depth": 2,
+      "inclusion_criteria": [
+        "Design, manufacture, or equip the production of semiconductor devices."
+      ],
+      "exclusion_criteria": [
+        "Electronic component distributors without design/manufacturing.",
+        "EMS/ODM assemblers of finished electronics (future node).",
+        "Pure EDA software vendors (may be adjacent later)."
+      ],
+      "allowed_child_node_types": [
+        "industry"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 2
+    },
+    {
+      "id": "semiconductor_devices",
+      "name": "Semiconductor Devices",
+      "description": "Companies that design and/or manufacture semiconductor chips.",
+      "node_type": "industry",
+      "parent_id": "semiconductors_and_equipment",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Sell semiconductor devices or wafer foundry capacity for devices."
+      ],
+      "exclusion_criteria": [
+        "Equipment-only suppliers."
+      ],
+      "allowed_child_node_types": [
+        "sub_industry",
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 5
+    },
+    {
+      "id": "fabless_chip_design",
+      "name": "Fabless Chip Design",
+      "description": "Semiconductor designers that outsource wafer manufacturing to foundries.",
+      "node_type": "sub_industry",
+      "parent_id": "semiconductor_devices",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Fabless or asset-light manufacturing model; design is the core IP."
+      ],
+      "exclusion_criteria": [
+        "Companies with leading-edge captive fabs as the core model (IDM/foundry)."
+      ],
+      "allowed_child_node_types": [
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 3
+    },
+    {
+      "id": "fabless_compute_and_ai_accelerators",
+      "name": "Fabless Compute and AI Accelerators",
+      "description": "Fabless designers of CPUs, GPUs, NPUs, and AI/accelerator silicon.",
+      "node_type": "peer_cluster",
+      "parent_id": "fabless_chip_design",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_compute_and_ai_accelerators",
+      "depth": 5,
+      "inclusion_criteria": [
+        "Primary products are compute or AI acceleration semiconductors."
+      ],
+      "exclusion_criteria": [
+        "Mobile application processor specialists without compute/AI as primary identity.",
+        "Networking PHY/switch specialists."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "fabless_mobile_and_consumer_soc",
+      "name": "Fabless Mobile and Consumer SoC",
+      "description": "Fabless designers of mobile application processors and consumer SoCs.",
+      "node_type": "peer_cluster",
+      "parent_id": "fabless_chip_design",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_mobile_and_consumer_soc",
+      "depth": 5,
+      "inclusion_criteria": [
+        "Handset, tablet, or consumer SoC products dominate."
+      ],
+      "exclusion_criteria": [
+        "Data-center AI accelerator specialists."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "fabless_connectivity_and_networking",
+      "name": "Fabless Connectivity and Networking",
+      "description": "Fabless designers of connectivity, RF, and networking silicon.",
+      "node_type": "peer_cluster",
+      "parent_id": "fabless_chip_design",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
+      "depth": 5,
+      "inclusion_criteria": [
+        "Connectivity, RF, Ethernet, optical DSP, or networking ASSPs are primary."
+      ],
+      "exclusion_criteria": [
+        "Broad compute GPU/CPU vendors."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "integrated_device_manufacturers",
+      "name": "Integrated Device Manufacturers",
+      "description": "Semiconductor companies that design chips and operate captive fabrication capacity.",
+      "node_type": "peer_cluster",
+      "parent_id": "semiconductor_devices",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.integrated_device_manufacturers",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Significant captive manufacturing is central to the model (IDM).",
+        "Product portfolio spans logic and/or diversified devices beyond pure memory specialty."
+      ],
+      "exclusion_criteria": [
+        "Pure-play foundries selling capacity to third parties as the core business.",
+        "Fabless designers.",
+        "Pure-play memory specialists (use memory clusters)."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "semiconductor_foundries",
+      "name": "Semiconductor Foundries",
+      "description": "Pure-play or foundry-majority manufacturers producing wafers for third-party designers.",
+      "node_type": "peer_cluster",
+      "parent_id": "semiconductor_devices",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.semiconductor_foundries",
+      "depth": 4,
+      "inclusion_criteria": [
+        "External foundry customers are the primary demand source."
+      ],
+      "exclusion_criteria": [
+        "IDMs whose foundry sales are incidental.",
+        "Fabless companies."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "memory_semiconductors",
+      "name": "Memory Semiconductors",
+      "description": "Manufacturers of memory devices such as DRAM and NAND.",
+      "node_type": "sub_industry",
+      "parent_id": "semiconductor_devices",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.memory_semiconductors",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Memory products are the primary economic driver."
+      ],
+      "exclusion_criteria": [
+        "Logic IDMs with minor memory attachments.",
+        "Fabless designers without memory manufacturing identity."
+      ],
+      "allowed_child_node_types": [
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 2
+    },
+    {
+      "id": "dram_manufacturers",
+      "name": "DRAM Manufacturers",
+      "description": "Companies whose core business is DRAM design and manufacturing.",
+      "node_type": "peer_cluster",
+      "parent_id": "memory_semiconductors",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.memory_semiconductors.dram_manufacturers",
+      "depth": 5,
+      "inclusion_criteria": [
+        "DRAM is a primary or co-primary memory franchise."
+      ],
+      "exclusion_criteria": [
+        "NAND-only specialists."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "nand_and_other_memory",
+      "name": "NAND and Other Memory",
+      "description": "NAND flash and other non-DRAM memory manufacturers.",
+      "node_type": "peer_cluster",
+      "parent_id": "memory_semiconductors",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.memory_semiconductors.nand_and_other_memory",
+      "depth": 5,
+      "inclusion_criteria": [
+        "NAND or specialty memory is the primary memory identity."
+      ],
+      "exclusion_criteria": [
+        "DRAM-primary manufacturers (may hold secondary NAND exposure)."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "analog_mixed_signal_and_power",
+      "name": "Analog, Mixed-Signal, and Power",
+      "description": "Analog, mixed-signal, power management, and related semiconductor producers.",
+      "node_type": "peer_cluster",
+      "parent_id": "semiconductor_devices",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Analog, mixed-signal, power, or signal-chain devices dominate revenue and identity."
+      ],
+      "exclusion_criteria": [
+        "Digital compute GPU/CPU specialists.",
+        "Pure memory manufacturers.",
+        "Equipment suppliers."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "semiconductor_equipment",
+      "name": "Semiconductor Equipment",
+      "description": "Providers of equipment and process tools used to manufacture and package semiconductors.",
+      "node_type": "industry",
+      "parent_id": "semiconductors_and_equipment",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment",
+      "depth": 3,
+      "inclusion_criteria": [
+        "Sell capital equipment or process tools into semiconductor manufacturing and packaging."
+      ],
+      "exclusion_criteria": [
+        "Device makers.",
+        "Materials-only suppliers without equipment (future node)."
+      ],
+      "allowed_child_node_types": [
+        "sub_industry",
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 2
+    },
+    {
+      "id": "wafer_fabrication_equipment",
+      "name": "Wafer Fabrication Equipment",
+      "description": "Front-end wafer fab process equipment.",
+      "node_type": "sub_industry",
+      "parent_id": "semiconductor_equipment",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Tools used in wafer fabrication (lithography, etch, deposition, clean, metrology, etc.)."
+      ],
+      "exclusion_criteria": [
+        "Back-end assembly/test only."
+      ],
+      "allowed_child_node_types": [
+        "peer_cluster"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": false,
+      "child_count": 3
+    },
+    {
+      "id": "lithography_equipment",
+      "name": "Lithography Equipment",
+      "description": "Providers of lithography systems for semiconductor patterning.",
+      "node_type": "peer_cluster",
+      "parent_id": "wafer_fabrication_equipment",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.lithography_equipment",
+      "depth": 5,
+      "inclusion_criteria": [
+        "Lithography tools are the primary product franchise."
+      ],
+      "exclusion_criteria": [
+        "Etch/deposition specialists without lithography as core."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "etch_deposition_and_clean",
+      "name": "Etch, Deposition, and Clean",
+      "description": "Providers of etch, thin-film deposition, and wafer clean equipment.",
+      "node_type": "peer_cluster",
+      "parent_id": "wafer_fabrication_equipment",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.etch_deposition_and_clean",
+      "depth": 5,
+      "inclusion_criteria": [
+        "Etch, CVD/PVD/ALD deposition, or clean equipment is primary."
+      ],
+      "exclusion_criteria": [
+        "Lithography-only vendors.",
+        "Pure process-control/metrology vendors."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "process_control_and_metrology",
+      "name": "Process Control and Metrology",
+      "description": "Process control, inspection, and metrology equipment for semiconductor manufacturing.",
+      "node_type": "peer_cluster",
+      "parent_id": "wafer_fabrication_equipment",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
+      "depth": 5,
+      "inclusion_criteria": [
+        "Inspection, metrology, or process-control systems are primary."
+      ],
+      "exclusion_criteria": [
+        "Process tool vendors (etch/dep/litho) without metrology identity."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "assembly_test_and_packaging_equipment",
+      "name": "Assembly, Test, and Packaging Equipment",
+      "description": "Back-end equipment for assembly, packaging, and test of semiconductor devices.",
+      "node_type": "peer_cluster",
+      "parent_id": "semiconductor_equipment",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.assembly_test_and_packaging_equipment",
+      "depth": 4,
+      "inclusion_criteria": [
+        "ATP / back-end equipment is the primary offering."
+      ],
+      "exclusion_criteria": [
+        "Front-end wafer fab equipment specialists."
+      ],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "energy",
+      "name": "Energy",
+      "description": "Stub sector for energy producers and equipment (not piloted).",
+      "node_type": "stub",
+      "parent_id": "root",
+      "path": "root.energy",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Placeholder for future energy taxonomy depth."
+      ],
+      "exclusion_criteria": [
+        "Do not assign pilot companies here as primary without expanding the branch."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "industry",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "materials",
+      "name": "Materials",
+      "description": "Stub sector for materials and chemicals (not piloted).",
+      "node_type": "stub",
+      "parent_id": "root",
+      "path": "root.materials",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Placeholder for future materials taxonomy depth."
+      ],
+      "exclusion_criteria": [
+        "Do not assign pilot companies here as primary without expanding the branch."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "industry",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "industrials",
+      "name": "Industrials",
+      "description": "Stub sector for industrials (not piloted).",
+      "node_type": "stub",
+      "parent_id": "root",
+      "path": "root.industrials",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Placeholder for future industrials taxonomy depth."
+      ],
+      "exclusion_criteria": [
+        "Do not assign pilot companies here as primary without expanding the branch."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "industry",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "consumer_staples",
+      "name": "Consumer Staples",
+      "description": "Stub sector for consumer staples (not piloted).",
+      "node_type": "stub",
+      "parent_id": "root",
+      "path": "root.consumer_staples",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Placeholder for future staples taxonomy depth."
+      ],
+      "exclusion_criteria": [
+        "Restaurants belong under consumer discretionary."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "industry",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "health_care",
+      "name": "Health Care",
+      "description": "Stub sector for health care (not piloted).",
+      "node_type": "stub",
+      "parent_id": "root",
+      "path": "root.health_care",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Placeholder for future health care taxonomy depth."
+      ],
+      "exclusion_criteria": [
+        "Do not assign pilot companies here as primary without expanding the branch."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "industry",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "financials",
+      "name": "Financials",
+      "description": "Stub sector for financials (not piloted).",
+      "node_type": "stub",
+      "parent_id": "root",
+      "path": "root.financials",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Placeholder for future financials taxonomy depth."
+      ],
+      "exclusion_criteria": [
+        "Do not assign pilot companies here as primary without expanding the branch."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "industry",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "description": "Stub sector for utilities (not piloted).",
+      "node_type": "stub",
+      "parent_id": "root",
+      "path": "root.utilities",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Placeholder for future utilities taxonomy depth."
+      ],
+      "exclusion_criteria": [
+        "Do not assign pilot companies here as primary without expanding the branch."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "industry",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    },
+    {
+      "id": "real_estate",
+      "name": "Real Estate",
+      "description": "Stub sector for real estate (not piloted). Tower REITs in pilot use telecom infrastructure clusters.",
+      "node_type": "stub",
+      "parent_id": "root",
+      "path": "root.real_estate",
+      "depth": 1,
+      "inclusion_criteria": [
+        "Placeholder for future real estate taxonomy depth."
+      ],
+      "exclusion_criteria": [
+        "Telecom tower operators in the pilot use tower_and_macro_site_operators."
+      ],
+      "allowed_child_node_types": [
+        "industry_group",
+        "industry",
+        "stub"
+      ],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    }
+  ]
+}

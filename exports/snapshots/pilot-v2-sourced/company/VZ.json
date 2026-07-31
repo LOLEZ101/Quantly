@@ -1,0 +1,263 @@
+{
+  "response_type": "company_classification",
+  "company_key": "vz",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v1",
+  "primary_path": {
+    "node_id": "national_wireless_network_owners",
+    "path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "communication_services",
+        "name": "Communication Services",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "telecommunications",
+        "name": "Telecommunications",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "wireless_services",
+        "name": "Wireless Services",
+        "node_type": "industry",
+        "depth": 3
+      },
+      {
+        "id": "national_wireless_network_owners",
+        "name": "National Wireless Network Owners",
+        "node_type": "peer_cluster",
+        "depth": 4
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.775,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [
+    {
+      "node_id": "enterprise_network_and_connectivity",
+      "path": "root.communication_services.telecommunications.enterprise_communications.enterprise_network_and_connectivity",
+      "name": "Enterprise Network and Connectivity",
+      "weight": 0.22,
+      "confidence": 0.75,
+      "is_manual": false,
+      "effective_from": "2026-06-30",
+      "effective_to": null
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_type": "filing_section_business",
+      "summary": "Item 1. Business Verizon Communications Inc. (VZ) is a registrant under the Securities Exchange Act. Principal operations: Verizon. Reported segments include: Wireless (78% of revenue); Wireline / Business (22% of revenue). Our infrastructu",
+      "excerpt": "Item 1. Business Verizon Communications Inc. (VZ) is a registrant under the Securities Exchange Act. Principal operations: Verizon. Reported segments include: Wireless (78% of revenue); Wireline / Business (22% of revenue). Our infrastructure/operating model includes: Network Owner.",
+      "locator": "0000732712-24-0001#business:35",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Wireless (78% of revenue)",
+      "excerpt": "Wireless (78% of revenue)",
+      "locator": "0000732712-24-0001#segments",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Wireline / Business (22% of revenue)",
+      "excerpt": "Wireline / Business (22% of revenue)",
+      "locator": "0000732712-24-0001#segments",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "filing_section_risk_factors",
+      "summary": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "excerpt": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "locator": "0000732712-24-0001#risk_factors:369",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "filing_section_segment_notes",
+      "summary": "Segment Information Revenue by segment: Wireless (78% of revenue); Wireline / Business (22% of revenue).",
+      "excerpt": "Segment Information Revenue by segment: Wireless (78% of revenue); Wireline / Business (22% of revenue).",
+      "locator": "0000732712-24-0001#segment_notes:760",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Wireless (78% of revenue)",
+      "excerpt": "Wireless (78% of revenue)",
+      "locator": "0000732712-24-0001#segments",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Wireline / Business (22% of revenue)",
+      "excerpt": "Wireline / Business (22% of revenue)",
+      "locator": "0000732712-24-0001#segments",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "filing_section_geographic_information",
+      "summary": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "excerpt": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "locator": "0000732712-24-0001#geographic_information:904",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=52000000000 USD end=2024-12-31",
+      "excerpt": "Revenues=52000000000 USD end=2024-12-31",
+      "locator": "xbrl:0000732712-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "xbrl_operating_income",
+      "summary": "OperatingIncomeLoss=10400000000 USD end=2024-12-31",
+      "excerpt": "OperatingIncomeLoss=10400000000 USD end=2024-12-31",
+      "locator": "xbrl:0000732712-24-0001:OperatingIncomeLoss",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=104000000000 USD end=2024-12-31",
+      "excerpt": "Assets=104000000000 USD end=2024-12-31",
+      "locator": "xbrl:0000732712-24-0001:Assets",
+      "source_document_uri": "fixture://sec/vz",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [
+    {
+      "target_type": "peer_relationship",
+      "prior_value": {
+        "node_id": "national_wireless_network_owners",
+        "path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+        "nodes": [
+          {
+            "id": "root",
+            "name": "Economy",
+            "node_type": "root",
+            "depth": 0
+          },
+          {
+            "id": "communication_services",
+            "name": "Communication Services",
+            "node_type": "sector",
+            "depth": 1
+          },
+          {
+            "id": "telecommunications",
+            "name": "Telecommunications",
+            "node_type": "industry_group",
+            "depth": 2
+          },
+          {
+            "id": "wireless_services",
+            "name": "Wireless Services",
+            "node_type": "industry",
+            "depth": 3
+          },
+          {
+            "id": "national_wireless_network_owners",
+            "name": "National Wireless Network Owners",
+            "node_type": "peer_cluster",
+            "depth": 4
+          }
+        ],
+        "confidence": 0.775,
+        "confidence_components": {
+          "segment_coverage": 1,
+          "evidence_completeness": 1,
+          "source_agreement": 0.9,
+          "recency": 0.9,
+          "manual_review_bonus": 0,
+          "ambiguity_penalty": 0,
+          "final": 0.775
+        },
+        "is_manual": false,
+        "primary_selection_reason": "consolidated_revenue",
+        "evidence_ids": [
+          "ec_vz_1",
+          "ec_vz_2",
+          "ec_vz_3",
+          "ec_vz_4",
+          "ec_vz_5",
+          "ec_vz_6",
+          "ec_vz_7",
+          "ec_vz_8",
+          "ec_vz_9",
+          "ec_vz_10",
+          "ec_vz_11"
+        ]
+      },
+      "new_value": {
+        "peer_company_key": "t",
+        "peer_type": "direct_competitor",
+        "status": "reviewed"
+      },
+      "rationale": "Confirm AT&T remains a core direct wireless competitor for Verizon in the pilot.",
+      "created_by": "pilot.analyst@peer-engine.test",
+      "approved_by": null,
+      "effective_from": "2026-06-30",
+      "effective_to": null
+    }
+  ],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 1,
+      "evidence_completeness": 1,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.775
+    },
+    "coverage_ratio": 1,
+    "unallocated_weight": 0
+  }
+}

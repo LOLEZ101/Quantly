@@ -1,0 +1,42 @@
+{
+  "cik": "732717",
+  "entityType": "operating",
+  "sic": "4812",
+  "sicDescription": "Communications / Technology",
+  "name": "AT&T Inc.",
+  "tickers": [
+    "T"
+  ],
+  "exchanges": [
+    "Nasdaq"
+  ],
+  "formerNames": [],
+  "filings": {
+    "recent": {
+      "accessionNumber": [
+        "0000732717-24-0001",
+        "0000732717-24-0002"
+      ],
+      "filingDate": [
+        "2025-02-15",
+        "2025-05-01"
+      ],
+      "reportDate": [
+        "2024-12-31",
+        "2025-03-31"
+      ],
+      "form": [
+        "10-K",
+        "10-Q"
+      ],
+      "primaryDocument": [
+        "t-20241231.htm",
+        "t-20250331.htm"
+      ],
+      "isXBRL": [
+        1,
+        1
+      ]
+    }
+  }
+}

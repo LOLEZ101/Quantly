@@ -1,0 +1,324 @@
+{
+  "company_key": "chtr",
+  "identifier": {
+    "company_key": "chtr",
+    "configured_name": "Charter Communications, Inc.",
+    "configured_ticker": "CHTR",
+    "resolved_cik": "0001091667",
+    "resolved_registrant": "Charter Communications, Inc.",
+    "exchange": "Nasdaq",
+    "foreign_issuer": false,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "chtr",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 54600000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2023-12-31",
+      "filing_date": "2024-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2023",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 55100000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 12500000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 148000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 96000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 0,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Capital Expenditures",
+      "normalized_metric": "capex",
+      "value_numeric": 11000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business Charter Communications, Inc. (CHTR) is a registrant under the Securities Exchange Act. Charter provides broadband, video, and voice services under the Spectrum brand over a hybrid fiber-coax network, primarily to residential and SMB customers. Principal operations: Charter Communications, Inc.. Reported segments include: Internet (57% of revenue); Video / Voice / Mobile (43% of re",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0001091667-24-0001#business:171"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.internet.weight": {
+      "value": 0.55,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001091667-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.video_voice.weight": {
+      "value": 0.4,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001091667-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.other.weight": {
+      "value": 0.05,
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_curated_segment",
+      "confidence": 0.6,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "operating_model": {
+      "value": "network_owner",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0001091667-24-0001#business"
+      ],
+      "derivation_method": "regex_business_model",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "mega",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "revenue_growth_band": {
+      "value": "low",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "profitability_band": {
+      "value": "moderate",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "leverage_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "capital_intensity_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "cik": {
+      "value": "0001091667",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "illustrative_fallbacks": [
+    "segment.other"
+  ],
+  "derived_financial": {
+    "company_key": "chtr",
+    "as_of": "2026-06-30",
+    "currency": "USD",
+    "size_band": {
+      "value": "mega",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_growth_band": {
+      "value": "low",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "profitability_band": {
+      "value": "moderate",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "leverage_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "capital_intensity_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_ttm_illustrative_usd": {
+      "value": 55100000000,
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    }
+  },
+  "provenance_class": "independent_offline_verified_excerpt"
+}

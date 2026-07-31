@@ -1,0 +1,667 @@
+{
+  "fixture_data_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "quality_notice": "Manually curated pilot fixtures. Illustrative fields are for testing only and are not live financial data.",
+  "companies": [
+    {
+      "company_key": "vz",
+      "legal_name": "Verizon Communications Inc.",
+      "display_name": "Verizon",
+      "ticker": "VZ",
+      "exchange": "NASDAQ",
+      "cik": "0000732712",
+      "country_of_domicile": "US",
+      "website": "https://example.test/vz",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Nationwide US wireless network owner with consumer and enterprise connectivity services.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": "50101020",
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "t",
+      "legal_name": "AT&T Inc.",
+      "display_name": "AT&T",
+      "ticker": "T",
+      "exchange": "NASDAQ",
+      "cik": "0000732717",
+      "country_of_domicile": "US",
+      "website": "https://example.test/t",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Integrated US telecom with national wireless and substantial wireline/fiber operations.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "tmus",
+      "legal_name": "T-Mobile US, Inc.",
+      "display_name": "T-Mobile US",
+      "ticker": "TMUS",
+      "exchange": "NASDAQ",
+      "cik": "0001283699",
+      "country_of_domicile": "US",
+      "website": "https://example.test/tmus",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "National US wireless network operator focused primarily on mobile services.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmcsa",
+      "legal_name": "Comcast Corporation",
+      "display_name": "Comcast",
+      "ticker": "CMCSA",
+      "exchange": "NASDAQ",
+      "cik": "0001166691",
+      "country_of_domicile": "US",
+      "website": "https://example.test/cmcsa",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "US cable broadband and media conglomerate; connectivity economics driven by HFC broadband.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "chtr",
+      "legal_name": "Charter Communications, Inc.",
+      "display_name": "Charter Communications",
+      "ticker": "CHTR",
+      "exchange": "NASDAQ",
+      "cik": "0001091667",
+      "country_of_domicile": "US",
+      "website": "https://example.test/chtr",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "US cable broadband operator (Spectrum) focused on residential and SMB connectivity.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cci",
+      "legal_name": "Crown Castle Inc.",
+      "display_name": "Crown Castle",
+      "ticker": "CCI",
+      "exchange": "NASDAQ",
+      "cik": "0001051470",
+      "country_of_domicile": "US",
+      "website": "https://example.test/cci",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "US telecom infrastructure company owning towers and fiber for carrier tenants.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amt",
+      "legal_name": "American Tower Corporation",
+      "display_name": "American Tower",
+      "ticker": "AMT",
+      "exchange": "NASDAQ",
+      "cik": "0001053507",
+      "country_of_domicile": "US",
+      "website": "https://example.test/amt",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Global telecom tower landlord leasing macro sites to wireless carriers.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mcd",
+      "legal_name": "McDonald's Corporation",
+      "display_name": "McDonald's",
+      "ticker": "MCD",
+      "exchange": "NASDAQ",
+      "cik": "0000063908",
+      "country_of_domicile": "US",
+      "website": "https://example.test/mcd",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Global QSR brand with a franchise-heavy system and significant franchise revenues.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "sbux",
+      "legal_name": "Starbucks Corporation",
+      "display_name": "Starbucks",
+      "ticker": "SBUX",
+      "exchange": "NASDAQ",
+      "cik": "0000829224",
+      "country_of_domicile": "US",
+      "website": "https://example.test/sbux",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Global coffeehouse chain with a predominantly company-operated store model in key markets.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmg",
+      "legal_name": "Chipotle Mexican Grill, Inc.",
+      "display_name": "Chipotle",
+      "ticker": "CMG",
+      "exchange": "NASDAQ",
+      "cik": "0001058090",
+      "country_of_domicile": "US",
+      "website": "https://example.test/cmg",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Fast-casual restaurant company operating nearly all restaurants as company-owned.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "yum",
+      "legal_name": "Yum! Brands, Inc.",
+      "display_name": "Yum! Brands",
+      "ticker": "YUM",
+      "exchange": "NASDAQ",
+      "cik": "0001041061",
+      "country_of_domicile": "US",
+      "website": "https://example.test/yum",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Asset-light global QSR franchisor (KFC, Taco Bell, Pizza Hut).",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dpz",
+      "legal_name": "Domino's Pizza, Inc.",
+      "display_name": "Domino's",
+      "ticker": "DPZ",
+      "exchange": "NASDAQ",
+      "cik": "0001286681",
+      "country_of_domicile": "US",
+      "website": "https://example.test/dpz",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Global pizza QSR with a franchise-heavy system.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dri",
+      "legal_name": "Darden Restaurants, Inc.",
+      "display_name": "Darden Restaurants",
+      "ticker": "DRI",
+      "exchange": "NASDAQ",
+      "cik": "0000940944",
+      "country_of_domicile": "US",
+      "website": "https://example.test/dri",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Full-service casual dining company operating Olive Garden and related brands.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qsr",
+      "legal_name": "Restaurant Brands International Inc.",
+      "display_name": "Restaurant Brands International",
+      "ticker": "QSR",
+      "exchange": "NYSE",
+      "cik": "0001618756",
+      "country_of_domicile": "US",
+      "website": "https://example.test/qsr",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Asset-light franchisor of Burger King, Tim Hortons, and Popeyes.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txrh",
+      "legal_name": "Texas Roadhouse, Inc.",
+      "display_name": "Texas Roadhouse",
+      "ticker": "TXRH",
+      "exchange": "NASDAQ",
+      "cik": "0001289460",
+      "country_of_domicile": "US",
+      "website": "https://example.test/txrh",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Casual dining steakhouse chain that is primarily company-operated.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nvda",
+      "legal_name": "NVIDIA Corporation",
+      "display_name": "NVIDIA",
+      "ticker": "NVDA",
+      "exchange": "NASDAQ",
+      "cik": "0001045810",
+      "country_of_domicile": "US",
+      "website": "https://example.test/nvda",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Fabless designer of GPUs and accelerated computing platforms for data center and AI.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amd",
+      "legal_name": "Advanced Micro Devices, Inc.",
+      "display_name": "AMD",
+      "ticker": "AMD",
+      "exchange": "NASDAQ",
+      "cik": "0000002488",
+      "country_of_domicile": "US",
+      "website": "https://example.test/amd",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Fabless designer of CPUs, GPUs, and data-center accelerators.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "intc",
+      "legal_name": "Intel Corporation",
+      "display_name": "Intel",
+      "ticker": "INTC",
+      "exchange": "NASDAQ",
+      "cik": "0000050863",
+      "country_of_domicile": "US",
+      "website": "https://example.test/intc",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Integrated device manufacturer designing CPUs and operating captive fabs, with foundry ambitions.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "avgo",
+      "legal_name": "Broadcom Inc.",
+      "display_name": "Broadcom",
+      "ticker": "AVGO",
+      "exchange": "NASDAQ",
+      "cik": "0001730168",
+      "country_of_domicile": "US",
+      "website": "https://example.test/avgo",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Diversified semiconductor and infrastructure software company with leading networking silicon.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qcom",
+      "legal_name": "QUALCOMM Incorporated",
+      "display_name": "Qualcomm",
+      "ticker": "QCOM",
+      "exchange": "NASDAQ",
+      "cik": "0000804328",
+      "country_of_domicile": "US",
+      "website": "https://example.test/qcom",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Fabless mobile and connectivity SoC designer with licensing franchise.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txn",
+      "legal_name": "Texas Instruments Incorporated",
+      "display_name": "Texas Instruments",
+      "ticker": "TXN",
+      "exchange": "NASDAQ",
+      "cik": "0000097476",
+      "country_of_domicile": "US",
+      "website": "https://example.test/txn",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Analog and embedded semiconductor manufacturer with substantial internal manufacturing.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "adi",
+      "legal_name": "Analog Devices, Inc.",
+      "display_name": "Analog Devices",
+      "ticker": "ADI",
+      "exchange": "NASDAQ",
+      "cik": "0000006281",
+      "country_of_domicile": "US",
+      "website": "https://example.test/adi",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "High-performance analog, mixed-signal, and power semiconductor company.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mu",
+      "legal_name": "Micron Technology, Inc.",
+      "display_name": "Micron",
+      "ticker": "MU",
+      "exchange": "NASDAQ",
+      "cik": "0000723125",
+      "country_of_domicile": "US",
+      "website": "https://example.test/mu",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Memory semiconductor manufacturer focused on DRAM and NAND.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amat",
+      "legal_name": "Applied Materials, Inc.",
+      "display_name": "Applied Materials",
+      "ticker": "AMAT",
+      "exchange": "NASDAQ",
+      "cik": "0000006951",
+      "country_of_domicile": "US",
+      "website": "https://example.test/amat",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Semiconductor wafer fabrication equipment supplier (deposition, etch, related tools).",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "lrcx",
+      "legal_name": "Lam Research Corporation",
+      "display_name": "Lam Research",
+      "ticker": "LRCX",
+      "exchange": "NASDAQ",
+      "cik": "0000707549",
+      "country_of_domicile": "US",
+      "website": "https://example.test/lrcx",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Wafer fabrication equipment company focused on etch and deposition.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "klac",
+      "legal_name": "KLA Corporation",
+      "display_name": "KLA",
+      "ticker": "KLAC",
+      "exchange": "NASDAQ",
+      "cik": "0000319201",
+      "country_of_domicile": "US",
+      "website": "https://example.test/klac",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Process control and yield-management equipment for semiconductor manufacturing.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nxpi",
+      "legal_name": "NXP Semiconductors N.V.",
+      "display_name": "NXP Semiconductors",
+      "ticker": "NXPI",
+      "exchange": "NASDAQ",
+      "cik": "0001413447",
+      "country_of_domicile": "US",
+      "website": "https://example.test/nxpi",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Automotive and industrial mixed-signal semiconductor company.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "gfs",
+      "legal_name": "GlobalFoundries Inc.",
+      "display_name": "GlobalFoundries",
+      "ticker": "GFS",
+      "exchange": "NASDAQ",
+      "cik": "0001709048",
+      "country_of_domicile": "US",
+      "website": "https://example.test/gfs",
+      "sp500_membership_status": "not_member",
+      "primary_business_description": {
+        "value": "Pure-play semiconductor foundry manufacturing chips for third-party designers.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mrvl",
+      "legal_name": "Marvell Technology, Inc.",
+      "display_name": "Marvell",
+      "ticker": "MRVL",
+      "exchange": "NASDAQ",
+      "cik": "0001835632",
+      "country_of_domicile": "US",
+      "website": "https://example.test/mrvl",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Fabless designer of data infrastructure and networking semiconductors.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mpwr",
+      "legal_name": "Monolithic Power Systems, Inc.",
+      "display_name": "Monolithic Power Systems",
+      "ticker": "MPWR",
+      "exchange": "NASDAQ",
+      "cik": "0001280452",
+      "country_of_domicile": "US",
+      "website": "https://example.test/mpwr",
+      "sp500_membership_status": "member",
+      "primary_business_description": {
+        "value": "Analog and power-management semiconductor company.",
+        "quality": "manually_classified",
+        "as_of": "2026-06-30"
+      },
+      "industry_identifiers": {
+        "gics": null,
+        "naics": null
+      },
+      "is_active": true,
+      "data_as_of": "2026-06-30"
+    }
+  ]
+}

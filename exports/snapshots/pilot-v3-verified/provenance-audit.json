@@ -1,0 +1,8 @@
+{
+  "provenance_class": "independent_offline_verified_excerpt",
+  "circular_phase2_derived": false,
+  "parent_snapshots": [
+    "snap_pilot_v1",
+    "snap_pilot_v2_sourced"
+  ]
+}

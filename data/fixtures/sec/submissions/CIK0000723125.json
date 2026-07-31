@@ -1,0 +1,42 @@
+{
+  "cik": "723125",
+  "entityType": "operating",
+  "sic": "4812",
+  "sicDescription": "Communications / Technology",
+  "name": "Micron Technology, Inc.",
+  "tickers": [
+    "MU"
+  ],
+  "exchanges": [
+    "Nasdaq"
+  ],
+  "formerNames": [],
+  "filings": {
+    "recent": {
+      "accessionNumber": [
+        "0000723125-24-0001",
+        "0000723125-24-0002"
+      ],
+      "filingDate": [
+        "2025-02-15",
+        "2025-05-01"
+      ],
+      "reportDate": [
+        "2024-12-31",
+        "2025-03-31"
+      ],
+      "form": [
+        "10-K",
+        "10-Q"
+      ],
+      "primaryDocument": [
+        "mu-20241231.htm",
+        "mu-20250331.htm"
+      ],
+      "isXBRL": [
+        1,
+        1
+      ]
+    }
+  }
+}

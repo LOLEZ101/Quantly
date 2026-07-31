@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-06-30",
+  "errors": [],
+  "warnings": [],
+  "publishable": true,
+  "counts": {
+    "companies": 30,
+    "classifications": 30,
+    "peer_relationships": 1234,
+    "review_items": 11,
+    "evidence": 31
+  }
+}

@@ -1,0 +1,2703 @@
+{
+  "company_key": "vz",
+  "taxonomy_version": "1.0.0",
+  "peer_model_version": "1.1.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v3_verified",
+  "peer_groups": {
+    "direct_competitor": {
+      "response_type": "peer_group",
+      "company_key": "vz",
+      "peer_type": "direct_competitor",
+      "taxonomy_version": "1.0.0",
+      "peer_model_version": "1.1.0",
+      "as_of": "2026-06-30",
+      "snapshot_id": "snap_pilot_v3_verified",
+      "threshold": 0.5,
+      "peers": [
+        {
+          "company_key": "t",
+          "display_name": "AT&T",
+          "ticker": "T",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 1,
+          "rank": 1,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.4921,
+              "weight": 0.2,
+              "weighted_contribution": 0.0984,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.8692,
+              "weight": 0.15,
+              "weighted_contribution": 0.1304,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9802,
+              "weight": 0.05,
+              "weighted_contribution": 0.049,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 1,
+              "weight": 0.25,
+              "weighted_contribution": 0.25,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "AT&T is a close direct competitor for Verizon.",
+            "similarities": [
+              "Evidence or customer overlap indicates competitive interaction.",
+              "Both map primarily to national_wireless_network_owners.",
+              "Customer-type mix is similar."
+            ],
+            "differences": [
+              "segment overlap is relatively weak (0.49)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "explicit_manual_competitor",
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "AT&T is retained for peer type direct_competitor because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "explicit_manual_competitor",
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "tmus",
+          "display_name": "T-Mobile US",
+          "ticker": "TMUS",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 1,
+          "rank": 2,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.626,
+              "weight": 0.2,
+              "weighted_contribution": 0.1252,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.7699,
+              "weight": 0.15,
+              "weighted_contribution": 0.1155,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9231,
+              "weight": 0.05,
+              "weighted_contribution": 0.0462,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 1,
+              "weight": 0.25,
+              "weighted_contribution": 0.25,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "T-Mobile US is a close direct competitor for Verizon.",
+            "similarities": [
+              "Evidence or customer overlap indicates competitive interaction.",
+              "Both map primarily to national_wireless_network_owners.",
+              "Business-segment composition overlaps materially."
+            ],
+            "differences": [
+              "No large scored differences stood out among available components."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "explicit_manual_competitor",
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "T-Mobile US is retained for peer type direct_competitor because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Available components are already relatively strong; residual gap reflects imperfect overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "explicit_manual_competitor",
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "chtr",
+          "display_name": "Charter Communications",
+          "ticker": "CHTR",
+          "primary_node_id": "cable_broadband_operators",
+          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+          "score": 0.6878,
+          "rank": 3,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.2,
+              "weighted_contribution": 0.152,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.2,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.7241,
+              "weight": 0.15,
+              "weighted_contribution": 0.1086,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9231,
+              "weight": 0.05,
+              "weighted_contribution": 0.0462,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.7241,
+              "weight": 0.25,
+              "weighted_contribution": 0.181,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Charter Communications is a relevant direct competitor for Verizon.",
+            "similarities": [
+              "Evidence or customer overlap indicates competitive interaction.",
+              "Taxonomy proximity is high between national_wireless_network_owners and cable_broadband_operators.",
+              "Customer-type mix is similar."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs cable_broadband_operators).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Charter Communications is retained for peer type direct_competitor because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "cmcsa",
+          "display_name": "Comcast",
+          "ticker": "CMCSA",
+          "primary_node_id": "cable_broadband_operators",
+          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+          "score": 0.6867,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.2,
+              "weighted_contribution": 0.152,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.5385,
+              "weight": 0.1,
+              "weighted_contribution": 0.0538,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.2,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.8519,
+              "weight": 0.15,
+              "weighted_contribution": 0.1278,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.8018,
+              "weight": 0.05,
+              "weighted_contribution": 0.0401,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.8519,
+              "weight": 0.25,
+              "weighted_contribution": 0.213,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Comcast is a relevant direct competitor for Verizon.",
+            "similarities": [
+              "Evidence or customer overlap indicates competitive interaction.",
+              "Taxonomy proximity is high between national_wireless_network_owners and cable_broadband_operators.",
+              "Customer-type mix is similar."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs cable_broadband_operators).",
+              "business model similarity is relatively weak (0.54).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Comcast is retained for peer type direct_competitor because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        }
+      ]
+    },
+    "operating": {
+      "response_type": "peer_group",
+      "company_key": "vz",
+      "peer_type": "operating",
+      "taxonomy_version": "1.0.0",
+      "peer_model_version": "1.1.0",
+      "as_of": "2026-06-30",
+      "snapshot_id": "snap_pilot_v3_verified",
+      "threshold": 0.55,
+      "peers": [
+        {
+          "company_key": "t",
+          "display_name": "AT&T",
+          "ticker": "T",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 1,
+          "rank": 1,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.3,
+              "weighted_contribution": 0.3,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.25,
+              "weighted_contribution": 0.25,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.4921,
+              "weight": 0.15,
+              "weighted_contribution": 0.0738,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.8692,
+              "weight": 0.05,
+              "weighted_contribution": 0.0435,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9802,
+              "weight": 0.05,
+              "weighted_contribution": 0.049,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "AT&T is a close operating for Verizon.",
+            "similarities": [
+              "Both map primarily to national_wireless_network_owners.",
+              "Infrastructure / operating models are similar.",
+              "capital intensity similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "segment overlap is relatively weak (0.49)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "explicit_manual_competitor",
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "AT&T is retained for peer type operating because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "explicit_manual_competitor",
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "tmus",
+          "display_name": "T-Mobile US",
+          "ticker": "TMUS",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 1,
+          "rank": 2,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.3,
+              "weighted_contribution": 0.3,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.25,
+              "weighted_contribution": 0.25,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.626,
+              "weight": 0.15,
+              "weighted_contribution": 0.0939,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.7699,
+              "weight": 0.05,
+              "weighted_contribution": 0.0385,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9231,
+              "weight": 0.05,
+              "weighted_contribution": 0.0462,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "T-Mobile US is a close operating for Verizon.",
+            "similarities": [
+              "Both map primarily to national_wireless_network_owners.",
+              "Infrastructure / operating models are similar.",
+              "capital intensity similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "No large scored differences stood out among available components."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "explicit_manual_competitor",
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "T-Mobile US is retained for peer type operating because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Available components are already relatively strong; residual gap reflects imperfect overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "explicit_manual_competitor",
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "chtr",
+          "display_name": "Charter Communications",
+          "ticker": "CHTR",
+          "primary_node_id": "cable_broadband_operators",
+          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+          "score": 0.8104,
+          "rank": 3,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.3,
+              "weighted_contribution": 0.228,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.25,
+              "weighted_contribution": 0.25,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.15,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.7241,
+              "weight": 0.05,
+              "weighted_contribution": 0.0362,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9231,
+              "weight": 0.05,
+              "weighted_contribution": 0.0462,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Charter Communications is a close operating for Verizon.",
+            "similarities": [
+              "Infrastructure / operating models are similar.",
+              "Taxonomy proximity is high between national_wireless_network_owners and cable_broadband_operators.",
+              "capital intensity similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs cable_broadband_operators).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Charter Communications is retained for peer type operating because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "cmcsa",
+          "display_name": "Comcast",
+          "ticker": "CMCSA",
+          "primary_node_id": "cable_broadband_operators",
+          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+          "score": 0.6953,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.3,
+              "weighted_contribution": 0.228,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.5385,
+              "weight": 0.25,
+              "weighted_contribution": 0.1346,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.15,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.8519,
+              "weight": 0.05,
+              "weighted_contribution": 0.0426,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.8018,
+              "weight": 0.05,
+              "weighted_contribution": 0.0401,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Comcast is a relevant operating for Verizon.",
+            "similarities": [
+              "Taxonomy proximity is high between national_wireless_network_owners and cable_broadband_operators.",
+              "Infrastructure / operating models are similar.",
+              "capital intensity similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs cable_broadband_operators).",
+              "business model similarity is relatively weak (0.54).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Comcast is retained for peer type operating because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        }
+      ]
+    },
+    "growth": {
+      "response_type": "peer_group",
+      "company_key": "vz",
+      "peer_type": "growth",
+      "taxonomy_version": "1.0.0",
+      "peer_model_version": "1.1.0",
+      "as_of": "2026-06-30",
+      "snapshot_id": "snap_pilot_v3_verified",
+      "threshold": 0.45,
+      "peers": [
+        {
+          "company_key": "t",
+          "display_name": "AT&T",
+          "ticker": "T",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 1,
+          "rank": 1,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.15,
+              "weighted_contribution": 0.15,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.4921,
+              "weight": 0.1,
+              "weighted_contribution": 0.0492,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.8692,
+              "weight": 0.05,
+              "weighted_contribution": 0.0435,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9802,
+              "weight": 0.05,
+              "weighted_contribution": 0.049,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.35,
+              "weighted_contribution": 0.245,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "AT&T is a close growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "Both map primarily to national_wireless_network_owners.",
+              "Infrastructure / operating models are similar."
+            ],
+            "differences": [
+              "segment overlap is relatively weak (0.49)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "explicit_manual_competitor",
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "AT&T is retained for peer type growth because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "explicit_manual_competitor",
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "tmus",
+          "display_name": "T-Mobile US",
+          "ticker": "TMUS",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 1,
+          "rank": 2,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.15,
+              "weighted_contribution": 0.15,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.626,
+              "weight": 0.1,
+              "weighted_contribution": 0.0626,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.7699,
+              "weight": 0.05,
+              "weighted_contribution": 0.0385,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9231,
+              "weight": 0.05,
+              "weighted_contribution": 0.0462,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.35,
+              "weighted_contribution": 0.245,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "T-Mobile US is a close growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "Both map primarily to national_wireless_network_owners.",
+              "Infrastructure / operating models are similar."
+            ],
+            "differences": [
+              "No large scored differences stood out among available components."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "explicit_manual_competitor",
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "T-Mobile US is retained for peer type growth because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Available components are already relatively strong; residual gap reflects imperfect overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "explicit_manual_competitor",
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "chtr",
+          "display_name": "Charter Communications",
+          "ticker": "CHTR",
+          "primary_node_id": "cable_broadband_operators",
+          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+          "score": 0.8826,
+          "rank": 3,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.15,
+              "weighted_contribution": 0.114,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.7241,
+              "weight": 0.05,
+              "weighted_contribution": 0.0362,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9231,
+              "weight": 0.05,
+              "weighted_contribution": 0.0462,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.35,
+              "weighted_contribution": 0.35,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.7241,
+              "weight": 0.05,
+              "weighted_contribution": 0.0362,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Charter Communications is a close growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "Taxonomy proximity is high between national_wireless_network_owners and cable_broadband_operators.",
+              "Infrastructure / operating models are similar."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs cable_broadband_operators).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Charter Communications is retained for peer type growth because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "cmcsa",
+          "display_name": "Comcast",
+          "ticker": "CMCSA",
+          "primary_node_id": "cable_broadband_operators",
+          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+          "score": 0.8431,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.15,
+              "weighted_contribution": 0.114,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.5385,
+              "weight": 0.1,
+              "weighted_contribution": 0.0538,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.8519,
+              "weight": 0.05,
+              "weighted_contribution": 0.0426,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.8018,
+              "weight": 0.05,
+              "weighted_contribution": 0.0401,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.35,
+              "weighted_contribution": 0.35,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.8519,
+              "weight": 0.05,
+              "weighted_contribution": 0.0426,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Comcast is a close growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "Taxonomy proximity is high between national_wireless_network_owners and cable_broadband_operators.",
+              "size similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs cable_broadband_operators).",
+              "business model similarity is relatively weak (0.54).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Comcast is retained for peer type growth because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "sbux",
+          "display_name": "Starbucks",
+          "ticker": "SBUX",
+          "primary_node_id": "qsr_hybrid_franchise",
+          "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_hybrid_franchise",
+          "score": 0.5906,
+          "rank": 5,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.2,
+              "weight": 0.15,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.5625,
+              "weight": 0.05,
+              "weighted_contribution": 0.0281,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.5873,
+              "weight": 0.05,
+              "weighted_contribution": 0.0294,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.35,
+              "weighted_contribution": 0.35,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.5625,
+              "weight": 0.05,
+              "weighted_contribution": 0.0281,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Starbucks is a relevant growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "size similarity contributes 0.07 to the score.",
+              "margin similarity contributes 0.05 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs qsr_hybrid_franchise).",
+              "taxonomy proximity is relatively weak (0.20).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Starbucks is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "mcd",
+          "display_name": "McDonald's",
+          "ticker": "MCD",
+          "primary_node_id": "qsr_franchise_heavy",
+          "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy",
+          "score": 0.5553,
+          "rank": 6,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.2,
+              "weight": 0.15,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.5625,
+              "weight": 0.05,
+              "weighted_contribution": 0.0281,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.2821,
+              "weight": 0.05,
+              "weighted_contribution": 0.0141,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.05,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.35,
+              "weighted_contribution": 0.35,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.5625,
+              "weight": 0.05,
+              "weighted_contribution": 0.0281,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "McDonald's is a relevant growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "size similarity contributes 0.07 to the score.",
+              "Taxonomy proximity is high between national_wireless_network_owners and qsr_franchise_heavy."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs qsr_franchise_heavy).",
+              "taxonomy proximity is relatively weak (0.20).",
+              "geographic overlap is relatively weak (0.28).",
+              "business model similarity is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "McDonald's is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, geographic_overlap, business_model_similarity.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "amt",
+          "display_name": "American Tower",
+          "ticker": "AMT",
+          "primary_node_id": "tower_and_macro_site_operators",
+          "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
+          "score": 0.5205,
+          "rank": 7,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.6725,
+              "weight": 0.15,
+              "weighted_contribution": 0.1009,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.1834,
+              "weight": 0.05,
+              "weighted_contribution": 0.0092,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.3245,
+              "weight": 0.05,
+              "weighted_contribution": 0.0162,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.05,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.35,
+              "weighted_contribution": 0.35,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.1834,
+              "weight": 0.05,
+              "weighted_contribution": 0.0092,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "American Tower is a weaker growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "Taxonomy proximity is high between national_wireless_network_owners and tower_and_macro_site_operators.",
+              "size similarity contributes 0.07 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs tower_and_macro_site_operators).",
+              "geographic overlap is relatively weak (0.32).",
+              "customer overlap is relatively weak (0.18).",
+              "competitive overlap is relatively weak (0.18)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [
+              "eligible_with_penalty via allow_tower_operator_risk: Infrastructure / capital-intensity / rate-risk comparisons may include towers."
+            ],
+            "why_appropriate": "American Tower is retained for peer type growth because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
+            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, customer_overlap, competitive_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible_with_penalty",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 0.85,
+          "incomplete": false
+        },
+        {
+          "company_key": "cmg",
+          "display_name": "Chipotle",
+          "ticker": "CMG",
+          "primary_node_id": "fast_casual_company_operated",
+          "primary_path": "root.consumer_discretionary.restaurants.fast_casual_restaurants.fast_casual_company_operated",
+          "score": 0.5052,
+          "rank": 8,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.2,
+              "weight": 0.15,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.5625,
+              "weight": 0.05,
+              "weighted_contribution": 0.0281,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9802,
+              "weight": 0.05,
+              "weighted_contribution": 0.049,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.35,
+              "weighted_contribution": 0.245,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.5625,
+              "weight": 0.05,
+              "weighted_contribution": 0.0281,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Chipotle is a weaker growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "size similarity contributes 0.07 to the score.",
+              "margin similarity contributes 0.05 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs fast_casual_company_operated).",
+              "taxonomy proximity is relatively weak (0.20).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Chipotle is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "dri",
+          "display_name": "Darden Restaurants",
+          "ticker": "DRI",
+          "primary_node_id": "casual_dining",
+          "primary_path": "root.consumer_discretionary.restaurants.full_service_restaurants.casual_dining",
+          "score": 0.5042,
+          "rank": 9,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.2,
+              "weight": 0.15,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.5625,
+              "weight": 0.05,
+              "weighted_contribution": 0.0281,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9608,
+              "weight": 0.05,
+              "weighted_contribution": 0.048,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.35,
+              "weighted_contribution": 0.245,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.5625,
+              "weight": 0.05,
+              "weighted_contribution": 0.0281,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Darden Restaurants is a weaker growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "size similarity contributes 0.07 to the score.",
+              "margin similarity contributes 0.05 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs casual_dining).",
+              "taxonomy proximity is relatively weak (0.20).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Darden Restaurants is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "amat",
+          "display_name": "Applied Materials",
+          "ticker": "AMAT",
+          "primary_node_id": "etch_deposition_and_clean",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.etch_deposition_and_clean",
+          "score": 0.503,
+          "rank": 10,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.1667,
+              "weight": 0.15,
+              "weighted_contribution": 0.025,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.1628,
+              "weight": 0.05,
+              "weighted_contribution": 0.0081,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.1364,
+              "weight": 0.05,
+              "weighted_contribution": 0.0068,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.05,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.35,
+              "weighted_contribution": 0.35,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.1628,
+              "weight": 0.05,
+              "weighted_contribution": 0.0081,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Applied Materials is a weaker growth for Verizon.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "size similarity contributes 0.07 to the score.",
+              "margin similarity contributes 0.03 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs etch_deposition_and_clean).",
+              "taxonomy proximity is relatively weak (0.17).",
+              "customer overlap is relatively weak (0.16).",
+              "competitive overlap is relatively weak (0.16)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Applied Materials is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, customer_overlap, competitive_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        }
+      ]
+    },
+    "risk": {
+      "response_type": "peer_group",
+      "company_key": "vz",
+      "peer_type": "risk",
+      "taxonomy_version": "1.0.0",
+      "peer_model_version": "1.1.0",
+      "as_of": "2026-06-30",
+      "snapshot_id": "snap_pilot_v3_verified",
+      "threshold": 0.4,
+      "peers": [
+        {
+          "company_key": "t",
+          "display_name": "AT&T",
+          "ticker": "T",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 1,
+          "rank": 1,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.4921,
+              "weight": 0.05,
+              "weighted_contribution": 0.0246,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.8692,
+              "weight": 0.05,
+              "weighted_contribution": 0.0435,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9802,
+              "weight": 0.1,
+              "weighted_contribution": 0.098,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 1,
+              "weight": 0.15,
+              "weighted_contribution": 0.15,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "AT&T is a close risk for Verizon.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.15 to the score.",
+              "Both map primarily to national_wireless_network_owners."
+            ],
+            "differences": [
+              "segment overlap is relatively weak (0.49)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "explicit_manual_competitor",
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "AT&T is retained for peer type risk because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "explicit_manual_competitor",
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "tmus",
+          "display_name": "T-Mobile US",
+          "ticker": "TMUS",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 1,
+          "rank": 2,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.626,
+              "weight": 0.05,
+              "weighted_contribution": 0.0313,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.7699,
+              "weight": 0.05,
+              "weighted_contribution": 0.0385,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9231,
+              "weight": 0.1,
+              "weighted_contribution": 0.0923,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 1,
+              "weight": 0.15,
+              "weighted_contribution": 0.15,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "T-Mobile US is a close risk for Verizon.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.15 to the score.",
+              "Both map primarily to national_wireless_network_owners."
+            ],
+            "differences": [
+              "No large scored differences stood out among available components."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "explicit_manual_competitor",
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "T-Mobile US is retained for peer type risk because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Available components are already relatively strong; residual gap reflects imperfect overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "explicit_manual_competitor",
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "cmcsa",
+          "display_name": "Comcast",
+          "ticker": "CMCSA",
+          "primary_node_id": "cable_broadband_operators",
+          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+          "score": 0.9026,
+          "rank": 3,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.1,
+              "weighted_contribution": 0.076,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.5385,
+              "weight": 0.1,
+              "weighted_contribution": 0.0538,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.8519,
+              "weight": 0.05,
+              "weighted_contribution": 0.0426,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.8018,
+              "weight": 0.1,
+              "weighted_contribution": 0.0802,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 1,
+              "weight": 0.15,
+              "weighted_contribution": 0.15,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Comcast is a close risk for Verizon.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.15 to the score.",
+              "size similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs cable_broadband_operators).",
+              "business model similarity is relatively weak (0.54).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Comcast is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "chtr",
+          "display_name": "Charter Communications",
+          "ticker": "CHTR",
+          "primary_node_id": "cable_broadband_operators",
+          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+          "score": 0.8945,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.1,
+              "weighted_contribution": 0.076,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.7241,
+              "weight": 0.05,
+              "weighted_contribution": 0.0362,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9231,
+              "weight": 0.1,
+              "weighted_contribution": 0.0923,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.6,
+              "weight": 0.15,
+              "weighted_contribution": 0.09,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Charter Communications is a close risk for Verizon.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "Infrastructure / operating models are similar.",
+              "size similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs cable_broadband_operators).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Charter Communications is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "cci",
+          "display_name": "Crown Castle",
+          "ticker": "CCI",
+          "primary_node_id": "tower_and_macro_site_operators",
+          "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
+          "score": 0.5595,
+          "rank": 5,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.6725,
+              "weight": 0.1,
+              "weighted_contribution": 0.0673,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.1976,
+              "weight": 0.05,
+              "weighted_contribution": 0.0099,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9231,
+              "weight": 0.1,
+              "weighted_contribution": 0.0923,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.6,
+              "weight": 0.15,
+              "weighted_contribution": 0.09,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Crown Castle is a relevant risk for Verizon.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "geographic overlap contributes 0.09 to the score.",
+              "leverage similarity contributes 0.09 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs tower_and_macro_site_operators).",
+              "customer overlap is relatively weak (0.20).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [
+              "eligible_with_penalty via allow_tower_operator_risk: Infrastructure / capital-intensity / rate-risk comparisons may include towers."
+            ],
+            "why_appropriate": "Crown Castle is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
+            "why_not_higher": "Score is not higher mainly due to weaker customer_overlap, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible_with_penalty",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 0.85,
+          "incomplete": false
+        },
+        {
+          "company_key": "amt",
+          "display_name": "American Tower",
+          "ticker": "AMT",
+          "primary_node_id": "tower_and_macro_site_operators",
+          "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
+          "score": 0.514,
+          "rank": 6,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.6725,
+              "weight": 0.1,
+              "weighted_contribution": 0.0673,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.1834,
+              "weight": 0.05,
+              "weighted_contribution": 0.0092,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.3245,
+              "weight": 0.1,
+              "weighted_contribution": 0.0325,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.6,
+              "weight": 0.15,
+              "weighted_contribution": 0.09,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "American Tower is a weaker risk for Verizon.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.09 to the score.",
+              "size similarity contributes 0.07 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (national_wireless_network_owners vs tower_and_macro_site_operators).",
+              "geographic overlap is relatively weak (0.32).",
+              "customer overlap is relatively weak (0.18).",
+              "business model similarity is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [
+              "eligible_with_penalty via allow_tower_operator_risk: Infrastructure / capital-intensity / rate-risk comparisons may include towers."
+            ],
+            "why_appropriate": "American Tower is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
+            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, customer_overlap, business_model_similarity.",
+            "confidence": 1
+          },
+          "eligibility": "eligible_with_penalty",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 0.85,
+          "incomplete": false
+        }
+      ]
+    }
+  }
+}

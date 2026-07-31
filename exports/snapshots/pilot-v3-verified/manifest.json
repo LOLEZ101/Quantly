@@ -1,0 +1,60 @@
+{
+  "response_type": "snapshot_manifest",
+  "snapshot_id": "snap_pilot_v3_verified",
+  "taxonomy_version": "1.0.0",
+  "peer_model_version": "1.1.0",
+  "adjacency_version": "1.0.0",
+  "contract_versions": {
+    "taxonomy": "1.0.0",
+    "company_profile": "1.0.0",
+    "company_classification": "1.0.0",
+    "peer_response": "1.1.0",
+    "snapshot_manifest": "1.0.0"
+  },
+  "created_at": "2026-07-31T12:00:00.000Z",
+  "published_at": "2026-07-31T12:00:00.000Z",
+  "as_of": "2026-06-30",
+  "is_immutable": true,
+  "content_hash": "sha256:8533127807dc83d38c795e3257159f4b16d4b327799209fb00586d5ec8e1cfde",
+  "counts": {
+    "companies": 30,
+    "taxonomy_nodes": 59,
+    "primary_classifications": 30,
+    "peer_relationships": 797,
+    "evidence_records": 351
+  },
+  "artifacts": [
+    {
+      "name": "manifest.json",
+      "uri": "exports/snapshots/pilot-v3-verified/manifest.json",
+      "media_type": "application/json",
+      "content_hash": null,
+      "byte_size": null
+    }
+  ],
+  "pilot_universe": [
+    "telecommunications",
+    "restaurants",
+    "semiconductors_and_equipment"
+  ],
+  "notes": "Phase-3.5 verified offline pilot. Independent corpus (not Phase-2 circular). Peer financial bands derived from companyfacts. valuation/market_behavior gated. Parent: snap_pilot_v2_sourced.",
+  "parent_snapshot_id": "snap_pilot_v2_sourced",
+  "source_adapter_version": "1.1.0",
+  "normalization_version": "1.0.0",
+  "fixture_data_version": "1.0.0",
+  "processing_run_id": "run_phase35_2026-07-31T120000000Z",
+  "source_document_count": 90,
+  "structured_fact_count": 210,
+  "illustrative_fallback_count": 14,
+  "illustrative_peer_band_count": 0,
+  "review_item_count": 14,
+  "validation_status": "passed",
+  "publication_status": "verified_offline_independent",
+  "provenance_class": "independent_offline_verified_excerpt",
+  "known_limitations": [
+    "Offline independent excerpts — not live EDGAR archives",
+    "Segment→taxonomy node mappings remain curated judgments",
+    "valuation and market_behavior peer types unsupported without market data",
+    "Customer/geo exposures still Phase-2 curated"
+  ]
+}

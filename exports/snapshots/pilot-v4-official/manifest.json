@@ -1,0 +1,61 @@
+{
+  "response_type": "snapshot_manifest",
+  "snapshot_id": "snap_pilot_v4_official",
+  "taxonomy_version": "1.0.0",
+  "peer_model_version": "1.1.0",
+  "adjacency_version": "1.0.0",
+  "contract_versions": {
+    "taxonomy": "1.0.0",
+    "company_profile": "1.0.0",
+    "company_classification": "1.0.0",
+    "peer_response": "1.1.0",
+    "snapshot_manifest": "1.0.0"
+  },
+  "created_at": "2026-07-31T18:00:00.000Z",
+  "published_at": null,
+  "as_of": "2026-06-30",
+  "is_immutable": true,
+  "content_hash": "sha256:aa663c4eaa2cb96520cbfb10db80961d211d10f47e16947172dde7f1ee427e87",
+  "counts": {
+    "companies": 30,
+    "taxonomy_nodes": 59,
+    "primary_classifications": 30,
+    "peer_relationships": 797,
+    "evidence_records": 351
+  },
+  "artifacts": [
+    {
+      "name": "manifest.json",
+      "uri": "exports/snapshots/pilot-v4-official/manifest.json",
+      "media_type": "application/json",
+      "content_hash": null,
+      "byte_size": null
+    }
+  ],
+  "pilot_universe": [
+    "telecommunications",
+    "restaurants",
+    "semiconductors_and_equipment"
+  ],
+  "notes": "Phase-3.6 acceptance snapshot. Field provenance documented. Official status requires live EDGAR + Postgres E2E.",
+  "parent_snapshot_id": "snap_pilot_v3_verified",
+  "source_adapter_version": "1.1.0",
+  "normalization_version": "1.0.0",
+  "processing_run_id": "run_phase36_2026-07-31T180000000Z",
+  "persistence_backend": "memory",
+  "postgres_e2e_complete": false,
+  "live_edgar_full_financial": 0,
+  "illustrative_peer_band_count": 0,
+  "review_item_count": 14,
+  "validation_status": "passed",
+  "publication_status": "website_ready_not_official",
+  "publishable": false,
+  "official": false,
+  "provenance_class": "independent_offline_verified_excerpt",
+  "known_limitations": [
+    "Offline default path uses hand-authored approximate corpus values",
+    "Official status requires live EDGAR companyfacts for all companies plus Postgres E2E",
+    "valuation and market_behavior peer types gated",
+    "Segment→taxonomy node mappings remain curated judgments"
+  ]
+}

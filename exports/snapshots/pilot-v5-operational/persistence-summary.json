@@ -1,0 +1,29 @@
+{
+  "companies_upserted": 30,
+  "source_payloads_inserted": 15,
+  "facts_upserted": 140154,
+  "sections_upserted": 0,
+  "evidence_candidates_upserted": 0,
+  "identifier_resolutions": 30,
+  "classifications": 30,
+  "peer_relationships": 797,
+  "review_items": 13,
+  "complete": true,
+  "backend": "postgres",
+  "postgres_e2e_complete": true,
+  "database": {
+    "host": "localhost",
+    "port": "5432",
+    "database": "peer_engine",
+    "user": "peer"
+  },
+  "migrations": {
+    "applied": [
+      "001_baseline_schema",
+      "002_phase3_source_layer",
+      "003_phase36_pipeline_persistence"
+    ],
+    "pending": [],
+    "newly_applied": []
+  }
+}

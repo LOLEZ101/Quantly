@@ -1,0 +1,183 @@
+{
+  "response_type": "company_classification",
+  "company_key": "klac",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v4_official",
+  "primary_path": {
+    "node_id": "process_control_and_metrology",
+    "path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "information_technology",
+        "name": "Information Technology",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "semiconductors_and_equipment",
+        "name": "Semiconductors and Semiconductor Equipment",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "semiconductor_equipment",
+        "name": "Semiconductor Equipment",
+        "node_type": "industry",
+        "depth": 3
+      },
+      {
+        "id": "wafer_fabrication_equipment",
+        "name": "Wafer Fabrication Equipment",
+        "node_type": "sub_industry",
+        "depth": 4
+      },
+      {
+        "id": "process_control_and_metrology",
+        "name": "Process Control and Metrology",
+        "node_type": "peer_cluster",
+        "depth": 5
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.775,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [],
+  "evidence": [
+    {
+      "evidence_type": "filing_section_business",
+      "summary": "Item 1. Business KLA Corporation (KLAC) is a registrant under the Securities Exchange Act. KLA supplies process control and yield-management systems used in semiconductor manufacturing. Principal operations: KLA Corporation. Reported segmen",
+      "excerpt": "Item 1. Business KLA Corporation (KLAC) is a registrant under the Securities Exchange Act. KLA supplies process control and yield-management systems used in semiconductor manufacturing. Principal operations: KLA Corporation. Reported segments include: Semiconductor Process Control (100% of revenue). Our semiconductor business model is equipment. We supply wafer fabrication equipment to semiconduct",
+      "locator": "0000319201-24-0001#business:171",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Semiconductor Process Control (100% of revenue)",
+      "excerpt": "Semiconductor Process Control (100% of revenue)",
+      "locator": "0000319201-24-0001#segments",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "semiconductor_model_equipment",
+      "summary": "Item 1. Business KLA Corporation (KLAC) is a registrant under the Securities Exchange Act. KLA supplies process control and yield-management systems used in semiconductor manufacturing. Principal operations: KLA Corporation. Reported segmen",
+      "excerpt": "Item 1. Business KLA Corporation (KLAC) is a registrant under the Securities Exchange Act. KLA supplies process control and yield-management systems used in semiconductor manufacturing. Principal operations: KLA Corporation. Reported segmen",
+      "locator": "0000319201-24-0001#business",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "filing_section_risk_factors",
+      "summary": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "excerpt": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "locator": "0000319201-24-0001#risk_factors:646",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "filing_section_segment_notes",
+      "summary": "Segment Information Revenue by segment: Semiconductor Process Control (100% of revenue).",
+      "excerpt": "Segment Information Revenue by segment: Semiconductor Process Control (100% of revenue).",
+      "locator": "0000319201-24-0001#segment_notes:936",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Semiconductor Process Control (100% of revenue)",
+      "excerpt": "Semiconductor Process Control (100% of revenue)",
+      "locator": "0000319201-24-0001#segments",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "filing_section_geographic_information",
+      "summary": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "excerpt": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "locator": "0000319201-24-0001#geographic_information:1064",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=10500000000 USD end=2023-12-31",
+      "excerpt": "Revenues=10500000000 USD end=2023-12-31",
+      "locator": "xbrl:0000319201-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=9800000000 USD end=2024-12-31",
+      "excerpt": "Revenues=9800000000 USD end=2024-12-31",
+      "locator": "xbrl:0000319201-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "xbrl_operating_income",
+      "summary": "OperatingIncomeLoss=3700000000 USD end=2024-12-31",
+      "excerpt": "OperatingIncomeLoss=3700000000 USD end=2024-12-31",
+      "locator": "xbrl:0000319201-24-0001:OperatingIncomeLoss",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=15000000000 USD end=2024-12-31",
+      "excerpt": "Assets=15000000000 USD end=2024-12-31",
+      "locator": "xbrl:0000319201-24-0001:Assets",
+      "source_document_uri": "fixture://sec/klac",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "process_control_and_metrology"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 1,
+      "evidence_completeness": 1,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.775
+    },
+    "coverage_ratio": 1,
+    "unallocated_weight": 0
+  }
+}

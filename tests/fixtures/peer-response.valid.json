@@ -1,0 +1,38 @@
+{
+  "response_type": "peer_group",
+  "company_key": "example-wireless",
+  "peer_type": "economic",
+  "taxonomy_version": "1.0.0",
+  "peer_model_version": "1.1.0",
+  "as_of": "2026-07-31",
+  "snapshot_id": "snap_pilot_2026_07_31",
+  "threshold": 0.55,
+  "peers": [
+    {
+      "company_key": "example-wireless-b",
+      "display_name": "Example Wireless B",
+      "ticker": "EXWB",
+      "primary_node_id": "national_wireless_network_owners",
+      "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+      "score": 0.88,
+      "rank": 1,
+      "is_manual": false,
+      "components": [
+        {
+          "factor_code": "taxonomy_proximity",
+          "factor_score": 1.0,
+          "weight": 0.35,
+          "weighted_contribution": 0.35,
+          "notes": "Same peer cluster"
+        },
+        {
+          "factor_code": "business_model_similarity",
+          "factor_score": 0.9,
+          "weight": 0.2,
+          "weighted_contribution": 0.18,
+          "notes": null
+        }
+      ]
+    }
+  ]
+}

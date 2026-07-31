@@ -1,0 +1,52 @@
+{
+  "response_type": "company_classification",
+  "company_key": "example-franchisor",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-07-31",
+  "snapshot_id": null,
+  "primary_path": {
+    "node_id": "restaurant_franchisors_asset_light",
+    "path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
+    "nodes": [
+      { "id": "root", "name": "Economy", "node_type": "root", "depth": 0 },
+      {
+        "id": "consumer_discretionary",
+        "name": "Consumer Discretionary",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "restaurants",
+        "name": "Restaurants",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "restaurant_franchisors_asset_light",
+        "name": "Restaurant Franchisors (Asset-Light)",
+        "node_type": "peer_cluster",
+        "depth": 3
+      }
+    ],
+    "weight": 1.0,
+    "confidence": 1.0,
+    "is_manual": true,
+    "effective_from": "2026-07-31",
+    "effective_to": null
+  },
+  "secondary_exposures": [],
+  "evidence": [],
+  "history": [],
+  "manual_overrides": [
+    {
+      "target_type": "primary_path",
+      "prior_value": { "node_id": "qsr_franchise_heavy" },
+      "new_value": { "node_id": "restaurant_franchisors_asset_light" },
+      "rationale": "Royalty-dominated economics with immaterial company units.",
+      "created_by": "analyst@peer-engine.test",
+      "approved_by": "reviewer@peer-engine.test",
+      "effective_from": "2026-07-31",
+      "effective_to": null
+    }
+  ]
+}

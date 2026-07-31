@@ -1,0 +1,320 @@
+{
+  "company_key": "t",
+  "identifier": {
+    "company_key": "t",
+    "configured_name": "AT&T Inc.",
+    "configured_ticker": "T",
+    "resolved_cik": "0000732717",
+    "resolved_registrant": "AT&T Inc.",
+    "exchange": "NYSE",
+    "foreign_issuer": false,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "t",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 122400000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2023-12-31",
+      "filing_date": "2024-02-15",
+      "accession_number": "0000732717-24-0001",
+      "fiscal_year": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2023",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "t",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 122300000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000732717-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "t",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 22000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000732717-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "t",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 400000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000732717-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "t",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 125000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000732717-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "t",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 0,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000732717-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "t",
+      "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Capital Expenditures",
+      "normalized_metric": "capex",
+      "value_numeric": 20000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000732717-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business AT&T Inc. (T) is a registrant under the Securities Exchange Act. AT&T provides communications and technology services, including wireless mobility and wireline broadband/fiber services to consumers and businesses in the United States. Principal operations: AT&T Inc.. Reported segments include: Mobility (64% of revenue); Business Wireline (26% of revenue); Consumer Wireline (10% of",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0000732717-24-0001#business:171"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.mobility.weight": {
+      "value": 0.62,
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_curated_segment",
+      "confidence": 0.6,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "segment.wireline_fiber.weight": {
+      "value": 0.28,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0000732717-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.other.weight": {
+      "value": 0.1,
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_curated_segment",
+      "confidence": 0.6,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "operating_model": {
+      "value": "network_owner",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0000732717-24-0001#business"
+      ],
+      "derivation_method": "regex_business_model",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "mega",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "revenue_growth_band": {
+      "value": "negative",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "profitability_band": {
+      "value": "moderate",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "leverage_band": {
+      "value": "moderate",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "capital_intensity_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "cik": {
+      "value": "0000732717",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "derived_financial": {
+    "company_key": "t",
+    "as_of": "2026-06-30",
+    "currency": "USD",
+    "size_band": {
+      "value": "mega",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_growth_band": {
+      "value": "negative",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "profitability_band": {
+      "value": "moderate",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "leverage_band": {
+      "value": "moderate",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "capital_intensity_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_ttm_illustrative_usd": {
+      "value": 122300000000,
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    }
+  },
+  "companyfacts_uri": "fixture://sec/companyfacts/CIK0000732717.json",
+  "provenance_class": "independent_offline_verified_excerpt"
+}

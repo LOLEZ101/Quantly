@@ -1,0 +1,18 @@
+{
+  "mode": "postgres",
+  "database": {
+    "host": "localhost",
+    "port": "5432",
+    "database": "peer_engine",
+    "user": "peer"
+  },
+  "migrations": {
+    "applied": [
+      "001_baseline_schema",
+      "002_phase3_source_layer",
+      "003_phase36_pipeline_persistence"
+    ],
+    "pending": [],
+    "newly_applied": []
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "cik": "804328",
+  "entityType": "operating",
+  "sic": "4812",
+  "sicDescription": "Communications / Technology",
+  "name": "QUALCOMM Incorporated",
+  "tickers": [
+    "QCOM"
+  ],
+  "exchanges": [
+    "Nasdaq"
+  ],
+  "formerNames": [],
+  "filings": {
+    "recent": {
+      "accessionNumber": [
+        "0000804328-24-0001",
+        "0000804328-24-0002"
+      ],
+      "filingDate": [
+        "2025-02-15",
+        "2025-05-01"
+      ],
+      "reportDate": [
+        "2024-12-31",
+        "2025-03-31"
+      ],
+      "form": [
+        "10-K",
+        "10-Q"
+      ],
+      "primaryDocument": [
+        "qcom-20241231.htm",
+        "qcom-20250331.htm"
+      ],
+      "isXBRL": [
+        1,
+        1
+      ]
+    }
+  }
+}

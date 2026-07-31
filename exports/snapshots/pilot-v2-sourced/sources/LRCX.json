@@ -1,0 +1,227 @@
+{
+  "company_key": "lrcx",
+  "identifier": {
+    "company_key": "lrcx",
+    "configured_name": "Lam Research Corporation",
+    "configured_ticker": "LRCX",
+    "resolved_cik": "0000707549",
+    "resolved_registrant": "Lam Research Corporation",
+    "exchange": "Nasdaq",
+    "foreign_issuer": false,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "lrcx",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 52000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000707549-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "lrcx",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 10400000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000707549-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "lrcx",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 104000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000707549-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "lrcx",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 20800000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000707549-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "lrcx",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 1040000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000707549-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business Lam Research Corporation (LRCX) is a registrant under the Securities Exchange Act. Principal operations: Lam Research. Reported segments include: Systems (70% of revenue); Customer Support (30% of revenue). Our semiconductor business model is equipment. We supply wafer fabrication equipment to semiconductor manufacturers.",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0000707549-24-0001#business:35"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.systems.weight": {
+      "value": 0.7,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0000707549-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.cs.weight": {
+      "value": 0.3,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0000707549-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "operating_model": {
+      "value": "equipment",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0000707549-24-0001#business"
+      ],
+      "derivation_method": "regex_business_model",
+      "confidence": 0.9,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "mega",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "revenue_growth_band": {
+      "value": "moderate",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "profitability_band": {
+      "value": "high",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "leverage_band": {
+      "value": "low",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "capital_intensity_band": {
+      "value": "low",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "cik": {
+      "value": "0000707549",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "illustrative_fallbacks": [
+    "size_band",
+    "revenue_growth_band",
+    "profitability_band",
+    "leverage_band",
+    "capital_intensity_band"
+  ]
+}

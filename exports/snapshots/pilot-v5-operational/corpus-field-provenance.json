@@ -1,0 +1,345 @@
+{
+  "verified_corpus_version": "1.0.0",
+  "company_count": 30,
+  "field_definitions": [
+    {
+      "field_path": "company_key",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "not_an_sec_structured_field",
+      "notes": "Internal pilot key; not an SEC identifier."
+    },
+    {
+      "field_path": "ticker",
+      "origin": "public_identifier_convention",
+      "sec_authority_support": "supported_by_sec_submissions_identifier",
+      "notes": "Public exchange ticker; confirmable via SEC submissions.tickers."
+    },
+    {
+      "field_path": "cik",
+      "origin": "public_identifier_convention",
+      "sec_authority_support": "supported_by_sec_submissions_identifier",
+      "notes": "SEC Central Index Key; confirmable via data.sec.gov submissions."
+    },
+    {
+      "field_path": "registrant",
+      "origin": "public_identifier_convention",
+      "sec_authority_support": "supported_by_sec_submissions_identifier",
+      "notes": "Legal registrant name; confirmable via SEC submissions.name."
+    },
+    {
+      "field_path": "exchange",
+      "origin": "public_identifier_convention",
+      "sec_authority_support": "supported_by_sec_submissions_identifier",
+      "notes": "Listing venue; often present on SEC submissions.exchanges."
+    },
+    {
+      "field_path": "foreign_issuer",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_submissions_identifier",
+      "notes": "Pilot flag for 20-F/6-K forms; confirmable via filing form types."
+    },
+    {
+      "field_path": "business_excerpt",
+      "origin": "hand_authored_disclosure_paraphrase",
+      "sec_authority_support": "supported_by_sec_filing_text_extraction",
+      "notes": "Paraphrased Item 1-style text authored for offline tests — not a verbatim EDGAR excerpt until live filings are ingested."
+    },
+    {
+      "field_path": "competition_excerpt",
+      "origin": "hand_authored_disclosure_paraphrase",
+      "sec_authority_support": "supported_by_sec_filing_text_extraction",
+      "notes": "Paraphrased competition disclosure for offline extraction tests — not live EDGAR text by default."
+    },
+    {
+      "field_path": "segment_lines[].name",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_filing_text_extraction",
+      "notes": "Segment names approximated for offline regex extraction; authoritative values live in filing notes / XBRL dimensions."
+    },
+    {
+      "field_path": "segment_lines[].revenue_pct",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_filing_text_extraction",
+      "notes": "Approximate segment mix; not companyfacts scalar. Live support requires segment notes or dimensional XBRL."
+    },
+    {
+      "field_path": "franchise_locations_pct",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_filing_text_extraction",
+      "notes": "Restaurant franchise mix paraphrase for offline regex; confirm in 10-K Item 1."
+    },
+    {
+      "field_path": "semiconductor_model",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_filing_text_extraction",
+      "notes": "Operating-model label (fabless/idm/…); inferred from business description, not a us-gaap concept."
+    },
+    {
+      "field_path": "infrastructure_model",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_filing_text_extraction",
+      "notes": "Network owner vs infra landlord label; text-derived, not companyfacts."
+    },
+    {
+      "field_path": "facts.revenue_fy2023",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_companyfacts_concept",
+      "sec_concepts": [
+        "Revenues",
+        "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "SalesRevenueNet"
+      ],
+      "notes": "Approximate USD; replaceable by live companyfacts FY points."
+    },
+    {
+      "field_path": "facts.revenue_fy2024",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_companyfacts_concept",
+      "sec_concepts": [
+        "Revenues",
+        "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "SalesRevenueNet"
+      ],
+      "notes": "Approximate USD; replaceable by live companyfacts FY points."
+    },
+    {
+      "field_path": "facts.operating_income_fy2024",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_companyfacts_concept",
+      "sec_concepts": [
+        "OperatingIncomeLoss"
+      ],
+      "notes": "Approximate USD; companyfacts-mappable."
+    },
+    {
+      "field_path": "facts.assets_fy2024",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_companyfacts_concept",
+      "sec_concepts": [
+        "Assets"
+      ],
+      "notes": "Approximate USD; companyfacts-mappable."
+    },
+    {
+      "field_path": "facts.long_term_debt_fy2024",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_companyfacts_concept",
+      "sec_concepts": [
+        "LongTermDebt"
+      ],
+      "notes": "Approximate USD; companyfacts-mappable (concept may vary by issuer)."
+    },
+    {
+      "field_path": "facts.rd_fy2024",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_companyfacts_concept",
+      "sec_concepts": [
+        "ResearchAndDevelopmentExpense"
+      ],
+      "notes": "Approximate USD; companyfacts-mappable when reported."
+    },
+    {
+      "field_path": "facts.capex_fy2024",
+      "origin": "hand_authored_offline_approximation",
+      "sec_authority_support": "supported_by_sec_companyfacts_concept",
+      "sec_concepts": [
+        "PaymentsToAcquirePropertyPlantAndEquipment"
+      ],
+      "notes": "Approximate USD; companyfacts-mappable when reported."
+    }
+  ],
+  "summary": {
+    "total_field_definitions": 20,
+    "by_sec_authority_support": {
+      "not_an_sec_structured_field": 1,
+      "supported_by_sec_submissions_identifier": 5,
+      "supported_by_sec_filing_text_extraction": 7,
+      "supported_by_sec_companyfacts_concept": 7
+    },
+    "origin_claim": "All numeric and disclosure corpus values are hand-authored offline approximations unless replaced by live EDGAR payloads.",
+    "not_from_phase2_curated_json": true,
+    "not_from_live_edgar_by_default": true
+  },
+  "companies": [
+    {
+      "company_key": "vz",
+      "ticker": "VZ",
+      "cik": "0000732712",
+      "field_count": 20
+    },
+    {
+      "company_key": "t",
+      "ticker": "T",
+      "cik": "0000732717",
+      "field_count": 20
+    },
+    {
+      "company_key": "tmus",
+      "ticker": "TMUS",
+      "cik": "0001283699",
+      "field_count": 20
+    },
+    {
+      "company_key": "cmcsa",
+      "ticker": "CMCSA",
+      "cik": "0001166691",
+      "field_count": 20
+    },
+    {
+      "company_key": "chtr",
+      "ticker": "CHTR",
+      "cik": "0001091667",
+      "field_count": 20
+    },
+    {
+      "company_key": "cci",
+      "ticker": "CCI",
+      "cik": "0001051470",
+      "field_count": 20
+    },
+    {
+      "company_key": "amt",
+      "ticker": "AMT",
+      "cik": "0001053507",
+      "field_count": 20
+    },
+    {
+      "company_key": "mcd",
+      "ticker": "MCD",
+      "cik": "0000063908",
+      "field_count": 20
+    },
+    {
+      "company_key": "sbux",
+      "ticker": "SBUX",
+      "cik": "0000829224",
+      "field_count": 20
+    },
+    {
+      "company_key": "cmg",
+      "ticker": "CMG",
+      "cik": "0001058090",
+      "field_count": 20
+    },
+    {
+      "company_key": "yum",
+      "ticker": "YUM",
+      "cik": "0001041061",
+      "field_count": 20
+    },
+    {
+      "company_key": "dpz",
+      "ticker": "DPZ",
+      "cik": "0001286681",
+      "field_count": 20
+    },
+    {
+      "company_key": "dri",
+      "ticker": "DRI",
+      "cik": "0000940944",
+      "field_count": 20
+    },
+    {
+      "company_key": "qsr",
+      "ticker": "QSR",
+      "cik": "0001618756",
+      "field_count": 20
+    },
+    {
+      "company_key": "txrh",
+      "ticker": "TXRH",
+      "cik": "0001289460",
+      "field_count": 20
+    },
+    {
+      "company_key": "nvda",
+      "ticker": "NVDA",
+      "cik": "0001045810",
+      "field_count": 20
+    },
+    {
+      "company_key": "amd",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "field_count": 20
+    },
+    {
+      "company_key": "intc",
+      "ticker": "INTC",
+      "cik": "0000050863",
+      "field_count": 20
+    },
+    {
+      "company_key": "avgo",
+      "ticker": "AVGO",
+      "cik": "0001730168",
+      "field_count": 20
+    },
+    {
+      "company_key": "qcom",
+      "ticker": "QCOM",
+      "cik": "0000804328",
+      "field_count": 20
+    },
+    {
+      "company_key": "txn",
+      "ticker": "TXN",
+      "cik": "0000097476",
+      "field_count": 20
+    },
+    {
+      "company_key": "adi",
+      "ticker": "ADI",
+      "cik": "0000006281",
+      "field_count": 20
+    },
+    {
+      "company_key": "mu",
+      "ticker": "MU",
+      "cik": "0000723125",
+      "field_count": 20
+    },
+    {
+      "company_key": "amat",
+      "ticker": "AMAT",
+      "cik": "0000006951",
+      "field_count": 20
+    },
+    {
+      "company_key": "lrcx",
+      "ticker": "LRCX",
+      "cik": "0000707549",
+      "field_count": 20
+    },
+    {
+      "company_key": "klac",
+      "ticker": "KLAC",
+      "cik": "0000319201",
+      "field_count": 20
+    },
+    {
+      "company_key": "nxpi",
+      "ticker": "NXPI",
+      "cik": "0001413447",
+      "field_count": 20
+    },
+    {
+      "company_key": "gfs",
+      "ticker": "GFS",
+      "cik": "0001709048",
+      "field_count": 20
+    },
+    {
+      "company_key": "mrvl",
+      "ticker": "MRVL",
+      "cik": "0001835632",
+      "field_count": 20
+    },
+    {
+      "company_key": "mpwr",
+      "ticker": "MPWR",
+      "cik": "0001280452",
+      "field_count": 20
+    }
+  ]
+}

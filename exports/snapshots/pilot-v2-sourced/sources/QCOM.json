@@ -1,0 +1,225 @@
+{
+  "company_key": "qcom",
+  "identifier": {
+    "company_key": "qcom",
+    "configured_name": "QUALCOMM Incorporated",
+    "configured_ticker": "QCOM",
+    "resolved_cik": "0000804328",
+    "resolved_registrant": "QUALCOMM Incorporated",
+    "exchange": "Nasdaq",
+    "foreign_issuer": false,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "qcom",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 52000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000804328-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qcom",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 10400000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000804328-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qcom",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 104000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000804328-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qcom",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 20800000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000804328-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qcom",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 7800000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000804328-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business QUALCOMM Incorporated (QCOM) is a registrant under the Securities Exchange Act. Principal operations: Qualcomm. Reported segments include: QCT (chips) (80% of revenue); QTL (licensing) (20% of revenue). Our semiconductor business model is fabless. We design semiconductors and outsource manufacturing to foundries.",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0000804328-24-0001#business:35"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.qct.weight": {
+      "value": 0.8,
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_curated_segment",
+      "confidence": 0.6,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "segment.qtl.weight": {
+      "value": 0.2,
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_curated_segment",
+      "confidence": 0.6,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "operating_model": {
+      "value": "fabless",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0000804328-24-0001#business"
+      ],
+      "derivation_method": "regex_business_model",
+      "confidence": 0.9,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "mega",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "revenue_growth_band": {
+      "value": "moderate",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "profitability_band": {
+      "value": "high",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "leverage_band": {
+      "value": "low",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "capital_intensity_band": {
+      "value": "low",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "cik": {
+      "value": "0000804328",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "illustrative_fallbacks": [
+    "segment.qct",
+    "segment.qtl",
+    "size_band",
+    "revenue_growth_band",
+    "profitability_band",
+    "leverage_band",
+    "capital_intensity_band"
+  ]
+}

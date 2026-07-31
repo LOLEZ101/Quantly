@@ -1,0 +1,21 @@
+{
+  "response_type": "taxonomy_tree",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-07-31",
+  "root": {
+    "id": "root",
+    "name": "Economy",
+    "description": "Root of the Peer Engine economic taxonomy.",
+    "node_type": "root",
+    "parent_id": null,
+    "path": "root",
+    "depth": 0,
+    "inclusion_criteria": ["All classified companies descend from this node."],
+    "exclusion_criteria": ["None; this is the universal root."],
+    "allowed_child_node_types": ["sector", "stub"],
+    "effective_date": "2026-07-31",
+    "taxonomy_version": "1.0.0",
+    "is_leaf": false,
+    "child_count": 10
+  }
+}

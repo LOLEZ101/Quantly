@@ -1,0 +1,77 @@
+{
+  "response_type": "company_classification",
+  "company_key": "chtr",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v1",
+  "primary_path": {
+    "node_id": "cable_broadband_operators",
+    "path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "communication_services",
+        "name": "Communication Services",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "telecommunications",
+        "name": "Telecommunications",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "fixed_connectivity",
+        "name": "Fixed Connectivity",
+        "node_type": "industry",
+        "depth": 3
+      },
+      {
+        "id": "cable_broadband_operators",
+        "name": "Cable Broadband Operators",
+        "node_type": "peer_cluster",
+        "depth": 4
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.635,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [],
+  "evidence": [
+    {
+      "evidence_type": "curated_business_description",
+      "summary": "Spectrum cable broadband operator; mobile is MVNO attach, not facilities wireless primary.",
+      "excerpt": "Spectrum cable broadband operator; mobile is MVNO attach, not facilities wireless primary.",
+      "locator": "pilot-fixture",
+      "source_document_uri": "https://example.test/filings/chtr",
+      "confidence": 0.85,
+      "is_manual": true,
+      "related_node_id": "cable_broadband_operators"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 0.95,
+      "evidence_completeness": 0.5,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.635
+    },
+    "coverage_ratio": 0.95,
+    "unallocated_weight": 0.05
+  }
+}

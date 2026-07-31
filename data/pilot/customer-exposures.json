@@ -1,0 +1,342 @@
+{
+  "fixture_data_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "exposures": [
+    {
+      "company_key": "vz",
+      "customer_type": "consumer",
+      "weight": 0.72,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "vz",
+      "customer_type": "enterprise",
+      "weight": 0.28,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "t",
+      "customer_type": "consumer",
+      "weight": 0.65,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "t",
+      "customer_type": "enterprise",
+      "weight": 0.35,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "tmus",
+      "customer_type": "consumer",
+      "weight": 0.85,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "tmus",
+      "customer_type": "enterprise",
+      "weight": 0.15,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmcsa",
+      "customer_type": "consumer",
+      "weight": 0.8,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmcsa",
+      "customer_type": "enterprise",
+      "weight": 0.2,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "chtr",
+      "customer_type": "consumer",
+      "weight": 0.88,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "chtr",
+      "customer_type": "enterprise",
+      "weight": 0.12,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cci",
+      "customer_type": "enterprise",
+      "weight": 0.95,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cci",
+      "customer_type": "consumer",
+      "weight": 0.05,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amt",
+      "customer_type": "enterprise",
+      "weight": 0.97,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amt",
+      "customer_type": "consumer",
+      "weight": 0.03,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mcd",
+      "customer_type": "consumer",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "sbux",
+      "customer_type": "consumer",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmg",
+      "customer_type": "consumer",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "yum",
+      "customer_type": "consumer",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dpz",
+      "customer_type": "consumer",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dri",
+      "customer_type": "consumer",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qsr",
+      "customer_type": "consumer",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txrh",
+      "customer_type": "consumer",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nvda",
+      "customer_type": "enterprise",
+      "weight": 0.85,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nvda",
+      "customer_type": "consumer",
+      "weight": 0.15,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amd",
+      "customer_type": "enterprise",
+      "weight": 0.6,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amd",
+      "customer_type": "consumer",
+      "weight": 0.4,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "intc",
+      "customer_type": "enterprise",
+      "weight": 0.55,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "intc",
+      "customer_type": "consumer",
+      "weight": 0.45,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "avgo",
+      "customer_type": "enterprise",
+      "weight": 0.9,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "avgo",
+      "customer_type": "consumer",
+      "weight": 0.1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qcom",
+      "customer_type": "enterprise",
+      "weight": 0.2,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qcom",
+      "customer_type": "consumer",
+      "weight": 0.8,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txn",
+      "customer_type": "enterprise",
+      "weight": 0.95,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txn",
+      "customer_type": "consumer",
+      "weight": 0.05,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "adi",
+      "customer_type": "enterprise",
+      "weight": 0.95,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "adi",
+      "customer_type": "consumer",
+      "weight": 0.05,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mu",
+      "customer_type": "enterprise",
+      "weight": 0.7,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mu",
+      "customer_type": "consumer",
+      "weight": 0.3,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amat",
+      "customer_type": "enterprise",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "lrcx",
+      "customer_type": "enterprise",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "klac",
+      "customer_type": "enterprise",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nxpi",
+      "customer_type": "enterprise",
+      "weight": 0.95,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nxpi",
+      "customer_type": "consumer",
+      "weight": 0.05,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "gfs",
+      "customer_type": "enterprise",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mrvl",
+      "customer_type": "enterprise",
+      "weight": 0.95,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mrvl",
+      "customer_type": "consumer",
+      "weight": 0.05,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mpwr",
+      "customer_type": "enterprise",
+      "weight": 0.9,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mpwr",
+      "customer_type": "consumer",
+      "weight": 0.1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    }
+  ]
+}

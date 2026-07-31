@@ -1,0 +1,313 @@
+{
+  "company_key": "nxpi",
+  "identifier": {
+    "company_key": "nxpi",
+    "configured_name": "NXP Semiconductors N.V.",
+    "configured_ticker": "NXPI",
+    "resolved_cik": "0001413447",
+    "resolved_registrant": "NXP Semiconductors N.V.",
+    "exchange": "Nasdaq",
+    "foreign_issuer": true,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "nxpi",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 13300000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2023-12-31",
+      "filing_date": "2024-02-15",
+      "accession_number": "0001413447-24-0001",
+      "fiscal_year": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2023",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "nxpi",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 12600000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001413447-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "nxpi",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 3500000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001413447-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "nxpi",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 24000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001413447-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "nxpi",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 10000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001413447-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "nxpi",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 2400000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001413447-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "nxpi",
+      "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Capital Expenditures",
+      "normalized_metric": "capex",
+      "value_numeric": 900000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001413447-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business NXP Semiconductors N.V. (NXPI) is a registrant under the Securities Exchange Act. NXP provides mixed-signal and automotive semiconductor solutions. Manufacturing uses a mix of internal and external capacity. Principal operations: NXP Semiconductors N.V.. Reported segments include: Automotive (56% of revenue); Industrial & IoT (28% of revenue); Mobile & Comm (16% of revenue). Our s",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0001413447-24-0001#business:171"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.auto.weight": {
+      "value": 0.55,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001413447-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.industrial_iot.weight": {
+      "value": 0.3,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001413447-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.mobile_comm.weight": {
+      "value": 0.15,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001413447-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "large",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "revenue_growth_band": {
+      "value": "negative",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "profitability_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "leverage_band": {
+      "value": "moderate",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "capital_intensity_band": {
+      "value": "moderate",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "cik": {
+      "value": "0001413447",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "illustrative_fallbacks": [],
+  "derived_financial": {
+    "company_key": "nxpi",
+    "as_of": "2026-06-30",
+    "currency": "USD",
+    "size_band": {
+      "value": "large",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_growth_band": {
+      "value": "negative",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "profitability_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "leverage_band": {
+      "value": "moderate",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "capital_intensity_band": {
+      "value": "moderate",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_ttm_illustrative_usd": {
+      "value": 12600000000,
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    }
+  },
+  "provenance_class": "independent_offline_verified_excerpt"
+}

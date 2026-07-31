@@ -1,0 +1,57 @@
+# Classification and disclosure thresholds (Phase 2)
+version: "1.0.0"
+effective_date: "2026-07-31"
+
+franchise_mix:
+  primary_measure: locations_franchised_pct
+  supporting_measures:
+    - revenue_franchise_associated_pct
+    - operating_income_franchise_associated_pct
+    - systemwide_sales_franchised_pct
+  franchise_heavy_min_locations_pct: 0.70
+  company_operated_heavy_max_locations_pct: 0.30
+  # hybrid is exclusive between the two bounds
+  unknown_requires_review: true
+
+primary_path:
+  revenue_tie_epsilon: 0.05
+  operating_income_tie_epsilon: 0.05
+  selection_cascade:
+    - consolidated_revenue
+    - operating_income
+    - identifiable_assets
+    - management_principal_business
+    - strategic_identity
+    - human_review
+  ambiguity_score_gap: 0.08
+
+secondary_exposure:
+  min_revenue_pct: 0.10
+  min_operating_income_pct: 0.10
+  allow_strategic_importance: true
+
+segment_coverage:
+  complete_min: 0.99
+  complete_max: 1.01
+  usable_with_warning_min: 0.90
+  moderate_review_min: 0.70
+  # below moderate_review_min => review required, low confidence
+  material_missing_share_for_review: 0.10
+
+confidence:
+  weights:
+    segment_coverage: 0.30
+    evidence_completeness: 0.25
+    source_agreement: 0.15
+    recency: 0.10
+    manual_review_bonus: 0.10
+    ambiguity_penalty: 0.10
+  stale_evidence_days: 540
+
+peer_scoring:
+  allow_reweight_among_available: true
+  min_available_weight_share: 0.40
+  incomplete_score_flag_below_available_share: 0.60
+  reciprocity_similar_score_epsilon: 0.08
+  max_peers_per_type: 10
+  close_peer_min_score: 0.55

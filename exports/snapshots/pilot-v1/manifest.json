@@ -1,0 +1,79 @@
+{
+  "response_type": "snapshot_manifest",
+  "snapshot_id": "snap_pilot_v1",
+  "taxonomy_version": "1.0.0",
+  "peer_model_version": "1.1.0",
+  "adjacency_version": "1.0.0",
+  "contract_versions": {
+    "taxonomy": "1.0.0",
+    "company_profile": "1.0.0",
+    "company_classification": "1.0.0",
+    "peer_response": "1.1.0",
+    "snapshot_manifest": "1.0.0"
+  },
+  "created_at": "2026-07-31T00:00:00.000Z",
+  "published_at": "2026-07-31T00:00:00.000Z",
+  "as_of": "2026-06-30",
+  "is_immutable": true,
+  "content_hash": "sha256:a4f8b5113f5a39966b72d4886d3a61c6a01b68061160ea703060c58a8e04feba",
+  "counts": {
+    "companies": 30,
+    "taxonomy_nodes": 59,
+    "primary_classifications": 30,
+    "peer_relationships": 1234,
+    "evidence_records": 31
+  },
+  "artifacts": [
+    {
+      "name": "taxonomy.json",
+      "uri": "exports/snapshots/pilot-v1/taxonomy.json",
+      "media_type": "application/json",
+      "content_hash": "sha256:8b49a9b538ac507fe1b86aebb6741ae882c364a2cedc4fb25d3e68e012fd96a7",
+      "byte_size": 48891
+    },
+    {
+      "name": "tree.json",
+      "uri": "exports/snapshots/pilot-v1/tree.json",
+      "media_type": "application/json",
+      "content_hash": "sha256:09bda39083e233b7e13c3becbc979d56b5a157f3013292ab0d06ebe720c36bcf",
+      "byte_size": 10400
+    },
+    {
+      "name": "companies.json",
+      "uri": "exports/snapshots/pilot-v1/companies.json",
+      "media_type": "application/json",
+      "content_hash": "sha256:4fa7dc3c8fcdb0ccf534073018ef411f178ef42dce14860fdc17e419c622b4b8",
+      "byte_size": 10021
+    },
+    {
+      "name": "review-queue.json",
+      "uri": "exports/snapshots/pilot-v1/review-queue.json",
+      "media_type": "application/json",
+      "content_hash": "sha256:46bb7274d2e95bafaf46c96a0ff783e54654095d7503f55162b75ce1ede8adfb",
+      "byte_size": 5174
+    },
+    {
+      "name": "validation-report.json",
+      "uri": "exports/snapshots/pilot-v1/validation-report.json",
+      "media_type": "application/json",
+      "content_hash": "sha256:445575e8d4382051ab7d02d371a44096bc1c212985ab6d1f3abe44d10d41f778",
+      "byte_size": 227
+    }
+  ],
+  "pilot_universe": [
+    "telecommunications",
+    "restaurants",
+    "semiconductors_and_equipment"
+  ],
+  "notes": "Phase-2 manually curated pilot snapshot. Financial bands are illustrative, not live market data.",
+  "snapshot_type": "pilot",
+  "fixture_data_version": "1.0.0",
+  "validation_status": "passed",
+  "known_limitations": [
+    "Manually curated fixtures",
+    "Illustrative financial bands only",
+    "No live SEC ingestion",
+    "No AI extraction",
+    "Not full S&P 500 coverage"
+  ]
+}

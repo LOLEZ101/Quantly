@@ -1,0 +1,94 @@
+{
+  "response_type": "company_classification",
+  "company_key": "mu",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v1",
+  "primary_path": {
+    "node_id": "dram_manufacturers",
+    "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.memory_semiconductors.dram_manufacturers",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "information_technology",
+        "name": "Information Technology",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "semiconductors_and_equipment",
+        "name": "Semiconductors and Semiconductor Equipment",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "semiconductor_devices",
+        "name": "Semiconductor Devices",
+        "node_type": "industry",
+        "depth": 3
+      },
+      {
+        "id": "memory_semiconductors",
+        "name": "Memory Semiconductors",
+        "node_type": "sub_industry",
+        "depth": 4
+      },
+      {
+        "id": "dram_manufacturers",
+        "name": "DRAM Manufacturers",
+        "node_type": "peer_cluster",
+        "depth": 5
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.65,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [
+    {
+      "node_id": "nand_and_other_memory",
+      "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.memory_semiconductors.nand_and_other_memory",
+      "name": "NAND and Other Memory",
+      "weight": 0.3,
+      "confidence": 0.75,
+      "is_manual": false,
+      "effective_from": "2026-06-30",
+      "effective_to": null
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_type": "curated_business_description",
+      "summary": "DRAM-primary memory manufacturer with NAND exposure.",
+      "excerpt": "DRAM-primary memory manufacturer with NAND exposure.",
+      "locator": "pilot-fixture",
+      "source_document_uri": "https://example.test/filings/mu",
+      "confidence": 0.85,
+      "is_manual": true,
+      "related_node_id": "dram_manufacturers"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 1,
+      "evidence_completeness": 0.5,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.65
+    },
+    "coverage_ratio": 1,
+    "unallocated_weight": 0
+  }
+}

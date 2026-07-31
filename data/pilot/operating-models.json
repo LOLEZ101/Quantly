@@ -1,0 +1,1025 @@
+{
+  "fixture_data_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "models": [
+    {
+      "company_key": "vz",
+      "revenue_models": [
+        {
+          "model_code": "subscription_service",
+          "model_name": "Subscription Service",
+          "weight": 0.9,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "equipment",
+          "model_name": "Equipment",
+          "weight": 0.1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "network_owner",
+          "model_name": "Network Owner",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": "Owns spectrum and RAN"
+        }
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "t",
+      "revenue_models": [
+        {
+          "model_code": "subscription_service",
+          "model_name": "Subscription Service",
+          "weight": 0.92,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "other",
+          "model_name": "Other",
+          "weight": 0.08,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "network_owner",
+          "model_name": "Network Owner",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "tmus",
+      "revenue_models": [
+        {
+          "model_code": "subscription_service",
+          "model_name": "Subscription Service",
+          "weight": 0.88,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "equipment",
+          "model_name": "Equipment",
+          "weight": 0.12,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "network_owner",
+          "model_name": "Network Owner",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmcsa",
+      "revenue_models": [
+        {
+          "model_code": "subscription_service",
+          "model_name": "Subscription Service",
+          "weight": 0.7,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "advertising_content",
+          "model_name": "Advertising/Content",
+          "weight": 0.3,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "network_owner",
+          "model_name": "Network Owner",
+          "weight": 0.7,
+          "quality": "manually_classified",
+          "notes": "Cable HFC"
+        },
+        {
+          "model_code": "content_platform",
+          "model_name": "Content Platform",
+          "weight": 0.3,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "chtr",
+      "revenue_models": [
+        {
+          "model_code": "subscription_service",
+          "model_name": "Subscription Service",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "network_owner",
+          "model_name": "Network Owner",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": "HFC cable"
+        }
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cci",
+      "revenue_models": [
+        {
+          "model_code": "lease_rental",
+          "model_name": "Lease / Rental",
+          "weight": 0.9,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "services",
+          "model_name": "Services",
+          "weight": 0.1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "infra_landlord",
+          "model_name": "Infrastructure Landlord",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": "Towers and fiber leased to carriers"
+        }
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amt",
+      "revenue_models": [
+        {
+          "model_code": "lease_rental",
+          "model_name": "Lease / Rental",
+          "weight": 0.95,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "services",
+          "model_name": "Services",
+          "weight": 0.05,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "infra_landlord",
+          "model_name": "Infrastructure Landlord",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mcd",
+      "revenue_models": [
+        {
+          "model_code": "franchise_royalties",
+          "model_name": "Franchise royalties & fees",
+          "weight": 0.55,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "company_restaurant_sales",
+          "model_name": "Company restaurant sales",
+          "weight": 0.45,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "franchise_system",
+          "model_name": "Franchise System",
+          "weight": 0.85,
+          "quality": "manually_classified",
+          "notes": null
+        },
+        {
+          "model_code": "company_ops",
+          "model_name": "Company Operated",
+          "weight": 0.15,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "franchise_mix": {
+        "locations_franchised_pct": {
+          "value": 0.95,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "revenue_franchise_associated_pct": {
+          "value": 0.45,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "operating_income_franchise_associated_pct": {
+          "value": 0.85,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "systemwide_sales_franchised_pct": {
+          "value": 0.95,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        }
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "sbux",
+      "revenue_models": [
+        {
+          "model_code": "company_restaurant_sales",
+          "model_name": "Company store sales",
+          "weight": 0.85,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "licensed",
+          "model_name": "Licensed / other",
+          "weight": 0.15,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "company_ops",
+          "model_name": "Company Operated",
+          "weight": 0.8,
+          "quality": "manually_classified",
+          "notes": null
+        },
+        {
+          "model_code": "licensed_stores",
+          "model_name": "Licensed Stores",
+          "weight": 0.2,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "franchise_mix": {
+        "locations_franchised_pct": {
+          "value": 0.45,
+          "quality": "illustrative",
+          "as_of": "2026-06-30"
+        },
+        "revenue_franchise_associated_pct": {
+          "value": 0.15,
+          "quality": "illustrative",
+          "as_of": "2026-06-30"
+        },
+        "operating_income_franchise_associated_pct": {
+          "value": 0.1,
+          "quality": "illustrative",
+          "as_of": "2026-06-30"
+        },
+        "systemwide_sales_franchised_pct": {
+          "value": 0.45,
+          "quality": "illustrative",
+          "as_of": "2026-06-30"
+        }
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmg",
+      "revenue_models": [
+        {
+          "model_code": "company_restaurant_sales",
+          "model_name": "Company restaurant sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "company_ops",
+          "model_name": "Company Operated",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "franchise_mix": {
+        "locations_franchised_pct": {
+          "value": 0,
+          "quality": "reported",
+          "as_of": "2026-06-30"
+        },
+        "revenue_franchise_associated_pct": {
+          "value": 0,
+          "quality": "reported",
+          "as_of": "2026-06-30"
+        },
+        "operating_income_franchise_associated_pct": {
+          "value": 0,
+          "quality": "reported",
+          "as_of": "2026-06-30"
+        },
+        "systemwide_sales_franchised_pct": {
+          "value": 0,
+          "quality": "reported",
+          "as_of": "2026-06-30"
+        }
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "yum",
+      "revenue_models": [
+        {
+          "model_code": "franchise_royalties",
+          "model_name": "Franchise royalties & fees",
+          "weight": 0.85,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "company_restaurant_sales",
+          "model_name": "Company sales",
+          "weight": 0.15,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "franchise_system",
+          "model_name": "Franchise System",
+          "weight": 0.95,
+          "quality": "manually_classified",
+          "notes": null
+        },
+        {
+          "model_code": "company_ops",
+          "model_name": "Company Operated",
+          "weight": 0.05,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "franchise_mix": {
+        "locations_franchised_pct": {
+          "value": 0.98,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "revenue_franchise_associated_pct": {
+          "value": 0.85,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "operating_income_franchise_associated_pct": {
+          "value": 0.92,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "systemwide_sales_franchised_pct": {
+          "value": 0.98,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        }
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dpz",
+      "revenue_models": [
+        {
+          "model_code": "franchise_royalties",
+          "model_name": "Franchise & supply",
+          "weight": 0.7,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "company_restaurant_sales",
+          "model_name": "Company stores",
+          "weight": 0.3,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "franchise_system",
+          "model_name": "Franchise System",
+          "weight": 0.9,
+          "quality": "manually_classified",
+          "notes": null
+        },
+        {
+          "model_code": "company_ops",
+          "model_name": "Company Operated",
+          "weight": 0.1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "franchise_mix": {
+        "locations_franchised_pct": {
+          "value": 0.98,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "revenue_franchise_associated_pct": {
+          "value": 0.65,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "operating_income_franchise_associated_pct": {
+          "value": 0.8,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "systemwide_sales_franchised_pct": {
+          "value": 0.98,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        }
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dri",
+      "revenue_models": [
+        {
+          "model_code": "company_restaurant_sales",
+          "model_name": "Company restaurant sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "company_ops",
+          "model_name": "Company Operated",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "franchise_mix": {
+        "locations_franchised_pct": {
+          "value": 0,
+          "quality": "reported",
+          "as_of": "2026-06-30"
+        },
+        "revenue_franchise_associated_pct": {
+          "value": 0,
+          "quality": "reported",
+          "as_of": "2026-06-30"
+        },
+        "operating_income_franchise_associated_pct": {
+          "value": 0,
+          "quality": "reported",
+          "as_of": "2026-06-30"
+        },
+        "systemwide_sales_franchised_pct": {
+          "value": 0,
+          "quality": "reported",
+          "as_of": "2026-06-30"
+        }
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qsr",
+      "revenue_models": [
+        {
+          "model_code": "franchise_royalties",
+          "model_name": "Franchise royalties & fees",
+          "weight": 0.9,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "other",
+          "model_name": "Other",
+          "weight": 0.1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "franchise_system",
+          "model_name": "Franchise System",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "franchise_mix": {
+        "locations_franchised_pct": {
+          "value": 0.95,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "revenue_franchise_associated_pct": {
+          "value": 0.9,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "operating_income_franchise_associated_pct": {
+          "value": 0.95,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        },
+        "systemwide_sales_franchised_pct": {
+          "value": 0.95,
+          "quality": "derived",
+          "as_of": "2026-06-30"
+        }
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txrh",
+      "revenue_models": [
+        {
+          "model_code": "company_restaurant_sales",
+          "model_name": "Company restaurant sales",
+          "weight": 0.92,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "franchise_royalties",
+          "model_name": "Franchise",
+          "weight": 0.08,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "company_ops",
+          "model_name": "Company Operated",
+          "weight": 0.9,
+          "quality": "manually_classified",
+          "notes": null
+        },
+        {
+          "model_code": "franchise_system",
+          "model_name": "Franchise System",
+          "weight": 0.1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "franchise_mix": {
+        "locations_franchised_pct": {
+          "value": 0.1,
+          "quality": "illustrative",
+          "as_of": "2026-06-30"
+        },
+        "revenue_franchise_associated_pct": {
+          "value": 0.08,
+          "quality": "illustrative",
+          "as_of": "2026-06-30"
+        },
+        "operating_income_franchise_associated_pct": {
+          "value": 0.08,
+          "quality": "illustrative",
+          "as_of": "2026-06-30"
+        },
+        "systemwide_sales_franchised_pct": {
+          "value": 0.1,
+          "quality": "illustrative",
+          "as_of": "2026-06-30"
+        }
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nvda",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Semiconductor product sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "fabless_design",
+          "model_name": "Fabless Design",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "fabless",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amd",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Semiconductor product sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "fabless_design",
+          "model_name": "Fabless Design",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "fabless",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "intc",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Semiconductor product sales",
+          "weight": 0.9,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "foundry_services",
+          "model_name": "Foundry services",
+          "weight": 0.1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "idm_manufacturing",
+          "model_name": "IDM Manufacturing",
+          "weight": 0.85,
+          "quality": "manually_classified",
+          "notes": null
+        },
+        {
+          "model_code": "foundry_capacity",
+          "model_name": "Foundry Capacity",
+          "weight": 0.15,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "idm",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "avgo",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Semiconductor product sales",
+          "weight": 0.75,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "software_subscription",
+          "model_name": "Software",
+          "weight": 0.25,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "fabless_design",
+          "model_name": "Fabless Design",
+          "weight": 0.8,
+          "quality": "manually_classified",
+          "notes": null
+        },
+        {
+          "model_code": "software_ip",
+          "model_name": "Software IP",
+          "weight": 0.2,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "fabless",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qcom",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Chip sales",
+          "weight": 0.8,
+          "quality": "manually_classified"
+        },
+        {
+          "model_code": "licensing",
+          "model_name": "Licensing",
+          "weight": 0.2,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "fabless_design",
+          "model_name": "Fabless Design",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "fabless",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txn",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Semiconductor product sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "idm_manufacturing",
+          "model_name": "IDM / Internal Fabs",
+          "weight": 0.85,
+          "quality": "manually_classified",
+          "notes": null
+        },
+        {
+          "model_code": "fabless_design",
+          "model_name": "External foundry use",
+          "weight": 0.15,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "analog",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "adi",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Semiconductor product sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "idm_manufacturing",
+          "model_name": "Mixed manufacturing model",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "analog",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mu",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Memory product sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "idm_manufacturing",
+          "model_name": "Memory Manufacturing",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "memory",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amat",
+      "revenue_models": [
+        {
+          "model_code": "equipment_sales",
+          "model_name": "Equipment sales & services",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "equipment_supplier",
+          "model_name": "Equipment Supplier",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "equipment",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "lrcx",
+      "revenue_models": [
+        {
+          "model_code": "equipment_sales",
+          "model_name": "Equipment sales & services",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "equipment_supplier",
+          "model_name": "Equipment Supplier",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "equipment",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "klac",
+      "revenue_models": [
+        {
+          "model_code": "equipment_sales",
+          "model_name": "Equipment sales & services",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "equipment_supplier",
+          "model_name": "Equipment Supplier",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "equipment",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nxpi",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Semiconductor product sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "idm_manufacturing",
+          "model_name": "Mixed manufacturing",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "analog",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "gfs",
+      "revenue_models": [
+        {
+          "model_code": "foundry_services",
+          "model_name": "Foundry wafer services",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "foundry_capacity",
+          "model_name": "Foundry Capacity",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "foundry",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mrvl",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Semiconductor product sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "fabless_design",
+          "model_name": "Fabless Design",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "fabless",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mpwr",
+      "revenue_models": [
+        {
+          "model_code": "product_sales",
+          "model_name": "Semiconductor product sales",
+          "weight": 1,
+          "quality": "manually_classified"
+        }
+      ],
+      "infrastructure_models": [
+        {
+          "model_code": "fabless_design",
+          "model_name": "Primarily fabless/power design",
+          "weight": 1,
+          "quality": "manually_classified",
+          "notes": null
+        }
+      ],
+      "semiconductor_model": {
+        "model_code": "analog",
+        "quality": "manually_classified"
+      },
+      "as_of": "2026-06-30"
+    }
+  ]
+}

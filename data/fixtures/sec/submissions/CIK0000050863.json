@@ -1,0 +1,42 @@
+{
+  "cik": "50863",
+  "entityType": "operating",
+  "sic": "4812",
+  "sicDescription": "Communications / Technology",
+  "name": "Intel Corporation",
+  "tickers": [
+    "INTC"
+  ],
+  "exchanges": [
+    "Nasdaq"
+  ],
+  "formerNames": [],
+  "filings": {
+    "recent": {
+      "accessionNumber": [
+        "0000050863-24-0001",
+        "0000050863-24-0002"
+      ],
+      "filingDate": [
+        "2025-02-15",
+        "2025-05-01"
+      ],
+      "reportDate": [
+        "2024-12-31",
+        "2025-03-31"
+      ],
+      "form": [
+        "10-K",
+        "10-Q"
+      ],
+      "primaryDocument": [
+        "intc-20241231.htm",
+        "intc-20250331.htm"
+      ],
+      "isXBRL": [
+        1,
+        1
+      ]
+    }
+  }
+}

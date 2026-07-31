@@ -1,0 +1,12 @@
+{
+  "scored": [
+    "direct_competitor",
+    "operating",
+    "growth",
+    "risk"
+  ],
+  "excluded_without_market_data": [
+    "valuation",
+    "market_behavior"
+  ]
+}

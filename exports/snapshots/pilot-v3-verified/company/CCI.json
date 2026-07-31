@@ -1,0 +1,198 @@
+{
+  "response_type": "company_classification",
+  "company_key": "cci",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v3_verified",
+  "primary_path": {
+    "node_id": "tower_and_macro_site_operators",
+    "path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "communication_services",
+        "name": "Communication Services",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "telecommunications",
+        "name": "Telecommunications",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "telecom_infrastructure",
+        "name": "Telecom Infrastructure",
+        "node_type": "industry",
+        "depth": 3
+      },
+      {
+        "id": "tower_and_macro_site_operators",
+        "name": "Tower and Macro Site Operators",
+        "node_type": "peer_cluster",
+        "depth": 4
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.775,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [
+    {
+      "node_id": "wholesale_fiber_and_backhaul",
+      "path": "root.communication_services.telecommunications.telecom_infrastructure.wholesale_fiber_and_backhaul",
+      "name": "Wholesale Fiber and Backhaul",
+      "weight": 0.32,
+      "confidence": 0.75,
+      "is_manual": false,
+      "effective_from": "2026-06-30",
+      "effective_to": null
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_type": "filing_section_business",
+      "summary": "Item 1. Business Crown Castle Inc. (CCI) is a registrant under the Securities Exchange Act. Crown Castle owns and leases shared communications infrastructure, including towers and fiber, primarily to wireless carriers. We are not a retail w",
+      "excerpt": "Item 1. Business Crown Castle Inc. (CCI) is a registrant under the Securities Exchange Act. Crown Castle owns and leases shared communications infrastructure, including towers and fiber, primarily to wireless carriers. We are not a retail wireless network operator. Principal operations: Crown Castle Inc.. Reported segments include: Towers (68% of revenue); Fiber (32% of revenue). Our infrastructur",
+      "locator": "0001051470-24-0001#business:171",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Towers (68% of revenue)",
+      "excerpt": "Towers (68% of revenue)",
+      "locator": "0001051470-24-0001#segments",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Fiber (32% of revenue)",
+      "excerpt": "Fiber (32% of revenue)",
+      "locator": "0001051470-24-0001#segments",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "infrastructure_landlord",
+      "summary": "Item 1. Business Crown Castle Inc. (CCI) is a registrant under the Securities Exchange Act. Crown Castle owns and leases shared communications infrastructure, including towers and fiber, primarily to wireless carriers. We are not a retail w",
+      "excerpt": "Item 1. Business Crown Castle Inc. (CCI) is a registrant under the Securities Exchange Act. Crown Castle owns and leases shared communications infrastructure, including towers and fiber, primarily to wireless carriers. We are not a retail w",
+      "locator": "0001051470-24-0001#business",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "network_owner",
+      "summary": "Item 1. Business Crown Castle Inc. (CCI) is a registrant under the Securities Exchange Act. Crown Castle owns and leases shared communications infrastructure, including towers and fiber, primarily to wireless carriers. We are not a retail w",
+      "excerpt": "Item 1. Business Crown Castle Inc. (CCI) is a registrant under the Securities Exchange Act. Crown Castle owns and leases shared communications infrastructure, including towers and fiber, primarily to wireless carriers. We are not a retail w",
+      "locator": "0001051470-24-0001#business",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "filing_section_risk_factors",
+      "summary": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "excerpt": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "locator": "0001051470-24-0001#risk_factors:795",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "filing_section_segment_notes",
+      "summary": "Segment Information Revenue by segment: Towers (68% of revenue); Fiber (32% of revenue).",
+      "excerpt": "Segment Information Revenue by segment: Towers (68% of revenue); Fiber (32% of revenue).",
+      "locator": "0001051470-24-0001#segment_notes:1110",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Towers (68% of revenue)",
+      "excerpt": "Towers (68% of revenue)",
+      "locator": "0001051470-24-0001#segments",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Fiber (32% of revenue)",
+      "excerpt": "Fiber (32% of revenue)",
+      "locator": "0001051470-24-0001#segments",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "filing_section_geographic_information",
+      "summary": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "excerpt": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "locator": "0001051470-24-0001#geographic_information:1238",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=6980000000 USD end=2023-12-31",
+      "excerpt": "Revenues=6980000000 USD end=2023-12-31",
+      "locator": "xbrl:0001051470-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=6600000000 USD end=2024-12-31",
+      "excerpt": "Revenues=6600000000 USD end=2024-12-31",
+      "locator": "xbrl:0001051470-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/cci",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "tower_and_macro_site_operators"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 1,
+      "evidence_completeness": 1,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.775
+    },
+    "coverage_ratio": 1,
+    "unallocated_weight": 0
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "response_type": "taxonomy_tree",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "root": {
+    "id": "root",
+    "name": "Economy",
+    "description": "Root of the Peer Engine economic taxonomy.",
+    "node_type": "root",
+    "parent_id": null,
+    "path": "root",
+    "depth": 0,
+    "inclusion_criteria": [
+      "All classified companies descend from this node."
+    ],
+    "exclusion_criteria": [
+      "None; this is the universal root."
+    ],
+    "allowed_child_node_types": [
+      "sector",
+      "stub"
+    ],
+    "effective_date": "2026-07-31",
+    "taxonomy_version": "1.0.0",
+    "is_leaf": false,
+    "child_count": 11
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "parent_id": null,
+      "node_type": "root",
+      "name": "Economy"
+    },
+    {
+      "id": "communication_services",
+      "parent_id": "root",
+      "node_type": "sector",
+      "name": "Communication Services"
+    },
+    {
+      "id": "telecommunications",
+      "parent_id": "communication_services",
+      "node_type": "industry_group",
+      "name": "Telecommunications"
+    },
+    {
+      "id": "wireless_services",
+      "parent_id": "telecommunications",
+      "node_type": "industry",
+      "name": "Wireless Services"
+    },
+    {
+      "id": "national_wireless_network_owners",
+      "parent_id": "wireless_services",
+      "node_type": "peer_cluster",
+      "name": "National Wireless Network Owners"
+    },
+    {
+      "id": "regional_wireless_operators",
+      "parent_id": "wireless_services",
+      "node_type": "peer_cluster",
+      "name": "Regional Wireless Operators"
+    },
+    {
+      "id": "wireless_mvno_and_resellers",
+      "parent_id": "wireless_services",
+      "node_type": "peer_cluster",
+      "name": "Wireless MVNOs and Resellers"
+    },
+    {
+      "id": "fixed_connectivity",
+      "parent_id": "telecommunications",
+      "node_type": "industry",
+      "name": "Fixed Connectivity"
+    },
+    {
+      "id": "cable_broadband_operators",
+      "parent_id": "fixed_connectivity",
+      "node_type": "peer_cluster",
+      "name": "Cable Broadband Operators"
+    },
+    {
+      "id": "fiber_network_operators",
+      "parent_id": "fixed_connectivity",
+      "node_type": "peer_cluster",
+      "name": "Fiber Network Operators"
+    },
+    {
+      "id": "integrated_incumbent_telcos",
+      "parent_id": "fixed_connectivity",
+      "node_type": "peer_cluster",
+      "name": "Integrated Incumbent Telcos"
+    },
+    {
+      "id": "telecom_infrastructure",
+      "parent_id": "telecommunications",
+      "node_type": "industry",
+      "name": "Telecom Infrastructure"
+    },
+    {
+      "id": "tower_and_macro_site_operators",
+      "parent_id": "telecom_infrastructure",
+      "node_type": "peer_cluster",
+      "name": "Tower and Macro Site Operators"
+    },
+    {
+      "id": "wholesale_fiber_and_backhaul",
+      "parent_id": "telecom_infrastructure",
+      "node_type": "peer_cluster",
+      "name": "Wholesale Fiber and Backhaul"
+    },
+    {
+      "id": "enterprise_communications",
+      "parent_id": "telecommunications",
+      "node_type": "industry",
+      "name": "Enterprise Communications"
+    },
+    {
+      "id": "enterprise_network_and_connectivity",
+      "parent_id": "enterprise_communications",
+      "node_type": "peer_cluster",
+      "name": "Enterprise Network and Connectivity"
+    },
+    {
+      "id": "collaboration_and_ucaas",
+      "parent_id": "enterprise_communications",
+      "node_type": "peer_cluster",
+      "name": "Collaboration and UCaaS"
+    },
+    {
+      "id": "consumer_discretionary",
+      "parent_id": "root",
+      "node_type": "sector",
+      "name": "Consumer Discretionary"
+    },
+    {
+      "id": "restaurants",
+      "parent_id": "consumer_discretionary",
+      "node_type": "industry_group",
+      "name": "Restaurants"
+    },
+    {
+      "id": "quick_service_restaurants",
+      "parent_id": "restaurants",
+      "node_type": "industry",
+      "name": "Quick-Service Restaurants"
+    },
+    {
+      "id": "qsr_franchise_heavy",
+      "parent_id": "quick_service_restaurants",
+      "node_type": "peer_cluster",
+      "name": "QSR — Franchise-Heavy"
+    },
+    {
+      "id": "qsr_company_operated",
+      "parent_id": "quick_service_restaurants",
+      "node_type": "peer_cluster",
+      "name": "QSR — Company-Operated"
+    },
+    {
+      "id": "qsr_hybrid_franchise",
+      "parent_id": "quick_service_restaurants",
+      "node_type": "peer_cluster",
+      "name": "QSR — Hybrid Franchise Model"
+    },
+    {
+      "id": "fast_casual_restaurants",
+      "parent_id": "restaurants",
+      "node_type": "industry",
+      "name": "Fast-Casual Restaurants"
+    },
+    {
+      "id": "fast_casual_franchise_heavy",
+      "parent_id": "fast_casual_restaurants",
+      "node_type": "peer_cluster",
+      "name": "Fast Casual — Franchise-Heavy"
+    },
+    {
+      "id": "fast_casual_company_operated",
+      "parent_id": "fast_casual_restaurants",
+      "node_type": "peer_cluster",
+      "name": "Fast Casual — Company-Operated"
+    },
+    {
+      "id": "fast_casual_hybrid_franchise",
+      "parent_id": "fast_casual_restaurants",
+      "node_type": "peer_cluster",
+      "name": "Fast Casual — Hybrid Franchise Model"
+    },
+    {
+      "id": "full_service_restaurants",
+      "parent_id": "restaurants",
+      "node_type": "industry",
+      "name": "Full-Service Restaurants"
+    },
+    {
+      "id": "casual_dining",
+      "parent_id": "full_service_restaurants",
+      "node_type": "peer_cluster",
+      "name": "Casual Dining"
+    },
+    {
+      "id": "fine_dining_and_upscale",
+      "parent_id": "full_service_restaurants",
+      "node_type": "peer_cluster",
+      "name": "Fine Dining and Upscale"
+    },
+    {
+      "id": "restaurant_franchisors_asset_light",
+      "parent_id": "restaurants",
+      "node_type": "peer_cluster",
+      "name": "Restaurant Franchisors (Asset-Light)"
+    },
+    {
+      "id": "information_technology",
+      "parent_id": "root",
+      "node_type": "sector",
+      "name": "Information Technology"
+    },
+    {
+      "id": "software",
+      "parent_id": "information_technology",
+      "node_type": "stub",
+      "name": "Software (Stub Crosswalk)"
+    },
+    {
+      "id": "semiconductors_and_equipment",
+      "parent_id": "information_technology",
+      "node_type": "industry_group",
+      "name": "Semiconductors and Semiconductor Equipment"
+    },
+    {
+      "id": "semiconductor_devices",
+      "parent_id": "semiconductors_and_equipment",
+      "node_type": "industry",
+      "name": "Semiconductor Devices"
+    },
+    {
+      "id": "fabless_chip_design",
+      "parent_id": "semiconductor_devices",
+      "node_type": "sub_industry",
+      "name": "Fabless Chip Design"
+    },
+    {
+      "id": "fabless_compute_and_ai_accelerators",
+      "parent_id": "fabless_chip_design",
+      "node_type": "peer_cluster",
+      "name": "Fabless Compute and AI Accelerators"
+    },
+    {
+      "id": "fabless_mobile_and_consumer_soc",
+      "parent_id": "fabless_chip_design",
+      "node_type": "peer_cluster",
+      "name": "Fabless Mobile and Consumer SoC"
+    },
+    {
+      "id": "fabless_connectivity_and_networking",
+      "parent_id": "fabless_chip_design",
+      "node_type": "peer_cluster",
+      "name": "Fabless Connectivity and Networking"
+    },
+    {
+      "id": "integrated_device_manufacturers",
+      "parent_id": "semiconductor_devices",
+      "node_type": "peer_cluster",
+      "name": "Integrated Device Manufacturers"
+    },
+    {
+      "id": "semiconductor_foundries",
+      "parent_id": "semiconductor_devices",
+      "node_type": "peer_cluster",
+      "name": "Semiconductor Foundries"
+    },
+    {
+      "id": "memory_semiconductors",
+      "parent_id": "semiconductor_devices",
+      "node_type": "sub_industry",
+      "name": "Memory Semiconductors"
+    },
+    {
+      "id": "dram_manufacturers",
+      "parent_id": "memory_semiconductors",
+      "node_type": "peer_cluster",
+      "name": "DRAM Manufacturers"
+    },
+    {
+      "id": "nand_and_other_memory",
+      "parent_id": "memory_semiconductors",
+      "node_type": "peer_cluster",
+      "name": "NAND and Other Memory"
+    },
+    {
+      "id": "analog_mixed_signal_and_power",
+      "parent_id": "semiconductor_devices",
+      "node_type": "peer_cluster",
+      "name": "Analog, Mixed-Signal, and Power"
+    },
+    {
+      "id": "semiconductor_equipment",
+      "parent_id": "semiconductors_and_equipment",
+      "node_type": "industry",
+      "name": "Semiconductor Equipment"
+    },
+    {
+      "id": "wafer_fabrication_equipment",
+      "parent_id": "semiconductor_equipment",
+      "node_type": "sub_industry",
+      "name": "Wafer Fabrication Equipment"
+    },
+    {
+      "id": "lithography_equipment",
+      "parent_id": "wafer_fabrication_equipment",
+      "node_type": "peer_cluster",
+      "name": "Lithography Equipment"
+    },
+    {
+      "id": "etch_deposition_and_clean",
+      "parent_id": "wafer_fabrication_equipment",
+      "node_type": "peer_cluster",
+      "name": "Etch, Deposition, and Clean"
+    },
+    {
+      "id": "process_control_and_metrology",
+      "parent_id": "wafer_fabrication_equipment",
+      "node_type": "peer_cluster",
+      "name": "Process Control and Metrology"
+    },
+    {
+      "id": "assembly_test_and_packaging_equipment",
+      "parent_id": "semiconductor_equipment",
+      "node_type": "peer_cluster",
+      "name": "Assembly, Test, and Packaging Equipment"
+    },
+    {
+      "id": "energy",
+      "parent_id": "root",
+      "node_type": "stub",
+      "name": "Energy"
+    },
+    {
+      "id": "materials",
+      "parent_id": "root",
+      "node_type": "stub",
+      "name": "Materials"
+    },
+    {
+      "id": "industrials",
+      "parent_id": "root",
+      "node_type": "stub",
+      "name": "Industrials"
+    },
+    {
+      "id": "consumer_staples",
+      "parent_id": "root",
+      "node_type": "stub",
+      "name": "Consumer Staples"
+    },
+    {
+      "id": "health_care",
+      "parent_id": "root",
+      "node_type": "stub",
+      "name": "Health Care"
+    },
+    {
+      "id": "financials",
+      "parent_id": "root",
+      "node_type": "stub",
+      "name": "Financials"
+    },
+    {
+      "id": "utilities",
+      "parent_id": "root",
+      "node_type": "stub",
+      "name": "Utilities"
+    },
+    {
+      "id": "real_estate",
+      "parent_id": "root",
+      "node_type": "stub",
+      "name": "Real Estate"
+    }
+  ]
+}

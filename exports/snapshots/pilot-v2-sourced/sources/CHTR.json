@@ -1,0 +1,227 @@
+{
+  "company_key": "chtr",
+  "identifier": {
+    "company_key": "chtr",
+    "configured_name": "Charter Communications, Inc.",
+    "configured_ticker": "CHTR",
+    "resolved_cik": "0001091667",
+    "resolved_registrant": "Charter Communications, Inc.",
+    "exchange": "Nasdaq",
+    "foreign_issuer": false,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "chtr",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 53000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 10600000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 106000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 21200000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "chtr",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 1060000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001091667-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business Charter Communications, Inc. (CHTR) is a registrant under the Securities Exchange Act. Principal operations: Charter Communications. Reported segments include: Internet (55% of revenue); Video / Voice / Mobile (40% of revenue); Other (5% of revenue). Our infrastructure/operating model includes: Network Owner.",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0001091667-24-0001#business:35"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.internet.weight": {
+      "value": 0.55,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001091667-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.video_voice.weight": {
+      "value": 0.4,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001091667-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.other.weight": {
+      "value": 0.05,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001091667-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "large",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "revenue_growth_band": {
+      "value": "low",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "profitability_band": {
+      "value": "moderate",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "leverage_band": {
+      "value": "high",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "capital_intensity_band": {
+      "value": "high",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "cik": {
+      "value": "0001091667",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "illustrative_fallbacks": [
+    "size_band",
+    "revenue_growth_band",
+    "profitability_band",
+    "leverage_band",
+    "capital_intensity_band"
+  ]
+}

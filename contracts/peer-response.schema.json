@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peer-engine.local/contracts/peer-response.schema.json",
+  "title": "PeerResponse",
+  "description": "Peer groups for a company by peer type, with scores and components.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "response_type",
+    "company_key",
+    "peer_type",
+    "taxonomy_version",
+    "peer_model_version",
+    "as_of",
+    "peers"
+  ],
+  "properties": {
+    "response_type": { "const": "peer_group" },
+    "company_key": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]*$"
+    },
+    "peer_type": {
+      "type": "string",
+      "enum": [
+        "economic",
+        "valuation",
+        "competitive",
+        "custom",
+        "direct_competitor",
+        "operating",
+        "growth",
+        "risk",
+        "market_behavior"
+      ]
+    },
+    "taxonomy_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "peer_model_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "as_of": { "type": "string", "format": "date" },
+    "snapshot_id": { "type": ["string", "null"] },
+    "threshold": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "peers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "company_key",
+          "display_name",
+          "score",
+          "is_manual"
+        ],
+        "properties": {
+          "company_key": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]*$"
+          },
+          "display_name": { "type": "string", "minLength": 1 },
+          "ticker": { "type": ["string", "null"] },
+          "primary_node_id": {
+            "type": ["string", "null"],
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "primary_path": {
+            "type": ["string", "null"],
+            "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$"
+          },
+          "score": { "type": "number", "minimum": 0, "maximum": 1 },
+          "rank": {
+            "type": ["integer", "null"],
+            "minimum": 1
+          },
+          "is_manual": { "type": "boolean" },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "factor_code",
+                "factor_score",
+                "weight",
+                "weighted_contribution"
+              ],
+              "properties": {
+                "factor_code": { "type": "string", "minLength": 1 },
+                "factor_score": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+                "weighted_contribution": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "notes": { "type": ["string", "null"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

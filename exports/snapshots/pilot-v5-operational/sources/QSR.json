@@ -1,0 +1,311 @@
+{
+  "company_key": "qsr",
+  "identifier": {
+    "company_key": "qsr",
+    "configured_name": "Restaurant Brands International Inc.",
+    "configured_ticker": "QSR",
+    "resolved_cik": "0001618756",
+    "resolved_registrant": "Restaurant Brands International Inc.",
+    "exchange": "NYSE",
+    "foreign_issuer": false,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "qsr",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 7000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2023-12-31",
+      "filing_date": "2024-02-15",
+      "accession_number": "0001618756-24-0001",
+      "fiscal_year": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2023",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qsr",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 8400000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001618756-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qsr",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 2200000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001618756-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qsr",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 24000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001618756-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qsr",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 13000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001618756-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qsr",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 0,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001618756-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "qsr",
+      "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Capital Expenditures",
+      "normalized_metric": "capex",
+      "value_numeric": 150000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001618756-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business Restaurant Brands International Inc. (QSR) is a registrant under the Securities Exchange Act. Restaurant Brands International is an asset-light franchisor of Burger King, Tim Hortons, and Popeyes. System restaurants are predominantly franchised. Principal operations: Restaurant Brands International Inc.. Reported segments include: Franchise revenues (100% of revenue). As of year e",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0001618756-24-0001#business:171"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.franchise.weight": {
+      "value": 0.9,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001618756-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.other.weight": {
+      "value": 0.1,
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_curated_segment",
+      "confidence": 0.6,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "franchise_locations_pct": {
+      "value": 0.94,
+      "source_status": "source_backed",
+      "source_ids": [
+        "0001618756-24-0001#business"
+      ],
+      "derivation_method": "filing_franchise_percentage",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "mid",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "revenue_growth_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "profitability_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "leverage_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "capital_intensity_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "cik": {
+      "value": "0001618756",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "derived_financial": {
+    "company_key": "qsr",
+    "as_of": "2026-06-30",
+    "currency": "USD",
+    "size_band": {
+      "value": "mid",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_growth_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "profitability_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "leverage_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "capital_intensity_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_ttm_illustrative_usd": {
+      "value": 8400000000,
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    }
+  },
+  "companyfacts_uri": "fixture://sec/companyfacts/CIK0001618756.json",
+  "provenance_class": "independent_offline_verified_excerpt"
+}

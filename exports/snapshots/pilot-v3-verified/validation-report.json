@@ -1,0 +1,10 @@
+{
+  "publishable": true,
+  "publication_status": "verified_offline_independent",
+  "errors": [],
+  "warnings": [
+    "14 non-peer illustrative/curated fallbacks remain (taxonomy judgments may still be curated)",
+    "Offline independent corpus only — not live EDGAR-verified official filings"
+  ],
+  "processing_run_id": "run_phase35_2026-07-31T120000000Z"
+}

@@ -1,0 +1,10 @@
+{
+  "publishable": false,
+  "official": true,
+  "publication_status": "official_acceptance_set_verified",
+  "errors": [],
+  "warnings": [
+    "Live EDGAR full financial coverage 5/30"
+  ],
+  "processing_run_id": "run_phase37_2026-07-31T200000000Z"
+}

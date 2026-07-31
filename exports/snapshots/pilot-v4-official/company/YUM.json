@@ -1,0 +1,192 @@
+{
+  "response_type": "company_classification",
+  "company_key": "yum",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v4_official",
+  "primary_path": {
+    "node_id": "restaurant_franchisors_asset_light",
+    "path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "consumer_discretionary",
+        "name": "Consumer Discretionary",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "restaurants",
+        "name": "Restaurants",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "restaurant_franchisors_asset_light",
+        "name": "Restaurant Franchisors (Asset-Light)",
+        "node_type": "peer_cluster",
+        "depth": 3
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.775,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [
+    {
+      "node_id": "qsr_franchise_heavy",
+      "path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy",
+      "name": "QSR — Franchise-Heavy",
+      "weight": 0.12,
+      "confidence": 0.75,
+      "is_manual": false,
+      "effective_from": "2026-06-30",
+      "effective_to": null
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_type": "filing_section_business",
+      "summary": "Item 1. Business Yum! Brands, Inc. (YUM) is a registrant under the Securities Exchange Act. Yum! Brands is an asset-light franchisor of KFC, Taco Bell, and Pizza Hut. Nearly all system restaurants are franchised. Principal operations: Yum! ",
+      "excerpt": "Item 1. Business Yum! Brands, Inc. (YUM) is a registrant under the Securities Exchange Act. Yum! Brands is an asset-light franchisor of KFC, Taco Bell, and Pizza Hut. Nearly all system restaurants are franchised. Principal operations: Yum! Brands, Inc.. Reported segments include: Franchise and property revenues (88% of revenue); Company sales (12% of revenue). As of year end, approximately 98% of ",
+      "locator": "0001041061-24-0001#business:171",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Franchise and property revenues (88% of revenue)",
+      "excerpt": "Franchise and property revenues (88% of revenue)",
+      "locator": "0001041061-24-0001#segments",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Company sales (12% of revenue)",
+      "excerpt": "Company sales (12% of revenue)",
+      "locator": "0001041061-24-0001#segments",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "franchise_locations_pct",
+      "summary": "approximately 98% of system restaurants were franchised",
+      "excerpt": "approximately 98% of system restaurants were franchised",
+      "locator": "0001041061-24-0001#business",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.85,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "filing_section_risk_factors",
+      "summary": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "excerpt": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "locator": "0001041061-24-0001#risk_factors:704",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "filing_section_segment_notes",
+      "summary": "Segment Information Revenue by segment: Franchise and property revenues (88% of revenue); Company sales (12% of revenue).",
+      "excerpt": "Segment Information Revenue by segment: Franchise and property revenues (88% of revenue); Company sales (12% of revenue).",
+      "locator": "0001041061-24-0001#segment_notes:1034",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Franchise and property revenues (88% of revenue)",
+      "excerpt": "Franchise and property revenues (88% of revenue)",
+      "locator": "0001041061-24-0001#segments",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Company sales (12% of revenue)",
+      "excerpt": "Company sales (12% of revenue)",
+      "locator": "0001041061-24-0001#segments",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "filing_section_geographic_information",
+      "summary": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "excerpt": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "locator": "0001041061-24-0001#geographic_information:1195",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=7100000000 USD end=2023-12-31",
+      "excerpt": "Revenues=7100000000 USD end=2023-12-31",
+      "locator": "xbrl:0001041061-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=7500000000 USD end=2024-12-31",
+      "excerpt": "Revenues=7500000000 USD end=2024-12-31",
+      "locator": "xbrl:0001041061-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_operating_income",
+      "summary": "OperatingIncomeLoss=2400000000 USD end=2024-12-31",
+      "excerpt": "OperatingIncomeLoss=2400000000 USD end=2024-12-31",
+      "locator": "xbrl:0001041061-24-0001:OperatingIncomeLoss",
+      "source_document_uri": "fixture://sec/yum",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 1,
+      "evidence_completeness": 1,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.775
+    },
+    "coverage_ratio": 1,
+    "unallocated_weight": 0
+  }
+}

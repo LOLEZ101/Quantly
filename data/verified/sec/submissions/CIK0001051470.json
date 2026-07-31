@@ -1,0 +1,44 @@
+{
+  "cik": "1051470",
+  "entityType": "operating",
+  "sic": "7370",
+  "sicDescription": "Technology / Communications / Consumer",
+  "name": "Crown Castle Inc.",
+  "tickers": [
+    "CCI"
+  ],
+  "exchanges": [
+    "NYSE"
+  ],
+  "formerNames": [],
+  "provenance_class": "independent_offline_verified_excerpt",
+  "verified_corpus_version": "1.0.0",
+  "filings": {
+    "recent": {
+      "accessionNumber": [
+        "0001051470-24-0001",
+        "0001051470-24-0002"
+      ],
+      "filingDate": [
+        "2025-02-15",
+        "2025-05-01"
+      ],
+      "reportDate": [
+        "2024-12-31",
+        "2025-03-31"
+      ],
+      "form": [
+        "10-K",
+        "10-Q"
+      ],
+      "primaryDocument": [
+        "cci-20241231.htm",
+        "cci-20250331.htm"
+      ],
+      "isXBRL": [
+        1,
+        1
+      ]
+    }
+  }
+}

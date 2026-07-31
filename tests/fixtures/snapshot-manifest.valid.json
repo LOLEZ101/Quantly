@@ -1,0 +1,41 @@
+{
+  "response_type": "snapshot_manifest",
+  "snapshot_id": "snap_pilot_2026_07_31",
+  "taxonomy_version": "1.0.0",
+  "peer_model_version": "1.0.0",
+  "adjacency_version": "1.0.0",
+  "contract_versions": {
+    "taxonomy": "1.0.0",
+    "company_profile": "1.0.0",
+    "company_classification": "1.0.0",
+    "peer_response": "1.0.0",
+    "snapshot_manifest": "1.0.0"
+  },
+  "created_at": "2026-07-31T12:00:00Z",
+  "published_at": "2026-07-31T15:00:00Z",
+  "as_of": "2026-07-31",
+  "is_immutable": true,
+  "content_hash": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "counts": {
+    "companies": 0,
+    "taxonomy_nodes": 56,
+    "primary_classifications": 0,
+    "peer_relationships": 0,
+    "evidence_records": 0
+  },
+  "artifacts": [
+    {
+      "name": "taxonomy.json",
+      "uri": "snapshots/snap_pilot_2026_07_31/taxonomy.json",
+      "media_type": "application/json",
+      "content_hash": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      "byte_size": 12000
+    }
+  ],
+  "pilot_universe": [
+    "telecommunications",
+    "restaurants",
+    "semiconductors_and_equipment"
+  ],
+  "notes": "Design-phase empty company snapshot for contract validation."
+}

@@ -1,0 +1,62 @@
+{
+  "count": 14,
+  "peer_band_count": 0,
+  "items": [
+    {
+      "company_key": "t",
+      "field": "segment.mobility"
+    },
+    {
+      "company_key": "t",
+      "field": "segment.other"
+    },
+    {
+      "company_key": "tmus",
+      "field": "segment.other"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "segment.media"
+    },
+    {
+      "company_key": "chtr",
+      "field": "segment.other"
+    },
+    {
+      "company_key": "amt",
+      "field": "segment.towers"
+    },
+    {
+      "company_key": "amt",
+      "field": "segment.other"
+    },
+    {
+      "company_key": "dpz",
+      "field": "segment.us_stores"
+    },
+    {
+      "company_key": "qsr",
+      "field": "segment.other"
+    },
+    {
+      "company_key": "nvda",
+      "field": "segment.gaming"
+    },
+    {
+      "company_key": "qcom",
+      "field": "segment.qct"
+    },
+    {
+      "company_key": "qcom",
+      "field": "segment.qtl"
+    },
+    {
+      "company_key": "klac",
+      "field": "segment.other"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "segment.power"
+    }
+  ]
+}

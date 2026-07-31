@@ -1,0 +1,291 @@
+{
+  "company_key": "adi",
+  "identifier": {
+    "company_key": "adi",
+    "configured_name": "Analog Devices, Inc.",
+    "configured_ticker": "ADI",
+    "resolved_cik": "0000006281",
+    "resolved_registrant": "Analog Devices, Inc.",
+    "exchange": "Nasdaq",
+    "foreign_issuer": false,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "adi",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 12300000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2023-12-31",
+      "filing_date": "2024-02-15",
+      "accession_number": "0000006281-24-0001",
+      "fiscal_year": 2023,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2023",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "adi",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 9400000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000006281-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "adi",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 2500000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000006281-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "adi",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 48000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000006281-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "adi",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 7000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000006281-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "adi",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 1600000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000006281-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "adi",
+      "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Capital Expenditures",
+      "normalized_metric": "capex",
+      "value_numeric": 800000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000006281-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business Analog Devices, Inc. (ADI) is a registrant under the Securities Exchange Act. Analog Devices designs and manufactures high-performance analog, mixed-signal, and digital signal processing products. Principal operations: Analog Devices, Inc.. Reported segments include: Analog / Mixed Signal (100% of revenue). Our semiconductor business model is analog. We produce analog and mixed-si",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0000006281-24-0001#business:171"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.analog.weight": {
+      "value": 1,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0000006281-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "large",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "revenue_growth_band": {
+      "value": "negative",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "profitability_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "leverage_band": {
+      "value": "low",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "capital_intensity_band": {
+      "value": "high",
+      "source_status": "derived",
+      "source_ids": [
+        "companyfacts"
+      ],
+      "derivation_method": "xbrl_fact_band_derivation",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "cik": {
+      "value": "0000006281",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "illustrative_fallbacks": [],
+  "derived_financial": {
+    "company_key": "adi",
+    "as_of": "2026-06-30",
+    "currency": "USD",
+    "size_band": {
+      "value": "large",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_growth_band": {
+      "value": "negative",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "profitability_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "leverage_band": {
+      "value": "low",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "capital_intensity_band": {
+      "value": "high",
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    },
+    "revenue_ttm_illustrative_usd": {
+      "value": 9400000000,
+      "quality": "derived",
+      "as_of": "2026-06-30",
+      "note": "Derived from independent verified offline companyfacts"
+    }
+  },
+  "provenance_class": "independent_offline_verified_excerpt"
+}

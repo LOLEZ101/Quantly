@@ -1,0 +1,245 @@
+{
+  "as_of": "2026-06-30",
+  "companies": [
+    {
+      "company_key": "vz",
+      "display_name": "Verizon",
+      "ticker": "VZ",
+      "sp500_membership_status": "member",
+      "primary_node_id": "national_wireless_network_owners",
+      "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners"
+    },
+    {
+      "company_key": "t",
+      "display_name": "AT&T",
+      "ticker": "T",
+      "sp500_membership_status": "member",
+      "primary_node_id": "national_wireless_network_owners",
+      "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners"
+    },
+    {
+      "company_key": "tmus",
+      "display_name": "T-Mobile US",
+      "ticker": "TMUS",
+      "sp500_membership_status": "member",
+      "primary_node_id": "national_wireless_network_owners",
+      "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners"
+    },
+    {
+      "company_key": "cmcsa",
+      "display_name": "Comcast",
+      "ticker": "CMCSA",
+      "sp500_membership_status": "member",
+      "primary_node_id": "cable_broadband_operators",
+      "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators"
+    },
+    {
+      "company_key": "chtr",
+      "display_name": "Charter Communications",
+      "ticker": "CHTR",
+      "sp500_membership_status": "member",
+      "primary_node_id": "cable_broadband_operators",
+      "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators"
+    },
+    {
+      "company_key": "cci",
+      "display_name": "Crown Castle",
+      "ticker": "CCI",
+      "sp500_membership_status": "member",
+      "primary_node_id": "tower_and_macro_site_operators",
+      "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators"
+    },
+    {
+      "company_key": "amt",
+      "display_name": "American Tower",
+      "ticker": "AMT",
+      "sp500_membership_status": "member",
+      "primary_node_id": "tower_and_macro_site_operators",
+      "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators"
+    },
+    {
+      "company_key": "mcd",
+      "display_name": "McDonald's",
+      "ticker": "MCD",
+      "sp500_membership_status": "member",
+      "primary_node_id": "qsr_franchise_heavy",
+      "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy"
+    },
+    {
+      "company_key": "sbux",
+      "display_name": "Starbucks",
+      "ticker": "SBUX",
+      "sp500_membership_status": "member",
+      "primary_node_id": "qsr_hybrid_franchise",
+      "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_hybrid_franchise"
+    },
+    {
+      "company_key": "cmg",
+      "display_name": "Chipotle",
+      "ticker": "CMG",
+      "sp500_membership_status": "member",
+      "primary_node_id": "fast_casual_company_operated",
+      "primary_path": "root.consumer_discretionary.restaurants.fast_casual_restaurants.fast_casual_company_operated"
+    },
+    {
+      "company_key": "yum",
+      "display_name": "Yum! Brands",
+      "ticker": "YUM",
+      "sp500_membership_status": "member",
+      "primary_node_id": "restaurant_franchisors_asset_light",
+      "primary_path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light"
+    },
+    {
+      "company_key": "dpz",
+      "display_name": "Domino's",
+      "ticker": "DPZ",
+      "sp500_membership_status": "member",
+      "primary_node_id": "qsr_franchise_heavy",
+      "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy"
+    },
+    {
+      "company_key": "dri",
+      "display_name": "Darden Restaurants",
+      "ticker": "DRI",
+      "sp500_membership_status": "member",
+      "primary_node_id": "casual_dining",
+      "primary_path": "root.consumer_discretionary.restaurants.full_service_restaurants.casual_dining"
+    },
+    {
+      "company_key": "qsr",
+      "display_name": "Restaurant Brands International",
+      "ticker": "QSR",
+      "sp500_membership_status": "member",
+      "primary_node_id": "restaurant_franchisors_asset_light",
+      "primary_path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light"
+    },
+    {
+      "company_key": "txrh",
+      "display_name": "Texas Roadhouse",
+      "ticker": "TXRH",
+      "sp500_membership_status": "member",
+      "primary_node_id": "casual_dining",
+      "primary_path": "root.consumer_discretionary.restaurants.full_service_restaurants.casual_dining"
+    },
+    {
+      "company_key": "nvda",
+      "display_name": "NVIDIA",
+      "ticker": "NVDA",
+      "sp500_membership_status": "member",
+      "primary_node_id": "fabless_compute_and_ai_accelerators",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_compute_and_ai_accelerators"
+    },
+    {
+      "company_key": "amd",
+      "display_name": "AMD",
+      "ticker": "AMD",
+      "sp500_membership_status": "member",
+      "primary_node_id": "fabless_compute_and_ai_accelerators",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_compute_and_ai_accelerators"
+    },
+    {
+      "company_key": "intc",
+      "display_name": "Intel",
+      "ticker": "INTC",
+      "sp500_membership_status": "member",
+      "primary_node_id": "integrated_device_manufacturers",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.integrated_device_manufacturers"
+    },
+    {
+      "company_key": "avgo",
+      "display_name": "Broadcom",
+      "ticker": "AVGO",
+      "sp500_membership_status": "member",
+      "primary_node_id": "fabless_connectivity_and_networking",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking"
+    },
+    {
+      "company_key": "qcom",
+      "display_name": "Qualcomm",
+      "ticker": "QCOM",
+      "sp500_membership_status": "member",
+      "primary_node_id": "fabless_mobile_and_consumer_soc",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_mobile_and_consumer_soc"
+    },
+    {
+      "company_key": "txn",
+      "display_name": "Texas Instruments",
+      "ticker": "TXN",
+      "sp500_membership_status": "member",
+      "primary_node_id": "analog_mixed_signal_and_power",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power"
+    },
+    {
+      "company_key": "adi",
+      "display_name": "Analog Devices",
+      "ticker": "ADI",
+      "sp500_membership_status": "member",
+      "primary_node_id": "analog_mixed_signal_and_power",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power"
+    },
+    {
+      "company_key": "mu",
+      "display_name": "Micron",
+      "ticker": "MU",
+      "sp500_membership_status": "member",
+      "primary_node_id": "dram_manufacturers",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.memory_semiconductors.dram_manufacturers"
+    },
+    {
+      "company_key": "amat",
+      "display_name": "Applied Materials",
+      "ticker": "AMAT",
+      "sp500_membership_status": "member",
+      "primary_node_id": "etch_deposition_and_clean",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.etch_deposition_and_clean"
+    },
+    {
+      "company_key": "lrcx",
+      "display_name": "Lam Research",
+      "ticker": "LRCX",
+      "sp500_membership_status": "member",
+      "primary_node_id": "etch_deposition_and_clean",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.etch_deposition_and_clean"
+    },
+    {
+      "company_key": "klac",
+      "display_name": "KLA",
+      "ticker": "KLAC",
+      "sp500_membership_status": "member",
+      "primary_node_id": "process_control_and_metrology",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology"
+    },
+    {
+      "company_key": "nxpi",
+      "display_name": "NXP Semiconductors",
+      "ticker": "NXPI",
+      "sp500_membership_status": "member",
+      "primary_node_id": "analog_mixed_signal_and_power",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power"
+    },
+    {
+      "company_key": "gfs",
+      "display_name": "GlobalFoundries",
+      "ticker": "GFS",
+      "sp500_membership_status": "not_member",
+      "primary_node_id": "semiconductor_foundries",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.semiconductor_foundries"
+    },
+    {
+      "company_key": "mrvl",
+      "display_name": "Marvell",
+      "ticker": "MRVL",
+      "sp500_membership_status": "member",
+      "primary_node_id": "fabless_connectivity_and_networking",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking"
+    },
+    {
+      "company_key": "mpwr",
+      "display_name": "Monolithic Power Systems",
+      "ticker": "MPWR",
+      "sp500_membership_status": "member",
+      "primary_node_id": "analog_mixed_signal_and_power",
+      "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power"
+    }
+  ]
+}

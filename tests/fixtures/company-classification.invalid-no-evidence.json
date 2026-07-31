@@ -1,0 +1,26 @@
+{
+  "response_type": "company_classification",
+  "company_key": "example-bad",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-07-31",
+  "primary_path": {
+    "node_id": "lithography_equipment",
+    "path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.lithography_equipment",
+    "nodes": [
+      { "id": "root", "name": "Economy", "node_type": "root", "depth": 0 },
+      {
+        "id": "lithography_equipment",
+        "name": "Lithography Equipment",
+        "node_type": "peer_cluster",
+        "depth": 5
+      }
+    ],
+    "weight": 1.0,
+    "confidence": 0.8,
+    "is_manual": false,
+    "effective_from": "2026-07-31",
+    "effective_to": null
+  },
+  "secondary_exposures": [],
+  "evidence": []
+}

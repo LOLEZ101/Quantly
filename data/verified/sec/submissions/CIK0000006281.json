@@ -1,0 +1,44 @@
+{
+  "cik": "6281",
+  "entityType": "operating",
+  "sic": "7370",
+  "sicDescription": "Technology / Communications / Consumer",
+  "name": "Analog Devices, Inc.",
+  "tickers": [
+    "ADI"
+  ],
+  "exchanges": [
+    "Nasdaq"
+  ],
+  "formerNames": [],
+  "provenance_class": "independent_offline_verified_excerpt",
+  "verified_corpus_version": "1.0.0",
+  "filings": {
+    "recent": {
+      "accessionNumber": [
+        "0000006281-24-0001",
+        "0000006281-24-0002"
+      ],
+      "filingDate": [
+        "2025-02-15",
+        "2025-05-01"
+      ],
+      "reportDate": [
+        "2024-12-31",
+        "2025-03-31"
+      ],
+      "form": [
+        "10-K",
+        "10-Q"
+      ],
+      "primaryDocument": [
+        "adi-20241231.htm",
+        "adi-20250331.htm"
+      ],
+      "isXBRL": [
+        1,
+        1
+      ]
+    }
+  }
+}

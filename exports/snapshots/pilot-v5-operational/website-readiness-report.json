@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check_code": "contract_present:contracts/snapshot-manifest.schema.json",
+      "passed": true,
+      "detail": "Contract file present"
+    },
+    {
+      "check_code": "contract_present:contracts/company-classification.schema.json",
+      "passed": true,
+      "detail": "Contract file present"
+    },
+    {
+      "check_code": "contract_present:contracts/peer-response.schema.json",
+      "passed": true,
+      "detail": "Contract file present"
+    },
+    {
+      "check_code": "contract_present:contracts/company-profile.schema.json",
+      "passed": true,
+      "detail": "Contract file present"
+    },
+    {
+      "check_code": "contract_present:contracts/taxonomy.schema.json",
+      "passed": true,
+      "detail": "Contract file present"
+    },
+    {
+      "check_code": "manifest_contract_valid",
+      "passed": true,
+      "detail": "Manifest validates against snapshot-manifest.schema.json"
+    },
+    {
+      "check_code": "artifact:manifest.json",
+      "passed": true,
+      "detail": "Present"
+    },
+    {
+      "check_code": "artifact:taxonomy.json",
+      "passed": true,
+      "detail": "Present"
+    },
+    {
+      "check_code": "artifact:tree.json",
+      "passed": true,
+      "detail": "Present"
+    },
+    {
+      "check_code": "artifact:companies.json",
+      "passed": true,
+      "detail": "Present"
+    },
+    {
+      "check_code": "artifact:review-queue.json",
+      "passed": true,
+      "detail": "Present"
+    },
+    {
+      "check_code": "artifact:corpus-field-provenance.json",
+      "passed": true,
+      "detail": "Present"
+    },
+    {
+      "check_code": "artifact:official-source-support.json",
+      "passed": true,
+      "detail": "Present"
+    },
+    {
+      "check_code": "artifact:gated-peer-types.json",
+      "passed": true,
+      "detail": "Present"
+    },
+    {
+      "check_code": "artifact:persistence-summary.json",
+      "passed": true,
+      "detail": "Present"
+    },
+    {
+      "check_code": "demo_exports:VZ",
+      "passed": true,
+      "detail": "company + peers exports present"
+    },
+    {
+      "check_code": "demo_exports:MCD",
+      "passed": true,
+      "detail": "company + peers exports present"
+    },
+    {
+      "check_code": "demo_exports:NVDA",
+      "passed": true,
+      "detail": "company + peers exports present"
+    },
+    {
+      "check_code": "demo_exports:INTC",
+      "passed": true,
+      "detail": "company + peers exports present"
+    },
+    {
+      "check_code": "demo_exports:AMT",
+      "passed": true,
+      "detail": "company + peers exports present"
+    },
+    {
+      "check_code": "valuation_market_behavior_gated",
+      "passed": true,
+      "detail": "Market-dependent peer types remain gated for website consumers"
+    },
+    {
+      "check_code": "corpus_field_provenance_nonempty",
+      "passed": true,
+      "detail": "20 field provenance definitions"
+    },
+    {
+      "check_code": "companies_json_parseable",
+      "passed": true,
+      "detail": "companies.json parseable"
+    }
+  ]
+}

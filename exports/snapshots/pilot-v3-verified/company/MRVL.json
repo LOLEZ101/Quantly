@@ -1,0 +1,193 @@
+{
+  "response_type": "company_classification",
+  "company_key": "mrvl",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v3_verified",
+  "primary_path": {
+    "node_id": "fabless_connectivity_and_networking",
+    "path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "information_technology",
+        "name": "Information Technology",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "semiconductors_and_equipment",
+        "name": "Semiconductors and Semiconductor Equipment",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "semiconductor_devices",
+        "name": "Semiconductor Devices",
+        "node_type": "industry",
+        "depth": 3
+      },
+      {
+        "id": "fabless_chip_design",
+        "name": "Fabless Chip Design",
+        "node_type": "sub_industry",
+        "depth": 4
+      },
+      {
+        "id": "fabless_connectivity_and_networking",
+        "name": "Fabless Connectivity and Networking",
+        "node_type": "peer_cluster",
+        "depth": 5
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.775,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [],
+  "evidence": [
+    {
+      "evidence_type": "filing_section_business",
+      "summary": "Item 1. Business Marvell Technology, Inc. (MRVL) is a registrant under the Securities Exchange Act. Marvell designs data infrastructure semiconductor products, including networking and storage solutions, on a fabless basis. Principal operat",
+      "excerpt": "Item 1. Business Marvell Technology, Inc. (MRVL) is a registrant under the Securities Exchange Act. Marvell designs data infrastructure semiconductor products, including networking and storage solutions, on a fabless basis. Principal operations: Marvell Technology, Inc.. Reported segments include: Data Center (48% of revenue); Enterprise Networking (24% of revenue); Carrier (14% of revenue); Other",
+      "locator": "0001835632-24-0001#business:171",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Data Center (48% of revenue)",
+      "excerpt": "Data Center (48% of revenue)",
+      "locator": "0001835632-24-0001#segments",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Enterprise Networking (24% of revenue)",
+      "excerpt": "Enterprise Networking (24% of revenue)",
+      "locator": "0001835632-24-0001#segments",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Carrier (14% of revenue)",
+      "excerpt": "Carrier (14% of revenue)",
+      "locator": "0001835632-24-0001#segments",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Other (14% of revenue)",
+      "excerpt": "Other (14% of revenue)",
+      "locator": "0001835632-24-0001#segments",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "semiconductor_model_fabless",
+      "summary": "We design semiconductors and outsource manufacturing to foundries.",
+      "excerpt": "We design semiconductors and outsource manufacturing to foundries.",
+      "locator": "0001835632-24-0001#business",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "filing_section_risk_factors",
+      "summary": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "excerpt": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "locator": "0001835632-24-0001#risk_factors:759",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "filing_section_segment_notes",
+      "summary": "Segment Information Revenue by segment: Data Center (48% of revenue); Enterprise Networking (24% of revenue); Carrier (14% of revenue); Other (14% of revenue).",
+      "excerpt": "Segment Information Revenue by segment: Data Center (48% of revenue); Enterprise Networking (24% of revenue); Carrier (14% of revenue); Other (14% of revenue).",
+      "locator": "0001835632-24-0001#segment_notes:1055",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Data Center (48% of revenue)",
+      "excerpt": "Data Center (48% of revenue)",
+      "locator": "0001835632-24-0001#segments",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Enterprise Networking (24% of revenue)",
+      "excerpt": "Enterprise Networking (24% of revenue)",
+      "locator": "0001835632-24-0001#segments",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Carrier (14% of revenue)",
+      "excerpt": "Carrier (14% of revenue)",
+      "locator": "0001835632-24-0001#segments",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Other (14% of revenue)",
+      "excerpt": "Other (14% of revenue)",
+      "locator": "0001835632-24-0001#segments",
+      "source_document_uri": "fixture://sec/mrvl",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "fabless_connectivity_and_networking"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 1,
+      "evidence_completeness": 1,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.775
+    },
+    "coverage_ratio": 1,
+    "unallocated_weight": 0
+  }
+}

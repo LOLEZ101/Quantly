@@ -1,0 +1,171 @@
+{
+  "response_type": "company_classification",
+  "company_key": "qsr",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v4_official",
+  "primary_path": {
+    "node_id": "restaurant_franchisors_asset_light",
+    "path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "consumer_discretionary",
+        "name": "Consumer Discretionary",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "restaurants",
+        "name": "Restaurants",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "restaurant_franchisors_asset_light",
+        "name": "Restaurant Franchisors (Asset-Light)",
+        "node_type": "peer_cluster",
+        "depth": 3
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.775,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [],
+  "evidence": [
+    {
+      "evidence_type": "filing_section_business",
+      "summary": "Item 1. Business Restaurant Brands International Inc. (QSR) is a registrant under the Securities Exchange Act. Restaurant Brands International is an asset-light franchisor of Burger King, Tim Hortons, and Popeyes. System restaurants are pre",
+      "excerpt": "Item 1. Business Restaurant Brands International Inc. (QSR) is a registrant under the Securities Exchange Act. Restaurant Brands International is an asset-light franchisor of Burger King, Tim Hortons, and Popeyes. System restaurants are predominantly franchised. Principal operations: Restaurant Brands International Inc.. Reported segments include: Franchise revenues (100% of revenue). As of year e",
+      "locator": "0001618756-24-0001#business:171",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Franchise revenues (100% of revenue)",
+      "excerpt": "Franchise revenues (100% of revenue)",
+      "locator": "0001618756-24-0001#segments",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "franchise_locations_pct",
+      "summary": "approximately 94% of system restaurants were franchised",
+      "excerpt": "approximately 94% of system restaurants were franchised",
+      "locator": "0001618756-24-0001#business",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.85,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "filing_section_risk_factors",
+      "summary": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "excerpt": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "locator": "0001618756-24-0001#risk_factors:729",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "filing_section_segment_notes",
+      "summary": "Segment Information Revenue by segment: Franchise revenues (100% of revenue).",
+      "excerpt": "Segment Information Revenue by segment: Franchise revenues (100% of revenue).",
+      "locator": "0001618756-24-0001#segment_notes:1029",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.35,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Franchise revenues (100% of revenue)",
+      "excerpt": "Franchise revenues (100% of revenue)",
+      "locator": "0001618756-24-0001#segments",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "filing_section_geographic_information",
+      "summary": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "excerpt": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "locator": "0001618756-24-0001#geographic_information:1146",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=7000000000 USD end=2023-12-31",
+      "excerpt": "Revenues=7000000000 USD end=2023-12-31",
+      "locator": "xbrl:0001618756-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=8400000000 USD end=2024-12-31",
+      "excerpt": "Revenues=8400000000 USD end=2024-12-31",
+      "locator": "xbrl:0001618756-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_operating_income",
+      "summary": "OperatingIncomeLoss=2200000000 USD end=2024-12-31",
+      "excerpt": "OperatingIncomeLoss=2200000000 USD end=2024-12-31",
+      "locator": "xbrl:0001618756-24-0001:OperatingIncomeLoss",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=24000000000 USD end=2024-12-31",
+      "excerpt": "Assets=24000000000 USD end=2024-12-31",
+      "locator": "xbrl:0001618756-24-0001:Assets",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 1,
+      "evidence_completeness": 1,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.775
+    },
+    "coverage_ratio": 1,
+    "unallocated_weight": 0
+  }
+}

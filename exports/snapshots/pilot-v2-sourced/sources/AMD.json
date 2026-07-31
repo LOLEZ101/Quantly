@@ -1,0 +1,249 @@
+{
+  "company_key": "amd",
+  "identifier": {
+    "company_key": "amd",
+    "configured_name": "Advanced Micro Devices, Inc.",
+    "configured_ticker": "AMD",
+    "resolved_cik": "0000002488",
+    "resolved_registrant": "Advanced Micro Devices, Inc.",
+    "exchange": "Nasdaq",
+    "foreign_issuer": false,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "amd",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 54000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000002488-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "amd",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 10800000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000002488-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "amd",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 108000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000002488-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "amd",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 21600000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000002488-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "amd",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 8100000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0000002488-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business Advanced Micro Devices, Inc. (AMD) is a registrant under the Securities Exchange Act. Principal operations: AMD. Reported segments include: Data Center (45% of revenue); Client (30% of revenue); Gaming (15% of revenue); Embedded (10% of revenue). Our semiconductor business model is fabless. We design semiconductors and outsource manufacturing to foundries.",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0000002488-24-0001#business:35"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.data_center.weight": {
+      "value": 0.45,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0000002488-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.client.weight": {
+      "value": 0.3,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0000002488-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.gaming.weight": {
+      "value": 0.15,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0000002488-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.embedded.weight": {
+      "value": 0.1,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0000002488-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "operating_model": {
+      "value": "fabless",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0000002488-24-0001#business"
+      ],
+      "derivation_method": "regex_business_model",
+      "confidence": 0.9,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "mega",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "revenue_growth_band": {
+      "value": "high",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "profitability_band": {
+      "value": "moderate",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "leverage_band": {
+      "value": "low",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "capital_intensity_band": {
+      "value": "low",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "cik": {
+      "value": "0000002488",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "illustrative_fallbacks": [
+    "size_band",
+    "revenue_growth_band",
+    "profitability_band",
+    "leverage_band",
+    "capital_intensity_band"
+  ]
+}

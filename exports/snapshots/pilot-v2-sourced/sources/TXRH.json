@@ -1,0 +1,227 @@
+{
+  "company_key": "txrh",
+  "identifier": {
+    "company_key": "txrh",
+    "configured_name": "Texas Roadhouse, Inc.",
+    "configured_ticker": "TXRH",
+    "resolved_cik": "0001289460",
+    "resolved_registrant": "Texas Roadhouse, Inc.",
+    "exchange": "Nasdaq",
+    "foreign_issuer": false,
+    "identifier_confidence": 0.95,
+    "status": "resolved",
+    "discrepancy": null,
+    "former_names": []
+  },
+  "canonical_facts": [
+    {
+      "company_key": "txrh",
+      "concept": "Revenues",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Revenues",
+      "normalized_metric": "revenue",
+      "value_numeric": 52000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001289460-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "txrh",
+      "concept": "OperatingIncomeLoss",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Operating Income (Loss)",
+      "normalized_metric": "operating_income",
+      "value_numeric": 10400000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001289460-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": "CY2024",
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "txrh",
+      "concept": "Assets",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Assets",
+      "normalized_metric": "assets",
+      "value_numeric": 104000000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001289460-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "txrh",
+      "concept": "LongTermDebt",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Long-term Debt",
+      "normalized_metric": "long_term_debt",
+      "value_numeric": 20800000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001289460-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    },
+    {
+      "company_key": "txrh",
+      "concept": "ResearchAndDevelopmentExpense",
+      "taxonomy_namespace": "us-gaap",
+      "original_label": "Research and Development Expense",
+      "normalized_metric": "rd_expense",
+      "value_numeric": 1040000000,
+      "unit": "USD",
+      "start_date": null,
+      "end_date": "2024-12-31",
+      "filing_date": "2025-02-15",
+      "accession_number": "0001289460-24-0001",
+      "fiscal_year": 2024,
+      "fiscal_period": "FY",
+      "form": "10-K",
+      "frame": null,
+      "is_segment": false,
+      "data_quality_status": "normalized",
+      "is_canonical": true
+    }
+  ],
+  "provenance": {
+    "primary_business_description": {
+      "value": "Item 1. Business Texas Roadhouse, Inc. (TXRH) is a registrant under the Securities Exchange Act. Principal operations: Texas Roadhouse. Reported segments include: Company restaurants (90% of revenue); Franchise (10% of revenue). Our infrastructure/operating model includes: Company Operated, Franchise System. As of year end, approximately 10% of system restaurants were franchised and the remainder ",
+      "source_status": "source_backed",
+      "source_ids": [
+        "0001289460-24-0001#business:35"
+      ],
+      "derivation_method": "filing_section_business",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.company.weight": {
+      "value": 0.9,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001289460-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "segment.franchise.weight": {
+      "value": 0.1,
+      "source_status": "source_supported",
+      "source_ids": [
+        "0001289460-24-0001#segments"
+      ],
+      "derivation_method": "curated_node_map_plus_filing_percentage",
+      "confidence": 0.8,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "franchise_locations_pct": {
+      "value": 0.1,
+      "source_status": "source_backed",
+      "source_ids": [
+        "0001289460-24-0001#business"
+      ],
+      "derivation_method": "filing_franchise_percentage",
+      "confidence": 0.85,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    },
+    "size_band": {
+      "value": "mid",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "revenue_growth_band": {
+      "value": "moderate",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "profitability_band": {
+      "value": "moderate",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "leverage_band": {
+      "value": "low",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "capital_intensity_band": {
+      "value": "moderate",
+      "source_status": "illustrative",
+      "source_ids": [],
+      "derivation_method": "phase2_illustrative_band",
+      "confidence": 0.3,
+      "data_date": "2026-06-30",
+      "review_status": "pending"
+    },
+    "cik": {
+      "value": "0001289460",
+      "source_status": "source_backed",
+      "source_ids": [
+        "identifier_resolution"
+      ],
+      "derivation_method": "sec_submissions",
+      "confidence": 0.95,
+      "data_date": "2026-06-30",
+      "review_status": "n/a"
+    }
+  },
+  "illustrative_fallbacks": [
+    "size_band",
+    "revenue_growth_band",
+    "profitability_band",
+    "leverage_band",
+    "capital_intensity_band"
+  ]
+}

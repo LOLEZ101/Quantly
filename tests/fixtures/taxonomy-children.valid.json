@@ -1,0 +1,41 @@
+{
+  "response_type": "taxonomy_children",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-07-31",
+  "parent": {
+    "id": "wireless_services",
+    "name": "Wireless Services",
+    "description": "Mobile connectivity services delivered over cellular networks.",
+    "node_type": "industry",
+    "parent_id": "telecommunications",
+    "path": "root.communication_services.telecommunications.wireless_services",
+    "depth": 3,
+    "inclusion_criteria": ["Primary offering is retail or wholesale mobile access."],
+    "exclusion_criteria": ["Tower landlords without subscriber businesses."],
+    "allowed_child_node_types": ["sub_industry", "peer_cluster"],
+    "effective_date": "2026-07-31",
+    "taxonomy_version": "1.0.0",
+    "is_leaf": false,
+    "child_count": 3
+  },
+  "children": [
+    {
+      "id": "national_wireless_network_owners",
+      "name": "National Wireless Network Owners",
+      "description": "Nationwide facilities-based wireless carriers that own spectrum and radio access networks.",
+      "node_type": "peer_cluster",
+      "parent_id": "wireless_services",
+      "path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+      "depth": 4,
+      "inclusion_criteria": [
+        "Own or control licensed spectrum and operate a national-scale RAN."
+      ],
+      "exclusion_criteria": ["MVNOs that rent network access."],
+      "allowed_child_node_types": [],
+      "effective_date": "2026-07-31",
+      "taxonomy_version": "1.0.0",
+      "is_leaf": true,
+      "child_count": 0
+    }
+  ]
+}

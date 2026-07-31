@@ -1,0 +1,187 @@
+{
+  "response_type": "company_classification",
+  "company_key": "chtr",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "snapshot_id": "snap_pilot_v1",
+  "primary_path": {
+    "node_id": "cable_broadband_operators",
+    "path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+    "nodes": [
+      {
+        "id": "root",
+        "name": "Economy",
+        "node_type": "root",
+        "depth": 0
+      },
+      {
+        "id": "communication_services",
+        "name": "Communication Services",
+        "node_type": "sector",
+        "depth": 1
+      },
+      {
+        "id": "telecommunications",
+        "name": "Telecommunications",
+        "node_type": "industry_group",
+        "depth": 2
+      },
+      {
+        "id": "fixed_connectivity",
+        "name": "Fixed Connectivity",
+        "node_type": "industry",
+        "depth": 3
+      },
+      {
+        "id": "cable_broadband_operators",
+        "name": "Cable Broadband Operators",
+        "node_type": "peer_cluster",
+        "depth": 4
+      }
+    ],
+    "weight": 1,
+    "confidence": 0.76,
+    "is_manual": false,
+    "effective_from": "2026-06-30",
+    "effective_to": null
+  },
+  "secondary_exposures": [],
+  "evidence": [
+    {
+      "evidence_type": "filing_section_business",
+      "summary": "Item 1. Business Charter Communications, Inc. (CHTR) is a registrant under the Securities Exchange Act. Principal operations: Charter Communications. Reported segments include: Internet (55% of revenue); Video / Voice / Mobile (40% of reven",
+      "excerpt": "Item 1. Business Charter Communications, Inc. (CHTR) is a registrant under the Securities Exchange Act. Principal operations: Charter Communications. Reported segments include: Internet (55% of revenue); Video / Voice / Mobile (40% of revenue); Other (5% of revenue). Our infrastructure/operating model includes: Network Owner.",
+      "locator": "0001091667-24-0001#business:35",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Internet (55% of revenue)",
+      "excerpt": "Internet (55% of revenue)",
+      "locator": "0001091667-24-0001#segments",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Video / Voice / Mobile (40% of revenue)",
+      "excerpt": "Video / Voice / Mobile (40% of revenue)",
+      "locator": "0001091667-24-0001#segments",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Other (5% of revenue)",
+      "excerpt": "Other (5% of revenue)",
+      "locator": "0001091667-24-0001#segments",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "filing_section_risk_factors",
+      "summary": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "excerpt": "Item 1A. Risk Factors Our business is subject to competitive, regulatory, and technology risks. <a id=\"",
+      "locator": "0001091667-24-0001#risk_factors:413",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "filing_section_segment_notes",
+      "summary": "Segment Information Revenue by segment: Internet (55% of revenue); Video / Voice / Mobile (40% of revenue); Other (5% of revenue).",
+      "excerpt": "Segment Information Revenue by segment: Internet (55% of revenue); Video / Voice / Mobile (40% of revenue); Other (5% of revenue).",
+      "locator": "0001091667-24-0001#segment_notes:679",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Internet (55% of revenue)",
+      "excerpt": "Internet (55% of revenue)",
+      "locator": "0001091667-24-0001#segments",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Video / Voice / Mobile (40% of revenue)",
+      "excerpt": "Video / Voice / Mobile (40% of revenue)",
+      "locator": "0001091667-24-0001#segments",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "segment_revenue",
+      "summary": "Other (5% of revenue)",
+      "excerpt": "Other (5% of revenue)",
+      "locator": "0001091667-24-0001#segments",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.75,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "filing_section_geographic_information",
+      "summary": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "excerpt": "Geographic Information We generate revenue primarily in the United States and other international markets.",
+      "locator": "0001091667-24-0001#geographic_information:849",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.8,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "xbrl_revenue",
+      "summary": "Revenues=53000000000 USD end=2024-12-31",
+      "excerpt": "Revenues=53000000000 USD end=2024-12-31",
+      "locator": "xbrl:0001091667-24-0001:Revenues",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    },
+    {
+      "evidence_type": "xbrl_operating_income",
+      "summary": "OperatingIncomeLoss=10600000000 USD end=2024-12-31",
+      "excerpt": "OperatingIncomeLoss=10600000000 USD end=2024-12-31",
+      "locator": "xbrl:0001091667-24-0001:OperatingIncomeLoss",
+      "source_document_uri": "fixture://sec/chtr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "cable_broadband_operators"
+    }
+  ],
+  "history": [],
+  "manual_overrides": [],
+  "_pilot": {
+    "primary_selection_reason": "consolidated_revenue",
+    "confidence_components": {
+      "segment_coverage": 0.95,
+      "evidence_completeness": 1,
+      "source_agreement": 0.9,
+      "recency": 0.9,
+      "manual_review_bonus": 0,
+      "ambiguity_penalty": 0,
+      "final": 0.76
+    },
+    "coverage_ratio": 0.95,
+    "unallocated_weight": 0.05
+  }
+}

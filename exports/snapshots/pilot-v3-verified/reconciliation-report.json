@@ -1,0 +1,1757 @@
+{
+  "fields": [
+    {
+      "company_key": "vz",
+      "field": "cik",
+      "curated_value": "0000732712",
+      "source_value": "0000732712",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "vz",
+      "field": "legal_name",
+      "curated_value": "Verizon Communications Inc.",
+      "source_value": "Verizon Communications Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "vz",
+      "field": "primary_business_description",
+      "curated_value": "Nationwide US wireless network owner with consumer and enterprise connectivity services.",
+      "source_value": "Item 1. Business Verizon Communications Inc. (VZ) is a registrant under the Securities Exchange Act. Verizon operates a nationwide wireless network and provides consumer and business connectivity serv",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "vz",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 134000000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "vz",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "vz",
+      "field": "revenue_growth_band",
+      "curated_value": "low",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "vz",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "t",
+      "field": "cik",
+      "curated_value": "0000732717",
+      "source_value": "0000732717",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "t",
+      "field": "legal_name",
+      "curated_value": "AT&T Inc.",
+      "source_value": "AT&T Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "t",
+      "field": "primary_business_description",
+      "curated_value": "Integrated US telecom with national wireless and substantial wireline/fiber operations.",
+      "source_value": "Item 1. Business AT&T Inc. (T) is a registrant under the Securities Exchange Act. AT&T provides communications and technology services, including wireless mobility and wireline broadband/fiber service",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "t",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 122400000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "t",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "t",
+      "field": "revenue_growth_band",
+      "curated_value": "low",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "t",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "tmus",
+      "field": "cik",
+      "curated_value": "0001283699",
+      "source_value": "0001283699",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "tmus",
+      "field": "legal_name",
+      "curated_value": "T-Mobile US, Inc.",
+      "source_value": "T-Mobile US, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "tmus",
+      "field": "primary_business_description",
+      "curated_value": "National US wireless network operator focused primarily on mobile services.",
+      "source_value": "Item 1. Business T-Mobile US, Inc. (TMUS) is a registrant under the Securities Exchange Act. T-Mobile US operates a nationwide wireless communications network focused primarily on postpaid and prepaid",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "tmus",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 78500000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "tmus",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "tmus",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "tmus",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "cik",
+      "curated_value": "0001166691",
+      "source_value": "0001166691",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "legal_name",
+      "curated_value": "Comcast Corporation",
+      "source_value": "Comcast Corporation",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "primary_business_description",
+      "curated_value": "US cable broadband and media conglomerate; connectivity economics driven by HFC broadband.",
+      "source_value": "Item 1. Business Comcast Corporation (CMCSA) is a registrant under the Securities Exchange Act. Comcast operates cable communications (broadband, video, voice) and media businesses. Connectivity throu",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 121600000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "revenue_growth_band",
+      "curated_value": "low",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "chtr",
+      "field": "cik",
+      "curated_value": "0001091667",
+      "source_value": "0001091667",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "chtr",
+      "field": "legal_name",
+      "curated_value": "Charter Communications, Inc.",
+      "source_value": "Charter Communications, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "chtr",
+      "field": "primary_business_description",
+      "curated_value": "US cable broadband operator (Spectrum) focused on residential and SMB connectivity.",
+      "source_value": "Item 1. Business Charter Communications, Inc. (CHTR) is a registrant under the Securities Exchange Act. Charter provides broadband, video, and voice services under the Spectrum brand over a hybrid fib",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "chtr",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 54600000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "chtr",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "chtr",
+      "field": "revenue_growth_band",
+      "curated_value": "low",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "chtr",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "cci",
+      "field": "cik",
+      "curated_value": "0001051470",
+      "source_value": "0001051470",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "cci",
+      "field": "legal_name",
+      "curated_value": "Crown Castle Inc.",
+      "source_value": "Crown Castle Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "cci",
+      "field": "primary_business_description",
+      "curated_value": "US telecom infrastructure company owning towers and fiber for carrier tenants.",
+      "source_value": "Item 1. Business Crown Castle Inc. (CCI) is a registrant under the Securities Exchange Act. Crown Castle owns and leases shared communications infrastructure, including towers and fiber, primarily to ",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "cci",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 6980000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "cci",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "cci",
+      "field": "revenue_growth_band",
+      "curated_value": "low",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "cci",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "amt",
+      "field": "cik",
+      "curated_value": "0001053507",
+      "source_value": "0001053507",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "amt",
+      "field": "legal_name",
+      "curated_value": "American Tower Corporation",
+      "source_value": "American Tower Corporation",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "amt",
+      "field": "primary_business_description",
+      "curated_value": "Global telecom tower landlord leasing macro sites to wireless carriers.",
+      "source_value": "Item 1. Business American Tower Corporation (AMT) is a registrant under the Securities Exchange Act. American Tower owns and operates wireless and broadcast communications sites and leases space on to",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "amt",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 11100000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "amt",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "amt",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "amt",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mcd",
+      "field": "cik",
+      "curated_value": "0000063908",
+      "source_value": "0000063908",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "mcd",
+      "field": "legal_name",
+      "curated_value": "McDonald's Corporation",
+      "source_value": "McDonald's Corporation",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "mcd",
+      "field": "primary_business_description",
+      "curated_value": "Global QSR brand with a franchise-heavy system and significant franchise revenues.",
+      "source_value": "Item 1. Business McDonald's Corporation (MCD) is a registrant under the Securities Exchange Act. McDonald's franchises and operates McDonald's restaurants. The substantial majority of restaurants glob",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "mcd",
+      "field": "franchise_locations_pct",
+      "curated_value": 0.95,
+      "source_value": 0.95,
+      "status": "confirmed_by_source",
+      "notes": "Franchise location mix"
+    },
+    {
+      "company_key": "mcd",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 25500000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "mcd",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mcd",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mcd",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "sbux",
+      "field": "cik",
+      "curated_value": "0000829224",
+      "source_value": "0000829224",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "sbux",
+      "field": "legal_name",
+      "curated_value": "Starbucks Corporation",
+      "source_value": "Starbucks Corporation",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "sbux",
+      "field": "primary_business_description",
+      "curated_value": "Global coffeehouse chain with a predominantly company-operated store model in key markets.",
+      "source_value": "Item 1. Business Starbucks Corporation (SBUX) is a registrant under the Securities Exchange Act. Starbucks operates and licenses Starbucks coffeehouses. Company-operated stores are the primary model i",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "sbux",
+      "field": "franchise_locations_pct",
+      "curated_value": 0.45,
+      "source_value": 0.48,
+      "status": "confirmed_by_source",
+      "notes": "Franchise location mix"
+    },
+    {
+      "company_key": "sbux",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 36000000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "sbux",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "sbux",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "sbux",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "cmg",
+      "field": "cik",
+      "curated_value": "0001058090",
+      "source_value": "0001058090",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "cmg",
+      "field": "legal_name",
+      "curated_value": "Chipotle Mexican Grill, Inc.",
+      "source_value": "Chipotle Mexican Grill, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "cmg",
+      "field": "primary_business_description",
+      "curated_value": "Fast-casual restaurant company operating nearly all restaurants as company-owned.",
+      "source_value": "Item 1. Business Chipotle Mexican Grill, Inc. (CMG) is a registrant under the Securities Exchange Act. Chipotle owns and operates fast-casual restaurants. Restaurants are substantially all company-ope",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "cmg",
+      "field": "franchise_locations_pct",
+      "curated_value": 0,
+      "source_value": 0,
+      "status": "confirmed_by_source",
+      "notes": "Franchise location mix"
+    },
+    {
+      "company_key": "cmg",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 9900000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "cmg",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "cmg",
+      "field": "revenue_growth_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "cmg",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "yum",
+      "field": "cik",
+      "curated_value": "0001041061",
+      "source_value": "0001041061",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "yum",
+      "field": "legal_name",
+      "curated_value": "Yum! Brands, Inc.",
+      "source_value": "Yum! Brands, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "yum",
+      "field": "primary_business_description",
+      "curated_value": "Asset-light global QSR franchisor (KFC, Taco Bell, Pizza Hut).",
+      "source_value": "Item 1. Business Yum! Brands, Inc. (YUM) is a registrant under the Securities Exchange Act. Yum! Brands is an asset-light franchisor of KFC, Taco Bell, and Pizza Hut. Nearly all system restaurants are",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "yum",
+      "field": "franchise_locations_pct",
+      "curated_value": 0.98,
+      "source_value": 0.98,
+      "status": "confirmed_by_source",
+      "notes": "Franchise location mix"
+    },
+    {
+      "company_key": "yum",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 7100000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "yum",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "yum",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "yum",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "dpz",
+      "field": "cik",
+      "curated_value": "0001286681",
+      "source_value": "0001286681",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "dpz",
+      "field": "legal_name",
+      "curated_value": "Domino's Pizza, Inc.",
+      "source_value": "Domino's Pizza, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "dpz",
+      "field": "primary_business_description",
+      "curated_value": "Global pizza QSR with a franchise-heavy system.",
+      "source_value": "Item 1. Business Domino's Pizza, Inc. (DPZ) is a registrant under the Securities Exchange Act. Domino's franchises and operates pizza delivery and carryout restaurants. The system is heavily franchise",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "dpz",
+      "field": "franchise_locations_pct",
+      "curated_value": 0.98,
+      "source_value": 0.98,
+      "status": "confirmed_by_source",
+      "notes": "Franchise location mix"
+    },
+    {
+      "company_key": "dpz",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 4500000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "dpz",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "dpz",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "dpz",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "dri",
+      "field": "cik",
+      "curated_value": "0000940944",
+      "source_value": "0000940944",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "dri",
+      "field": "legal_name",
+      "curated_value": "Darden Restaurants, Inc.",
+      "source_value": "Darden Restaurants, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "dri",
+      "field": "primary_business_description",
+      "curated_value": "Full-service casual dining company operating Olive Garden and related brands.",
+      "source_value": "Item 1. Business Darden Restaurants, Inc. (DRI) is a registrant under the Securities Exchange Act. Darden owns and operates full-service restaurants including Olive Garden and other casual dining bran",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "dri",
+      "field": "franchise_locations_pct",
+      "curated_value": 0,
+      "source_value": 0,
+      "status": "confirmed_by_source",
+      "notes": "Franchise location mix"
+    },
+    {
+      "company_key": "dri",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 10500000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "dri",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "dri",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "dri",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "qsr",
+      "field": "cik",
+      "curated_value": "0001618756",
+      "source_value": "0001618756",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "qsr",
+      "field": "legal_name",
+      "curated_value": "Restaurant Brands International Inc.",
+      "source_value": "Restaurant Brands International Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "qsr",
+      "field": "primary_business_description",
+      "curated_value": "Asset-light franchisor of Burger King, Tim Hortons, and Popeyes.",
+      "source_value": "Item 1. Business Restaurant Brands International Inc. (QSR) is a registrant under the Securities Exchange Act. Restaurant Brands International is an asset-light franchisor of Burger King, Tim Hortons,",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "qsr",
+      "field": "franchise_locations_pct",
+      "curated_value": 0.95,
+      "source_value": 0.94,
+      "status": "confirmed_by_source",
+      "notes": "Franchise location mix"
+    },
+    {
+      "company_key": "qsr",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 7000000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "qsr",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "qsr",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "qsr",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "txrh",
+      "field": "cik",
+      "curated_value": "0001289460",
+      "source_value": "0001289460",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "txrh",
+      "field": "legal_name",
+      "curated_value": "Texas Roadhouse, Inc.",
+      "source_value": "Texas Roadhouse, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "txrh",
+      "field": "primary_business_description",
+      "curated_value": "Casual dining steakhouse chain that is primarily company-operated.",
+      "source_value": "Item 1. Business Texas Roadhouse, Inc. (TXRH) is a registrant under the Securities Exchange Act. Texas Roadhouse operates casual dining restaurants that are primarily company-owned, with a smaller fra",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "txrh",
+      "field": "franchise_locations_pct",
+      "curated_value": 0.1,
+      "source_value": 0.12,
+      "status": "confirmed_by_source",
+      "notes": "Franchise location mix"
+    },
+    {
+      "company_key": "txrh",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 4600000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "txrh",
+      "field": "size_band",
+      "curated_value": "mid",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "txrh",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "txrh",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "nvda",
+      "field": "cik",
+      "curated_value": "0001045810",
+      "source_value": "0001045810",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "nvda",
+      "field": "legal_name",
+      "curated_value": "NVIDIA Corporation",
+      "source_value": "NVIDIA Corporation",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "nvda",
+      "field": "primary_business_description",
+      "curated_value": "Fabless designer of GPUs and accelerated computing platforms for data center and AI.",
+      "source_value": "Item 1. Business NVIDIA Corporation (NVDA) is a registrant under the Securities Exchange Act. NVIDIA designs GPUs and accelerated computing platforms. We are a fabless semiconductor company; wafer man",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "nvda",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 27000000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "nvda",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "nvda",
+      "field": "revenue_growth_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "nvda",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "amd",
+      "field": "cik",
+      "curated_value": "0000002488",
+      "source_value": "0000002488",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "amd",
+      "field": "legal_name",
+      "curated_value": "Advanced Micro Devices, Inc.",
+      "source_value": "Advanced Micro Devices, Inc.",
+      "status": "source_supported_minor_difference",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "amd",
+      "field": "primary_business_description",
+      "curated_value": "Fabless designer of CPUs, GPUs, and data-center accelerators.",
+      "source_value": "Item 1. Business Advanced Micro Devices, Inc. (AMD) is a registrant under the Securities Exchange Act. AMD designs high-performance CPUs, GPUs, and adaptive computing products as a fabless semiconduct",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "amd",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 22800000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "amd",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "amd",
+      "field": "revenue_growth_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "amd",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "intc",
+      "field": "cik",
+      "curated_value": "0000050863",
+      "source_value": "0000050863",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "intc",
+      "field": "legal_name",
+      "curated_value": "Intel Corporation",
+      "source_value": "Intel Corporation",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "intc",
+      "field": "primary_business_description",
+      "curated_value": "Integrated device manufacturer designing CPUs and operating captive fabs, with foundry ambitions.",
+      "source_value": "Item 1. Business Intel Corporation (INTC) is a registrant under the Securities Exchange Act. Intel designs and manufactures semiconductors using an integrated device manufacturing model, including cli",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "intc",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 54200000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "intc",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "intc",
+      "field": "revenue_growth_band",
+      "curated_value": "negative",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "intc",
+      "field": "profitability_band",
+      "curated_value": "low",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "avgo",
+      "field": "cik",
+      "curated_value": "0001730168",
+      "source_value": "0001730168",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "avgo",
+      "field": "legal_name",
+      "curated_value": "Broadcom Inc.",
+      "source_value": "Broadcom Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "avgo",
+      "field": "primary_business_description",
+      "curated_value": "Diversified semiconductor and infrastructure software company with leading networking silicon.",
+      "source_value": "Item 1. Business Broadcom Inc. (AVGO) is a registrant under the Securities Exchange Act. Broadcom provides semiconductor solutions for networking and infrastructure and also sells infrastructure softw",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "avgo",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 35800000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "avgo",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "avgo",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "avgo",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "qcom",
+      "field": "cik",
+      "curated_value": "0000804328",
+      "source_value": "0000804328",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "qcom",
+      "field": "legal_name",
+      "curated_value": "QUALCOMM Incorporated",
+      "source_value": "QUALCOMM Incorporated",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "qcom",
+      "field": "primary_business_description",
+      "curated_value": "Fabless mobile and connectivity SoC designer with licensing franchise.",
+      "source_value": "Item 1. Business QUALCOMM Incorporated (QCOM) is a registrant under the Securities Exchange Act. Qualcomm develops and licenses wireless technology and sells fabless mobile and connectivity semiconduc",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "qcom",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 35800000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "qcom",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "qcom",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "qcom",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "txn",
+      "field": "cik",
+      "curated_value": "0000097476",
+      "source_value": "0000097476",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "txn",
+      "field": "legal_name",
+      "curated_value": "Texas Instruments Incorporated",
+      "source_value": "Texas Instruments Incorporated",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "txn",
+      "field": "primary_business_description",
+      "curated_value": "Analog and embedded semiconductor manufacturer with substantial internal manufacturing.",
+      "source_value": "Item 1. Business Texas Instruments Incorporated (TXN) is a registrant under the Securities Exchange Act. Texas Instruments designs and manufactures analog and embedded processing semiconductors, with ",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "txn",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 17500000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "txn",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "txn",
+      "field": "revenue_growth_band",
+      "curated_value": "low",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "txn",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "adi",
+      "field": "cik",
+      "curated_value": "0000006281",
+      "source_value": "0000006281",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "adi",
+      "field": "legal_name",
+      "curated_value": "Analog Devices, Inc.",
+      "source_value": "Analog Devices, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "adi",
+      "field": "primary_business_description",
+      "curated_value": "High-performance analog, mixed-signal, and power semiconductor company.",
+      "source_value": "Item 1. Business Analog Devices, Inc. (ADI) is a registrant under the Securities Exchange Act. Analog Devices designs and manufactures high-performance analog, mixed-signal, and digital signal process",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "adi",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 12300000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "adi",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "adi",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "adi",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mu",
+      "field": "cik",
+      "curated_value": "0000723125",
+      "source_value": "0000723125",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "mu",
+      "field": "legal_name",
+      "curated_value": "Micron Technology, Inc.",
+      "source_value": "Micron Technology, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "mu",
+      "field": "primary_business_description",
+      "curated_value": "Memory semiconductor manufacturer focused on DRAM and NAND.",
+      "source_value": "Item 1. Business Micron Technology, Inc. (MU) is a registrant under the Securities Exchange Act. Micron designs and manufactures memory and storage products, principally DRAM and NAND. Principal opera",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "mu",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 15500000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "mu",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mu",
+      "field": "revenue_growth_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mu",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "amat",
+      "field": "cik",
+      "curated_value": "0000006951",
+      "source_value": "0000006951",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "amat",
+      "field": "legal_name",
+      "curated_value": "Applied Materials, Inc.",
+      "source_value": "Applied Materials, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "amat",
+      "field": "primary_business_description",
+      "curated_value": "Semiconductor wafer fabrication equipment supplier (deposition, etch, related tools).",
+      "source_value": "Item 1. Business Applied Materials, Inc. (AMAT) is a registrant under the Securities Exchange Act. Applied Materials supplies manufacturing equipment and services used to produce semiconductor chips, ",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "amat",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 26500000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "amat",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "amat",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "amat",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "cik",
+      "curated_value": "0000707549",
+      "source_value": "0000707549",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "legal_name",
+      "curated_value": "Lam Research Corporation",
+      "source_value": "Lam Research Corporation",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "primary_business_description",
+      "curated_value": "Wafer fabrication equipment company focused on etch and deposition.",
+      "source_value": "Item 1. Business Lam Research Corporation (LRCX) is a registrant under the Securities Exchange Act. Lam Research designs and manufactures wafer fabrication equipment focused on etch and deposition pro",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 17400000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "size_band",
+      "curated_value": "mega",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "klac",
+      "field": "cik",
+      "curated_value": "0000319201",
+      "source_value": "0000319201",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "klac",
+      "field": "legal_name",
+      "curated_value": "KLA Corporation",
+      "source_value": "KLA Corporation",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "klac",
+      "field": "primary_business_description",
+      "curated_value": "Process control and yield-management equipment for semiconductor manufacturing.",
+      "source_value": "Item 1. Business KLA Corporation (KLAC) is a registrant under the Securities Exchange Act. KLA supplies process control and yield-management systems used in semiconductor manufacturing. Principal oper",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "klac",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 10500000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "klac",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "klac",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "klac",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "cik",
+      "curated_value": "0001413447",
+      "source_value": "0001413447",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "legal_name",
+      "curated_value": "NXP Semiconductors N.V.",
+      "source_value": "NXP Semiconductors N.V.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "primary_business_description",
+      "curated_value": "Automotive and industrial mixed-signal semiconductor company.",
+      "source_value": "Item 1. Business NXP Semiconductors N.V. (NXPI) is a registrant under the Securities Exchange Act. NXP provides mixed-signal and automotive semiconductor solutions. Manufacturing uses a mix of interna",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 13300000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "gfs",
+      "field": "cik",
+      "curated_value": "0001709048",
+      "source_value": "0001709048",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "gfs",
+      "field": "legal_name",
+      "curated_value": "GlobalFoundries Inc.",
+      "source_value": "GlobalFoundries Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "gfs",
+      "field": "primary_business_description",
+      "curated_value": "Pure-play semiconductor foundry manufacturing chips for third-party designers.",
+      "source_value": "Item 1. Business GlobalFoundries Inc. (GFS) is a registrant under the Securities Exchange Act. GlobalFoundries is a pure-play semiconductor foundry manufacturing wafers for third-party fabless and IDM",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "gfs",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 7400000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "gfs",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "gfs",
+      "field": "revenue_growth_band",
+      "curated_value": "low",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "gfs",
+      "field": "profitability_band",
+      "curated_value": "low",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "cik",
+      "curated_value": "0001835632",
+      "source_value": "0001835632",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "legal_name",
+      "curated_value": "Marvell Technology, Inc.",
+      "source_value": "Marvell Technology, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "primary_business_description",
+      "curated_value": "Fabless designer of data infrastructure and networking semiconductors.",
+      "source_value": "Item 1. Business Marvell Technology, Inc. (MRVL) is a registrant under the Securities Exchange Act. Marvell designs data infrastructure semiconductor products, including networking and storage solutio",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 5500000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "revenue_growth_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "profitability_band",
+      "curated_value": "moderate",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "cik",
+      "curated_value": "0001280452",
+      "source_value": "0001280452",
+      "status": "confirmed_by_source",
+      "notes": "CIK reconciliation"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "legal_name",
+      "curated_value": "Monolithic Power Systems, Inc.",
+      "source_value": "Monolithic Power Systems, Inc.",
+      "status": "confirmed_by_source",
+      "notes": "Registrant name vs curated legal/display name"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "primary_business_description",
+      "curated_value": "Analog and power-management semiconductor company.",
+      "source_value": "Item 1. Business Monolithic Power Systems, Inc. (MPWR) is a registrant under the Securities Exchange Act. Monolithic Power Systems designs power-management and analog semiconductor solutions, primaril",
+      "status": "source_supported_minor_difference",
+      "notes": "Business description from curated fixture vs filing business section"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "revenue_ttm_illustrative",
+      "curated_value": null,
+      "source_value": 1800000000,
+      "status": "source_contains_greater_detail",
+      "notes": "Phase-2 omitted live revenue; source facts now available when mapped"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "size_band",
+      "curated_value": "large",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "revenue_growth_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "profitability_band",
+      "curated_value": "high",
+      "source_value": null,
+      "status": "curated_illustrative",
+      "notes": "Banded peer features remain illustrative unless derived later"
+    }
+  ],
+  "summary": {
+    "confirmed_by_source": 67,
+    "source_supported_minor_difference": 31,
+    "material_conflict": 0,
+    "not_found_in_source": 0,
+    "source_contains_greater_detail": 30,
+    "curated_illustrative": 90,
+    "human_interpretation_required": 0
+  }
+}

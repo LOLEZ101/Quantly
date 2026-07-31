@@ -1,0 +1,122 @@
+{
+  "entityName": "Restaurant Brands International Inc.",
+  "cik": "1618756",
+  "provenance_class": "independent_offline_verified_excerpt",
+  "verified_corpus_version": "1.0.0",
+  "facts": {
+    "us-gaap": {
+      "Revenues": {
+        "label": "Revenues",
+        "units": {
+          "USD": [
+            {
+              "end": "2023-12-31",
+              "val": 7000000000,
+              "accn": "0001618756-24-0001",
+              "fy": 2023,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2024-02-15",
+              "frame": "CY2023"
+            },
+            {
+              "end": "2024-12-31",
+              "val": 8400000000,
+              "accn": "0001618756-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "OperatingIncomeLoss": {
+        "label": "Operating Income (Loss)",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 2200000000,
+              "accn": "0001618756-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "Assets": {
+        "label": "Assets",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 24000000000,
+              "accn": "0001618756-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "LongTermDebt": {
+        "label": "Long-term Debt",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 13000000000,
+              "accn": "0001618756-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "ResearchAndDevelopmentExpense": {
+        "label": "Research and Development Expense",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 0,
+              "accn": "0001618756-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "PaymentsToAcquirePropertyPlantAndEquipment": {
+        "label": "Capital Expenditures",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 150000000,
+              "accn": "0001618756-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

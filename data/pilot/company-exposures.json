@@ -1,0 +1,357 @@
+{
+  "fixture_data_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "note": "Primary/secondary exposures are computed by the classifier; this file stores coverage metadata and explicit competitor links.",
+  "segment_coverage": [
+    {
+      "company_key": "vz",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "t",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "tmus",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmcsa",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "chtr",
+      "coverage_ratio": 0.95,
+      "unallocated_weight": 0.05,
+      "is_complete": false,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cci",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amt",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mcd",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "sbux",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmg",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "yum",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dpz",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dri",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qsr",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txrh",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nvda",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amd",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "intc",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "avgo",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qcom",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txn",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "adi",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mu",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amat",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "lrcx",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "klac",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nxpi",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "gfs",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mrvl",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mpwr",
+      "coverage_ratio": 1,
+      "unallocated_weight": 0,
+      "is_complete": true,
+      "quality": "derived",
+      "as_of": "2026-06-30"
+    }
+  ],
+  "explicit_competitors": [
+    {
+      "company_key": "vz",
+      "competitor_company_key": "t",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "vz",
+      "competitor_company_key": "tmus",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "t",
+      "competitor_company_key": "vz",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "t",
+      "competitor_company_key": "tmus",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "tmus",
+      "competitor_company_key": "vz",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "tmus",
+      "competitor_company_key": "t",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "mcd",
+      "competitor_company_key": "yum",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "mcd",
+      "competitor_company_key": "qsr",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "yum",
+      "competitor_company_key": "mcd",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "yum",
+      "competitor_company_key": "qsr",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "qsr",
+      "competitor_company_key": "yum",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "qsr",
+      "competitor_company_key": "mcd",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "nvda",
+      "competitor_company_key": "amd",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "amd",
+      "competitor_company_key": "nvda",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "amd",
+      "competitor_company_key": "intc",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "intc",
+      "competitor_company_key": "amd",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "amat",
+      "competitor_company_key": "lrcx",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    },
+    {
+      "company_key": "lrcx",
+      "competitor_company_key": "amat",
+      "quality": "manually_classified",
+      "note": "Curated competitor link for candidate generation"
+    }
+  ]
+}

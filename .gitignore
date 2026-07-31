@@ -2,3 +2,16 @@ node_modules
 dist
 .DS_Store
 *.local
+.env
+data/raw/
+!data/raw/.gitkeep
+!data/fixtures/
+reports/phase3/*.json
+!reports/phase3/.gitkeep
+reports/phase3.5/*.json
+!reports/phase3.5/.gitkeep
+reports/phase3.6/*.json
+!reports/phase3.6/.gitkeep
+reports/phase3.7/*.json
+!reports/phase3.7/.gitkeep
+exports/snapshots/.staging-*/

@@ -1,0 +1,462 @@
+{
+  "fixture_data_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "exposures": [
+    {
+      "company_key": "vz",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.96,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "vz",
+      "geo_code": "OTHER",
+      "geo_name": "Other",
+      "weight": 0.04,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "t",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.95,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "t",
+      "geo_code": "OTHER",
+      "geo_name": "Other",
+      "weight": 0.05,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "tmus",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmcsa",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.85,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmcsa",
+      "geo_code": "OTHER",
+      "geo_name": "Other",
+      "weight": 0.15,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "chtr",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cci",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 1,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amt",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.45,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amt",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.55,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mcd",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.4,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mcd",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.6,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "sbux",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.7,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "sbux",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.3,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmg",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.97,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "cmg",
+      "geo_code": "OTHER",
+      "geo_name": "Other",
+      "weight": 0.03,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "yum",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.45,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "yum",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.55,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dpz",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.55,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dpz",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.45,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dri",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.98,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "dri",
+      "geo_code": "OTHER",
+      "geo_name": "Other",
+      "weight": 0.02,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qsr",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.5,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qsr",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.5,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txrh",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.95,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txrh",
+      "geo_code": "OTHER",
+      "geo_name": "Other",
+      "weight": 0.05,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nvda",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.45,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nvda",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.55,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amd",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.3,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amd",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.7,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "intc",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.25,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "intc",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.75,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "avgo",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.3,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "avgo",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.7,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qcom",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.2,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "qcom",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.8,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txn",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.3,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "txn",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.7,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "adi",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.25,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "adi",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.75,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mu",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.2,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mu",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.8,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amat",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.2,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "amat",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.8,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "lrcx",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.15,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "lrcx",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.85,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "klac",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.2,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "klac",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.8,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nxpi",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.2,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "nxpi",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.8,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "gfs",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.35,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "gfs",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.65,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mrvl",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.35,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mrvl",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.65,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mpwr",
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 0.2,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    },
+    {
+      "company_key": "mpwr",
+      "geo_code": "OTHER",
+      "geo_name": "International",
+      "weight": 0.8,
+      "quality": "illustrative",
+      "as_of": "2026-06-30"
+    }
+  ]
+}

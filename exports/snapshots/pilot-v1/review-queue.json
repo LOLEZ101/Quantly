@@ -1,0 +1,156 @@
+{
+  "as_of": "2026-06-30",
+  "items": [
+    {
+      "review_item_id": "rev_gfs_no_close_operating",
+      "company_key": "gfs",
+      "severity": "moderate",
+      "reason_code": "no_close_peer",
+      "description": "gfs has no close operating peers in the pilot universe.",
+      "evidence_ids": [],
+      "suggested_action": "Expand universe, loosen threshold, or accept as sparse peer set.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_adi_nxpi",
+      "company_pair": [
+        "adi",
+        "nxpi"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between adi and nxpi.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_adi_txn",
+      "company_pair": [
+        "adi",
+        "txn"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between adi and txn.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_avgo_mrvl",
+      "company_pair": [
+        "avgo",
+        "mrvl"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between avgo and mrvl.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_dpz_mcd",
+      "company_pair": [
+        "dpz",
+        "mcd"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between dpz and mcd.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_mcd_dpz",
+      "company_pair": [
+        "mcd",
+        "dpz"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between mcd and dpz.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_mpwr_txn",
+      "company_pair": [
+        "mpwr",
+        "txn"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between mpwr and txn.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_mrvl_avgo",
+      "company_pair": [
+        "mrvl",
+        "avgo"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between mrvl and avgo.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_nxpi_adi",
+      "company_pair": [
+        "nxpi",
+        "adi"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between nxpi and adi.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_txn_adi",
+      "company_pair": [
+        "txn",
+        "adi"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between txn and adi.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    },
+    {
+      "review_item_id": "rev_recip_txn_mpwr",
+      "company_pair": [
+        "txn",
+        "mpwr"
+      ],
+      "severity": "low",
+      "reason_code": "reciprocity_inconsistent",
+      "description": "Direct-competitor scores differ materially between txn and mpwr.",
+      "evidence_ids": [],
+      "suggested_action": "Inspect asymmetric diversification/size effects; usually acceptable.",
+      "created_date": "2026-06-30",
+      "status": "pending"
+    }
+  ]
+}

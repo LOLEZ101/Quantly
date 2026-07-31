@@ -1,0 +1,90 @@
+{
+  "entityName": "Chipotle Mexican Grill, Inc.",
+  "cik": "1058090",
+  "facts": {
+    "us-gaap": {
+      "Revenues": {
+        "label": "Revenues",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 51000000000,
+              "accn": "0001058090-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "OperatingIncomeLoss": {
+        "label": "Operating Income (Loss)",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 10200000000,
+              "accn": "0001058090-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15",
+              "frame": "CY2024"
+            }
+          ]
+        }
+      },
+      "Assets": {
+        "label": "Assets",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 102000000000,
+              "accn": "0001058090-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15"
+            }
+          ]
+        }
+      },
+      "LongTermDebt": {
+        "label": "Long-term Debt",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 20400000000,
+              "accn": "0001058090-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15"
+            }
+          ]
+        }
+      },
+      "ResearchAndDevelopmentExpense": {
+        "label": "Research and Development Expense",
+        "units": {
+          "USD": [
+            {
+              "end": "2024-12-31",
+              "val": 1020000000,
+              "accn": "0001058090-24-0001",
+              "fy": 2024,
+              "fp": "FY",
+              "form": "10-K",
+              "filed": "2025-02-15"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "publishable": false,
+  "official": false,
+  "publication_status": "website_ready_not_official",
+  "errors": [],
+  "warnings": [
+    "Live EDGAR full financial coverage 0/30",
+    "Live EDGAR acceptance-set coverage 0/5",
+    "PostgreSQL end-to-end persistence not completed in this run"
+  ],
+  "processing_run_id": "run_phase36_2026-07-31T180000000Z"
+}

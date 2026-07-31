@@ -1,0 +1,110 @@
+{
+  "response_type": "company_profile",
+  "taxonomy_version": "1.0.0",
+  "as_of": "2026-07-31",
+  "snapshot_id": "snap_pilot_2026_07_31",
+  "company": {
+    "company_key": "example-wireless",
+    "legal_name": "Example Wireless Inc.",
+    "display_name": "Example Wireless",
+    "cik": "0000000001",
+    "lei": null,
+    "country_of_domicile": "US",
+    "description": "National facilities-based wireless carrier.",
+    "website": "https://example-wireless.test",
+    "is_active": true
+  },
+  "securities": [
+    {
+      "ticker": "EXW",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "security_type": "common_equity",
+      "isin": null,
+      "cusip": null,
+      "is_primary": true
+    }
+  ],
+  "index_membership": [
+    {
+      "index_code": "SPX",
+      "index_name": "S&P 500",
+      "effective_from": "2020-01-01",
+      "effective_to": null
+    }
+  ],
+  "business_segments": [
+    {
+      "segment_key": "wireless_service",
+      "segment_name": "Wireless Service",
+      "node_id": "national_wireless_network_owners",
+      "revenue_weight": 0.85,
+      "confidence": 0.9,
+      "is_manual": false,
+      "fiscal_year": 2025
+    },
+    {
+      "segment_key": "equipment",
+      "segment_name": "Equipment",
+      "node_id": null,
+      "revenue_weight": 0.15,
+      "confidence": 0.8,
+      "is_manual": false,
+      "fiscal_year": 2025
+    }
+  ],
+  "customer_exposures": [
+    {
+      "customer_type": "consumer",
+      "weight": 0.8,
+      "confidence": 0.85,
+      "is_manual": false
+    },
+    {
+      "customer_type": "enterprise",
+      "weight": 0.2,
+      "confidence": 0.8,
+      "is_manual": false
+    }
+  ],
+  "geographic_exposures": [
+    {
+      "geo_code": "US",
+      "geo_name": "United States",
+      "weight": 1.0,
+      "confidence": 0.95,
+      "is_manual": false
+    }
+  ],
+  "revenue_models": [
+    {
+      "model_code": "subscription_service",
+      "model_name": "Subscription Service",
+      "weight": 1.0,
+      "confidence": 0.9,
+      "is_manual": false
+    }
+  ],
+  "infrastructure_models": [
+    {
+      "model_code": "network_owner",
+      "model_name": "Network Owner",
+      "weight": 1.0,
+      "confidence": 0.95,
+      "is_manual": false,
+      "notes": "Owns spectrum and RAN"
+    }
+  ],
+  "financial_snapshot": {
+    "as_of_date": "2026-06-30",
+    "currency": "USD",
+    "market_cap": 100000000000,
+    "enterprise_value": 130000000000,
+    "revenue_ttm": 80000000000,
+    "revenue_growth_yoy": 0.03,
+    "gross_margin": 0.6,
+    "operating_margin": 0.2,
+    "ebitda_margin": 0.35,
+    "source": "fixture"
+  }
+}

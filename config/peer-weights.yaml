@@ -1,0 +1,202 @@
+# Peer scoring weight profiles by peer_type.
+# Factor weights within each profile must sum to 1.0 (±0.001).
+# Scores and components are constrained to [0, 1].
+
+peer_model_version: "1.1.0"
+effective_date: "2026-07-31"
+score_bounds:
+  min: 0.0
+  max: 1.0
+
+# Factors available to scoring profiles
+factors:
+  taxonomy_proximity:
+    description: Same peer_cluster > sibling > ancestor overlap > adjacent category.
+  business_model_similarity:
+    description: Overlap in revenue_model and infrastructure_model facets.
+  segment_overlap:
+    description: Weighted Jaccard / cosine over business-segment exposures.
+  customer_overlap:
+    description: Similarity of customer exposure mix (consumer/enterprise/etc.).
+  geographic_overlap:
+    description: Similarity of geographic revenue mix.
+  size_similarity:
+    description: Proximity in market cap / revenue bands.
+  margin_similarity:
+    description: Proximity in gross and operating margin profiles.
+  growth_similarity:
+    description: Proximity in revenue growth.
+  competitive_overlap:
+    description: Shared end markets or explicit competitive mentions in evidence.
+  manual_assignment:
+    description: Explicit analyst assignment used by custom peer sets.
+  capital_intensity_similarity:
+    description: Similarity of capex intensity / infrastructure ownership models.
+  leverage_similarity:
+    description: Similarity of leverage / balance-sheet risk profiles.
+
+peer_types:
+  economic:
+    description: Economically comparable peers for fundamental business comparison.
+    default_threshold: 0.55
+    weights:
+      taxonomy_proximity: 0.35
+      business_model_similarity: 0.20
+      segment_overlap: 0.15
+      customer_overlap: 0.10
+      geographic_overlap: 0.05
+      size_similarity: 0.10
+      margin_similarity: 0.05
+      growth_similarity: 0.00
+      competitive_overlap: 0.00
+      manual_assignment: 0.00
+      capital_intensity_similarity: 0.00
+      leverage_similarity: 0.00
+
+  valuation:
+    description: Peers suitable for multiple-based valuation after economic filtering.
+    default_threshold: 0.50
+    weights:
+      taxonomy_proximity: 0.20
+      business_model_similarity: 0.10
+      segment_overlap: 0.10
+      customer_overlap: 0.05
+      geographic_overlap: 0.05
+      size_similarity: 0.20
+      margin_similarity: 0.15
+      growth_similarity: 0.15
+      competitive_overlap: 0.00
+      manual_assignment: 0.00
+      capital_intensity_similarity: 0.00
+      leverage_similarity: 0.00
+
+  competitive:
+    description: Companies that contest the same customers or end markets.
+    default_threshold: 0.45
+    weights:
+      taxonomy_proximity: 0.15
+      business_model_similarity: 0.10
+      segment_overlap: 0.15
+      customer_overlap: 0.20
+      geographic_overlap: 0.10
+      size_similarity: 0.05
+      margin_similarity: 0.00
+      growth_similarity: 0.00
+      competitive_overlap: 0.25
+      manual_assignment: 0.00
+      capital_intensity_similarity: 0.00
+      leverage_similarity: 0.00
+
+  custom:
+    description: Analyst-defined peer sets; score is fully manual.
+    default_threshold: 0.00
+    weights:
+      taxonomy_proximity: 0.00
+      business_model_similarity: 0.00
+      segment_overlap: 0.00
+      customer_overlap: 0.00
+      geographic_overlap: 0.00
+      size_similarity: 0.00
+      margin_similarity: 0.00
+      growth_similarity: 0.00
+      competitive_overlap: 0.00
+      manual_assignment: 1.00
+      capital_intensity_similarity: 0.00
+      leverage_similarity: 0.00
+
+  # Phase-2 peer types (additive; Phase-1 types retained for contract compatibility)
+  direct_competitor:
+    description: Companies that contest the same end products and customers.
+    default_threshold: 0.50
+    weights:
+      taxonomy_proximity: 0.20
+      business_model_similarity: 0.10
+      segment_overlap: 0.20
+      customer_overlap: 0.15
+      geographic_overlap: 0.05
+      size_similarity: 0.05
+      margin_similarity: 0.00
+      growth_similarity: 0.00
+      competitive_overlap: 0.25
+      manual_assignment: 0.00
+      capital_intensity_similarity: 0.00
+      leverage_similarity: 0.00
+
+  operating:
+    description: Peers with similar operating and infrastructure economics.
+    default_threshold: 0.55
+    weights:
+      taxonomy_proximity: 0.30
+      business_model_similarity: 0.25
+      segment_overlap: 0.15
+      customer_overlap: 0.05
+      geographic_overlap: 0.05
+      size_similarity: 0.05
+      margin_similarity: 0.05
+      growth_similarity: 0.00
+      competitive_overlap: 0.00
+      manual_assignment: 0.00
+      capital_intensity_similarity: 0.10
+      leverage_similarity: 0.00
+
+  growth:
+    description: Peers selected for growth-profile comparability.
+    default_threshold: 0.45
+    weights:
+      taxonomy_proximity: 0.15
+      business_model_similarity: 0.10
+      segment_overlap: 0.10
+      customer_overlap: 0.05
+      geographic_overlap: 0.05
+      size_similarity: 0.10
+      margin_similarity: 0.05
+      growth_similarity: 0.35
+      competitive_overlap: 0.05
+      manual_assignment: 0.00
+      capital_intensity_similarity: 0.00
+      leverage_similarity: 0.00
+
+  risk:
+    description: Peers for industry, infrastructure, or balance-sheet risk comparison.
+    default_threshold: 0.40
+    weights:
+      taxonomy_proximity: 0.10
+      business_model_similarity: 0.10
+      segment_overlap: 0.05
+      customer_overlap: 0.05
+      geographic_overlap: 0.10
+      size_similarity: 0.10
+      margin_similarity: 0.10
+      growth_similarity: 0.05
+      competitive_overlap: 0.00
+      manual_assignment: 0.00
+      capital_intensity_similarity: 0.20
+      leverage_similarity: 0.15
+
+  market_behavior:
+    description: Peers that may co-move with shared industry narratives (not valuation peers).
+    default_threshold: 0.40
+    weights:
+      taxonomy_proximity: 0.20
+      business_model_similarity: 0.10
+      segment_overlap: 0.10
+      customer_overlap: 0.10
+      geographic_overlap: 0.10
+      size_similarity: 0.10
+      margin_similarity: 0.05
+      growth_similarity: 0.10
+      competitive_overlap: 0.05
+      manual_assignment: 0.00
+      capital_intensity_similarity: 0.05
+      leverage_similarity: 0.05
+
+# Soft boosts applied after weighted sum, then re-clamped to [0, 1]
+modifiers:
+  same_primary_peer_cluster:
+    boost: 0.10
+    description: Applied when both companies share the same primary peer_cluster.
+  adjacent_category_match:
+    boost: 0.05
+    description: Applied when primary clusters are linked in adjacent-categories.yaml.
+  manual_override_lock:
+    description: If either side has a locked custom peer set, automated scores are informational only.

@@ -1,0 +1,12 @@
+{
+  "companies_upserted": 30,
+  "source_payloads_inserted": 90,
+  "facts_upserted": 210,
+  "sections_upserted": 0,
+  "evidence_candidates_upserted": 0,
+  "identifier_resolutions": 30,
+  "classifications": 30,
+  "peer_relationships": 797,
+  "review_items": 14,
+  "complete": true
+}

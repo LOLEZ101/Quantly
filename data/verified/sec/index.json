@@ -1,0 +1,308 @@
+{
+  "generated_at": "2026-07-31T00:00:00.000Z",
+  "note": "Independent offline SEC-like fixtures for Phase 3.5. Not derived from Phase-2 curated pilot JSON. Not full EDGAR archives.",
+  "provenance_class": "independent_offline_verified_excerpt",
+  "verified_corpus_version": "1.0.0",
+  "companies": {
+    "vz": {
+      "cik": "0000732712",
+      "ticker": "VZ",
+      "submissions": "submissions/CIK0000732712.json",
+      "companyfacts": "companyfacts/CIK0000732712.json",
+      "annual_filing": "filings/vz-0000732712-24-0001.json",
+      "annual_document": "documents/vz-0000732712-24-0001.htm",
+      "content_hash": "1b5763397016fb5f99b8f132a4a97fb233ecb12dde057808244255304a553720",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "t": {
+      "cik": "0000732717",
+      "ticker": "T",
+      "submissions": "submissions/CIK0000732717.json",
+      "companyfacts": "companyfacts/CIK0000732717.json",
+      "annual_filing": "filings/t-0000732717-24-0001.json",
+      "annual_document": "documents/t-0000732717-24-0001.htm",
+      "content_hash": "14ec55d522d79d86834098508b9fc7b5b067df8c8c9838ce422ae12b60f78deb",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "tmus": {
+      "cik": "0001283699",
+      "ticker": "TMUS",
+      "submissions": "submissions/CIK0001283699.json",
+      "companyfacts": "companyfacts/CIK0001283699.json",
+      "annual_filing": "filings/tmus-0001283699-24-0001.json",
+      "annual_document": "documents/tmus-0001283699-24-0001.htm",
+      "content_hash": "4193857d08cf4e3ebcac83b35404a6fbecea9b93c656d7477fdbfc74eae975f0",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "cmcsa": {
+      "cik": "0001166691",
+      "ticker": "CMCSA",
+      "submissions": "submissions/CIK0001166691.json",
+      "companyfacts": "companyfacts/CIK0001166691.json",
+      "annual_filing": "filings/cmcsa-0001166691-24-0001.json",
+      "annual_document": "documents/cmcsa-0001166691-24-0001.htm",
+      "content_hash": "3e2d1f3114a1d31848d4e30d258687a48ffadce96228d05cb5deebfaa49ae555",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "chtr": {
+      "cik": "0001091667",
+      "ticker": "CHTR",
+      "submissions": "submissions/CIK0001091667.json",
+      "companyfacts": "companyfacts/CIK0001091667.json",
+      "annual_filing": "filings/chtr-0001091667-24-0001.json",
+      "annual_document": "documents/chtr-0001091667-24-0001.htm",
+      "content_hash": "153f14e787720f85bc86f0f2b34b057247d047f08ab7caf2287f3b67c1fdca01",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "cci": {
+      "cik": "0001051470",
+      "ticker": "CCI",
+      "submissions": "submissions/CIK0001051470.json",
+      "companyfacts": "companyfacts/CIK0001051470.json",
+      "annual_filing": "filings/cci-0001051470-24-0001.json",
+      "annual_document": "documents/cci-0001051470-24-0001.htm",
+      "content_hash": "b8a9b494e4557876eb69c29fa691338e3eeff436ff521d3199608a17864d089b",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "amt": {
+      "cik": "0001053507",
+      "ticker": "AMT",
+      "submissions": "submissions/CIK0001053507.json",
+      "companyfacts": "companyfacts/CIK0001053507.json",
+      "annual_filing": "filings/amt-0001053507-24-0001.json",
+      "annual_document": "documents/amt-0001053507-24-0001.htm",
+      "content_hash": "8a9a987f9b12fb5cc9ad46398bda7d28de85da46010a247252176e1e703081fc",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "mcd": {
+      "cik": "0000063908",
+      "ticker": "MCD",
+      "submissions": "submissions/CIK0000063908.json",
+      "companyfacts": "companyfacts/CIK0000063908.json",
+      "annual_filing": "filings/mcd-0000063908-24-0001.json",
+      "annual_document": "documents/mcd-0000063908-24-0001.htm",
+      "content_hash": "71338a36928d006276ddccfd39d37d28891c73d7b82ff8a1624a0b7bf8f36a47",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "sbux": {
+      "cik": "0000829224",
+      "ticker": "SBUX",
+      "submissions": "submissions/CIK0000829224.json",
+      "companyfacts": "companyfacts/CIK0000829224.json",
+      "annual_filing": "filings/sbux-0000829224-24-0001.json",
+      "annual_document": "documents/sbux-0000829224-24-0001.htm",
+      "content_hash": "f8f0cf8ad102223030224f2854b53fc34084c5b5fae516fc0726b43e45afbd88",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "cmg": {
+      "cik": "0001058090",
+      "ticker": "CMG",
+      "submissions": "submissions/CIK0001058090.json",
+      "companyfacts": "companyfacts/CIK0001058090.json",
+      "annual_filing": "filings/cmg-0001058090-24-0001.json",
+      "annual_document": "documents/cmg-0001058090-24-0001.htm",
+      "content_hash": "dd93fe2f52c86a3563d11935661a23fb367fdfde44c1b155c0385bd4c63d0b70",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "yum": {
+      "cik": "0001041061",
+      "ticker": "YUM",
+      "submissions": "submissions/CIK0001041061.json",
+      "companyfacts": "companyfacts/CIK0001041061.json",
+      "annual_filing": "filings/yum-0001041061-24-0001.json",
+      "annual_document": "documents/yum-0001041061-24-0001.htm",
+      "content_hash": "fb1d4eeb38587f2b29cd3b5736d0115ba78536ab5bf05da3ae9b6cd5b16471f8",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "dpz": {
+      "cik": "0001286681",
+      "ticker": "DPZ",
+      "submissions": "submissions/CIK0001286681.json",
+      "companyfacts": "companyfacts/CIK0001286681.json",
+      "annual_filing": "filings/dpz-0001286681-24-0001.json",
+      "annual_document": "documents/dpz-0001286681-24-0001.htm",
+      "content_hash": "81efba9a5e056d3eafd56501e3b8efe97ba61b85f4180cf3a1b8c67b781baed0",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "dri": {
+      "cik": "0000940944",
+      "ticker": "DRI",
+      "submissions": "submissions/CIK0000940944.json",
+      "companyfacts": "companyfacts/CIK0000940944.json",
+      "annual_filing": "filings/dri-0000940944-24-0001.json",
+      "annual_document": "documents/dri-0000940944-24-0001.htm",
+      "content_hash": "e1872a175f8d3430a12e76a438716ae69b08ad907cf236168327c98532b7b16b",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "qsr": {
+      "cik": "0001618756",
+      "ticker": "QSR",
+      "submissions": "submissions/CIK0001618756.json",
+      "companyfacts": "companyfacts/CIK0001618756.json",
+      "annual_filing": "filings/qsr-0001618756-24-0001.json",
+      "annual_document": "documents/qsr-0001618756-24-0001.htm",
+      "content_hash": "fc14af39e9128821a268cf20b9fa01809fad0e8ec55396f619ebb92b72ea7f7e",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "txrh": {
+      "cik": "0001289460",
+      "ticker": "TXRH",
+      "submissions": "submissions/CIK0001289460.json",
+      "companyfacts": "companyfacts/CIK0001289460.json",
+      "annual_filing": "filings/txrh-0001289460-24-0001.json",
+      "annual_document": "documents/txrh-0001289460-24-0001.htm",
+      "content_hash": "82aa191614baa35448c512085526e6ee60b6252dc6541ccc7f1f63aafd797bbb",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "nvda": {
+      "cik": "0001045810",
+      "ticker": "NVDA",
+      "submissions": "submissions/CIK0001045810.json",
+      "companyfacts": "companyfacts/CIK0001045810.json",
+      "annual_filing": "filings/nvda-0001045810-24-0001.json",
+      "annual_document": "documents/nvda-0001045810-24-0001.htm",
+      "content_hash": "cebfed8fe900b26ad84b399c92b1b87ef6b8906f8c92ab91515e78e54989fc6e",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "amd": {
+      "cik": "0000002488",
+      "ticker": "AMD",
+      "submissions": "submissions/CIK0000002488.json",
+      "companyfacts": "companyfacts/CIK0000002488.json",
+      "annual_filing": "filings/amd-0000002488-24-0001.json",
+      "annual_document": "documents/amd-0000002488-24-0001.htm",
+      "content_hash": "ad645d7ecda014ef6ef48d26b47188d39971bd31be69a141297fdf2a20697f2e",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "intc": {
+      "cik": "0000050863",
+      "ticker": "INTC",
+      "submissions": "submissions/CIK0000050863.json",
+      "companyfacts": "companyfacts/CIK0000050863.json",
+      "annual_filing": "filings/intc-0000050863-24-0001.json",
+      "annual_document": "documents/intc-0000050863-24-0001.htm",
+      "content_hash": "61c143a942f344d4ab4a987481dc1929fd8b580048c7a0f44df764515b804c96",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "avgo": {
+      "cik": "0001730168",
+      "ticker": "AVGO",
+      "submissions": "submissions/CIK0001730168.json",
+      "companyfacts": "companyfacts/CIK0001730168.json",
+      "annual_filing": "filings/avgo-0001730168-24-0001.json",
+      "annual_document": "documents/avgo-0001730168-24-0001.htm",
+      "content_hash": "41a846eac59b85c46cb04875df8b71969528db0929e1f00d77fa037d098548d2",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "qcom": {
+      "cik": "0000804328",
+      "ticker": "QCOM",
+      "submissions": "submissions/CIK0000804328.json",
+      "companyfacts": "companyfacts/CIK0000804328.json",
+      "annual_filing": "filings/qcom-0000804328-24-0001.json",
+      "annual_document": "documents/qcom-0000804328-24-0001.htm",
+      "content_hash": "43ff172d17e358c034c4d5256cd505c9b41e72653b31b16b327e0bd624d2b666",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "txn": {
+      "cik": "0000097476",
+      "ticker": "TXN",
+      "submissions": "submissions/CIK0000097476.json",
+      "companyfacts": "companyfacts/CIK0000097476.json",
+      "annual_filing": "filings/txn-0000097476-24-0001.json",
+      "annual_document": "documents/txn-0000097476-24-0001.htm",
+      "content_hash": "60c7894a630b3dcacb295b7893028318b40ec9881afca5eb0d25573b80cfe9aa",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "adi": {
+      "cik": "0000006281",
+      "ticker": "ADI",
+      "submissions": "submissions/CIK0000006281.json",
+      "companyfacts": "companyfacts/CIK0000006281.json",
+      "annual_filing": "filings/adi-0000006281-24-0001.json",
+      "annual_document": "documents/adi-0000006281-24-0001.htm",
+      "content_hash": "5fb82f4757b7e31977b9fb03d95144ca4ff3ed7631adfe173628f1c77a990f90",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "mu": {
+      "cik": "0000723125",
+      "ticker": "MU",
+      "submissions": "submissions/CIK0000723125.json",
+      "companyfacts": "companyfacts/CIK0000723125.json",
+      "annual_filing": "filings/mu-0000723125-24-0001.json",
+      "annual_document": "documents/mu-0000723125-24-0001.htm",
+      "content_hash": "f3d96ee8b656acc4f773b7f35641e2927f5bff8a148216bc364b1fdb5d13b7ab",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "amat": {
+      "cik": "0000006951",
+      "ticker": "AMAT",
+      "submissions": "submissions/CIK0000006951.json",
+      "companyfacts": "companyfacts/CIK0000006951.json",
+      "annual_filing": "filings/amat-0000006951-24-0001.json",
+      "annual_document": "documents/amat-0000006951-24-0001.htm",
+      "content_hash": "f0f384694a1442fe86388b410589790b53340f98fedbc96d185e95ca6fe32748",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "lrcx": {
+      "cik": "0000707549",
+      "ticker": "LRCX",
+      "submissions": "submissions/CIK0000707549.json",
+      "companyfacts": "companyfacts/CIK0000707549.json",
+      "annual_filing": "filings/lrcx-0000707549-24-0001.json",
+      "annual_document": "documents/lrcx-0000707549-24-0001.htm",
+      "content_hash": "e4bce33eb5b020aa365e1ece7539a1120e86f25aa2c34ebe5ff2083fd163f47c",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "klac": {
+      "cik": "0000319201",
+      "ticker": "KLAC",
+      "submissions": "submissions/CIK0000319201.json",
+      "companyfacts": "companyfacts/CIK0000319201.json",
+      "annual_filing": "filings/klac-0000319201-24-0001.json",
+      "annual_document": "documents/klac-0000319201-24-0001.htm",
+      "content_hash": "e692ef20bfe70f50b7d3c8b1bbddb9a9a441b5ba36c1aad6849d91c8e78ab137",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "nxpi": {
+      "cik": "0001413447",
+      "ticker": "NXPI",
+      "submissions": "submissions/CIK0001413447.json",
+      "companyfacts": "companyfacts/CIK0001413447.json",
+      "annual_filing": "filings/nxpi-0001413447-24-0001.json",
+      "annual_document": "documents/nxpi-0001413447-24-0001.htm",
+      "content_hash": "020ab2f216a1ab49ec5a2ce075a334dd7508b5203d0686315e457b6f37ee4259",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "gfs": {
+      "cik": "0001709048",
+      "ticker": "GFS",
+      "submissions": "submissions/CIK0001709048.json",
+      "companyfacts": "companyfacts/CIK0001709048.json",
+      "annual_filing": "filings/gfs-0001709048-24-0001.json",
+      "annual_document": "documents/gfs-0001709048-24-0001.htm",
+      "content_hash": "c4cd7c7be05d876b87c8c4cab9b96511627f124eabcb2dfb968640b3aabd7b6b",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "mrvl": {
+      "cik": "0001835632",
+      "ticker": "MRVL",
+      "submissions": "submissions/CIK0001835632.json",
+      "companyfacts": "companyfacts/CIK0001835632.json",
+      "annual_filing": "filings/mrvl-0001835632-24-0001.json",
+      "annual_document": "documents/mrvl-0001835632-24-0001.htm",
+      "content_hash": "ff0870d30da65cd56153e7adc065fb05a7de31b527ab16322116095f550dfbf3",
+      "provenance_class": "independent_offline_verified_excerpt"
+    },
+    "mpwr": {
+      "cik": "0001280452",
+      "ticker": "MPWR",
+      "submissions": "submissions/CIK0001280452.json",
+      "companyfacts": "companyfacts/CIK0001280452.json",
+      "annual_filing": "filings/mpwr-0001280452-24-0001.json",
+      "annual_document": "documents/mpwr-0001280452-24-0001.htm",
+      "content_hash": "2374318a55b1a4945cfbf7d3f24be3a6347e47c2fc9233ce0333899808f24c6a",
+      "provenance_class": "independent_offline_verified_excerpt"
+    }
+  }
+}

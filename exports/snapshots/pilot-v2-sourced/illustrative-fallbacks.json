@@ -1,0 +1,617 @@
+{
+  "count": 153,
+  "items": [
+    {
+      "company_key": "vz",
+      "field": "size_band"
+    },
+    {
+      "company_key": "vz",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "vz",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "vz",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "vz",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "t",
+      "field": "size_band"
+    },
+    {
+      "company_key": "t",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "t",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "t",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "t",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "tmus",
+      "field": "size_band"
+    },
+    {
+      "company_key": "tmus",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "tmus",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "tmus",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "tmus",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "size_band"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "cmcsa",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "chtr",
+      "field": "size_band"
+    },
+    {
+      "company_key": "chtr",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "chtr",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "chtr",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "chtr",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "cci",
+      "field": "size_band"
+    },
+    {
+      "company_key": "cci",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "cci",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "cci",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "cci",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "amt",
+      "field": "size_band"
+    },
+    {
+      "company_key": "amt",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "amt",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "amt",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "amt",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "mcd",
+      "field": "size_band"
+    },
+    {
+      "company_key": "mcd",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "mcd",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "mcd",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "mcd",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "sbux",
+      "field": "size_band"
+    },
+    {
+      "company_key": "sbux",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "sbux",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "sbux",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "sbux",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "cmg",
+      "field": "size_band"
+    },
+    {
+      "company_key": "cmg",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "cmg",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "cmg",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "cmg",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "yum",
+      "field": "size_band"
+    },
+    {
+      "company_key": "yum",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "yum",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "yum",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "yum",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "dpz",
+      "field": "segment.us_stores"
+    },
+    {
+      "company_key": "dpz",
+      "field": "size_band"
+    },
+    {
+      "company_key": "dpz",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "dpz",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "dpz",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "dpz",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "dri",
+      "field": "size_band"
+    },
+    {
+      "company_key": "dri",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "dri",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "dri",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "dri",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "qsr",
+      "field": "size_band"
+    },
+    {
+      "company_key": "qsr",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "qsr",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "qsr",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "qsr",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "txrh",
+      "field": "size_band"
+    },
+    {
+      "company_key": "txrh",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "txrh",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "txrh",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "txrh",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "nvda",
+      "field": "size_band"
+    },
+    {
+      "company_key": "nvda",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "nvda",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "nvda",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "nvda",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "amd",
+      "field": "size_band"
+    },
+    {
+      "company_key": "amd",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "amd",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "amd",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "amd",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "intc",
+      "field": "size_band"
+    },
+    {
+      "company_key": "intc",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "intc",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "intc",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "intc",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "avgo",
+      "field": "size_band"
+    },
+    {
+      "company_key": "avgo",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "avgo",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "avgo",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "avgo",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "qcom",
+      "field": "segment.qct"
+    },
+    {
+      "company_key": "qcom",
+      "field": "segment.qtl"
+    },
+    {
+      "company_key": "qcom",
+      "field": "size_band"
+    },
+    {
+      "company_key": "qcom",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "qcom",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "qcom",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "qcom",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "txn",
+      "field": "size_band"
+    },
+    {
+      "company_key": "txn",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "txn",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "txn",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "txn",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "adi",
+      "field": "size_band"
+    },
+    {
+      "company_key": "adi",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "adi",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "adi",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "adi",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "mu",
+      "field": "size_band"
+    },
+    {
+      "company_key": "mu",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "mu",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "mu",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "mu",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "amat",
+      "field": "size_band"
+    },
+    {
+      "company_key": "amat",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "amat",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "amat",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "amat",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "size_band"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "lrcx",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "klac",
+      "field": "size_band"
+    },
+    {
+      "company_key": "klac",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "klac",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "klac",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "klac",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "size_band"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "nxpi",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "gfs",
+      "field": "size_band"
+    },
+    {
+      "company_key": "gfs",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "gfs",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "gfs",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "gfs",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "size_band"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "mrvl",
+      "field": "capital_intensity_band"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "size_band"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "revenue_growth_band"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "profitability_band"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "leverage_band"
+    },
+    {
+      "company_key": "mpwr",
+      "field": "capital_intensity_band"
+    }
+  ]
+}

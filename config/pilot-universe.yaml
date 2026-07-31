@@ -1,0 +1,69 @@
+# Pilot company universe — Phase 2
+fixture_data_version: "1.0.0"
+as_of: "2026-06-30"
+taxonomy_version: "1.0.0"
+company_keys:
+  - vz
+  - t
+  - tmus
+  - cmcsa
+  - chtr
+  - cci
+  - amt
+  - mcd
+  - sbux
+  - cmg
+  - yum
+  - dpz
+  - dri
+  - qsr
+  - txrh
+  - nvda
+  - amd
+  - intc
+  - avgo
+  - qcom
+  - txn
+  - adi
+  - mu
+  - amat
+  - lrcx
+  - klac
+  - nxpi
+  - gfs
+  - mrvl
+  - mpwr
+industries:
+  telecommunications:
+    - vz
+    - t
+    - tmus
+    - cmcsa
+    - chtr
+    - cci
+    - amt
+  restaurants:
+    - mcd
+    - sbux
+    - cmg
+    - yum
+    - dpz
+    - dri
+    - qsr
+    - txrh
+  semiconductors_and_equipment:
+    - nvda
+    - amd
+    - intc
+    - avgo
+    - qcom
+    - txn
+    - adi
+    - mu
+    - amat
+    - lrcx
+    - klac
+    - nxpi
+    - gfs
+    - mrvl
+    - mpwr

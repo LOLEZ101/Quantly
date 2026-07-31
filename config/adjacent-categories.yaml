@@ -1,0 +1,186 @@
+# Soft adjacency edges between taxonomy nodes (typically peer_cluster leaves).
+# Adjacency does not merge nodes; it influences peer scoring only.
+# Relationships are treated as undirected unless directed: true.
+
+adjacency_version: "1.0.0"
+effective_date: "2026-07-31"
+taxonomy_version: "1.0.0"
+
+relationships:
+  # Telecommunications
+  - id: adj_wireless_owners_cable
+    source_node_id: national_wireless_network_owners
+    target_node_id: cable_broadband_operators
+    strength: 0.6
+    rationale: Multi-play convergence; consumer connectivity substitutes and bundles.
+
+  - id: adj_wireless_owners_incumbent
+    source_node_id: national_wireless_network_owners
+    target_node_id: integrated_incumbent_telcos
+    strength: 0.7
+    rationale: Integrated telcos often have wireless; overlapping consumer connectivity.
+
+  - id: adj_cable_fiber
+    source_node_id: cable_broadband_operators
+    target_node_id: fiber_network_operators
+    strength: 0.8
+    rationale: Competing fixed broadband access technologies.
+
+  - id: adj_fiber_incumbent
+    source_node_id: fiber_network_operators
+    target_node_id: integrated_incumbent_telcos
+    strength: 0.7
+    rationale: Overlapping fixed access footprints and upgrade paths.
+
+  - id: adj_wireless_owners_mvno
+    source_node_id: national_wireless_network_owners
+    target_node_id: wireless_mvno_and_resellers
+    strength: 0.4
+    rationale: Same end market; different infrastructure model (owner vs renter).
+
+  - id: adj_wireless_owners_regional
+    source_node_id: national_wireless_network_owners
+    target_node_id: regional_wireless_operators
+    strength: 0.65
+    rationale: Same service category; scale and spectrum differ.
+
+  - id: adj_towers_wireless_owners
+    source_node_id: tower_and_macro_site_operators
+    target_node_id: national_wireless_network_owners
+    strength: 0.35
+    rationale: Customer-supplier linkage; not economic peers but relevant adjacency.
+
+  - id: adj_wholesale_fiber_fiber_ops
+    source_node_id: wholesale_fiber_and_backhaul
+    target_node_id: fiber_network_operators
+    strength: 0.5
+    rationale: Shared fiber assets; different go-to-market (wholesale vs retail).
+
+  - id: adj_enterprise_network_ucaas
+    source_node_id: enterprise_network_and_connectivity
+    target_node_id: collaboration_and_ucaas
+    strength: 0.55
+    rationale: Adjacent enterprise communications stacks.
+
+  # Restaurants
+  - id: adj_qsr_franchise_company
+    source_node_id: qsr_franchise_heavy
+    target_node_id: qsr_company_operated
+    strength: 0.75
+    rationale: Same format; operating model differs.
+
+  - id: adj_fast_casual_franchise_company
+    source_node_id: fast_casual_franchise_heavy
+    target_node_id: fast_casual_company_operated
+    strength: 0.75
+    rationale: Same format; operating model differs.
+
+  - id: adj_qsr_fast_casual_franchise
+    source_node_id: qsr_franchise_heavy
+    target_node_id: fast_casual_franchise_heavy
+    strength: 0.5
+    rationale: Neighboring limited-service formats with franchise economics.
+
+  - id: adj_qsr_fast_casual_company
+    source_node_id: qsr_company_operated
+    target_node_id: fast_casual_company_operated
+    strength: 0.5
+    rationale: Neighboring limited-service formats with company ops.
+
+  - id: adj_qsr_franchise_asset_light
+    source_node_id: qsr_franchise_heavy
+    target_node_id: restaurant_franchisors_asset_light
+    strength: 0.6
+    rationale: Franchise economics continuum; unit mix differs.
+
+  - id: adj_casual_fine
+    source_node_id: casual_dining
+    target_node_id: fine_dining_and_upscale
+    strength: 0.45
+    rationale: Full-service dining continuum.
+
+  - id: adj_fast_casual_casual
+    source_node_id: fast_casual_company_operated
+    target_node_id: casual_dining
+    strength: 0.35
+    rationale: Occasional cross-format consumer substitution; weaker peer link.
+
+  # Semiconductors — devices
+  - id: adj_fabless_compute_foundry
+    source_node_id: fabless_compute_and_ai_accelerators
+    target_node_id: semiconductor_foundries
+    strength: 0.3
+    rationale: Ecosystem dependency, not peer substitution.
+
+  - id: adj_fabless_mobile_foundry
+    source_node_id: fabless_mobile_and_consumer_soc
+    target_node_id: semiconductor_foundries
+    strength: 0.3
+    rationale: Ecosystem dependency, not peer substitution.
+
+  - id: adj_fabless_compute_mobile
+    source_node_id: fabless_compute_and_ai_accelerators
+    target_node_id: fabless_mobile_and_consumer_soc
+    strength: 0.55
+    rationale: Adjacent fabless design franchises; some portfolio overlap.
+
+  - id: adj_fabless_compute_networking
+    source_node_id: fabless_compute_and_ai_accelerators
+    target_node_id: fabless_connectivity_and_networking
+    strength: 0.4
+    rationale: Shared fabless model; different end markets.
+
+  - id: adj_idm_analog
+    source_node_id: integrated_device_manufacturers
+    target_node_id: analog_mixed_signal_and_power
+    strength: 0.5
+    rationale: Diversified IDMs often overlap analog/power franchises.
+
+  - id: adj_idm_foundry
+    source_node_id: integrated_device_manufacturers
+    target_node_id: semiconductor_foundries
+    strength: 0.35
+    rationale: Manufacturing-centric models; different customer structure.
+
+  - id: adj_dram_nand
+    source_node_id: dram_manufacturers
+    target_node_id: nand_and_other_memory
+    strength: 0.7
+    rationale: Memory cycle kinship; product differences remain material.
+
+  - id: adj_memory_idm
+    source_node_id: dram_manufacturers
+    target_node_id: integrated_device_manufacturers
+    strength: 0.35
+    rationale: Some IDMs participate in memory; usually distinct peer sets.
+
+  # Semiconductors — equipment
+  - id: adj_litho_etch
+    source_node_id: lithography_equipment
+    target_node_id: etch_deposition_and_clean
+    strength: 0.55
+    rationale: Front-end WFE peers across process steps.
+
+  - id: adj_etch_metrology
+    source_node_id: etch_deposition_and_clean
+    target_node_id: process_control_and_metrology
+    strength: 0.5
+    rationale: Correlated WFE spending cycles.
+
+  - id: adj_litho_metrology
+    source_node_id: lithography_equipment
+    target_node_id: process_control_and_metrology
+    strength: 0.45
+    rationale: Patterning ecosystem adjacency.
+
+  - id: adj_wfe_atp
+    source_node_id: etch_deposition_and_clean
+    target_node_id: assembly_test_and_packaging_equipment
+    strength: 0.3
+    rationale: Semi capex complex; front-end vs back-end distinction remains.
+
+  - id: adj_foundry_wfe_litho
+    source_node_id: semiconductor_foundries
+    target_node_id: lithography_equipment
+    strength: 0.25
+    rationale: Customer-supplier adjacency only.

@@ -1,0 +1,298 @@
+# Peer-type eligibility rules applied BEFORE weighted scoring.
+# result: eligible | eligible_with_penalty | ineligible
+version: "1.0.0"
+effective_date: "2026-07-31"
+taxonomy_version: "1.0.0"
+
+# Node sets referenced by rules
+node_sets:
+  fabless:
+    - fabless_compute_and_ai_accelerators
+    - fabless_mobile_and_consumer_soc
+    - fabless_connectivity_and_networking
+  foundries:
+    - semiconductor_foundries
+  idm:
+    - integrated_device_manufacturers
+  memory:
+    - dram_manufacturers
+    - nand_and_other_memory
+  analog:
+    - analog_mixed_signal_and_power
+  semi_equipment:
+    - lithography_equipment
+    - etch_deposition_and_clean
+    - process_control_and_metrology
+    - assembly_test_and_packaging_equipment
+  telecom_network_operators:
+    - national_wireless_network_owners
+    - regional_wireless_operators
+    - wireless_mvno_and_resellers
+    - cable_broadband_operators
+    - fiber_network_operators
+    - integrated_incumbent_telcos
+    - enterprise_network_and_connectivity
+  tower_infra:
+    - tower_and_macro_site_operators
+  wholesale_fiber:
+    - wholesale_fiber_and_backhaul
+  qsr:
+    - qsr_franchise_heavy
+    - qsr_company_operated
+    - qsr_hybrid_franchise
+  fast_casual:
+    - fast_casual_franchise_heavy
+    - fast_casual_company_operated
+    - fast_casual_hybrid_franchise
+  full_service:
+    - casual_dining
+    - fine_dining_and_upscale
+  restaurant_franchisors:
+    - restaurant_franchisors_asset_light
+  restaurants_all:
+    - qsr_franchise_heavy
+    - qsr_company_operated
+    - qsr_hybrid_franchise
+    - fast_casual_franchise_heavy
+    - fast_casual_company_operated
+    - fast_casual_hybrid_franchise
+    - casual_dining
+    - fine_dining_and_upscale
+    - restaurant_franchisors_asset_light
+  telecom_all:
+    - national_wireless_network_owners
+    - regional_wireless_operators
+    - wireless_mvno_and_resellers
+    - cable_broadband_operators
+    - fiber_network_operators
+    - integrated_incumbent_telcos
+    - tower_and_macro_site_operators
+    - wholesale_fiber_and_backhaul
+    - enterprise_network_and_connectivity
+    - collaboration_and_ucaas
+  semi_devices_all:
+    - fabless_compute_and_ai_accelerators
+    - fabless_mobile_and_consumer_soc
+    - fabless_connectivity_and_networking
+    - integrated_device_manufacturers
+    - semiconductor_foundries
+    - dram_manufacturers
+    - nand_and_other_memory
+    - analog_mixed_signal_and_power
+  compute_fabless:
+    - fabless_compute_and_ai_accelerators
+
+# Phase-2 peer types (Phase-1 types remain valid in contracts)
+peer_types:
+  - direct_competitor
+  - operating
+  - valuation
+  - growth
+  - risk
+  - market_behavior
+  # legacy aliases retained for contract compatibility
+  - competitive
+  - economic
+  - custom
+
+rules:
+  - id: excl_foundry_fabless_direct
+    description: Foundries are suppliers to fabless designers, not direct competitors.
+    when:
+      one_in: foundries
+      other_in: fabless
+    peer_types: [direct_competitor, competitive]
+    result: ineligible
+
+  - id: excl_foundry_fabless_operating
+    description: Operating models differ (capacity seller vs chip designer).
+    when:
+      one_in: foundries
+      other_in: fabless
+    peer_types: [operating, economic]
+    result: ineligible
+
+  - id: excl_foundry_fabless_valuation
+    description: Valuation multiples are not directly comparable across foundry vs fabless.
+    when:
+      one_in: foundries
+      other_in: fabless
+    peer_types: [valuation]
+    result: ineligible
+
+  - id: allow_foundry_fabless_risk
+    description: Shared industry cycle / geo-manufacturing risk may still be relevant.
+    when:
+      one_in: foundries
+      other_in: fabless
+    peer_types: [risk, market_behavior]
+    result: eligible_with_penalty
+    penalty: 0.15
+
+  - id: excl_equipment_devices_direct
+    description: Equipment suppliers are not chip-product competitors.
+    when:
+      one_in: semi_equipment
+      other_in: [fabless, idm, memory, analog, foundries]
+    peer_types: [direct_competitor, competitive]
+    result: ineligible
+
+  - id: excl_equipment_devices_operating
+    description: Capex-tool vendors vs device makers are different operating models.
+    when:
+      one_in: semi_equipment
+      other_in: [fabless, idm, memory, analog, foundries]
+    peer_types: [operating, economic]
+    result: ineligible
+
+  - id: excl_equipment_devices_valuation
+    description: Normally exclude equipment vs devices for valuation peers.
+    when:
+      one_in: semi_equipment
+      other_in: [fabless, idm, memory, analog, foundries]
+    peer_types: [valuation]
+    result: ineligible
+
+  - id: allow_equipment_devices_risk
+    description: Semiconductor industry-risk and market-behavior comparisons may include equipment.
+    when:
+      one_in: semi_equipment
+      other_in: [fabless, idm, memory, analog, foundries]
+    peer_types: [risk, market_behavior]
+    result: eligible_with_penalty
+    penalty: 0.10
+
+  - id: excl_tower_operator_direct
+    description: Tower landlords are not telecom network-service competitors.
+    when:
+      one_in: tower_infra
+      other_in: telecom_network_operators
+    peer_types: [direct_competitor, competitive]
+    result: ineligible
+
+  - id: excl_tower_operator_operating
+    description: Infrastructure REIT/landlord model vs carrier operating model.
+    when:
+      one_in: tower_infra
+      other_in: telecom_network_operators
+    peer_types: [operating, economic]
+    result: ineligible
+
+  - id: excl_tower_operator_valuation
+    description: Generally exclude towers vs carriers for valuation peers.
+    when:
+      one_in: tower_infra
+      other_in: telecom_network_operators
+    peer_types: [valuation]
+    result: ineligible
+
+  - id: allow_tower_operator_risk
+    description: Infrastructure / capital-intensity / rate-risk comparisons may include towers.
+    when:
+      one_in: tower_infra
+      other_in: telecom_network_operators
+    peer_types: [risk, market_behavior, growth]
+    result: eligible_with_penalty
+    penalty: 0.12
+
+  - id: penalty_idm_fabless_operating
+    description: IDM vs fabless can compete in products but differ in manufacturing model.
+    when:
+      one_in: idm
+      other_in: fabless
+    peer_types: [operating, economic, valuation]
+    result: eligible_with_penalty
+    penalty: 0.18
+
+  - id: penalty_idm_fabless_direct
+    description: Product overlap may exist; still imperfect operating comparability.
+    when:
+      one_in: idm
+      other_in: fabless
+    peer_types: [direct_competitor, competitive]
+    result: eligible_with_penalty
+    penalty: 0.10
+
+  - id: penalty_qsr_fast_casual_operating
+    description: Neighboring limited-service formats; not equally close operating peers.
+    when:
+      one_in: qsr
+      other_in: fast_casual
+    peer_types: [operating, economic]
+    result: eligible_with_penalty
+    penalty: 0.12
+
+  - id: penalty_franchise_vs_company_ops
+    description: Same format but different capital/franchise model.
+    when:
+      one_in: [qsr_franchise_heavy, fast_casual_franchise_heavy, restaurant_franchisors_asset_light]
+      other_in: [qsr_company_operated, fast_casual_company_operated]
+    peer_types: [operating, economic, valuation]
+    result: eligible_with_penalty
+    penalty: 0.10
+
+  - id: excl_cross_industry_telecom_restaurants_direct
+    description: Telecom and restaurant companies are not direct competitors.
+    when:
+      one_in: telecom_all
+      other_in: restaurants_all
+    peer_types: [direct_competitor, competitive, operating, economic, valuation]
+    result: ineligible
+
+  - id: excl_cross_industry_telecom_semi_direct
+    description: Telecom operators/infra are not semiconductor product competitors.
+    when:
+      one_in: telecom_all
+      other_in: [semi_devices_all, semi_equipment]
+    peer_types: [direct_competitor, competitive, operating, economic, valuation]
+    result: ineligible
+
+  - id: excl_cross_industry_restaurants_semi_direct
+    description: Restaurants are not semiconductor peers for competitive/operating/valuation types.
+    when:
+      one_in: restaurants_all
+      other_in: [semi_devices_all, semi_equipment]
+    peer_types: [direct_competitor, competitive, operating, economic, valuation]
+    result: ineligible
+
+  - id: excl_tower_non_tower_direct
+    description: Tower landlords only directly compete with other tower/infra landlords.
+    when:
+      one_in: tower_infra
+      other_in: [telecom_network_operators, restaurants_all, semi_devices_all, semi_equipment, fabless, idm, memory, analog, foundries]
+    peer_types: [direct_competitor, competitive]
+    result: ineligible
+
+  - id: penalty_compute_vs_analog_direct
+    description: Compute GPU/CPU fabless vs analog/power are weak product competitors.
+    when:
+      one_in: compute_fabless
+      other_in: analog
+    peer_types: [direct_competitor, competitive]
+    result: eligible_with_penalty
+    penalty: 0.25
+
+  - id: penalty_compute_vs_memory_direct
+    description: Compute accelerators vs memory makers are imperfect product peers.
+    when:
+      one_in: compute_fabless
+      other_in: memory
+    peer_types: [direct_competitor, competitive]
+    result: eligible_with_penalty
+    penalty: 0.20
+
+  - id: penalty_idm_memory_direct
+    description: IDM logic vendors vs pure memory makers are imperfect direct competitors.
+    when:
+      one_in: idm
+      other_in: memory
+    peer_types: [direct_competitor, competitive]
+    result: eligible_with_penalty
+    penalty: 0.15
+
+  - id: default_same_cluster_eligible
+    description: Same terminal peer cluster is eligible for all scored peer types.
+    when:
+      same_primary_node: true
+    peer_types: [direct_competitor, operating, valuation, growth, risk, market_behavior, competitive, economic]
+    result: eligible

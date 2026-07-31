@@ -1,0 +1,1087 @@
+{
+  "fixture_data_version": "1.0.0",
+  "as_of": "2026-06-30",
+  "quality_notice": "Banded illustrative features only — not live quotes or filings extracts.",
+  "features": [
+    {
+      "company_key": "vz",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "t",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "tmus",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "cmcsa",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "chtr",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "cci",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "amt",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "mcd",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "sbux",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "cmg",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "yum",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "dpz",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "dri",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "qsr",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "txrh",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mid",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "nvda",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "amd",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "intc",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "negative",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "avgo",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "qcom",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "txn",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "adi",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "mu",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "amat",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "lrcx",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "mega",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "klac",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "nxpi",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "gfs",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "mrvl",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "moderate",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    },
+    {
+      "company_key": "mpwr",
+      "as_of": "2026-06-30",
+      "currency": "USD",
+      "size_band": {
+        "value": "large",
+        "quality": "illustrative",
+        "note": "Banded illustrative size for pilot scoring only"
+      },
+      "revenue_growth_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "profitability_band": {
+        "value": "high",
+        "quality": "illustrative"
+      },
+      "leverage_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "capital_intensity_band": {
+        "value": "low",
+        "quality": "illustrative"
+      },
+      "market_cap_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      },
+      "revenue_ttm_illustrative_usd": {
+        "value": null,
+        "quality": "illustrative",
+        "note": "Intentionally omitted — not live market data"
+      }
+    }
+  ]
+}

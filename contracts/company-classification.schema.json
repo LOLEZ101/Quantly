@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peer-engine.local/contracts/company-classification.schema.json",
+  "title": "CompanyClassificationResponse",
+  "description": "Primary path, secondary exposures, confidence, evidence, and history for a company.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "response_type",
+    "company_key",
+    "taxonomy_version",
+    "as_of",
+    "primary_path",
+    "secondary_exposures",
+    "evidence"
+  ],
+  "properties": {
+    "response_type": { "const": "company_classification" },
+    "company_key": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]*$"
+    },
+    "taxonomy_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "as_of": { "type": "string", "format": "date" },
+    "snapshot_id": { "type": ["string", "null"] },
+    "primary_path": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "path",
+        "nodes",
+        "confidence",
+        "is_manual",
+        "effective_from"
+      ],
+      "properties": {
+        "node_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$"
+        },
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name", "node_type", "depth"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_]*$"
+              },
+              "name": { "type": "string", "minLength": 1 },
+              "node_type": {
+                "type": "string",
+                "enum": [
+                  "root",
+                  "sector",
+                  "industry_group",
+                  "industry",
+                  "sub_industry",
+                  "peer_cluster",
+                  "stub"
+                ]
+              },
+              "depth": { "type": "integer", "minimum": 0 }
+            }
+          }
+        },
+        "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "is_manual": { "type": "boolean" },
+        "effective_from": { "type": "string", "format": "date" },
+        "effective_to": { "type": ["string", "null"], "format": "date" }
+      }
+    },
+    "secondary_exposures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "node_id",
+          "path",
+          "weight",
+          "confidence",
+          "is_manual",
+          "effective_from"
+        ],
+        "properties": {
+          "node_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$"
+          },
+          "name": { "type": "string" },
+          "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "is_manual": { "type": "boolean" },
+          "effective_from": { "type": "string", "format": "date" },
+          "effective_to": { "type": ["string", "null"], "format": "date" }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/EvidenceItem" }
+    },
+    "history": {
+      "type": "array",
+      "description": "Closed historical primary/secondary classifications; never mutated in place.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "exposure_kind",
+          "node_id",
+          "path",
+          "confidence",
+          "is_manual",
+          "effective_from",
+          "effective_to"
+        ],
+        "properties": {
+          "exposure_kind": {
+            "type": "string",
+            "enum": ["primary", "secondary", "segment"]
+          },
+          "node_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$"
+          },
+          "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "is_manual": { "type": "boolean" },
+          "effective_from": { "type": "string", "format": "date" },
+          "effective_to": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "manual_overrides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "target_type",
+          "new_value",
+          "rationale",
+          "created_by",
+          "effective_from"
+        ],
+        "properties": {
+          "target_type": {
+            "type": "string",
+            "enum": [
+              "primary_path",
+              "secondary_exposure",
+              "segment_weight",
+              "peer_relationship",
+              "confidence",
+              "other"
+            ]
+          },
+          "prior_value": {},
+          "new_value": {},
+          "rationale": { "type": "string", "minLength": 1 },
+          "created_by": { "type": "string", "minLength": 1 },
+          "approved_by": { "type": ["string", "null"] },
+          "effective_from": { "type": "string", "format": "date" },
+          "effective_to": { "type": ["string", "null"], "format": "date" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "EvidenceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_type",
+        "summary",
+        "is_manual"
+      ],
+      "properties": {
+        "evidence_type": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1 },
+        "excerpt": { "type": ["string", "null"] },
+        "locator": { "type": ["string", "null"] },
+        "source_document_uri": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "confidence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "is_manual": { "type": "boolean" },
+        "related_node_id": {
+          "type": ["string", "null"],
+          "pattern": "^[a-z][a-z0-9_]*$"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "description": "If a non-null primary path exists and is not manual, evidence must be present.",
+      "if": {
+        "properties": {
+          "primary_path": {
+            "type": "object",
+            "properties": { "is_manual": { "const": false } },
+            "required": ["is_manual"]
+          }
+        },
+        "required": ["primary_path"]
+      },
+      "then": {
+        "properties": {
+          "evidence": { "type": "array", "minItems": 1 }
+        }
+      }
+    }
+  ]
+}
