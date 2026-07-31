@@ -108,30 +108,10 @@
       "related_node_id": "analog_mixed_signal_and_power"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=12300000000 USD end=2023-12-31",
-      "excerpt": "Revenues=12300000000 USD end=2023-12-31",
-      "locator": "xbrl:0000006281-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/adi",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "analog_mixed_signal_and_power"
-    },
-    {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=9400000000 USD end=2024-12-31",
-      "excerpt": "Revenues=9400000000 USD end=2024-12-31",
-      "locator": "xbrl:0000006281-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/adi",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "analog_mixed_signal_and_power"
-    },
-    {
-      "evidence_type": "xbrl_operating_income",
-      "summary": "OperatingIncomeLoss=2500000000 USD end=2024-12-31",
-      "excerpt": "OperatingIncomeLoss=2500000000 USD end=2024-12-31",
-      "locator": "xbrl:0000006281-24-0001:OperatingIncomeLoss",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=3090992000 USD end=2008-11-01",
+      "excerpt": "Assets=3090992000 USD end=2008-11-01",
+      "locator": "xbrl:0000950123-09-036183:Assets",
       "source_document_uri": "fixture://sec/adi",
       "confidence": 0.9,
       "is_manual": false,
@@ -139,9 +119,49 @@
     },
     {
       "evidence_type": "xbrl_assets",
-      "summary": "Assets=48000000000 USD end=2024-12-31",
-      "excerpt": "Assets=48000000000 USD end=2024-12-31",
-      "locator": "xbrl:0000006281-24-0001:Assets",
+      "summary": "Assets=3090992000 USD end=2008-11-01",
+      "excerpt": "Assets=3090992000 USD end=2008-11-01",
+      "locator": "xbrl:0000950123-09-065635:Assets",
+      "source_document_uri": "fixture://sec/adi",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "analog_mixed_signal_and_power"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=3280151000 USD end=2009-08-01",
+      "excerpt": "Assets=3280151000 USD end=2009-08-01",
+      "locator": "xbrl:0000950123-09-036183:Assets",
+      "source_document_uri": "fixture://sec/adi",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "analog_mixed_signal_and_power"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=3404294000 USD end=2009-10-31",
+      "excerpt": "Assets=3404294000 USD end=2009-10-31",
+      "locator": "xbrl:0000950123-09-065635:Assets",
+      "source_document_uri": "fixture://sec/adi",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "analog_mixed_signal_and_power"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=3404294000 USD end=2009-10-31",
+      "excerpt": "Assets=3404294000 USD end=2009-10-31",
+      "locator": "xbrl:0000950123-10-013755:Assets",
+      "source_document_uri": "fixture://sec/adi",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "analog_mixed_signal_and_power"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=3404294000 USD end=2009-10-31",
+      "excerpt": "Assets=3404294000 USD end=2009-10-31",
+      "locator": "xbrl:0000950123-10-050859:Assets",
       "source_document_uri": "fixture://sec/adi",
       "confidence": 0.9,
       "is_manual": false,

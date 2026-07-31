@@ -52,17 +52,17 @@ S&P 500
 | Phase 3 — SEC ingestion layer, `pilot-v2-sourced` | Complete (historical; circular fixtures documented) |
 | Phase 3.5 — independent corpus, `pilot-v3-verified` | Complete |
 | Phase 3.6 — website-readiness, `pilot-v4-official` | Complete (`website_ready_not_official`) |
-| Phase 3.7 — Postgres + live EDGAR | **Acceptance set verified** (reconfirmed); full live attempt **29/30** (GFS partial) — not full-pilot official |
+| Phase 3.7 — Postgres + live EDGAR | **`official_full_pilot_verified`** (30/30 live EDGAR + Postgres E2E) |
 
-Canonical operational snapshot: `exports/snapshots/pilot-v5-operational` → `official_acceptance_set_verified`.
+Canonical operational snapshot: `exports/snapshots/pilot-v5-operational` → `official_full_pilot_verified`.
 
 ## Delivery phases
 
 ### Phase 3.7 (finish)
 
 - Postgres E2E with `--repository postgres` (fail clearly if unavailable).
-- Live EDGAR for acceptance set (done) and optionally full pilot (30/30) when environment allows.
-- Do not force `official_full_pilot_verified`.
+- Live EDGAR acceptance set and full pilot **30/30** completed (IFRS mappings unblocked GFS).
+- Status earned honestly: `official_full_pilot_verified`.
 
 ### Phase 4 — Read-only snapshot API
 

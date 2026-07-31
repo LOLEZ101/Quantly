@@ -2178,7 +2178,7 @@
           "ticker": "QSR",
           "primary_node_id": "restaurant_franchisors_asset_light",
           "primary_path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
-          "score": 1,
+          "score": 0.9703,
           "rank": 1,
           "is_manual": false,
           "components": [
@@ -2247,18 +2247,18 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 1,
+              "factor_score": 0.6,
               "weight": 0.15,
-              "weighted_contribution": 0.15,
+              "weighted_contribution": 0.09,
               "notes": null
             }
           ],
           "explanation": {
             "summary": "Restaurant Brands International is a close risk for Yum! Brands.",
             "similarities": [
-              "leverage similarity contributes 0.15 to the score.",
               "Both map primarily to restaurant_franchisors_asset_light.",
-              "size similarity contributes 0.10 to the score."
+              "size similarity contributes 0.10 to the score.",
+              "margin similarity contributes 0.10 to the score."
             ],
             "differences": [
               "capital intensity similarity is relatively weak (0.30)."
@@ -2301,7 +2301,7 @@
           "ticker": "DPZ",
           "primary_node_id": "qsr_franchise_heavy",
           "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy",
-          "score": 0.914,
+          "score": 0.869,
           "rank": 2,
           "is_manual": false,
           "components": [
@@ -2370,9 +2370,9 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 1,
+              "factor_score": 0.7,
               "weight": 0.15,
-              "weighted_contribution": 0.15,
+              "weighted_contribution": 0.105,
               "notes": null
             }
           ],
@@ -2380,7 +2380,7 @@
             "summary": "Domino's is a close risk for Yum! Brands.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.15 to the score.",
+              "leverage similarity contributes 0.10 to the score.",
               "size similarity contributes 0.10 to the score."
             ],
             "differences": [
@@ -2421,7 +2421,7 @@
           "ticker": "MCD",
           "primary_node_id": "qsr_franchise_heavy",
           "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy",
-          "score": 0.8929,
+          "score": 0.8329,
           "rank": 3,
           "is_manual": false,
           "components": [
@@ -2490,18 +2490,18 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 1,
+              "factor_score": 0.6,
               "weight": 0.15,
-              "weighted_contribution": 0.15,
+              "weighted_contribution": 0.09,
               "notes": null
             }
           ],
           "explanation": {
             "summary": "McDonald's is a close risk for Yum! Brands.",
             "similarities": [
-              "leverage similarity contributes 0.15 to the score.",
               "margin similarity contributes 0.10 to the score.",
-              "geographic overlap contributes 0.09 to the score."
+              "geographic overlap contributes 0.09 to the score.",
+              "leverage similarity contributes 0.09 to the score."
             ],
             "differences": [
               "Primary taxonomy nodes differ (restaurant_franchisors_asset_light vs qsr_franchise_heavy).",
@@ -2539,13 +2539,249 @@
           "incomplete": false
         },
         {
+          "company_key": "cmg",
+          "display_name": "Chipotle",
+          "ticker": "CMG",
+          "primary_node_id": "fast_casual_company_operated",
+          "primary_path": "root.consumer_discretionary.restaurants.fast_casual_restaurants.fast_casual_company_operated",
+          "score": 0.6342,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.0256,
+              "weight": 0.1,
+              "weighted_contribution": 0.0026,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.3158,
+              "weight": 0.1,
+              "weighted_contribution": 0.0316,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.7,
+              "weight": 0.15,
+              "weighted_contribution": 0.105,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Chipotle is a relevant risk for Yum! Brands.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.10 to the score.",
+              "size similarity contributes 0.07 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (restaurant_franchisors_asset_light vs fast_casual_company_operated).",
+              "geographic overlap is relatively weak (0.32).",
+              "business model similarity is relatively weak (0.03).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Chipotle is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "dri",
+          "display_name": "Darden Restaurants",
+          "ticker": "DRI",
+          "primary_node_id": "casual_dining",
+          "primary_path": "root.consumer_discretionary.restaurants.full_service_restaurants.casual_dining",
+          "score": 0.6333,
+          "rank": 5,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.0256,
+              "weight": 0.1,
+              "weighted_contribution": 0.0026,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.3072,
+              "weight": 0.1,
+              "weighted_contribution": 0.0307,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.7,
+              "weight": 0.15,
+              "weighted_contribution": 0.105,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Darden Restaurants is a relevant risk for Yum! Brands.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.10 to the score.",
+              "size similarity contributes 0.07 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (restaurant_franchisors_asset_light vs casual_dining).",
+              "geographic overlap is relatively weak (0.31).",
+              "business model similarity is relatively weak (0.03).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Darden Restaurants is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
           "company_key": "sbux",
           "display_name": "Starbucks",
           "ticker": "SBUX",
           "primary_node_id": "qsr_hybrid_franchise",
           "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_hybrid_franchise",
           "score": 0.6326,
-          "rank": 4,
+          "rank": 6,
           "is_manual": false,
           "components": [
             {
@@ -2656,242 +2892,6 @@
           "incomplete": false
         },
         {
-          "company_key": "cmg",
-          "display_name": "Chipotle",
-          "ticker": "CMG",
-          "primary_node_id": "fast_casual_company_operated",
-          "primary_path": "root.consumer_discretionary.restaurants.fast_casual_restaurants.fast_casual_company_operated",
-          "score": 0.5742,
-          "rank": 5,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.6,
-              "weight": 0.1,
-              "weighted_contribution": 0.06,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0.0256,
-              "weight": 0.1,
-              "weighted_contribution": 0.0026,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.3158,
-              "weight": 0.1,
-              "weighted_contribution": 0.0316,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 0.75,
-              "weight": 0.1,
-              "weighted_contribution": 0.075,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 0.6,
-              "weight": 0.1,
-              "weighted_contribution": 0.06,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
-              "weight": 0.2,
-              "weighted_contribution": 0.2,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 0.3,
-              "weight": 0.15,
-              "weighted_contribution": 0.045,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Chipotle is a relevant risk for Yum! Brands.",
-            "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "size similarity contributes 0.07 to the score.",
-              "Taxonomy proximity is high between restaurant_franchisors_asset_light and fast_casual_company_operated."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (restaurant_franchisors_asset_light vs fast_casual_company_operated).",
-              "leverage similarity is relatively weak (0.30).",
-              "geographic overlap is relatively weak (0.32).",
-              "business model similarity is relatively weak (0.03)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Chipotle is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, geographic_overlap, business_model_similarity.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
-          "company_key": "dri",
-          "display_name": "Darden Restaurants",
-          "ticker": "DRI",
-          "primary_node_id": "casual_dining",
-          "primary_path": "root.consumer_discretionary.restaurants.full_service_restaurants.casual_dining",
-          "score": 0.5733,
-          "rank": 6,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.6,
-              "weight": 0.1,
-              "weighted_contribution": 0.06,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0.0256,
-              "weight": 0.1,
-              "weighted_contribution": 0.0026,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.3072,
-              "weight": 0.1,
-              "weighted_contribution": 0.0307,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 0.75,
-              "weight": 0.1,
-              "weighted_contribution": 0.075,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 0.6,
-              "weight": 0.1,
-              "weighted_contribution": 0.06,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
-              "weight": 0.2,
-              "weighted_contribution": 0.2,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 0.3,
-              "weight": 0.15,
-              "weighted_contribution": 0.045,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Darden Restaurants is a relevant risk for Yum! Brands.",
-            "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "size similarity contributes 0.07 to the score.",
-              "Taxonomy proximity is high between restaurant_franchisors_asset_light and casual_dining."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (restaurant_franchisors_asset_light vs casual_dining).",
-              "leverage similarity is relatively weak (0.30).",
-              "geographic overlap is relatively weak (0.31).",
-              "business model similarity is relatively weak (0.03)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Darden Restaurants is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, geographic_overlap, business_model_similarity.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
           "company_key": "txrh",
           "display_name": "Texas Roadhouse",
           "ticker": "TXRH",
@@ -2959,31 +2959,31 @@
             },
             {
               "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
+              "factor_score": 0.7,
               "weight": 0.2,
-              "weighted_contribution": 0.2,
+              "weighted_contribution": 0.14,
               "notes": null
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.3,
+              "factor_score": 0.7,
               "weight": 0.15,
-              "weighted_contribution": 0.045,
+              "weighted_contribution": 0.105,
               "notes": null
             }
           ],
           "explanation": {
             "summary": "Texas Roadhouse is a relevant risk for Yum! Brands.",
             "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "size similarity contributes 0.10 to the score.",
-              "Taxonomy proximity is high between restaurant_franchisors_asset_light and casual_dining."
+              "capital intensity similarity contributes 0.14 to the score.",
+              "leverage similarity contributes 0.10 to the score.",
+              "size similarity contributes 0.10 to the score."
             ],
             "differences": [
               "Primary taxonomy nodes differ (restaurant_franchisors_asset_light vs casual_dining).",
-              "leverage similarity is relatively weak (0.30).",
               "geographic overlap is relatively weak (0.33).",
-              "margin similarity is relatively weak (0.30)."
+              "margin similarity is relatively weak (0.30).",
+              "business model similarity is relatively weak (0.08)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2996,7 +2996,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Texas Roadhouse is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, geographic_overlap, margin_similarity.",
+            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, margin_similarity, business_model_similarity.",
             "confidence": 1
           },
           "eligibility": "eligible",

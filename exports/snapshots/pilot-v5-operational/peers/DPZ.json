@@ -2164,7 +2164,7 @@
           "ticker": "YUM",
           "primary_node_id": "restaurant_franchisors_asset_light",
           "primary_path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
-          "score": 0.9125,
+          "score": 0.8675,
           "rank": 1,
           "is_manual": false,
           "components": [
@@ -2233,9 +2233,9 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 1,
+              "factor_score": 0.7,
               "weight": 0.15,
-              "weighted_contribution": 0.15,
+              "weighted_contribution": 0.105,
               "notes": null
             }
           ],
@@ -2243,7 +2243,7 @@
             "summary": "Yum! Brands is a close risk for Domino's.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.15 to the score.",
+              "leverage similarity contributes 0.10 to the score.",
               "size similarity contributes 0.10 to the score."
             ],
             "differences": [
@@ -2279,372 +2279,13 @@
           "incomplete": false
         },
         {
-          "company_key": "mcd",
-          "display_name": "McDonald's",
-          "ticker": "MCD",
-          "primary_node_id": "qsr_franchise_heavy",
-          "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy",
-          "score": 0.8326,
-          "rank": 2,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0.9048,
-              "weight": 0.1,
-              "weighted_contribution": 0.0905,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0.7636,
-              "weight": 0.05,
-              "weighted_contribution": 0.0382,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.7391,
-              "weight": 0.1,
-              "weighted_contribution": 0.0739,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 0.75,
-              "weight": 0.1,
-              "weighted_contribution": 0.075,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 0.6,
-              "weight": 0.1,
-              "weighted_contribution": 0.06,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.7,
-              "weight": 0.05,
-              "weighted_contribution": 0.035,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 0.3,
-              "weight": 0.2,
-              "weighted_contribution": 0.06,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 1,
-              "weight": 0.15,
-              "weighted_contribution": 0.15,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "McDonald's is a close risk for Domino's.",
-            "similarities": [
-              "leverage similarity contributes 0.15 to the score.",
-              "Both map primarily to qsr_franchise_heavy.",
-              "Infrastructure / operating models are similar."
-            ],
-            "differences": [
-              "capital intensity similarity is relatively weak (0.30)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "same_parent_node",
-              "same_terminal_taxonomy_node",
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model",
-              "similar_segment_composition"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "McDonald's is retained for peer type risk because candidate reasons include same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker capital_intensity_similarity.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "same_parent_node",
-            "same_terminal_taxonomy_node",
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model",
-            "similar_segment_composition"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
-          "company_key": "qsr",
-          "display_name": "Restaurant Brands International",
-          "ticker": "QSR",
-          "primary_node_id": "restaurant_franchisors_asset_light",
-          "primary_path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
-          "score": 0.7483,
-          "rank": 3,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.76,
-              "weight": 0.1,
-              "weighted_contribution": 0.076,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0.8182,
-              "weight": 0.1,
-              "weighted_contribution": 0.0818,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.1,
-              "weighted_contribution": 0.0905,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 0.6,
-              "weight": 0.1,
-              "weighted_contribution": 0.06,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.6,
-              "weight": 0.05,
-              "weighted_contribution": 0.03,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 0.3,
-              "weight": 0.2,
-              "weighted_contribution": 0.06,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 1,
-              "weight": 0.15,
-              "weighted_contribution": 0.15,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Restaurant Brands International is a relevant risk for Domino's.",
-            "similarities": [
-              "leverage similarity contributes 0.15 to the score.",
-              "size similarity contributes 0.10 to the score.",
-              "geographic overlap contributes 0.09 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (qsr_franchise_heavy vs restaurant_franchisors_asset_light).",
-              "capital intensity similarity is relatively weak (0.30).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "adjacent_taxonomy_node",
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Restaurant Brands International is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker capital_intensity_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "adjacent_taxonomy_node",
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
-          "company_key": "sbux",
-          "display_name": "Starbucks",
-          "ticker": "SBUX",
-          "primary_node_id": "qsr_hybrid_franchise",
-          "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_hybrid_franchise",
-          "score": 0.6992,
-          "rank": 4,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.7,
-              "weight": 0.1,
-              "weighted_contribution": 0.07,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0.0526,
-              "weight": 0.1,
-              "weighted_contribution": 0.0053,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.7391,
-              "weight": 0.1,
-              "weighted_contribution": 0.0739,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 0.75,
-              "weight": 0.1,
-              "weighted_contribution": 0.075,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.7,
-              "weight": 0.05,
-              "weighted_contribution": 0.035,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 0.7,
-              "weight": 0.2,
-              "weighted_contribution": 0.14,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 1,
-              "weight": 0.15,
-              "weighted_contribution": 0.15,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Starbucks is a relevant risk for Domino's.",
-            "similarities": [
-              "leverage similarity contributes 0.15 to the score.",
-              "capital intensity similarity contributes 0.14 to the score.",
-              "margin similarity contributes 0.10 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (qsr_franchise_heavy vs qsr_hybrid_franchise).",
-              "business model similarity is relatively weak (0.05).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "same_parent_node",
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Starbucks is retained for peer type risk because candidate reasons include same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "same_parent_node",
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
           "company_key": "cmg",
           "display_name": "Chipotle",
           "ticker": "CMG",
           "primary_node_id": "fast_casual_company_operated",
           "primary_path": "root.consumer_discretionary.restaurants.fast_casual_restaurants.fast_casual_company_operated",
-          "score": 0.6261,
-          "rank": 5,
+          "score": 0.7311,
+          "rank": 2,
           "is_manual": false,
           "components": [
             {
@@ -2712,9 +2353,9 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.3,
+              "factor_score": 1,
               "weight": 0.15,
-              "weighted_contribution": 0.045,
+              "weighted_contribution": 0.15,
               "notes": null
             }
           ],
@@ -2722,14 +2363,14 @@
             "summary": "Chipotle is a relevant risk for Domino's.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
-              "margin similarity contributes 0.10 to the score.",
-              "size similarity contributes 0.07 to the score."
+              "leverage similarity contributes 0.15 to the score.",
+              "margin similarity contributes 0.10 to the score."
             ],
             "differences": [
               "Primary taxonomy nodes differ (qsr_franchise_heavy vs fast_casual_company_operated).",
-              "leverage similarity is relatively weak (0.30).",
               "geographic overlap is relatively weak (0.41).",
-              "business model similarity is relatively weak (0.05)."
+              "business model similarity is relatively weak (0.05).",
+              "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2742,7 +2383,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Chipotle is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, geographic_overlap, business_model_similarity.",
+            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, business_model_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -2761,8 +2402,8 @@
           "ticker": "DRI",
           "primary_node_id": "casual_dining",
           "primary_path": "root.consumer_discretionary.restaurants.full_service_restaurants.casual_dining",
-          "score": 0.6252,
-          "rank": 6,
+          "score": 0.7302,
+          "rank": 3,
           "is_manual": false,
           "components": [
             {
@@ -2830,9 +2471,9 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.3,
+              "factor_score": 1,
               "weight": 0.15,
-              "weighted_contribution": 0.045,
+              "weighted_contribution": 0.15,
               "notes": null
             }
           ],
@@ -2840,14 +2481,14 @@
             "summary": "Darden Restaurants is a relevant risk for Domino's.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
-              "margin similarity contributes 0.10 to the score.",
-              "size similarity contributes 0.07 to the score."
+              "leverage similarity contributes 0.15 to the score.",
+              "margin similarity contributes 0.10 to the score."
             ],
             "differences": [
               "Primary taxonomy nodes differ (qsr_franchise_heavy vs casual_dining).",
-              "leverage similarity is relatively weak (0.30).",
               "geographic overlap is relatively weak (0.40).",
-              "business model similarity is relatively weak (0.05)."
+              "business model similarity is relatively weak (0.05).",
+              "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2860,11 +2501,252 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Darden Restaurants is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, geographic_overlap, business_model_similarity.",
+            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, business_model_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
           "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "mcd",
+          "display_name": "McDonald's",
+          "ticker": "MCD",
+          "primary_node_id": "qsr_franchise_heavy",
+          "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy",
+          "score": 0.7276,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.9048,
+              "weight": 0.1,
+              "weighted_contribution": 0.0905,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.7636,
+              "weight": 0.05,
+              "weighted_contribution": 0.0382,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.7391,
+              "weight": 0.1,
+              "weighted_contribution": 0.0739,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 0.3,
+              "weight": 0.2,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.3,
+              "weight": 0.15,
+              "weighted_contribution": 0.045,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "McDonald's is a relevant risk for Domino's.",
+            "similarities": [
+              "Both map primarily to qsr_franchise_heavy.",
+              "Infrastructure / operating models are similar.",
+              "size similarity contributes 0.07 to the score."
+            ],
+            "differences": [
+              "capital intensity similarity is relatively weak (0.30).",
+              "leverage similarity is relatively weak (0.30)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "McDonald's is retained for peer type risk because candidate reasons include same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker capital_intensity_similarity, leverage_similarity.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "sbux",
+          "display_name": "Starbucks",
+          "ticker": "SBUX",
+          "primary_node_id": "qsr_hybrid_franchise",
+          "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_hybrid_franchise",
+          "score": 0.6542,
+          "rank": 5,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.7,
+              "weight": 0.1,
+              "weighted_contribution": 0.07,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.0526,
+              "weight": 0.1,
+              "weighted_contribution": 0.0053,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.7391,
+              "weight": 0.1,
+              "weighted_contribution": 0.0739,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 0.7,
+              "weight": 0.2,
+              "weighted_contribution": 0.14,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.7,
+              "weight": 0.15,
+              "weighted_contribution": 0.105,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Starbucks is a relevant risk for Domino's.",
+            "similarities": [
+              "capital intensity similarity contributes 0.14 to the score.",
+              "leverage similarity contributes 0.10 to the score.",
+              "margin similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (qsr_franchise_heavy vs qsr_hybrid_franchise).",
+              "business model similarity is relatively weak (0.05).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "same_parent_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Starbucks is retained for peer type risk because candidate reasons include same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "same_parent_node",
             "shared_customer_type",
             "shared_geography",
             "shared_operating_model",
@@ -2879,8 +2761,8 @@
           "ticker": "TXRH",
           "primary_node_id": "casual_dining",
           "primary_path": "root.consumer_discretionary.restaurants.full_service_restaurants.casual_dining",
-          "score": 0.609,
-          "rank": 7,
+          "score": 0.654,
+          "rank": 6,
           "is_manual": false,
           "components": [
             {
@@ -2941,31 +2823,31 @@
             },
             {
               "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
+              "factor_score": 0.7,
               "weight": 0.2,
-              "weighted_contribution": 0.2,
+              "weighted_contribution": 0.14,
               "notes": null
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.3,
+              "factor_score": 1,
               "weight": 0.15,
-              "weighted_contribution": 0.045,
+              "weighted_contribution": 0.15,
               "notes": null
             }
           ],
           "explanation": {
             "summary": "Texas Roadhouse is a relevant risk for Domino's.",
             "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "size similarity contributes 0.10 to the score.",
-              "margin similarity contributes 0.07 to the score."
+              "leverage similarity contributes 0.15 to the score.",
+              "capital intensity similarity contributes 0.14 to the score.",
+              "size similarity contributes 0.10 to the score."
             ],
             "differences": [
               "Primary taxonomy nodes differ (qsr_franchise_heavy vs casual_dining).",
-              "leverage similarity is relatively weak (0.30).",
               "geographic overlap is relatively weak (0.43).",
-              "business model similarity is relatively weak (0.11)."
+              "business model similarity is relatively weak (0.11).",
+              "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2978,11 +2860,131 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Texas Roadhouse is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, geographic_overlap, business_model_similarity.",
+            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, business_model_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
           "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "qsr",
+          "display_name": "Restaurant Brands International",
+          "ticker": "QSR",
+          "primary_node_id": "restaurant_franchisors_asset_light",
+          "primary_path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
+          "score": 0.6433,
+          "rank": 7,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.1,
+              "weighted_contribution": 0.076,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.8182,
+              "weight": 0.1,
+              "weighted_contribution": 0.0818,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.1,
+              "weighted_contribution": 0.0905,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.6,
+              "weight": 0.05,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 0.3,
+              "weight": 0.2,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.3,
+              "weight": 0.15,
+              "weighted_contribution": 0.045,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Restaurant Brands International is a relevant risk for Domino's.",
+            "similarities": [
+              "size similarity contributes 0.10 to the score.",
+              "geographic overlap contributes 0.09 to the score.",
+              "Infrastructure / operating models are similar."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (qsr_franchise_heavy vs restaurant_franchisors_asset_light).",
+              "capital intensity similarity is relatively weak (0.30).",
+              "leverage similarity is relatively weak (0.30).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Restaurant Brands International is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker capital_intensity_similarity, leverage_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
             "shared_customer_type",
             "shared_geography",
             "shared_operating_model",

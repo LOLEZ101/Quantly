@@ -2346,7 +2346,7 @@
           "ticker": "CMCSA",
           "primary_node_id": "cable_broadband_operators",
           "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
-          "score": 0.8839,
+          "score": 0.8389,
           "rank": 4,
           "is_manual": false,
           "components": [
@@ -2415,9 +2415,9 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 1,
+              "factor_score": 0.7,
               "weight": 0.15,
-              "weighted_contribution": 0.15,
+              "weighted_contribution": 0.105,
               "notes": null
             }
           ],
@@ -2425,7 +2425,7 @@
             "summary": "Comcast is a close risk for T-Mobile US.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.15 to the score.",
+              "leverage similarity contributes 0.10 to the score.",
               "size similarity contributes 0.10 to the score."
             ],
             "differences": [
@@ -2465,7 +2465,7 @@
           "ticker": "CCI",
           "primary_node_id": "tower_and_macro_site_operators",
           "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
-          "score": 0.5479,
+          "score": 0.5279,
           "rank": 5,
           "is_manual": false,
           "components": [
@@ -2513,9 +2513,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 0.6,
+              "factor_score": 0.4,
               "weight": 0.1,
-              "weighted_contribution": 0.06,
+              "weighted_contribution": 0.04,
               "notes": null
             },
             {
@@ -2549,9 +2549,9 @@
             ],
             "differences": [
               "Primary taxonomy nodes differ (national_wireless_network_owners vs tower_and_macro_site_operators).",
+              "margin similarity is relatively weak (0.40).",
               "growth similarity is relatively weak (0.40).",
-              "customer overlap is relatively weak (0.11).",
-              "business model similarity is relatively weak (0.00)."
+              "customer overlap is relatively weak (0.11)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2565,7 +2565,7 @@
               "eligible_with_penalty via allow_tower_operator_risk: Infrastructure / capital-intensity / rate-risk comparisons may include towers."
             ],
             "why_appropriate": "Crown Castle is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
-            "why_not_higher": "Score is not higher mainly due to weaker growth_similarity, customer_overlap, business_model_similarity.",
+            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, growth_similarity, customer_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible_with_penalty",

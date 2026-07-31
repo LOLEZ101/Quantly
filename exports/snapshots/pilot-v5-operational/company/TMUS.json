@@ -118,30 +118,10 @@
       "related_node_id": "national_wireless_network_owners"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=78500000000 USD end=2023-12-31",
-      "excerpt": "Revenues=78500000000 USD end=2023-12-31",
-      "locator": "xbrl:0001283699-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/tmus",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "national_wireless_network_owners"
-    },
-    {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=81400000000 USD end=2024-12-31",
-      "excerpt": "Revenues=81400000000 USD end=2024-12-31",
-      "locator": "xbrl:0001283699-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/tmus",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "national_wireless_network_owners"
-    },
-    {
-      "evidence_type": "xbrl_operating_income",
-      "summary": "OperatingIncomeLoss=16000000000 USD end=2024-12-31",
-      "excerpt": "OperatingIncomeLoss=16000000000 USD end=2024-12-31",
-      "locator": "xbrl:0001283699-24-0001:OperatingIncomeLoss",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=7386017000 USD end=2009-12-31",
+      "excerpt": "Assets=7386017000 USD end=2009-12-31",
+      "locator": "xbrl:0001193125-10-182910:Assets",
       "source_document_uri": "fixture://sec/tmus",
       "confidence": 0.9,
       "is_manual": false,
@@ -149,9 +129,39 @@
     },
     {
       "evidence_type": "xbrl_assets",
-      "summary": "Assets=210000000000 USD end=2024-12-31",
-      "excerpt": "Assets=210000000000 USD end=2024-12-31",
-      "locator": "xbrl:0001283699-24-0001:Assets",
+      "summary": "Assets=7386017000 USD end=2009-12-31",
+      "excerpt": "Assets=7386017000 USD end=2009-12-31",
+      "locator": "xbrl:0001193125-10-248907:Assets",
+      "source_document_uri": "fixture://sec/tmus",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=7386017000 USD end=2009-12-31",
+      "excerpt": "Assets=7386017000 USD end=2009-12-31",
+      "locator": "xbrl:0001193125-11-051403:Assets",
+      "source_document_uri": "fixture://sec/tmus",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=7479122000 USD end=2010-06-30",
+      "excerpt": "Assets=7479122000 USD end=2010-06-30",
+      "locator": "xbrl:0001193125-10-182910:Assets",
+      "source_document_uri": "fixture://sec/tmus",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "national_wireless_network_owners"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=8320613000 USD end=2010-09-30",
+      "excerpt": "Assets=8320613000 USD end=2010-09-30",
+      "locator": "xbrl:0001193125-10-248907:Assets",
       "source_document_uri": "fixture://sec/tmus",
       "confidence": 0.9,
       "is_manual": false,

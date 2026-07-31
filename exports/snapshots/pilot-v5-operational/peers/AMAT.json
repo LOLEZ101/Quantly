@@ -343,7 +343,7 @@
           "ticker": "KLAC",
           "primary_node_id": "process_control_and_metrology",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
-          "score": 0.805,
+          "score": 0.77,
           "rank": 2,
           "is_manual": false,
           "components": [
@@ -391,9 +391,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 1,
+              "factor_score": 0.3,
               "weight": 0.05,
-              "weighted_contribution": 0.05,
+              "weighted_contribution": 0.015,
               "notes": null
             },
             {
@@ -413,6 +413,7 @@
             ],
             "differences": [
               "Primary taxonomy nodes differ (etch_deposition_and_clean vs process_control_and_metrology).",
+              "margin similarity is relatively weak (0.30).",
               "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
@@ -428,7 +429,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "KLA is retained for peer type operating because candidate reasons include adjacent_taxonomy_node, same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -577,7 +578,7 @@
           "ticker": "KLAC",
           "primary_node_id": "process_control_and_metrology",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
-          "score": 0.7788,
+          "score": 0.7438,
           "rank": 2,
           "is_manual": false,
           "components": [
@@ -625,9 +626,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 1,
+              "factor_score": 0.3,
               "weight": 0.05,
-              "weighted_contribution": 0.05,
+              "weighted_contribution": 0.015,
               "notes": null
             },
             {
@@ -646,7 +647,7 @@
             }
           ],
           "explanation": {
-            "summary": "KLA is a close growth for Applied Materials.",
+            "summary": "KLA is a relevant growth for Applied Materials.",
             "similarities": [
               "Growth bands are comparable in the pilot features.",
               "Taxonomy proximity is high between etch_deposition_and_clean and process_control_and_metrology.",
@@ -654,6 +655,7 @@
             ],
             "differences": [
               "Primary taxonomy nodes differ (etch_deposition_and_clean vs process_control_and_metrology).",
+              "margin similarity is relatively weak (0.30).",
               "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
@@ -669,7 +671,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "KLA is retained for peer type growth because candidate reasons include adjacent_taxonomy_node, same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -899,120 +901,13 @@
           "incomplete": false
         },
         {
-          "company_key": "adi",
-          "display_name": "Analog Devices",
-          "ticker": "ADI",
-          "primary_node_id": "analog_mixed_signal_and_power",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
-          "score": 0.6056,
-          "rank": 5,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.5,
-              "weight": 0.15,
-              "weighted_contribution": 0.075,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.7,
-              "weight": 0.35,
-              "weighted_contribution": 0.245,
-              "notes": null
-            },
-            {
-              "factor_code": "competitive_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Analog Devices is a relevant growth for Applied Materials.",
-            "similarities": [
-              "Growth bands are comparable in the pilot features.",
-              "size similarity contributes 0.10 to the score.",
-              "Taxonomy proximity is high between etch_deposition_and_clean and analog_mixed_signal_and_power."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (etch_deposition_and_clean vs analog_mixed_signal_and_power).",
-              "taxonomy proximity is relatively weak (0.50).",
-              "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Analog Devices is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
           "company_key": "txn",
           "display_name": "Texas Instruments",
           "ticker": "TXN",
           "primary_node_id": "analog_mixed_signal_and_power",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
           "score": 0.6013,
-          "rank": 6,
+          "rank": 5,
           "is_manual": false,
           "components": [
             {
@@ -1101,6 +996,113 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Texas Instruments is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "adi",
+          "display_name": "Analog Devices",
+          "ticker": "ADI",
+          "primary_node_id": "analog_mixed_signal_and_power",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
+          "score": 0.5856,
+          "rank": 6,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.5,
+              "weight": 0.15,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.05,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.35,
+              "weighted_contribution": 0.245,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Analog Devices is a relevant growth for Applied Materials.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "size similarity contributes 0.10 to the score.",
+              "Taxonomy proximity is high between etch_deposition_and_clean and analog_mixed_signal_and_power."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (etch_deposition_and_clean vs analog_mixed_signal_and_power).",
+              "taxonomy proximity is relatively weak (0.50).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Analog Devices is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
             "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
             "confidence": 1
           },
@@ -1679,7 +1681,7 @@
           "ticker": "KLAC",
           "primary_node_id": "process_control_and_metrology",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
-          "score": 0.8875,
+          "score": 0.8175,
           "rank": 2,
           "is_manual": false,
           "components": [
@@ -1727,9 +1729,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 1,
+              "factor_score": 0.3,
               "weight": 0.1,
-              "weighted_contribution": 0.1,
+              "weighted_contribution": 0.03,
               "notes": null
             },
             {
@@ -1763,6 +1765,7 @@
             ],
             "differences": [
               "Primary taxonomy nodes differ (etch_deposition_and_clean vs process_control_and_metrology).",
+              "margin similarity is relatively weak (0.30).",
               "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
@@ -1778,7 +1781,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "KLA is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -1794,13 +1797,129 @@
           "incomplete": false
         },
         {
+          "company_key": "qcom",
+          "display_name": "Qualcomm",
+          "ticker": "QCOM",
+          "primary_node_id": "fabless_mobile_and_consumer_soc",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_mobile_and_consumer_soc",
+          "score": 0.6406,
+          "rank": 3,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.5,
+              "weight": 0.1,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.1111,
+              "weight": 0.05,
+              "weighted_contribution": 0.0056,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 1,
+              "weight": 0.15,
+              "weighted_contribution": 0.15,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Qualcomm is a relevant risk for Applied Materials.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.15 to the score.",
+              "geographic overlap contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (etch_deposition_and_clean vs fabless_mobile_and_consumer_soc).",
+              "taxonomy proximity is relatively weak (0.50).",
+              "customer overlap is relatively weak (0.11).",
+              "business model similarity is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [
+              "eligible_with_penalty via allow_equipment_devices_risk: Semiconductor industry-risk and market-behavior comparisons may include equipment."
+            ],
+            "why_appropriate": "Qualcomm is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, customer_overlap, business_model_similarity.",
+            "confidence": 1
+          },
+          "eligibility": "eligible_with_penalty",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 0.85,
+          "incomplete": false
+        },
+        {
           "company_key": "nxpi",
           "display_name": "NXP Semiconductors",
           "ticker": "NXPI",
           "primary_node_id": "analog_mixed_signal_and_power",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
           "score": 0.6352,
-          "rank": 3,
+          "rank": 4,
           "is_manual": false,
           "components": [
             {
@@ -1899,122 +2018,6 @@
             ],
             "why_appropriate": "NXP Semiconductors is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
             "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible_with_penalty",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography"
-          ],
-          "confidence": 0.85,
-          "incomplete": false
-        },
-        {
-          "company_key": "qcom",
-          "display_name": "Qualcomm",
-          "ticker": "QCOM",
-          "primary_node_id": "fabless_mobile_and_consumer_soc",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_mobile_and_consumer_soc",
-          "score": 0.5956,
-          "rank": 4,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.5,
-              "weight": 0.1,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.1111,
-              "weight": 0.05,
-              "weighted_contribution": 0.0056,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.7,
-              "weight": 0.05,
-              "weighted_contribution": 0.035,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
-              "weight": 0.2,
-              "weighted_contribution": 0.2,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 0.7,
-              "weight": 0.15,
-              "weighted_contribution": 0.105,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Qualcomm is a relevant risk for Applied Materials.",
-            "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.10 to the score.",
-              "geographic overlap contributes 0.10 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (etch_deposition_and_clean vs fabless_mobile_and_consumer_soc).",
-              "taxonomy proximity is relatively weak (0.50).",
-              "customer overlap is relatively weak (0.11).",
-              "business model similarity is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography"
-            ],
-            "eligibility_notes": [
-              "eligible_with_penalty via allow_equipment_devices_risk: Semiconductor industry-risk and market-behavior comparisons may include equipment."
-            ],
-            "why_appropriate": "Qualcomm is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
-            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, customer_overlap, business_model_similarity.",
             "confidence": 1
           },
           "eligibility": "eligible_with_penalty",
@@ -2142,129 +2145,13 @@
           "incomplete": false
         },
         {
-          "company_key": "adi",
-          "display_name": "Analog Devices",
-          "ticker": "ADI",
-          "primary_node_id": "analog_mixed_signal_and_power",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
-          "score": 0.5907,
-          "rank": 6,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.5,
-              "weight": 0.1,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.1,
-              "weighted_contribution": 0.0905,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.7,
-              "weight": 0.05,
-              "weighted_contribution": 0.035,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 0.6,
-              "weight": 0.2,
-              "weighted_contribution": 0.12,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 1,
-              "weight": 0.15,
-              "weighted_contribution": 0.15,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Analog Devices is a relevant risk for Applied Materials.",
-            "similarities": [
-              "leverage similarity contributes 0.15 to the score.",
-              "capital intensity similarity contributes 0.12 to the score.",
-              "size similarity contributes 0.10 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (etch_deposition_and_clean vs analog_mixed_signal_and_power).",
-              "taxonomy proximity is relatively weak (0.50).",
-              "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography"
-            ],
-            "eligibility_notes": [
-              "eligible_with_penalty via allow_equipment_devices_risk: Semiconductor industry-risk and market-behavior comparisons may include equipment."
-            ],
-            "why_appropriate": "Analog Devices is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
-            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible_with_penalty",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography"
-          ],
-          "confidence": 0.85,
-          "incomplete": false
-        },
-        {
           "company_key": "nvda",
           "display_name": "NVIDIA",
           "ticker": "NVDA",
           "primary_node_id": "fabless_compute_and_ai_accelerators",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_compute_and_ai_accelerators",
           "score": 0.587,
-          "rank": 7,
+          "rank": 6,
           "is_manual": false,
           "components": [
             {
@@ -2363,6 +2250,122 @@
             ],
             "why_appropriate": "NVIDIA is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
             "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, growth_similarity, business_model_similarity.",
+            "confidence": 1
+          },
+          "eligibility": "eligible_with_penalty",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 0.85,
+          "incomplete": false
+        },
+        {
+          "company_key": "adi",
+          "display_name": "Analog Devices",
+          "ticker": "ADI",
+          "primary_node_id": "analog_mixed_signal_and_power",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
+          "score": 0.5507,
+          "rank": 7,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.5,
+              "weight": 0.1,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.1,
+              "weighted_contribution": 0.0905,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 0.6,
+              "weight": 0.2,
+              "weighted_contribution": 0.12,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 1,
+              "weight": 0.15,
+              "weighted_contribution": 0.15,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Analog Devices is a relevant risk for Applied Materials.",
+            "similarities": [
+              "leverage similarity contributes 0.15 to the score.",
+              "capital intensity similarity contributes 0.12 to the score.",
+              "size similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (etch_deposition_and_clean vs analog_mixed_signal_and_power).",
+              "taxonomy proximity is relatively weak (0.50).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [
+              "eligible_with_penalty via allow_equipment_devices_risk: Semiconductor industry-risk and market-behavior comparisons may include equipment."
+            ],
+            "why_appropriate": "Analog Devices is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible_with_penalty",

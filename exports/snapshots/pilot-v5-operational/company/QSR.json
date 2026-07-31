@@ -112,30 +112,10 @@
       "related_node_id": "restaurant_franchisors_asset_light"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=7000000000 USD end=2023-12-31",
-      "excerpt": "Revenues=7000000000 USD end=2023-12-31",
-      "locator": "xbrl:0001618756-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/qsr",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "restaurant_franchisors_asset_light"
-    },
-    {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=8400000000 USD end=2024-12-31",
-      "excerpt": "Revenues=8400000000 USD end=2024-12-31",
-      "locator": "xbrl:0001618756-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/qsr",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "restaurant_franchisors_asset_light"
-    },
-    {
-      "evidence_type": "xbrl_operating_income",
-      "summary": "OperatingIncomeLoss=2200000000 USD end=2024-12-31",
-      "excerpt": "OperatingIncomeLoss=2200000000 USD end=2024-12-31",
-      "locator": "xbrl:0001618756-24-0001:OperatingIncomeLoss",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=5828500000 USD end=2013-12-31",
+      "excerpt": "Assets=5828500000 USD end=2013-12-31",
+      "locator": "xbrl:0001193125-15-072217:Assets",
       "source_document_uri": "fixture://sec/qsr",
       "confidence": 0.9,
       "is_manual": false,
@@ -143,9 +123,39 @@
     },
     {
       "evidence_type": "xbrl_assets",
-      "summary": "Assets=24000000000 USD end=2024-12-31",
-      "excerpt": "Assets=24000000000 USD end=2024-12-31",
-      "locator": "xbrl:0001618756-24-0001:Assets",
+      "summary": "Assets=5785500000 USD end=2013-12-31",
+      "excerpt": "Assets=5785500000 USD end=2013-12-31",
+      "locator": "xbrl:0001193125-15-393949:Assets",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=21164000000 USD end=2014-12-31",
+      "excerpt": "Assets=21164000000 USD end=2014-12-31",
+      "locator": "xbrl:0001193125-15-072217:Assets",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=21164000000 USD end=2014-12-31",
+      "excerpt": "Assets=21164000000 USD end=2014-12-31",
+      "locator": "xbrl:0001193125-15-170663:Assets",
+      "source_document_uri": "fixture://sec/qsr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "restaurant_franchisors_asset_light"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=21157400000 USD end=2014-12-31",
+      "excerpt": "Assets=21157400000 USD end=2014-12-31",
+      "locator": "xbrl:0001193125-15-272061:Assets",
       "source_document_uri": "fixture://sec/qsr",
       "confidence": 0.9,
       "is_manual": false,

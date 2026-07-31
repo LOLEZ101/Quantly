@@ -108,30 +108,10 @@
       "related_node_id": "analog_mixed_signal_and_power"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=1800000000 USD end=2023-12-31",
-      "excerpt": "Revenues=1800000000 USD end=2023-12-31",
-      "locator": "xbrl:0001280452-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/mpwr",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "analog_mixed_signal_and_power"
-    },
-    {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=2200000000 USD end=2024-12-31",
-      "excerpt": "Revenues=2200000000 USD end=2024-12-31",
-      "locator": "xbrl:0001280452-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/mpwr",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "analog_mixed_signal_and_power"
-    },
-    {
-      "evidence_type": "xbrl_operating_income",
-      "summary": "OperatingIncomeLoss=500000000 USD end=2024-12-31",
-      "excerpt": "OperatingIncomeLoss=500000000 USD end=2024-12-31",
-      "locator": "xbrl:0001280452-24-0001:OperatingIncomeLoss",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=281603000 USD end=2010-12-31",
+      "excerpt": "Assets=281603000 USD end=2010-12-31",
+      "locator": "xbrl:0001437749-11-005640:Assets",
       "source_document_uri": "fixture://sec/mpwr",
       "confidence": 0.9,
       "is_manual": false,
@@ -139,9 +119,49 @@
     },
     {
       "evidence_type": "xbrl_assets",
-      "summary": "Assets=2800000000 USD end=2024-12-31",
-      "excerpt": "Assets=2800000000 USD end=2024-12-31",
-      "locator": "xbrl:0001280452-24-0001:Assets",
+      "summary": "Assets=281603000 USD end=2010-12-31",
+      "excerpt": "Assets=281603000 USD end=2010-12-31",
+      "locator": "xbrl:0001437749-11-007798:Assets",
+      "source_document_uri": "fixture://sec/mpwr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "analog_mixed_signal_and_power"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=281603000 USD end=2010-12-31",
+      "excerpt": "Assets=281603000 USD end=2010-12-31",
+      "locator": "xbrl:0001437749-12-002162:Assets",
+      "source_document_uri": "fixture://sec/mpwr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "analog_mixed_signal_and_power"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=263160000 USD end=2011-06-30",
+      "excerpt": "Assets=263160000 USD end=2011-06-30",
+      "locator": "xbrl:0001437749-11-005640:Assets",
+      "source_document_uri": "fixture://sec/mpwr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "analog_mixed_signal_and_power"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=267162000 USD end=2011-09-30",
+      "excerpt": "Assets=267162000 USD end=2011-09-30",
+      "locator": "xbrl:0001437749-11-007798:Assets",
+      "source_document_uri": "fixture://sec/mpwr",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "analog_mixed_signal_and_power"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=273867000 USD end=2011-12-31",
+      "excerpt": "Assets=273867000 USD end=2011-12-31",
+      "locator": "xbrl:0001437749-12-002162:Assets",
       "source_document_uri": "fixture://sec/mpwr",
       "confidence": 0.9,
       "is_manual": false,

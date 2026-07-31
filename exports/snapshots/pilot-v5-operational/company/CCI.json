@@ -159,20 +159,20 @@
       "related_node_id": "tower_and_macro_site_operators"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=6980000000 USD end=2023-12-31",
-      "excerpt": "Revenues=6980000000 USD end=2023-12-31",
-      "locator": "xbrl:0001051470-24-0001:Revenues",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=10361722000 USD end=2008-12-31",
+      "excerpt": "Assets=10361722000 USD end=2008-12-31",
+      "locator": "xbrl:0001193125-09-183869:Assets",
       "source_document_uri": "fixture://sec/cci",
       "confidence": 0.9,
       "is_manual": false,
       "related_node_id": "tower_and_macro_site_operators"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=6600000000 USD end=2024-12-31",
-      "excerpt": "Revenues=6600000000 USD end=2024-12-31",
-      "locator": "xbrl:0001051470-24-0001:Revenues",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=10361722000 USD end=2008-12-31",
+      "excerpt": "Assets=10361722000 USD end=2008-12-31",
+      "locator": "xbrl:0001193125-09-225905:Assets",
       "source_document_uri": "fixture://sec/cci",
       "confidence": 0.9,
       "is_manual": false,

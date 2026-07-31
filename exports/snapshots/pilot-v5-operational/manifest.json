@@ -15,13 +15,13 @@
   "published_at": "2026-07-31T20:00:00.000Z",
   "as_of": "2026-06-30",
   "is_immutable": true,
-  "content_hash": "sha256:df7e347e2cfbd46bc0de8e666d0dc2f601f473ffca4f8874cffacfc88971ecc6",
+  "content_hash": "sha256:78ecb0065d58c247e9471070554c969f3f66994e1d4d206f5d59d214a0ecaa3a",
   "counts": {
     "companies": 30,
     "taxonomy_nodes": 59,
     "primary_classifications": 30,
-    "peer_relationships": 797,
-    "evidence_records": 351
+    "peer_relationships": 795,
+    "evidence_records": 360
   },
   "artifacts": [
     {
@@ -40,7 +40,7 @@
   "notes": "Phase-3.7 operational acceptance. Postgres repository mode and live EDGAR verification required for official statuses.",
   "parent_snapshot_id": "snap_pilot_v4_official",
   "source_adapter_version": "1.1.0",
-  "normalization_version": "1.0.0",
+  "normalization_version": "1.0.1",
   "processing_run_id": "run_phase37_2026-07-31T200000000Z",
   "repository_mode": "postgres",
   "persistence_backend": "postgres",
@@ -48,10 +48,10 @@
   "database_host": "localhost",
   "database_name": "peer_engine",
   "live_edgar_enabled": true,
-  "live_edgar_full_financial": 5,
+  "live_edgar_full_financial": 30,
   "live_edgar_acceptance_set": 5,
-  "publication_status": "official_acceptance_set_verified",
-  "publishable": false,
+  "publication_status": "official_full_pilot_verified",
+  "publishable": true,
   "official": true,
   "validation_status": "passed",
   "known_limitations": [

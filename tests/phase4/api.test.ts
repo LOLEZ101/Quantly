@@ -21,9 +21,11 @@ describe("Phase-4 read-only snapshot API", () => {
   it("loads pilot-v5-operational publication meta honestly", () => {
     const meta = store.publicationMeta();
     expect(meta.snapshot_id).toBe("snap_pilot_v5_operational");
-    expect(meta.publication_status).toBe("official_acceptance_set_verified");
-    expect(meta.live_edgar_full_financial).toBe(5);
+    expect(meta.publication_status).toBe("official_full_pilot_verified");
+    expect(meta.live_edgar_full_financial).toBe(30);
     expect(meta.live_edgar_acceptance_set).toBe(5);
+    expect(meta.official).toBe(true);
+    expect(meta.publishable).toBe(true);
   });
 
   it("serves health, taxonomy, company, and peers over HTTP", async () => {
@@ -35,7 +37,7 @@ describe("Phase-4 read-only snapshot API", () => {
     const meta = await fetch(`${base}/v1/meta/publication`).then((r) =>
       r.json()
     );
-    expect(meta.publication_status).toBe("official_acceptance_set_verified");
+    expect(meta.publication_status).toBe("official_full_pilot_verified");
 
     const taxonomy = await fetch(`${base}/v1/taxonomy`).then((r) => r.json());
     expect(taxonomy.response_type || taxonomy.root || taxonomy.nodes).toBeTruthy();

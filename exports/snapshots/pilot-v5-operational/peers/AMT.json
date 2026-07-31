@@ -134,7 +134,7 @@
           "ticker": "CCI",
           "primary_node_id": "tower_and_macro_site_operators",
           "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
-          "score": 0.9948,
+          "score": 0.9448,
           "rank": 1,
           "is_manual": false,
           "components": [
@@ -182,9 +182,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 1,
+              "factor_score": 0,
               "weight": 0.05,
-              "weighted_contribution": 0.05,
+              "weighted_contribution": 0,
               "notes": null
             },
             {
@@ -204,7 +204,8 @@
             ],
             "differences": [
               "segment overlap is relatively weak (0.55).",
-              "geographic overlap is relatively weak (0.29)."
+              "geographic overlap is relatively weak (0.29).",
+              "margin similarity is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -220,7 +221,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Crown Castle is retained for peer type operating because candidate reasons include same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap, geographic_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap, geographic_overlap, margin_similarity.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -254,7 +255,7 @@
           "ticker": "CCI",
           "primary_node_id": "tower_and_macro_site_operators",
           "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
-          "score": 0.9023,
+          "score": 0.8523,
           "rank": 1,
           "is_manual": false,
           "components": [
@@ -302,9 +303,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 1,
+              "factor_score": 0,
               "weight": 0.05,
-              "weighted_contribution": 0.05,
+              "weighted_contribution": 0,
               "notes": null
             },
             {
@@ -331,7 +332,8 @@
             ],
             "differences": [
               "segment overlap is relatively weak (0.55).",
-              "geographic overlap is relatively weak (0.29)."
+              "geographic overlap is relatively weak (0.29).",
+              "margin similarity is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -347,7 +349,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Crown Castle is retained for peer type growth because candidate reasons include same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap, geographic_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker segment_overlap, geographic_overlap, margin_similarity.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -683,120 +685,13 @@
           "incomplete": false
         },
         {
-          "company_key": "adi",
-          "display_name": "Analog Devices",
-          "ticker": "ADI",
-          "primary_node_id": "analog_mixed_signal_and_power",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
-          "score": 0.5543,
-          "rank": 5,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.2,
-              "weight": 0.15,
-              "weighted_contribution": 0.03,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.9608,
-              "weight": 0.05,
-              "weighted_contribution": 0.048,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.6667,
-              "weight": 0.05,
-              "weighted_contribution": 0.0333,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.7,
-              "weight": 0.35,
-              "weighted_contribution": 0.245,
-              "notes": null
-            },
-            {
-              "factor_code": "competitive_overlap",
-              "factor_score": 0.9608,
-              "weight": 0.05,
-              "weighted_contribution": 0.048,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Analog Devices is a relevant growth for American Tower.",
-            "similarities": [
-              "Growth bands are comparable in the pilot features.",
-              "size similarity contributes 0.10 to the score.",
-              "margin similarity contributes 0.05 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (tower_and_macro_site_operators vs analog_mixed_signal_and_power).",
-              "taxonomy proximity is relatively weak (0.20).",
-              "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Analog Devices is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
           "company_key": "nxpi",
           "display_name": "NXP Semiconductors",
           "ticker": "NXPI",
           "primary_node_id": "analog_mixed_signal_and_power",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
           "score": 0.551,
-          "rank": 6,
+          "rank": 5,
           "is_manual": false,
           "components": [
             {
@@ -903,7 +798,7 @@
           "primary_node_id": "qsr_hybrid_franchise",
           "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_hybrid_franchise",
           "score": 0.5416,
-          "rank": 7,
+          "rank": 6,
           "is_manual": false,
           "components": [
             {
@@ -1008,7 +903,7 @@
           "primary_node_id": "etch_deposition_and_clean",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.etch_deposition_and_clean",
           "score": 0.5411,
-          "rank": 8,
+          "rank": 7,
           "is_manual": false,
           "components": [
             {
@@ -1098,6 +993,113 @@
             "eligibility_notes": [],
             "why_appropriate": "Lam Research is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
             "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, taxonomy_proximity, business_model_similarity.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "adi",
+          "display_name": "Analog Devices",
+          "ticker": "ADI",
+          "primary_node_id": "analog_mixed_signal_and_power",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
+          "score": 0.5343,
+          "rank": 8,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.2,
+              "weight": 0.15,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.9608,
+              "weight": 0.05,
+              "weighted_contribution": 0.048,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.6667,
+              "weight": 0.05,
+              "weighted_contribution": 0.0333,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.6,
+              "weight": 0.05,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.35,
+              "weighted_contribution": 0.245,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.9608,
+              "weight": 0.05,
+              "weighted_contribution": 0.048,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Analog Devices is a weaker growth for American Tower.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "size similarity contributes 0.10 to the score.",
+              "Customer-type mix is similar."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (tower_and_macro_site_operators vs analog_mixed_signal_and_power).",
+              "taxonomy proximity is relatively weak (0.20).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Analog Devices is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -1220,20 +1222,20 @@
           "incomplete": false
         },
         {
-          "company_key": "klac",
-          "display_name": "KLA",
-          "ticker": "KLAC",
-          "primary_node_id": "process_control_and_metrology",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
-          "score": 0.5192,
+          "company_key": "gfs",
+          "display_name": "GlobalFoundries",
+          "ticker": "GFS",
+          "primary_node_id": "semiconductor_foundries",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.semiconductor_foundries",
+          "score": 0.4851,
           "rank": 10,
           "is_manual": false,
           "components": [
             {
               "factor_code": "taxonomy_proximity",
-              "factor_score": 0.1667,
+              "factor_score": 0.2,
               "weight": 0.15,
-              "weighted_contribution": 0.025,
+              "weighted_contribution": 0.03,
               "notes": null
             },
             {
@@ -1259,9 +1261,9 @@
             },
             {
               "factor_code": "geographic_overlap",
-              "factor_score": 0.6,
+              "factor_score": 0.8182,
               "weight": 0.05,
-              "weighted_contribution": 0.03,
+              "weighted_contribution": 0.0409,
               "notes": null
             },
             {
@@ -1273,9 +1275,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 1,
+              "factor_score": 0,
               "weight": 0.05,
-              "weighted_contribution": 0.05,
+              "weighted_contribution": 0,
               "notes": null
             },
             {
@@ -1294,15 +1296,15 @@
             }
           ],
           "explanation": {
-            "summary": "KLA is a weaker growth for American Tower.",
+            "summary": "GlobalFoundries is a weaker growth for American Tower.",
             "similarities": [
               "Growth bands are comparable in the pilot features.",
               "size similarity contributes 0.07 to the score.",
-              "margin similarity contributes 0.05 to the score."
+              "Customer-type mix is similar."
             ],
             "differences": [
-              "Primary taxonomy nodes differ (tower_and_macro_site_operators vs process_control_and_metrology).",
-              "taxonomy proximity is relatively weak (0.17).",
+              "Primary taxonomy nodes differ (tower_and_macro_site_operators vs semiconductor_foundries).",
+              "taxonomy proximity is relatively weak (0.20).",
               "business model similarity is relatively weak (0.00).",
               "segment overlap is relatively weak (0.00)."
             ],
@@ -1314,7 +1316,7 @@
               "shared_geography"
             ],
             "eligibility_notes": [],
-            "why_appropriate": "KLA is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_appropriate": "GlobalFoundries is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
             "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
             "confidence": 1
           },
@@ -1344,7 +1346,7 @@
           "ticker": "CCI",
           "primary_node_id": "tower_and_macro_site_operators",
           "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
-          "score": 0.9894,
+          "score": 0.8894,
           "rank": 1,
           "is_manual": false,
           "components": [
@@ -1392,9 +1394,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 1,
+              "factor_score": 0,
               "weight": 0.1,
-              "weighted_contribution": 0.1,
+              "weighted_contribution": 0,
               "notes": null
             },
             {
@@ -1428,7 +1430,8 @@
             ],
             "differences": [
               "geographic overlap is relatively weak (0.29).",
-              "segment overlap is relatively weak (0.55)."
+              "segment overlap is relatively weak (0.55).",
+              "margin similarity is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -1444,7 +1447,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Crown Castle is retained for peer type risk because candidate reasons include same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, segment_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, segment_overlap, margin_similarity.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -1936,7 +1939,7 @@
           "ticker": "CMCSA",
           "primary_node_id": "cable_broadband_operators",
           "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
-          "score": 0.4644,
+          "score": 0.4194,
           "rank": 6,
           "is_manual": false,
           "components": [
@@ -2005,9 +2008,9 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.6,
+              "factor_score": 0.3,
               "weight": 0.15,
-              "weighted_contribution": 0.09,
+              "weighted_contribution": 0.045,
               "notes": null
             }
           ],
@@ -2015,14 +2018,14 @@
             "summary": "Comcast is a weaker risk for American Tower.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.09 to the score.",
-              "size similarity contributes 0.07 to the score."
+              "size similarity contributes 0.07 to the score.",
+              "Taxonomy proximity is high between tower_and_macro_site_operators and cable_broadband_operators."
             ],
             "differences": [
               "Primary taxonomy nodes differ (tower_and_macro_site_operators vs cable_broadband_operators).",
+              "leverage similarity is relatively weak (0.30).",
               "geographic overlap is relatively weak (0.43).",
-              "customer overlap is relatively weak (0.13).",
-              "business model similarity is relatively weak (0.00)."
+              "customer overlap is relatively weak (0.13)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2035,7 +2038,7 @@
               "eligible_with_penalty via allow_tower_operator_risk: Infrastructure / capital-intensity / rate-risk comparisons may include towers."
             ],
             "why_appropriate": "Comcast is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
-            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, customer_overlap, business_model_similarity.",
+            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, geographic_overlap, customer_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible_with_penalty",

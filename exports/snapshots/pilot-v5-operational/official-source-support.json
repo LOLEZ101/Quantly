@@ -23,91 +23,96 @@
       "company_key": "t",
       "ticker": "T",
       "cik": "0000732717",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000732717.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "tmus",
       "ticker": "TMUS",
       "cik": "0001283699",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001283699.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "cmcsa",
       "ticker": "CMCSA",
       "cik": "0001166691",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001166691.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
-        "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "long_term_debt",
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "chtr",
       "ticker": "CHTR",
       "cik": "0001091667",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001091667.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "cci",
       "ticker": "CCI",
       "cik": "0001051470",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001051470.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
-        "long_term_debt",
+        "long_term_debt"
+      ],
+      "metrics_missing": [
         "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "amt",
@@ -151,45 +156,47 @@
       "company_key": "sbux",
       "ticker": "SBUX",
       "cik": "0000829224",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000829224.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "cmg",
       "ticker": "CMG",
       "cik": "0001058090",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001058090.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "yum",
       "ticker": "YUM",
       "cik": "0001041061",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001041061.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -199,79 +206,83 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "dpz",
       "ticker": "DPZ",
       "cik": "0001286681",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001286681.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "dri",
       "ticker": "DRI",
       "cik": "0000940944",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000940944.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "qsr",
       "ticker": "QSR",
       "cik": "0001618756",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001618756.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "txrh",
       "ticker": "TXRH",
       "cik": "0001289460",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001289460.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "rd_expense"
+      ],
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "nvda",
@@ -295,9 +306,9 @@
       "company_key": "amd",
       "ticker": "AMD",
       "cik": "0000002488",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -307,7 +318,7 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "intc",
@@ -331,9 +342,9 @@
       "company_key": "avgo",
       "ticker": "AVGO",
       "cik": "0001730168",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -343,33 +354,34 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "qcom",
       "ticker": "QCOM",
       "cik": "0000804328",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000804328.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
+        "rd_expense"
+      ],
+      "metrics_missing": [
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "txn",
       "ticker": "TXN",
       "cik": "0000097476",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000097476.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -379,15 +391,15 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "adi",
       "ticker": "ADI",
       "cik": "0000006281",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000006281.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -397,15 +409,15 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "mu",
       "ticker": "MU",
       "cik": "0000723125",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723125.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -415,15 +427,15 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "amat",
       "ticker": "AMAT",
       "cik": "0000006951",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000006951.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -433,33 +445,34 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "lrcx",
       "ticker": "LRCX",
       "cik": "0000707549",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000707549.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
         "long_term_debt",
-        "rd_expense",
+        "rd_expense"
+      ],
+      "metrics_missing": [
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "klac",
       "ticker": "KLAC",
       "cik": "0000319201",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000319201.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -469,15 +482,15 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "nxpi",
       "ticker": "NXPI",
       "cik": "0001413447",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001413447.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -487,15 +500,15 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "gfs",
       "ticker": "GFS",
       "cik": "0001709048",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001709048.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -505,15 +518,15 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "mrvl",
       "ticker": "MRVL",
       "cik": "0001835632",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001835632.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
@@ -523,25 +536,26 @@
         "capex"
       ],
       "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "authoritative_financial_support": "live_edgar"
     },
     {
       "company_key": "mpwr",
       "ticker": "MPWR",
       "cik": "0001280452",
-      "identifier_live_checked": false,
-      "companyfacts_live_uri": null,
-      "companyfacts_source": "offline_verified_fixture",
+      "identifier_live_checked": true,
+      "companyfacts_live_uri": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001280452.json",
+      "companyfacts_source": "live_edgar",
       "metrics_present": [
         "revenue",
         "operating_income",
         "assets",
-        "long_term_debt",
         "rd_expense",
         "capex"
       ],
-      "metrics_missing": [],
-      "authoritative_financial_support": "full_offline_mapped"
+      "metrics_missing": [
+        "long_term_debt"
+      ],
+      "authoritative_financial_support": "live_edgar"
     }
   ],
   "field_authority_matrix": [
@@ -693,12 +707,12 @@
   ],
   "summary": {
     "companies": 30,
-    "live_edgar_full_financial": 5,
+    "live_edgar_full_financial": 30,
     "live_edgar_acceptance_set": 5,
     "acceptance_set_size": 5,
-    "offline_fixture_full_financial": 25,
+    "offline_fixture_full_financial": 0,
     "companyfacts_mappable_field_defs": 7,
     "filing_text_field_defs": 7,
-    "conclusion": "Acceptance set has live EDGAR core financials; full pilot not yet complete."
+    "conclusion": "All pilot companies have live EDGAR companyfacts covering core metrics."
   }
 }

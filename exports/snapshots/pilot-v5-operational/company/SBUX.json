@@ -169,10 +169,10 @@
       "related_node_id": "qsr_company_operated"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=36000000000 USD end=2023-12-31",
-      "excerpt": "Revenues=36000000000 USD end=2023-12-31",
-      "locator": "xbrl:0000829224-24-0001:Revenues",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=5672600000 USD end=2008-09-28",
+      "excerpt": "Assets=5672600000 USD end=2008-09-28",
+      "locator": "xbrl:0000950123-09-029843:Assets",
       "source_document_uri": "fixture://sec/sbux",
       "confidence": 0.9,
       "is_manual": false,

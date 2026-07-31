@@ -2139,136 +2139,13 @@
       "threshold": 0.4,
       "peers": [
         {
-          "company_key": "yum",
-          "display_name": "Yum! Brands",
-          "ticker": "YUM",
-          "primary_node_id": "restaurant_franchisors_asset_light",
-          "primary_path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
-          "score": 1,
-          "rank": 1,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0.9048,
-              "weight": 0.1,
-              "weighted_contribution": 0.0905,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0.7857,
-              "weight": 0.05,
-              "weighted_contribution": 0.0393,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.1,
-              "weighted_contribution": 0.0905,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.6,
-              "weight": 0.05,
-              "weighted_contribution": 0.03,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 0.3,
-              "weight": 0.2,
-              "weighted_contribution": 0.06,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 1,
-              "weight": 0.15,
-              "weighted_contribution": 0.15,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Yum! Brands is a close risk for Restaurant Brands International.",
-            "similarities": [
-              "leverage similarity contributes 0.15 to the score.",
-              "Both map primarily to restaurant_franchisors_asset_light.",
-              "size similarity contributes 0.10 to the score."
-            ],
-            "differences": [
-              "capital intensity similarity is relatively weak (0.30)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "explicit_manual_competitor",
-              "same_parent_node",
-              "same_terminal_taxonomy_node",
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model",
-              "similar_segment_composition"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Yum! Brands is retained for peer type risk because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker capital_intensity_similarity.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "explicit_manual_competitor",
-            "same_parent_node",
-            "same_terminal_taxonomy_node",
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model",
-            "similar_segment_composition"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
           "company_key": "mcd",
           "display_name": "McDonald's",
           "ticker": "MCD",
           "primary_node_id": "qsr_franchise_heavy",
           "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy",
           "score": 0.9917,
-          "rank": 2,
+          "rank": 1,
           "is_manual": false,
           "components": [
             {
@@ -2383,12 +2260,135 @@
           "incomplete": false
         },
         {
+          "company_key": "yum",
+          "display_name": "Yum! Brands",
+          "ticker": "YUM",
+          "primary_node_id": "restaurant_franchisors_asset_light",
+          "primary_path": "root.consumer_discretionary.restaurants.restaurant_franchisors_asset_light",
+          "score": 0.9703,
+          "rank": 2,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.9048,
+              "weight": 0.1,
+              "weighted_contribution": 0.0905,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0.7857,
+              "weight": 0.05,
+              "weighted_contribution": 0.0393,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.1,
+              "weighted_contribution": 0.0905,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.6,
+              "weight": 0.05,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 0.3,
+              "weight": 0.2,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.6,
+              "weight": 0.15,
+              "weighted_contribution": 0.09,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Yum! Brands is a close risk for Restaurant Brands International.",
+            "similarities": [
+              "Both map primarily to restaurant_franchisors_asset_light.",
+              "size similarity contributes 0.10 to the score.",
+              "margin similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "capital intensity similarity is relatively weak (0.30)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "explicit_manual_competitor",
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Yum! Brands is retained for peer type risk because candidate reasons include explicit_manual_competitor, same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker capital_intensity_similarity.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "explicit_manual_competitor",
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
           "company_key": "dpz",
           "display_name": "Domino's",
           "ticker": "DPZ",
           "primary_node_id": "qsr_franchise_heavy",
           "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_franchise_heavy",
-          "score": 0.7483,
+          "score": 0.6433,
           "rank": 3,
           "is_manual": false,
           "components": [
@@ -2457,22 +2457,23 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 1,
+              "factor_score": 0.3,
               "weight": 0.15,
-              "weighted_contribution": 0.15,
+              "weighted_contribution": 0.045,
               "notes": null
             }
           ],
           "explanation": {
             "summary": "Domino's is a relevant risk for Restaurant Brands International.",
             "similarities": [
-              "leverage similarity contributes 0.15 to the score.",
               "size similarity contributes 0.10 to the score.",
-              "geographic overlap contributes 0.09 to the score."
+              "geographic overlap contributes 0.09 to the score.",
+              "Infrastructure / operating models are similar."
             ],
             "differences": [
               "Primary taxonomy nodes differ (restaurant_franchisors_asset_light vs qsr_franchise_heavy).",
               "capital intensity similarity is relatively weak (0.30).",
+              "leverage similarity is relatively weak (0.30).",
               "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
@@ -2487,7 +2488,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Domino's is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker capital_intensity_similarity, segment_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker capital_intensity_similarity, leverage_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -2507,7 +2508,7 @@
           "ticker": "SBUX",
           "primary_node_id": "qsr_hybrid_franchise",
           "primary_path": "root.consumer_discretionary.restaurants.quick_service_restaurants.qsr_hybrid_franchise",
-          "score": 0.5967,
+          "score": 0.5367,
           "rank": 4,
           "is_manual": false,
           "components": [
@@ -2576,17 +2577,17 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 1,
+              "factor_score": 0.6,
               "weight": 0.15,
-              "weighted_contribution": 0.15,
+              "weighted_contribution": 0.09,
               "notes": null
             }
           ],
           "explanation": {
-            "summary": "Starbucks is a relevant risk for Restaurant Brands International.",
+            "summary": "Starbucks is a weaker risk for Restaurant Brands International.",
             "similarities": [
-              "leverage similarity contributes 0.15 to the score.",
               "capital intensity similarity contributes 0.12 to the score.",
+              "leverage similarity contributes 0.09 to the score.",
               "size similarity contributes 0.07 to the score."
             ],
             "differences": [
@@ -2621,7 +2622,7 @@
           "ticker": "TXRH",
           "primary_node_id": "casual_dining",
           "primary_path": "root.consumer_discretionary.restaurants.full_service_restaurants.casual_dining",
-          "score": 0.4382,
+          "score": 0.4982,
           "rank": 5,
           "is_manual": false,
           "components": [
@@ -2683,9 +2684,9 @@
             },
             {
               "factor_code": "capital_intensity_similarity",
-              "factor_score": 0.3,
+              "factor_score": 0.6,
               "weight": 0.2,
-              "weighted_contribution": 0.06,
+              "weighted_contribution": 0.12,
               "notes": null
             },
             {
@@ -2699,15 +2700,15 @@
           "explanation": {
             "summary": "Texas Roadhouse is a weaker risk for Restaurant Brands International.",
             "similarities": [
+              "capital intensity similarity contributes 0.12 to the score.",
               "size similarity contributes 0.10 to the score.",
-              "Taxonomy proximity is high between restaurant_franchisors_asset_light and casual_dining.",
-              "capital intensity similarity contributes 0.06 to the score."
+              "Taxonomy proximity is high between restaurant_franchisors_asset_light and casual_dining."
             ],
             "differences": [
               "Primary taxonomy nodes differ (restaurant_franchisors_asset_light vs casual_dining).",
-              "capital intensity similarity is relatively weak (0.30).",
               "leverage similarity is relatively weak (0.30).",
-              "geographic overlap is relatively weak (0.38)."
+              "geographic overlap is relatively weak (0.38).",
+              "margin similarity is relatively weak (0.30)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2720,7 +2721,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Texas Roadhouse is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker capital_intensity_similarity, leverage_similarity, geographic_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, geographic_overlap, margin_similarity.",
             "confidence": 1
           },
           "eligibility": "eligible",

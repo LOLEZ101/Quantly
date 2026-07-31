@@ -1954,7 +1954,7 @@
           "ticker": "CMCSA",
           "primary_node_id": "cable_broadband_operators",
           "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
-          "score": 0.9594,
+          "score": 0.9144,
           "rank": 1,
           "is_manual": false,
           "components": [
@@ -2023,9 +2023,9 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.6,
+              "factor_score": 0.3,
               "weight": 0.15,
-              "weighted_contribution": 0.09,
+              "weighted_contribution": 0.045,
               "notes": null
             }
           ],
@@ -2037,7 +2037,8 @@
               "size similarity contributes 0.10 to the score."
             ],
             "differences": [
-              "business model similarity is relatively weak (0.54)."
+              "business model similarity is relatively weak (0.54).",
+              "leverage similarity is relatively weak (0.30)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2053,7 +2054,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Comcast is retained for peer type risk because candidate reasons include same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, leverage_similarity.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -2430,7 +2431,7 @@
           "ticker": "CCI",
           "primary_node_id": "tower_and_macro_site_operators",
           "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
-          "score": 0.5646,
+          "score": 0.5446,
           "rank": 5,
           "is_manual": false,
           "components": [
@@ -2478,9 +2479,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 0.6,
+              "factor_score": 0.4,
               "weight": 0.1,
-              "weighted_contribution": 0.06,
+              "weighted_contribution": 0.04,
               "notes": null
             },
             {
@@ -2506,7 +2507,7 @@
             }
           ],
           "explanation": {
-            "summary": "Crown Castle is a relevant risk for Charter Communications.",
+            "summary": "Crown Castle is a weaker risk for Charter Communications.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
               "leverage similarity contributes 0.15 to the score.",
@@ -2514,9 +2515,9 @@
             ],
             "differences": [
               "Primary taxonomy nodes differ (cable_broadband_operators vs tower_and_macro_site_operators).",
+              "margin similarity is relatively weak (0.40).",
               "customer overlap is relatively weak (0.09).",
-              "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00)."
+              "business model similarity is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2529,7 +2530,7 @@
               "eligible_with_penalty via allow_tower_operator_risk: Infrastructure / capital-intensity / rate-risk comparisons may include towers."
             ],
             "why_appropriate": "Crown Castle is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
-            "why_not_higher": "Score is not higher mainly due to weaker customer_overlap, business_model_similarity, segment_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, customer_overlap, business_model_similarity.",
             "confidence": 1
           },
           "eligibility": "eligible_with_penalty",

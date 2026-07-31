@@ -1960,372 +1960,13 @@
       "threshold": 0.4,
       "peers": [
         {
-          "company_key": "chtr",
-          "display_name": "Charter Communications",
-          "ticker": "CHTR",
-          "primary_node_id": "cable_broadband_operators",
-          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
-          "score": 0.9474,
-          "rank": 1,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0.5385,
-              "weight": 0.1,
-              "weighted_contribution": 0.0538,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0.7414,
-              "weight": 0.05,
-              "weighted_contribution": 0.0371,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.8519,
-              "weight": 0.05,
-              "weighted_contribution": 0.0426,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.7391,
-              "weight": 0.1,
-              "weighted_contribution": 0.0739,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
-              "weight": 0.2,
-              "weighted_contribution": 0.2,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 0.6,
-              "weight": 0.15,
-              "weighted_contribution": 0.09,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Charter Communications is a close risk for Comcast.",
-            "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "Both map primarily to cable_broadband_operators.",
-              "size similarity contributes 0.10 to the score."
-            ],
-            "differences": [
-              "business model similarity is relatively weak (0.54)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "same_parent_node",
-              "same_terminal_taxonomy_node",
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model",
-              "similar_segment_composition"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Charter Communications is retained for peer type risk because candidate reasons include same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "same_parent_node",
-            "same_terminal_taxonomy_node",
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model",
-            "similar_segment_composition"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
-          "company_key": "tmus",
-          "display_name": "T-Mobile US",
-          "ticker": "TMUS",
-          "primary_node_id": "national_wireless_network_owners",
-          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
-          "score": 0.8839,
-          "rank": 2,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.76,
-              "weight": 0.1,
-              "weighted_contribution": 0.076,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0.5385,
-              "weight": 0.1,
-              "weighted_contribution": 0.0538,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.7391,
-              "weight": 0.1,
-              "weighted_contribution": 0.0739,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.7,
-              "weight": 0.05,
-              "weighted_contribution": 0.035,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
-              "weight": 0.2,
-              "weighted_contribution": 0.2,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 1,
-              "weight": 0.15,
-              "weighted_contribution": 0.15,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "T-Mobile US is a close risk for Comcast.",
-            "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.15 to the score.",
-              "size similarity contributes 0.10 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (cable_broadband_operators vs national_wireless_network_owners).",
-              "business model similarity is relatively weak (0.54).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "adjacent_taxonomy_node",
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "T-Mobile US is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "adjacent_taxonomy_node",
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
-          "company_key": "t",
-          "display_name": "AT&T",
-          "ticker": "T",
-          "primary_node_id": "national_wireless_network_owners",
-          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
-          "score": 0.8836,
-          "rank": 3,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.76,
-              "weight": 0.1,
-              "weighted_contribution": 0.076,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0.5385,
-              "weight": 0.1,
-              "weighted_contribution": 0.0538,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.7391,
-              "weight": 0.05,
-              "weighted_contribution": 0.037,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.8182,
-              "weight": 0.1,
-              "weighted_contribution": 0.0818,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.7,
-              "weight": 0.05,
-              "weighted_contribution": 0.035,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
-              "weight": 0.2,
-              "weighted_contribution": 0.2,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 1,
-              "weight": 0.15,
-              "weighted_contribution": 0.15,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "AT&T is a close risk for Comcast.",
-            "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.15 to the score.",
-              "size similarity contributes 0.10 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (cable_broadband_operators vs national_wireless_network_owners).",
-              "business model similarity is relatively weak (0.54).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "adjacent_taxonomy_node",
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "AT&T is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "adjacent_taxonomy_node",
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
           "company_key": "vz",
           "display_name": "Verizon",
           "ticker": "VZ",
           "primary_node_id": "national_wireless_network_owners",
           "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
-          "score": 0.8576,
-          "rank": 4,
+          "score": 0.9026,
+          "rank": 1,
           "is_manual": false,
           "components": [
             {
@@ -2393,9 +2034,9 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.7,
+              "factor_score": 1,
               "weight": 0.15,
-              "weighted_contribution": 0.105,
+              "weighted_contribution": 0.15,
               "notes": null
             }
           ],
@@ -2403,7 +2044,7 @@
             "summary": "Verizon is a close risk for Comcast.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.10 to the score.",
+              "leverage similarity contributes 0.15 to the score.",
               "size similarity contributes 0.10 to the score."
             ],
             "differences": [
@@ -2438,41 +2079,41 @@
           "incomplete": false
         },
         {
-          "company_key": "cci",
-          "display_name": "Crown Castle",
-          "ticker": "CCI",
-          "primary_node_id": "tower_and_macro_site_operators",
-          "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
-          "score": 0.481,
-          "rank": 5,
+          "company_key": "chtr",
+          "display_name": "Charter Communications",
+          "ticker": "CHTR",
+          "primary_node_id": "cable_broadband_operators",
+          "primary_path": "root.communication_services.telecommunications.fixed_connectivity.cable_broadband_operators",
+          "score": 0.9024,
+          "rank": 2,
           "is_manual": false,
           "components": [
             {
               "factor_code": "taxonomy_proximity",
-              "factor_score": 0.6,
+              "factor_score": 1,
               "weight": 0.1,
-              "weighted_contribution": 0.06,
+              "weighted_contribution": 0.1,
               "notes": null
             },
             {
               "factor_code": "business_model_similarity",
-              "factor_score": 0,
+              "factor_score": 0.5385,
               "weight": 0.1,
-              "weighted_contribution": 0,
+              "weighted_contribution": 0.0538,
               "notes": null
             },
             {
               "factor_code": "segment_overlap",
-              "factor_score": 0,
+              "factor_score": 0.7414,
               "weight": 0.05,
-              "weighted_contribution": 0,
+              "weighted_contribution": 0.0371,
               "notes": null
             },
             {
               "factor_code": "customer_overlap",
-              "factor_score": 0.1429,
+              "factor_score": 0.8519,
               "weight": 0.05,
-              "weighted_contribution": 0.0071,
+              "weighted_contribution": 0.0426,
               "notes": null
             },
             {
@@ -2484,16 +2125,138 @@
             },
             {
               "factor_code": "size_similarity",
-              "factor_score": 0.75,
+              "factor_score": 1,
               "weight": 0.1,
-              "weighted_contribution": 0.075,
+              "weighted_contribution": 0.1,
               "notes": null
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 0.6,
+              "factor_score": 1,
               "weight": 0.1,
-              "weighted_contribution": 0.06,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.3,
+              "weight": 0.15,
+              "weighted_contribution": 0.045,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Charter Communications is a close risk for Comcast.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "Both map primarily to cable_broadband_operators.",
+              "size similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "business model similarity is relatively weak (0.54).",
+              "leverage similarity is relatively weak (0.30)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "same_parent_node",
+              "same_terminal_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model",
+              "similar_segment_composition"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Charter Communications is retained for peer type risk because candidate reasons include same_parent_node, same_terminal_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model, similar_segment_composition and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, leverage_similarity.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "same_parent_node",
+            "same_terminal_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model",
+            "similar_segment_composition"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "tmus",
+          "display_name": "T-Mobile US",
+          "ticker": "TMUS",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 0.8389,
+          "rank": 3,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.1,
+              "weighted_contribution": 0.076,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.5385,
+              "weight": 0.1,
+              "weighted_contribution": 0.0538,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.7391,
+              "weight": 0.1,
+              "weighted_contribution": 0.0739,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
               "notes": null
             },
             {
@@ -2512,45 +2275,167 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.6,
+              "factor_score": 0.7,
               "weight": 0.15,
-              "weighted_contribution": 0.09,
+              "weighted_contribution": 0.105,
               "notes": null
             }
           ],
           "explanation": {
-            "summary": "Crown Castle is a weaker risk for Comcast.",
+            "summary": "T-Mobile US is a close risk for Comcast.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.09 to the score.",
-              "size similarity contributes 0.07 to the score."
+              "leverage similarity contributes 0.10 to the score.",
+              "size similarity contributes 0.10 to the score."
             ],
             "differences": [
-              "Primary taxonomy nodes differ (cable_broadband_operators vs tower_and_macro_site_operators).",
-              "customer overlap is relatively weak (0.14).",
-              "business model similarity is relatively weak (0.00).",
+              "Primary taxonomy nodes differ (cable_broadband_operators vs national_wireless_network_owners).",
+              "business model similarity is relatively weak (0.54).",
               "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
             ],
             "candidate_reasons": [
+              "adjacent_taxonomy_node",
               "shared_customer_type",
-              "shared_geography"
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
             ],
-            "eligibility_notes": [
-              "eligible_with_penalty via allow_tower_operator_risk: Infrastructure / capital-intensity / rate-risk comparisons may include towers."
-            ],
-            "why_appropriate": "Crown Castle is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
-            "why_not_higher": "Score is not higher mainly due to weaker customer_overlap, business_model_similarity, segment_overlap.",
+            "eligibility_notes": [],
+            "why_appropriate": "T-Mobile US is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
             "confidence": 1
           },
-          "eligibility": "eligible_with_penalty",
+          "eligibility": "eligible",
           "candidate_reasons": [
+            "adjacent_taxonomy_node",
             "shared_customer_type",
-            "shared_geography"
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
           ],
-          "confidence": 0.85,
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "t",
+          "display_name": "AT&T",
+          "ticker": "T",
+          "primary_node_id": "national_wireless_network_owners",
+          "primary_path": "root.communication_services.telecommunications.wireless_services.national_wireless_network_owners",
+          "score": 0.8386,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.76,
+              "weight": 0.1,
+              "weighted_contribution": 0.076,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0.5385,
+              "weight": 0.1,
+              "weighted_contribution": 0.0538,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.7391,
+              "weight": 0.05,
+              "weighted_contribution": 0.037,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.8182,
+              "weight": 0.1,
+              "weighted_contribution": 0.0818,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.7,
+              "weight": 0.15,
+              "weighted_contribution": 0.105,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "AT&T is a close risk for Comcast.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.10 to the score.",
+              "size similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (cable_broadband_operators vs national_wireless_network_owners).",
+              "business model similarity is relatively weak (0.54).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "AT&T is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
           "incomplete": false
         },
         {
@@ -2559,8 +2444,8 @@
           "ticker": "AMT",
           "primary_node_id": "tower_and_macro_site_operators",
           "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
-          "score": 0.4644,
-          "rank": 6,
+          "score": 0.4194,
+          "rank": 5,
           "is_manual": false,
           "components": [
             {
@@ -2628,9 +2513,9 @@
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.6,
+              "factor_score": 0.3,
               "weight": 0.15,
-              "weighted_contribution": 0.09,
+              "weighted_contribution": 0.045,
               "notes": null
             }
           ],
@@ -2638,14 +2523,14 @@
             "summary": "American Tower is a weaker risk for Comcast.",
             "similarities": [
               "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.09 to the score.",
-              "size similarity contributes 0.07 to the score."
+              "size similarity contributes 0.07 to the score.",
+              "Taxonomy proximity is high between cable_broadband_operators and tower_and_macro_site_operators."
             ],
             "differences": [
               "Primary taxonomy nodes differ (cable_broadband_operators vs tower_and_macro_site_operators).",
+              "leverage similarity is relatively weak (0.30).",
               "geographic overlap is relatively weak (0.43).",
-              "customer overlap is relatively weak (0.13).",
-              "business model similarity is relatively weak (0.00)."
+              "customer overlap is relatively weak (0.13)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -2658,7 +2543,123 @@
               "eligible_with_penalty via allow_tower_operator_risk: Infrastructure / capital-intensity / rate-risk comparisons may include towers."
             ],
             "why_appropriate": "American Tower is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
-            "why_not_higher": "Score is not higher mainly due to weaker geographic_overlap, customer_overlap, business_model_similarity.",
+            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, geographic_overlap, customer_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible_with_penalty",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 0.85,
+          "incomplete": false
+        },
+        {
+          "company_key": "cci",
+          "display_name": "Crown Castle",
+          "ticker": "CCI",
+          "primary_node_id": "tower_and_macro_site_operators",
+          "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
+          "score": 0.416,
+          "rank": 6,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.6,
+              "weight": 0.1,
+              "weighted_contribution": 0.06,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.1429,
+              "weight": 0.05,
+              "weighted_contribution": 0.0071,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.7391,
+              "weight": 0.1,
+              "weighted_contribution": 0.0739,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.4,
+              "weight": 0.1,
+              "weighted_contribution": 0.04,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.3,
+              "weight": 0.15,
+              "weighted_contribution": 0.045,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Crown Castle is a weaker risk for Comcast.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "size similarity contributes 0.07 to the score.",
+              "geographic overlap contributes 0.07 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (cable_broadband_operators vs tower_and_macro_site_operators).",
+              "leverage similarity is relatively weak (0.30).",
+              "margin similarity is relatively weak (0.40).",
+              "customer overlap is relatively weak (0.14)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [
+              "eligible_with_penalty via allow_tower_operator_risk: Infrastructure / capital-intensity / rate-risk comparisons may include towers."
+            ],
+            "why_appropriate": "Crown Castle is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
+            "why_not_higher": "Score is not higher mainly due to weaker leverage_similarity, margin_similarity, customer_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible_with_penalty",

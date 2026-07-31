@@ -404,13 +404,119 @@
       "threshold": 0.45,
       "peers": [
         {
+          "company_key": "mrvl",
+          "display_name": "Marvell",
+          "ticker": "MRVL",
+          "primary_node_id": "fabless_connectivity_and_networking",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
+          "score": 0.7404,
+          "rank": 1,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.6667,
+              "weight": 0.15,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.35,
+              "weighted_contribution": 0.35,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Marvell is a relevant growth for GlobalFoundries.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "Taxonomy proximity is high between semiconductor_foundries and fabless_connectivity_and_networking.",
+              "size similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (semiconductor_foundries vs fabless_connectivity_and_networking).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Marvell is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
           "company_key": "intc",
           "display_name": "Intel",
           "ticker": "INTC",
           "primary_node_id": "integrated_device_manufacturers",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.integrated_device_manufacturers",
           "score": 0.7009,
-          "rank": 1,
+          "rank": 2,
           "is_manual": false,
           "components": [
             {
@@ -521,13 +627,229 @@
           "incomplete": false
         },
         {
+          "company_key": "klac",
+          "display_name": "KLA",
+          "ticker": "KLAC",
+          "primary_node_id": "process_control_and_metrology",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
+          "score": 0.697,
+          "rank": 3,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.5,
+              "weight": 0.15,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.7391,
+              "weight": 0.05,
+              "weighted_contribution": 0.037,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.35,
+              "weighted_contribution": 0.35,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "KLA is a relevant growth for GlobalFoundries.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "size similarity contributes 0.10 to the score.",
+              "Taxonomy proximity is high between semiconductor_foundries and process_control_and_metrology."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (semiconductor_foundries vs process_control_and_metrology).",
+              "taxonomy proximity is relatively weak (0.50).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "KLA is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "adi",
+          "display_name": "Analog Devices",
+          "ticker": "ADI",
+          "primary_node_id": "analog_mixed_signal_and_power",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
+          "score": 0.6813,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.7,
+              "weight": 0.15,
+              "weighted_contribution": 0.105,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.8182,
+              "weight": 0.05,
+              "weighted_contribution": 0.0409,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.4,
+              "weight": 0.05,
+              "weighted_contribution": 0.02,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.35,
+              "weighted_contribution": 0.35,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Analog Devices is a relevant growth for GlobalFoundries.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "Taxonomy proximity is high between semiconductor_foundries and analog_mixed_signal_and_power.",
+              "size similarity contributes 0.07 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (semiconductor_foundries vs analog_mixed_signal_and_power).",
+              "margin similarity is relatively weak (0.40).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "same_parent_node",
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Analog Devices is retained for peer type growth because candidate reasons include same_parent_node, shared_customer_type, shared_geography and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "same_parent_node",
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
           "company_key": "txn",
           "display_name": "Texas Instruments",
           "ticker": "TXN",
           "primary_node_id": "analog_mixed_signal_and_power",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
           "score": 0.6656,
-          "rank": 2,
+          "rank": 5,
           "is_manual": false,
           "components": [
             {
@@ -630,229 +952,13 @@
           "incomplete": false
         },
         {
-          "company_key": "klac",
-          "display_name": "KLA",
-          "ticker": "KLAC",
-          "primary_node_id": "process_control_and_metrology",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
-          "score": 0.662,
-          "rank": 3,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.5,
-              "weight": 0.15,
-              "weighted_contribution": 0.075,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.7391,
-              "weight": 0.05,
-              "weighted_contribution": 0.037,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 1,
-              "weight": 0.35,
-              "weighted_contribution": 0.35,
-              "notes": null
-            },
-            {
-              "factor_code": "competitive_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "KLA is a relevant growth for GlobalFoundries.",
-            "similarities": [
-              "Growth bands are comparable in the pilot features.",
-              "size similarity contributes 0.10 to the score.",
-              "Taxonomy proximity is high between semiconductor_foundries and process_control_and_metrology."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (semiconductor_foundries vs process_control_and_metrology).",
-              "taxonomy proximity is relatively weak (0.50).",
-              "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "KLA is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
-          "company_key": "adi",
-          "display_name": "Analog Devices",
-          "ticker": "ADI",
-          "primary_node_id": "analog_mixed_signal_and_power",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
-          "score": 0.6613,
-          "rank": 4,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.7,
-              "weight": 0.15,
-              "weighted_contribution": 0.105,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.8182,
-              "weight": 0.05,
-              "weighted_contribution": 0.0409,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 0.75,
-              "weight": 0.1,
-              "weighted_contribution": 0.075,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 1,
-              "weight": 0.35,
-              "weighted_contribution": 0.35,
-              "notes": null
-            },
-            {
-              "factor_code": "competitive_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Analog Devices is a relevant growth for GlobalFoundries.",
-            "similarities": [
-              "Growth bands are comparable in the pilot features.",
-              "Taxonomy proximity is high between semiconductor_foundries and analog_mixed_signal_and_power.",
-              "size similarity contributes 0.07 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (semiconductor_foundries vs analog_mixed_signal_and_power).",
-              "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00).",
-              "margin similarity is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "same_parent_node",
-              "shared_customer_type",
-              "shared_geography"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Analog Devices is retained for peer type growth because candidate reasons include same_parent_node, shared_customer_type, shared_geography and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap, margin_similarity.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "same_parent_node",
-            "shared_customer_type",
-            "shared_geography"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
           "company_key": "nxpi",
           "display_name": "NXP Semiconductors",
           "ticker": "NXPI",
           "primary_node_id": "analog_mixed_signal_and_power",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
           "score": 0.6574,
-          "rank": 5,
+          "rank": 6,
           "is_manual": false,
           "components": [
             {
@@ -961,7 +1067,7 @@
           "primary_node_id": "etch_deposition_and_clean",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.etch_deposition_and_clean",
           "score": 0.6333,
-          "rank": 6,
+          "rank": 7,
           "is_manual": false,
           "components": [
             {
@@ -1067,8 +1173,8 @@
           "ticker": "CCI",
           "primary_node_id": "tower_and_macro_site_operators",
           "primary_path": "root.communication_services.telecommunications.telecom_infrastructure.tower_and_macro_site_operators",
-          "score": 0.556,
-          "rank": 7,
+          "score": 0.606,
+          "rank": 8,
           "is_manual": false,
           "components": [
             {
@@ -1115,9 +1221,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 0,
+              "factor_score": 1,
               "weight": 0.05,
-              "weighted_contribution": 0,
+              "weighted_contribution": 0.05,
               "notes": null
             },
             {
@@ -1140,7 +1246,7 @@
             "similarities": [
               "Growth bands are comparable in the pilot features.",
               "size similarity contributes 0.07 to the score.",
-              "Customer-type mix is similar."
+              "margin similarity contributes 0.05 to the score."
             ],
             "differences": [
               "Primary taxonomy nodes differ (semiconductor_foundries vs tower_and_macro_site_operators).",
@@ -1175,7 +1281,7 @@
           "primary_node_id": "etch_deposition_and_clean",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.etch_deposition_and_clean",
           "score": 0.532,
-          "rank": 8,
+          "rank": 9,
           "is_manual": false,
           "components": [
             {
@@ -1265,113 +1371,6 @@
             "eligibility_notes": [],
             "why_appropriate": "Applied Materials is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
             "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
-          "company_key": "mrvl",
-          "display_name": "Marvell",
-          "ticker": "MRVL",
-          "primary_node_id": "fabless_connectivity_and_networking",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
-          "score": 0.5304,
-          "rank": 9,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.6667,
-              "weight": 0.15,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.4,
-              "weight": 0.35,
-              "weighted_contribution": 0.14,
-              "notes": null
-            },
-            {
-              "factor_code": "competitive_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Marvell is a weaker growth for GlobalFoundries.",
-            "similarities": [
-              "Growth bands are comparable in the pilot features.",
-              "Taxonomy proximity is high between semiconductor_foundries and fabless_connectivity_and_networking.",
-              "size similarity contributes 0.10 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (semiconductor_foundries vs fabless_connectivity_and_networking).",
-              "growth similarity is relatively weak (0.40).",
-              "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Marvell is retained for peer type growth because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker growth_similarity, business_model_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -1633,7 +1632,7 @@
           "ticker": "ADI",
           "primary_node_id": "analog_mixed_signal_and_power",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
-          "score": 0.672,
+          "score": 0.712,
           "rank": 2,
           "is_manual": false,
           "components": [
@@ -1681,9 +1680,9 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 0,
+              "factor_score": 0.4,
               "weight": 0.1,
-              "weighted_contribution": 0,
+              "weighted_contribution": 0.04,
               "notes": null
             },
             {
@@ -1717,9 +1716,9 @@
             ],
             "differences": [
               "Primary taxonomy nodes differ (semiconductor_foundries vs analog_mixed_signal_and_power).",
+              "margin similarity is relatively weak (0.40).",
               "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00).",
-              "margin similarity is relatively weak (0.00)."
+              "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
@@ -1731,7 +1730,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Analog Devices is retained for peer type risk because candidate reasons include same_parent_node, shared_customer_type, shared_geography and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap, margin_similarity.",
+            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, business_model_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -1858,13 +1857,128 @@
           "incomplete": false
         },
         {
+          "company_key": "mrvl",
+          "display_name": "Marvell",
+          "ticker": "MRVL",
+          "primary_node_id": "fabless_connectivity_and_networking",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
+          "score": 0.6619,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.6667,
+              "weight": 0.1,
+              "weighted_contribution": 0.0667,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 1,
+              "weight": 0.2,
+              "weighted_contribution": 0.2,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 1,
+              "weight": 0.15,
+              "weighted_contribution": 0.15,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Marvell is a relevant risk for GlobalFoundries.",
+            "similarities": [
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.15 to the score.",
+              "geographic overlap contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (semiconductor_foundries vs fabless_connectivity_and_networking).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [
+              "eligible_with_penalty via allow_foundry_fabless_risk: Shared industry cycle / geo-manufacturing risk may still be relevant."
+            ],
+            "why_appropriate": "Marvell is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
+            "why_not_higher": "Score is not higher mainly due to weaker business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible_with_penalty",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 0.85,
+          "incomplete": false
+        },
+        {
           "company_key": "txn",
           "display_name": "Texas Instruments",
           "ticker": "TXN",
           "primary_node_id": "analog_mixed_signal_and_power",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
           "score": 0.6357,
-          "rank": 4,
+          "rank": 5,
           "is_manual": false,
           "components": [
             {
@@ -1971,122 +2085,6 @@
             "shared_geography"
           ],
           "confidence": 1,
-          "incomplete": false
-        },
-        {
-          "company_key": "mrvl",
-          "display_name": "Marvell",
-          "ticker": "MRVL",
-          "primary_node_id": "fabless_connectivity_and_networking",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
-          "score": 0.6319,
-          "rank": 5,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.6667,
-              "weight": 0.1,
-              "weighted_contribution": 0.0667,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.4,
-              "weight": 0.05,
-              "weighted_contribution": 0.02,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
-              "weight": 0.2,
-              "weighted_contribution": 0.2,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 1,
-              "weight": 0.15,
-              "weighted_contribution": 0.15,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Marvell is a relevant risk for GlobalFoundries.",
-            "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.15 to the score.",
-              "geographic overlap contributes 0.10 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (semiconductor_foundries vs fabless_connectivity_and_networking).",
-              "growth similarity is relatively weak (0.40).",
-              "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography"
-            ],
-            "eligibility_notes": [
-              "eligible_with_penalty via allow_foundry_fabless_risk: Shared industry cycle / geo-manufacturing risk may still be relevant."
-            ],
-            "why_appropriate": "Marvell is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
-            "why_not_higher": "Score is not higher mainly due to weaker growth_similarity, business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible_with_penalty",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography"
-          ],
-          "confidence": 0.85,
           "incomplete": false
         },
         {
@@ -2440,13 +2438,129 @@
           "incomplete": false
         },
         {
+          "company_key": "klac",
+          "display_name": "KLA",
+          "ticker": "KLAC",
+          "primary_node_id": "process_control_and_metrology",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
+          "score": 0.5189,
+          "rank": 9,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.5,
+              "weight": 0.1,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.7391,
+              "weight": 0.1,
+              "weighted_contribution": 0.0739,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.7,
+              "weight": 0.1,
+              "weighted_contribution": 0.07,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 0.6,
+              "weight": 0.2,
+              "weighted_contribution": 0.12,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 0.7,
+              "weight": 0.15,
+              "weighted_contribution": 0.105,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "KLA is a weaker risk for GlobalFoundries.",
+            "similarities": [
+              "capital intensity similarity contributes 0.12 to the score.",
+              "leverage similarity contributes 0.10 to the score.",
+              "size similarity contributes 0.10 to the score."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (semiconductor_foundries vs process_control_and_metrology).",
+              "taxonomy proximity is relatively weak (0.50).",
+              "business model similarity is relatively weak (0.00).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "shared_customer_type",
+              "shared_geography"
+            ],
+            "eligibility_notes": [
+              "eligible_with_penalty via allow_equipment_devices_risk: Semiconductor industry-risk and market-behavior comparisons may include equipment."
+            ],
+            "why_appropriate": "KLA is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
+            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible_with_penalty",
+          "candidate_reasons": [
+            "shared_customer_type",
+            "shared_geography"
+          ],
+          "confidence": 0.85,
+          "incomplete": false
+        },
+        {
           "company_key": "amat",
           "display_name": "Applied Materials",
           "ticker": "AMAT",
           "primary_node_id": "etch_deposition_and_clean",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.etch_deposition_and_clean",
           "score": 0.4539,
-          "rank": 9,
+          "rank": 10,
           "is_manual": false,
           "components": [
             {
@@ -2544,122 +2658,6 @@
               "eligible_with_penalty via allow_equipment_devices_risk: Semiconductor industry-risk and market-behavior comparisons may include equipment."
             ],
             "why_appropriate": "Applied Materials is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
-            "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible_with_penalty",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography"
-          ],
-          "confidence": 0.85,
-          "incomplete": false
-        },
-        {
-          "company_key": "klac",
-          "display_name": "KLA",
-          "ticker": "KLAC",
-          "primary_node_id": "process_control_and_metrology",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_equipment.wafer_fabrication_equipment.process_control_and_metrology",
-          "score": 0.4489,
-          "rank": 10,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.5,
-              "weight": 0.1,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.7391,
-              "weight": 0.1,
-              "weighted_contribution": 0.0739,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 1,
-              "weight": 0.05,
-              "weighted_contribution": 0.05,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 0.6,
-              "weight": 0.2,
-              "weighted_contribution": 0.12,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 0.7,
-              "weight": 0.15,
-              "weighted_contribution": 0.105,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "KLA is a weaker risk for GlobalFoundries.",
-            "similarities": [
-              "capital intensity similarity contributes 0.12 to the score.",
-              "leverage similarity contributes 0.10 to the score.",
-              "size similarity contributes 0.10 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (semiconductor_foundries vs process_control_and_metrology).",
-              "taxonomy proximity is relatively weak (0.50).",
-              "business model similarity is relatively weak (0.00).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography"
-            ],
-            "eligibility_notes": [
-              "eligible_with_penalty via allow_equipment_devices_risk: Semiconductor industry-risk and market-behavior comparisons may include equipment."
-            ],
-            "why_appropriate": "KLA is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography and eligibility is eligible_with_penalty.",
             "why_not_higher": "Score is not higher mainly due to weaker taxonomy_proximity, business_model_similarity, segment_overlap.",
             "confidence": 1
           },

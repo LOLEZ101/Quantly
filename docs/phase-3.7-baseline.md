@@ -85,7 +85,7 @@ See also [`phase-3.7-recovery-audit.md`](phase-3.7-recovery-audit.md). This sect
 |------|-------------------------|-----------------|
 | `pilot-v5-operational` | Found overwritten as memory/`website_ready_not_official` | Restored to `official_acceptance_set_verified` |
 | Postgres E2E | Not present on disk artifact | `postgres_e2e_complete=true` |
-| Live EDGAR | 0 on disk artifact; prior full run interrupted | Acceptance set 5/5; full attempt 29/30 (GFS partial) — not full-pilot official |
+| Live EDGAR | 0 on disk artifact; prior full run interrupted | Acceptance set 5/5; full pilot **30/30** → `official_full_pilot_verified` |
 | Silent memory fallback | Removed for Phase 3.7 via `--repository postgres\|memory` | Unchanged |
 | Full-pilot status | **Not** `official_full_pilot_verified` | Still not forced |
 | Snapshots v1–v5 | All preserved on disk | Preserved |

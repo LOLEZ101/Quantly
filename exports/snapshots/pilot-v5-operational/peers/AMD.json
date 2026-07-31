@@ -1311,128 +1311,13 @@
           "incomplete": false
         },
         {
-          "company_key": "mrvl",
-          "display_name": "Marvell",
-          "ticker": "MRVL",
-          "primary_node_id": "fabless_connectivity_and_networking",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
-          "score": 0.8069,
-          "rank": 3,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.69,
-              "weight": 0.15,
-              "weighted_contribution": 0.1035,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.4815,
-              "weight": 0.05,
-              "weighted_contribution": 0.0241,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.05,
-              "weighted_contribution": 0.0452,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 0.75,
-              "weight": 0.1,
-              "weighted_contribution": 0.075,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 0.7,
-              "weight": 0.05,
-              "weighted_contribution": 0.035,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 1,
-              "weight": 0.35,
-              "weighted_contribution": 0.35,
-              "notes": null
-            },
-            {
-              "factor_code": "competitive_overlap",
-              "factor_score": 0.4815,
-              "weight": 0.05,
-              "weighted_contribution": 0.0241,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Marvell is a close growth for AMD.",
-            "similarities": [
-              "Growth bands are comparable in the pilot features.",
-              "Taxonomy proximity is high between fabless_compute_and_ai_accelerators and fabless_connectivity_and_networking.",
-              "Infrastructure / operating models are similar."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (fabless_compute_and_ai_accelerators vs fabless_connectivity_and_networking).",
-              "customer overlap is relatively weak (0.48).",
-              "competitive overlap is relatively weak (0.48).",
-              "segment overlap is relatively weak (0.00)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "adjacent_taxonomy_node",
-              "same_parent_node",
-              "shared_customer_type",
-              "shared_geography",
-              "shared_operating_model",
-              "shared_revenue_model"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Marvell is retained for peer type growth because candidate reasons include adjacent_taxonomy_node, same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker customer_overlap, competitive_overlap, segment_overlap.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "adjacent_taxonomy_node",
-            "same_parent_node",
-            "shared_customer_type",
-            "shared_geography",
-            "shared_operating_model",
-            "shared_revenue_model"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
           "company_key": "avgo",
           "display_name": "Broadcom",
           "ticker": "AVGO",
           "primary_node_id": "fabless_connectivity_and_networking",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
           "score": 0.624,
-          "rank": 4,
+          "rank": 3,
           "is_manual": false,
           "components": [
             {
@@ -1547,7 +1432,7 @@
           "primary_node_id": "analog_mixed_signal_and_power",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
           "score": 0.6147,
-          "rank": 5,
+          "rank": 4,
           "is_manual": false,
           "components": [
             {
@@ -1658,7 +1543,7 @@
           "primary_node_id": "integrated_device_manufacturers",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.integrated_device_manufacturers",
           "score": 0.6104,
-          "rank": 6,
+          "rank": 5,
           "is_manual": false,
           "components": [
             {
@@ -1757,6 +1642,121 @@
             "explicit_manual_competitor",
             "shared_customer_type",
             "shared_geography",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
+          "company_key": "mrvl",
+          "display_name": "Marvell",
+          "ticker": "MRVL",
+          "primary_node_id": "fabless_connectivity_and_networking",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
+          "score": 0.5969,
+          "rank": 6,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.69,
+              "weight": 0.15,
+              "weighted_contribution": 0.1035,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.1,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.4815,
+              "weight": 0.05,
+              "weighted_contribution": 0.0241,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.9048,
+              "weight": 0.05,
+              "weighted_contribution": 0.0452,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 0.75,
+              "weight": 0.1,
+              "weighted_contribution": 0.075,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.7,
+              "weight": 0.05,
+              "weighted_contribution": 0.035,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 0.4,
+              "weight": 0.35,
+              "weighted_contribution": 0.14,
+              "notes": null
+            },
+            {
+              "factor_code": "competitive_overlap",
+              "factor_score": 0.4815,
+              "weight": 0.05,
+              "weighted_contribution": 0.0241,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Marvell is a relevant growth for AMD.",
+            "similarities": [
+              "Growth bands are comparable in the pilot features.",
+              "Taxonomy proximity is high between fabless_compute_and_ai_accelerators and fabless_connectivity_and_networking.",
+              "Infrastructure / operating models are similar."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (fabless_compute_and_ai_accelerators vs fabless_connectivity_and_networking).",
+              "growth similarity is relatively weak (0.40).",
+              "customer overlap is relatively weak (0.48).",
+              "competitive overlap is relatively weak (0.48)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "same_parent_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Marvell is retained for peer type growth because candidate reasons include adjacent_taxonomy_node, same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker growth_similarity, customer_overlap, competitive_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "same_parent_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
             "shared_revenue_model"
           ],
           "confidence": 1,
@@ -2333,7 +2333,7 @@
           "ticker": "MRVL",
           "primary_node_id": "fabless_connectivity_and_networking",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
-          "score": 0.8786,
+          "score": 0.8486,
           "rank": 2,
           "is_manual": false,
           "components": [
@@ -2388,9 +2388,9 @@
             },
             {
               "factor_code": "growth_similarity",
-              "factor_score": 1,
+              "factor_score": 0.4,
               "weight": 0.05,
-              "weighted_contribution": 0.05,
+              "weighted_contribution": 0.02,
               "notes": null
             },
             {
@@ -2418,6 +2418,7 @@
             "differences": [
               "Primary taxonomy nodes differ (fabless_compute_and_ai_accelerators vs fabless_connectivity_and_networking).",
               "customer overlap is relatively weak (0.48).",
+              "growth similarity is relatively weak (0.40).",
               "segment overlap is relatively weak (0.00)."
             ],
             "limitations": [
@@ -2433,7 +2434,7 @@
             ],
             "eligibility_notes": [],
             "why_appropriate": "Marvell is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker customer_overlap, segment_overlap.",
+            "why_not_higher": "Score is not higher mainly due to weaker customer_overlap, growth_similarity, segment_overlap.",
             "confidence": 1
           },
           "eligibility": "eligible",
@@ -2567,13 +2568,135 @@
           "incomplete": false
         },
         {
+          "company_key": "qcom",
+          "display_name": "Qualcomm",
+          "ticker": "QCOM",
+          "primary_node_id": "fabless_mobile_and_consumer_soc",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_mobile_and_consumer_soc",
+          "score": 0.7775,
+          "rank": 4,
+          "is_manual": false,
+          "components": [
+            {
+              "factor_code": "taxonomy_proximity",
+              "factor_score": 0.7425,
+              "weight": 0.1,
+              "weighted_contribution": 0.0743,
+              "notes": null
+            },
+            {
+              "factor_code": "business_model_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "segment_overlap",
+              "factor_score": 0,
+              "weight": 0.05,
+              "weighted_contribution": 0,
+              "notes": null
+            },
+            {
+              "factor_code": "customer_overlap",
+              "factor_score": 0.4286,
+              "weight": 0.05,
+              "weighted_contribution": 0.0214,
+              "notes": null
+            },
+            {
+              "factor_code": "geographic_overlap",
+              "factor_score": 0.8182,
+              "weight": 0.1,
+              "weighted_contribution": 0.0818,
+              "notes": null
+            },
+            {
+              "factor_code": "size_similarity",
+              "factor_score": 1,
+              "weight": 0.1,
+              "weighted_contribution": 0.1,
+              "notes": null
+            },
+            {
+              "factor_code": "margin_similarity",
+              "factor_score": 0.3,
+              "weight": 0.1,
+              "weighted_contribution": 0.03,
+              "notes": null
+            },
+            {
+              "factor_code": "growth_similarity",
+              "factor_score": 1,
+              "weight": 0.05,
+              "weighted_contribution": 0.05,
+              "notes": null
+            },
+            {
+              "factor_code": "capital_intensity_similarity",
+              "factor_score": 0.6,
+              "weight": 0.2,
+              "weighted_contribution": 0.12,
+              "notes": null
+            },
+            {
+              "factor_code": "leverage_similarity",
+              "factor_score": 1,
+              "weight": 0.15,
+              "weighted_contribution": 0.15,
+              "notes": null
+            }
+          ],
+          "explanation": {
+            "summary": "Qualcomm is a close risk for AMD.",
+            "similarities": [
+              "leverage similarity contributes 0.15 to the score.",
+              "capital intensity similarity contributes 0.12 to the score.",
+              "Infrastructure / operating models are similar."
+            ],
+            "differences": [
+              "Primary taxonomy nodes differ (fabless_compute_and_ai_accelerators vs fabless_mobile_and_consumer_soc).",
+              "margin similarity is relatively weak (0.30).",
+              "customer overlap is relatively weak (0.43).",
+              "segment overlap is relatively weak (0.00)."
+            ],
+            "limitations": [
+              "The pilot uses manually curated segment weights and illustrative financial bands."
+            ],
+            "candidate_reasons": [
+              "adjacent_taxonomy_node",
+              "same_parent_node",
+              "shared_customer_type",
+              "shared_geography",
+              "shared_operating_model",
+              "shared_revenue_model"
+            ],
+            "eligibility_notes": [],
+            "why_appropriate": "Qualcomm is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, customer_overlap, segment_overlap.",
+            "confidence": 1
+          },
+          "eligibility": "eligible",
+          "candidate_reasons": [
+            "adjacent_taxonomy_node",
+            "same_parent_node",
+            "shared_customer_type",
+            "shared_geography",
+            "shared_operating_model",
+            "shared_revenue_model"
+          ],
+          "confidence": 1,
+          "incomplete": false
+        },
+        {
           "company_key": "mu",
           "display_name": "Micron",
           "ticker": "MU",
           "primary_node_id": "dram_manufacturers",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.memory_semiconductors.dram_manufacturers",
           "score": 0.7694,
-          "rank": 4,
+          "rank": 5,
           "is_manual": false,
           "components": [
             {
@@ -2688,7 +2811,7 @@
           "primary_node_id": "fabless_connectivity_and_networking",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_connectivity_and_networking",
           "score": 0.7526,
-          "rank": 5,
+          "rank": 6,
           "is_manual": false,
           "components": [
             {
@@ -2804,27 +2927,27 @@
           "incomplete": false
         },
         {
-          "company_key": "qcom",
-          "display_name": "Qualcomm",
-          "ticker": "QCOM",
-          "primary_node_id": "fabless_mobile_and_consumer_soc",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.fabless_chip_design.fabless_mobile_and_consumer_soc",
-          "score": 0.7325,
-          "rank": 6,
+          "company_key": "adi",
+          "display_name": "Analog Devices",
+          "ticker": "ADI",
+          "primary_node_id": "analog_mixed_signal_and_power",
+          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
+          "score": 0.7213,
+          "rank": 7,
           "is_manual": false,
           "components": [
             {
               "factor_code": "taxonomy_proximity",
-              "factor_score": 0.7425,
+              "factor_score": 0.6667,
               "weight": 0.1,
-              "weighted_contribution": 0.0743,
+              "weighted_contribution": 0.0667,
               "notes": null
             },
             {
               "factor_code": "business_model_similarity",
-              "factor_score": 1,
+              "factor_score": 0,
               "weight": 0.1,
-              "weighted_contribution": 0.1,
+              "weighted_contribution": 0,
               "notes": null
             },
             {
@@ -2836,16 +2959,16 @@
             },
             {
               "factor_code": "customer_overlap",
-              "factor_score": 0.4286,
+              "factor_score": 0.4815,
               "weight": 0.05,
-              "weighted_contribution": 0.0214,
+              "weighted_contribution": 0.0241,
               "notes": null
             },
             {
               "factor_code": "geographic_overlap",
-              "factor_score": 0.8182,
+              "factor_score": 0.9048,
               "weight": 0.1,
-              "weighted_contribution": 0.0818,
+              "weighted_contribution": 0.0905,
               "notes": null
             },
             {
@@ -2857,69 +2980,63 @@
             },
             {
               "factor_code": "margin_similarity",
-              "factor_score": 0.3,
+              "factor_score": 0.7,
               "weight": 0.1,
-              "weighted_contribution": 0.03,
+              "weighted_contribution": 0.07,
               "notes": null
             },
             {
               "factor_code": "growth_similarity",
-              "factor_score": 1,
+              "factor_score": 0.4,
               "weight": 0.05,
-              "weighted_contribution": 0.05,
+              "weighted_contribution": 0.02,
               "notes": null
             },
             {
               "factor_code": "capital_intensity_similarity",
-              "factor_score": 0.6,
+              "factor_score": 1,
               "weight": 0.2,
-              "weighted_contribution": 0.12,
+              "weighted_contribution": 0.2,
               "notes": null
             },
             {
               "factor_code": "leverage_similarity",
-              "factor_score": 0.7,
+              "factor_score": 1,
               "weight": 0.15,
-              "weighted_contribution": 0.105,
+              "weighted_contribution": 0.15,
               "notes": null
             }
           ],
           "explanation": {
-            "summary": "Qualcomm is a relevant risk for AMD.",
+            "summary": "Analog Devices is a relevant risk for AMD.",
             "similarities": [
-              "capital intensity similarity contributes 0.12 to the score.",
-              "leverage similarity contributes 0.10 to the score.",
-              "Infrastructure / operating models are similar."
+              "capital intensity similarity contributes 0.20 to the score.",
+              "leverage similarity contributes 0.15 to the score.",
+              "size similarity contributes 0.10 to the score."
             ],
             "differences": [
-              "Primary taxonomy nodes differ (fabless_compute_and_ai_accelerators vs fabless_mobile_and_consumer_soc).",
-              "margin similarity is relatively weak (0.30).",
-              "customer overlap is relatively weak (0.43).",
-              "segment overlap is relatively weak (0.00)."
+              "Primary taxonomy nodes differ (fabless_compute_and_ai_accelerators vs analog_mixed_signal_and_power).",
+              "customer overlap is relatively weak (0.48).",
+              "growth similarity is relatively weak (0.40).",
+              "business model similarity is relatively weak (0.00)."
             ],
             "limitations": [
               "The pilot uses manually curated segment weights and illustrative financial bands."
             ],
             "candidate_reasons": [
-              "adjacent_taxonomy_node",
-              "same_parent_node",
               "shared_customer_type",
               "shared_geography",
-              "shared_operating_model",
               "shared_revenue_model"
             ],
             "eligibility_notes": [],
-            "why_appropriate": "Qualcomm is retained for peer type risk because candidate reasons include adjacent_taxonomy_node, same_parent_node, shared_customer_type, shared_geography, shared_operating_model, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, customer_overlap, segment_overlap.",
+            "why_appropriate": "Analog Devices is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_revenue_model and eligibility is eligible.",
+            "why_not_higher": "Score is not higher mainly due to weaker customer_overlap, growth_similarity, business_model_similarity.",
             "confidence": 1
           },
           "eligibility": "eligible",
           "candidate_reasons": [
-            "adjacent_taxonomy_node",
-            "same_parent_node",
             "shared_customer_type",
             "shared_geography",
-            "shared_operating_model",
             "shared_revenue_model"
           ],
           "confidence": 1,
@@ -2932,7 +3049,7 @@
           "primary_node_id": "analog_mixed_signal_and_power",
           "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
           "score": 0.7204,
-          "rank": 7,
+          "rank": 8,
           "is_manual": false,
           "components": [
             {
@@ -3037,122 +3154,6 @@
             "shared_customer_type",
             "shared_geography",
             "shared_operating_model",
-            "shared_revenue_model"
-          ],
-          "confidence": 1,
-          "incomplete": false
-        },
-        {
-          "company_key": "adi",
-          "display_name": "Analog Devices",
-          "ticker": "ADI",
-          "primary_node_id": "analog_mixed_signal_and_power",
-          "primary_path": "root.information_technology.semiconductors_and_equipment.semiconductor_devices.analog_mixed_signal_and_power",
-          "score": 0.6813,
-          "rank": 8,
-          "is_manual": false,
-          "components": [
-            {
-              "factor_code": "taxonomy_proximity",
-              "factor_score": 0.6667,
-              "weight": 0.1,
-              "weighted_contribution": 0.0667,
-              "notes": null
-            },
-            {
-              "factor_code": "business_model_similarity",
-              "factor_score": 0,
-              "weight": 0.1,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "segment_overlap",
-              "factor_score": 0,
-              "weight": 0.05,
-              "weighted_contribution": 0,
-              "notes": null
-            },
-            {
-              "factor_code": "customer_overlap",
-              "factor_score": 0.4815,
-              "weight": 0.05,
-              "weighted_contribution": 0.0241,
-              "notes": null
-            },
-            {
-              "factor_code": "geographic_overlap",
-              "factor_score": 0.9048,
-              "weight": 0.1,
-              "weighted_contribution": 0.0905,
-              "notes": null
-            },
-            {
-              "factor_code": "size_similarity",
-              "factor_score": 1,
-              "weight": 0.1,
-              "weighted_contribution": 0.1,
-              "notes": null
-            },
-            {
-              "factor_code": "margin_similarity",
-              "factor_score": 0.3,
-              "weight": 0.1,
-              "weighted_contribution": 0.03,
-              "notes": null
-            },
-            {
-              "factor_code": "growth_similarity",
-              "factor_score": 0.4,
-              "weight": 0.05,
-              "weighted_contribution": 0.02,
-              "notes": null
-            },
-            {
-              "factor_code": "capital_intensity_similarity",
-              "factor_score": 1,
-              "weight": 0.2,
-              "weighted_contribution": 0.2,
-              "notes": null
-            },
-            {
-              "factor_code": "leverage_similarity",
-              "factor_score": 1,
-              "weight": 0.15,
-              "weighted_contribution": 0.15,
-              "notes": null
-            }
-          ],
-          "explanation": {
-            "summary": "Analog Devices is a relevant risk for AMD.",
-            "similarities": [
-              "capital intensity similarity contributes 0.20 to the score.",
-              "leverage similarity contributes 0.15 to the score.",
-              "size similarity contributes 0.10 to the score."
-            ],
-            "differences": [
-              "Primary taxonomy nodes differ (fabless_compute_and_ai_accelerators vs analog_mixed_signal_and_power).",
-              "margin similarity is relatively weak (0.30).",
-              "customer overlap is relatively weak (0.48).",
-              "growth similarity is relatively weak (0.40)."
-            ],
-            "limitations": [
-              "The pilot uses manually curated segment weights and illustrative financial bands."
-            ],
-            "candidate_reasons": [
-              "shared_customer_type",
-              "shared_geography",
-              "shared_revenue_model"
-            ],
-            "eligibility_notes": [],
-            "why_appropriate": "Analog Devices is retained for peer type risk because candidate reasons include shared_customer_type, shared_geography, shared_revenue_model and eligibility is eligible.",
-            "why_not_higher": "Score is not higher mainly due to weaker margin_similarity, customer_overlap, growth_similarity.",
-            "confidence": 1
-          },
-          "eligibility": "eligible",
-          "candidate_reasons": [
-            "shared_customer_type",
-            "shared_geography",
             "shared_revenue_model"
           ],
           "confidence": 1,

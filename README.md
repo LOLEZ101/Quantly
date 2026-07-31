@@ -9,7 +9,7 @@ Makes sophisticated financial statistics understandable: what a company does, wh
 | Phase | Outcome |
 |-------|---------|
 | 1–3.6 | Complete (see `docs/`) |
-| 3.7 | Acceptance set live-EDGAR + Postgres verified (`pilot-v5-operational`) |
+| 3.7 | Full pilot live-EDGAR 30/30 + Postgres verified (`official_full_pilot_verified`) |
 | 4 | Read-only snapshot API (`npm run api:readonly`) |
 | 5+ | Website / S&P expansion — see [`docs/master-roadmap.md`](docs/master-roadmap.md) |
 

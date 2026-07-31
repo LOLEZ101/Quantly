@@ -169,10 +169,10 @@
       "related_node_id": "national_wireless_network_owners"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=122400000000 USD end=2023-12-31",
-      "excerpt": "Revenues=122400000000 USD end=2023-12-31",
-      "locator": "xbrl:0000732717-24-0001:Revenues",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=265245000000 USD end=2008-12-31",
+      "excerpt": "Assets=265245000000 USD end=2008-12-31",
+      "locator": "xbrl:0000732717-09-000050:Assets",
       "source_document_uri": "fixture://sec/t",
       "confidence": 0.9,
       "is_manual": false,

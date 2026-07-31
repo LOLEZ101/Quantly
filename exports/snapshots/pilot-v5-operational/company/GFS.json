@@ -118,30 +118,10 @@
       "related_node_id": "semiconductor_foundries"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=7400000000 USD end=2023-12-31",
-      "excerpt": "Revenues=7400000000 USD end=2023-12-31",
-      "locator": "xbrl:0001709048-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/gfs",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "semiconductor_foundries"
-    },
-    {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=6700000000 USD end=2024-12-31",
-      "excerpt": "Revenues=6700000000 USD end=2024-12-31",
-      "locator": "xbrl:0001709048-24-0001:Revenues",
-      "source_document_uri": "fixture://sec/gfs",
-      "confidence": 0.9,
-      "is_manual": false,
-      "related_node_id": "semiconductor_foundries"
-    },
-    {
-      "evidence_type": "xbrl_operating_income",
-      "summary": "OperatingIncomeLoss=-200000000 USD end=2024-12-31",
-      "excerpt": "OperatingIncomeLoss=-200000000 USD end=2024-12-31",
-      "locator": "xbrl:0001709048-24-0001:OperatingIncomeLoss",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=12321633000 USD end=2020-12-31",
+      "excerpt": "Assets=12321633000 USD end=2020-12-31",
+      "locator": "xbrl:0001709048-22-000008:Assets",
       "source_document_uri": "fixture://sec/gfs",
       "confidence": 0.9,
       "is_manual": false,
@@ -149,9 +129,39 @@
     },
     {
       "evidence_type": "xbrl_assets",
-      "summary": "Assets=18000000000 USD end=2024-12-31",
-      "excerpt": "Assets=18000000000 USD end=2024-12-31",
-      "locator": "xbrl:0001709048-24-0001:Assets",
+      "summary": "Assets=15027602000 USD end=2021-12-31",
+      "excerpt": "Assets=15027602000 USD end=2021-12-31",
+      "locator": "xbrl:0001709048-22-000008:Assets",
+      "source_document_uri": "fixture://sec/gfs",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "semiconductor_foundries"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=15028000000 USD end=2021-12-31",
+      "excerpt": "Assets=15028000000 USD end=2021-12-31",
+      "locator": "xbrl:0001709048-22-000021:Assets",
+      "source_document_uri": "fixture://sec/gfs",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "semiconductor_foundries"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=15028000000 USD end=2021-12-31",
+      "excerpt": "Assets=15028000000 USD end=2021-12-31",
+      "locator": "xbrl:0001709048-22-000038:Assets",
+      "source_document_uri": "fixture://sec/gfs",
+      "confidence": 0.9,
+      "is_manual": false,
+      "related_node_id": "semiconductor_foundries"
+    },
+    {
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=15028000000 USD end=2021-12-31",
+      "excerpt": "Assets=15028000000 USD end=2021-12-31",
+      "locator": "xbrl:0001709048-22-000051:Assets",
       "source_document_uri": "fixture://sec/gfs",
       "confidence": 0.9,
       "is_manual": false,

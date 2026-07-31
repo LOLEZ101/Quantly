@@ -45,4 +45,4 @@ Prefer existing schemas under `contracts/` for payload shapes. The API returns t
 
 ## Default snapshot
 
-`pilot-v5-operational` (`official_acceptance_set_verified` after post-recovery reconfirm). Full-pilot official status is not claimed (full live run reached 29/30; GFS partial).
+`pilot-v5-operational` (`official_full_pilot_verified`: live EDGAR 30/30 + Postgres E2E).

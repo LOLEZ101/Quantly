@@ -148,20 +148,20 @@
       "related_node_id": "analog_mixed_signal_and_power"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=13300000000 USD end=2023-12-31",
-      "excerpt": "Revenues=13300000000 USD end=2023-12-31",
-      "locator": "xbrl:0001413447-24-0001:Revenues",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=7637000000 USD end=2010-12-31",
+      "excerpt": "Assets=7637000000 USD end=2010-12-31",
+      "locator": "xbrl:0001193125-12-160092:Assets",
       "source_document_uri": "fixture://sec/nxpi",
       "confidence": 0.9,
       "is_manual": false,
       "related_node_id": "analog_mixed_signal_and_power"
     },
     {
-      "evidence_type": "xbrl_revenue",
-      "summary": "Revenues=12600000000 USD end=2024-12-31",
-      "excerpt": "Revenues=12600000000 USD end=2024-12-31",
-      "locator": "xbrl:0001413447-24-0001:Revenues",
+      "evidence_type": "xbrl_assets",
+      "summary": "Assets=6612000000 USD end=2011-12-31",
+      "excerpt": "Assets=6612000000 USD end=2011-12-31",
+      "locator": "xbrl:0001193125-12-160092:Assets",
       "source_document_uri": "fixture://sec/nxpi",
       "confidence": 0.9,
       "is_manual": false,

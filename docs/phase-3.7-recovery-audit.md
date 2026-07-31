@@ -12,7 +12,7 @@ Recorded after the development session crash during Phase 3.7 full-pilot executi
 | `pilot-v2-sourced` | `snap_pilot_v2_sourced` | `published` | Historical overstatement; retained as artifact |
 | `pilot-v3-verified` | `snap_pilot_v3_verified` | `verified_offline_independent` | Preserved |
 | `pilot-v4-official` | `snap_pilot_v4_official` | `website_ready_not_official` | `official=false`, live 0/30 |
-| `pilot-v5-operational` | `snap_pilot_v5_operational` | **`official_acceptance_set_verified`** (reconfirmed) | See reconfirm section |
+| `pilot-v5-operational` | `snap_pilot_v5_operational` | **`official_full_pilot_verified`** | Live 30/30 + Postgres E2E after IFRS mapping fix for GFS |
 
 ## Recovery-time discrepancy (corrected)
 
@@ -34,9 +34,9 @@ Interrupted full-pilot evidence: `/tmp/phase37-full.log` from the crash window o
 |-------------|--------|
 | PostgreSQL E2E (acceptance-set run) | **Completed** (`repository_mode=postgres`, host `localhost`, db `peer_engine`) |
 | Live EDGAR acceptance set (VZ, MCD, NVDA, INTC, AMT) | **Completed** (`live_edgar_acceptance_set=5`) |
-| Live EDGAR full pilot (30/30) | **Attempted** (`/tmp/phase37-full.log`): reached **29/30** live core financials; **GFS** remained `partial` (missing mapped core metrics). Run also blocked on illustrative peer bands + incomplete persistence for the full universe |
-| `official_full_pilot_verified` | **Not claimed** (honest) |
-| Snapshot after full attempt | Briefly became `blocked`; **restored** via re-run of `phase3.7:operational` to `official_acceptance_set_verified` |
+| Live EDGAR full pilot (30/30) | **Completed** (`/tmp/phase37-full-retry.log`): **30/30** after additive IFRS concept mappings (GFS uses `ifrs-full`) |
+| `official_full_pilot_verified` | **Earned** (`ok=true`, `publishable=true`, `postgres_e2e_complete=true`, empty blocks) |
+| Earlier failed full attempt | Had reached 29/30 with GFS partial + illustrative-band / persistence blocks; acceptance-set was restored, then retry succeeded |
 
 Reconfirm command and log:
 
@@ -87,16 +87,16 @@ Branch: `main` (tracks `origin/main`)
 
 ## Explicit non-claims
 
-- Full pilot is **not** live-EDGAR verified until `live_edgar_full_financial === 30`.
 - Filing HTML section extraction may still use offline verified excerpts.
 - `valuation` / `market_behavior` peer types remain gated.
-- Commit of Peer Engine work only when explicitly requested.
+- Full-pilot official status does **not** imply investment recommendations or live market prices.
 
 ## Recommended next steps
 
-1. ~~Non-destructive `npm test` (88 passed / 2 skipped; gated DB + live SEC also exercised).~~
+1. ~~Non-destructive `npm test`.~~
 2. ~~Reconfirm Postgres + acceptance-set live EDGAR.~~
-3. ~~Document full-pilot attempt (29/30; not official).~~
+3. ~~Full-pilot 30/30 → `official_full_pilot_verified`.~~
 4. ~~`docs/master-roadmap.md`.~~
 5. ~~Phase 4 read-only snapshot API (`npm run api:readonly`).~~
-6. Commit Peer Engine work only when explicitly requested (exclude secrets/raw cache).
+6. ~~Peer Engine work committed (secrets/raw cache excluded).~~
+7. Next product work: Phase 5 educational website (see master roadmap).
