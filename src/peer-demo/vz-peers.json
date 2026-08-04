@@ -1,0 +1,26 @@
+{
+  "subject": {
+    "ticker": "VZ",
+    "display_name": "Verizon",
+    "company_key": "vz"
+  },
+  "peers": [
+    {
+      "ticker": "T",
+      "display_name": "AT&T",
+      "company_key": "t",
+      "rank": 1,
+      "peer_type": "direct_competitor"
+    },
+    {
+      "ticker": "TMUS",
+      "display_name": "T-Mobile US",
+      "company_key": "tmus",
+      "rank": 2,
+      "peer_type": "direct_competitor"
+    }
+  ],
+  "snapshot_id": "snap_pilot_v5_operational",
+  "as_of": "2026-06-30",
+  "source": "exports/snapshots/pilot-v5-operational/peers/VZ.json"
+}
