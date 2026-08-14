@@ -272,4 +272,9 @@ async function yahooApiMiddleware(req, res, next) {
 export default defineConfig({
   base: '/StatTest/',
   plugins: [yahooFinancePlugin()],
+  build: {
+    rollupOptions: {
+      input: 'index.source.html',
+    },
+  },
 });
