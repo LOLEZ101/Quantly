@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S&P 500</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/StatTest/assets/index-Bia-nuFY.js"></script>
+    <link rel="stylesheet" crossorigin href="/StatTest/assets/index-DI62aXWE.css">
+  </head>
+  <body>
+    <main class="page">
+      <div class="search" id="search">
+        <label class="search-field" for="search-input">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.25" />
+            <path d="M16.5 16.5L21 21" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" />
+          </svg>
+          <input
+            id="search-input"
+            class="search-input"
+            type="search"
+            placeholder="Search ticker or company"
+            autocomplete="off"
+            spellcheck="false"
+            aria-autocomplete="list"
+            aria-controls="search-results"
+            aria-expanded="false"
+          />
+        </label>
+        <ul class="search-results" id="search-results" role="listbox" hidden></ul>
+      </div>
+
+      <header class="hero">
+        <h1 class="brand" id="brand">S&P 500</h1>
+        <div class="price-row">
+          <p class="price" id="price">—</p>
+          <p class="change" id="change">—</p>
+        </div>
+        <p class="status" id="status" aria-live="polite"></p>
+      </header>
+
+      <div class="chart-toolbar">
+        <button
+          type="button"
+          class="trendline-btn is-active"
+          id="trendline-toggle"
+          aria-pressed="true"
+          aria-label="Trendline"
+        >
+          <svg class="trendline-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M5 19 L19 5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.25"
+              stroke-dasharray="4 3.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M19 5 L19 9 M19 5 L15 5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <nav
+          class="ranges"
+          id="ranges"
+          role="group"
+          aria-label="Time range"
+          aria-expanded="false"
+          style="--range-index: 5"
+        >
+          <div class="range-slider">
+            <div class="range-track" aria-hidden="true"></div>
+            <div class="range-dots">
+              <button type="button" class="range-dot" data-range="1d" tabindex="-1" aria-label="1 day"></button>
+              <button type="button" class="range-dot" data-range="5d" tabindex="-1" aria-label="5 days"></button>
+              <button type="button" class="range-dot" data-range="1mo" tabindex="-1" aria-label="1 month"></button>
+              <button type="button" class="range-dot" data-range="6mo" tabindex="-1" aria-label="6 months"></button>
+              <button type="button" class="range-dot" data-range="ytd" tabindex="-1" aria-label="Year to date"></button>
+              <button type="button" class="range-dot is-active" data-range="1y" tabindex="-1" aria-label="1 year"></button>
+              <button type="button" class="range-dot" data-range="5y" tabindex="-1" aria-label="5 years"></button>
+              <button type="button" class="range-dot" data-range="max" tabindex="-1" aria-label="MAX"></button>
+            </div>
+            <button
+              type="button"
+              class="range-thumb"
+              id="range-thumb"
+              role="slider"
+              aria-label="Time range"
+              aria-valuemin="0"
+              aria-valuemax="7"
+              aria-valuenow="5"
+              aria-valuetext="1Y"
+            >
+              1Y
+            </button>
+            <div class="range-labels" aria-hidden="true">
+              <span class="range-label" data-range="1d"><span>1D</span></span>
+              <span class="range-label" data-range="5d"><span>5D</span></span>
+              <span class="range-label" data-range="1mo"><span>1M</span></span>
+              <span class="range-label" data-range="6mo"><span>6M</span></span>
+              <span class="range-label" data-range="ytd"><span>YTD</span></span>
+              <span class="range-label is-active" data-range="1y"><span>1Y</span></span>
+              <span class="range-label" data-range="5y"><span>5Y</span></span>
+              <span class="range-label" data-range="max"><span>MAX</span></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <section class="chart-wrap" aria-label="Price chart">
+        <canvas id="chart"></canvas>
+      </section>
+
+      <section
+        class="peer-value-card"
+        id="peer-value-card"
+        aria-label="Peer value comparison"
+        hidden
+      >
+        <div class="peer-value-card__metrics" id="peer-value-metrics">
+          <p class="peer-value-card__loading" id="peer-value-loading">
+            Loading peer stats…
+          </p>
+        </div>
+        <div class="peer-value-card__narrative" id="peer-value-narrative">
+          <p class="peer-value-card__sector" id="peer-value-sector"></p>
+          <p class="peer-value-card__value" id="peer-value-category"></p>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
