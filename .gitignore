@@ -1,5 +1,6 @@
 node_modules
 dist
+public/nasdaq-symbols.json
 .DS_Store
 *.local
 .env

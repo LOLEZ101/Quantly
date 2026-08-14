@@ -12,6 +12,9 @@ import quantreeHierarchy from './peer-demo/quantree-hierarchy.json';
 
 const MAX_CATEGORY_PEERS = 5;
 const MAX_SEARCH_RESULTS = 10;
+const YAHOO_CHART_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart';
+const YAHOO_QUOTE_BASE = 'https://query1.finance.yahoo.com/v7/finance/quote';
+const SYMBOL_DIRECTORY_URL = `${import.meta.env.BASE_URL}nasdaq-symbols.json`;
 
 const INDEX_CONSTITUENT = {
   symbol: '^GSPC',
@@ -278,36 +281,55 @@ function formatDividendYield(value) {
 }
 
 async function fetchQuoteMetrics(symbol) {
-  // Dev middleware handles Yahoo crumb/cookie auth; chart proxy alone is not enough.
-  const url = `/api/yahoo-metrics/${encodeURIComponent(symbol)}`;
-  const response = await fetch(url);
+  if (import.meta.env.DEV) {
+    const url = `/api/yahoo-metrics/${encodeURIComponent(symbol)}`;
+    const response = await fetch(url);
 
+    if (!response.ok) {
+      throw new Error(`Yahoo quote metrics returned ${response.status} for ${symbol}`);
+    }
+
+    const data = await response.json();
+    if (data?.error) {
+      throw new Error(data.error);
+    }
+
+    const result = data?.quoteSummary?.result?.[0];
+    if (!result) {
+      throw new Error(
+        data?.quoteSummary?.error?.description || `No quote data for ${symbol}`,
+      );
+    }
+
+    const stats = result.defaultKeyStatistics || {};
+    const summary = result.summaryDetail || {};
+    const trailingPe =
+      rawYahooNumber(summary.trailingPE) ?? rawYahooNumber(stats.trailingPE);
+    const dividendYield =
+      rawYahooNumber(summary.dividendYield) ??
+      rawYahooNumber(summary.trailingAnnualDividendYield) ??
+      rawYahooNumber(stats.yield);
+
+    return { symbol, trailingPe, dividendYield };
+  }
+
+  const url = `${YAHOO_QUOTE_BASE}?symbols=${encodeURIComponent(symbol)}`;
+  const response = await fetch(url);
   if (!response.ok) {
-    throw new Error(`Yahoo quote metrics returned ${response.status} for ${symbol}`);
+    throw new Error(`Yahoo quote returned ${response.status} for ${symbol}`);
   }
 
   const data = await response.json();
-  if (data?.error) {
-    throw new Error(data.error);
-  }
-
-  const result = data?.quoteSummary?.result?.[0];
+  const result = data?.quoteResponse?.result?.[0];
   if (!result) {
-    throw new Error(
-      data?.quoteSummary?.error?.description || `No quote data for ${symbol}`,
-    );
+    throw new Error(data?.quoteResponse?.error || `No quote data for ${symbol}`);
   }
 
-  const stats = result.defaultKeyStatistics || {};
-  const summary = result.summaryDetail || {};
-  const trailingPe =
-    rawYahooNumber(summary.trailingPE) ?? rawYahooNumber(stats.trailingPE);
-  const dividendYield =
-    rawYahooNumber(summary.dividendYield) ??
-    rawYahooNumber(summary.trailingAnnualDividendYield) ??
-    rawYahooNumber(stats.yield);
-
-  return { symbol, trailingPe, dividendYield };
+  return {
+    symbol,
+    trailingPe: rawYahooNumber(result.trailingPE),
+    dividendYield: rawYahooNumber(result.dividendYield),
+  };
 }
 
 function setPeerNarrative(sector, category) {
@@ -452,20 +474,32 @@ async function loadPeerValueCard(symbol, displayName) {
 
 async function fetchSeries(key, symbol = activeSymbol) {
   const config = RANGES[key];
-  const url = `/api/yahoo-chart/${encodeURIComponent(symbol)}?range=${config.range}&interval=${config.interval}`;
-  const response = await fetch(url);
+  let data;
 
-  if (!response.ok) {
-    const payload = await response.json().catch(() => ({}));
-    throw new Error(
-      payload?.error || `Yahoo Finance returned ${response.status}`,
-    );
+  if (import.meta.env.DEV) {
+    const url = `/api/yahoo-chart/${encodeURIComponent(symbol)}?range=${config.range}&interval=${config.interval}`;
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      const payload = await response.json().catch(() => ({}));
+      throw new Error(
+        payload?.error || `Yahoo Finance returned ${response.status}`,
+      );
+    }
+
+    data = await response.json();
+    if (data?.error) {
+      throw new Error(data.error);
+    }
+  } else {
+    const url = `${YAHOO_CHART_BASE}/${encodeURIComponent(symbol)}?range=${config.range}&interval=${config.interval}`;
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Yahoo Finance returned ${response.status}`);
+    }
+    data = await response.json();
   }
 
-  const data = await response.json();
-  if (data?.error) {
-    throw new Error(data.error);
-  }
   const result = data?.chart?.result?.[0];
   if (!result) {
     throw new Error(data?.chart?.error?.description || 'No chart data returned');
@@ -905,7 +939,10 @@ function selectConstituent(item) {
 
 async function loadSymbolDirectory() {
   try {
-    const response = await fetch('/api/nasdaq-symbols');
+    const url = import.meta.env.DEV
+      ? '/api/nasdaq-symbols'
+      : SYMBOL_DIRECTORY_URL;
+    const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`Symbol directory returned ${response.status}`);
     }
