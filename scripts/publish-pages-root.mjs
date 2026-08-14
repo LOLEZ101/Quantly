@@ -16,6 +16,10 @@ async function main() {
     path.join(dist, 'nasdaq-symbols.json'),
     path.join(root, 'nasdaq-symbols.json'),
   );
+  await rm(path.join(root, 'chart'), { recursive: true, force: true });
+  await cp(path.join(dist, 'chart'), path.join(root, 'chart'), {
+    recursive: true,
+  });
   console.log('[build] published dist/ to repo root for GitHub Pages');
 }
 

@@ -15,6 +15,7 @@ const MAX_SEARCH_RESULTS = 10;
 const YAHOO_CHART_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart';
 const YAHOO_QUOTE_BASE = 'https://query1.finance.yahoo.com/v7/finance/quote';
 const SYMBOL_DIRECTORY_URL = `${import.meta.env.BASE_URL}nasdaq-symbols.json`;
+const PROD_API_BASE = import.meta.env.VITE_API_BASE || '';
 
 const INDEX_CONSTITUENT = {
   symbol: '^GSPC',
@@ -313,7 +314,9 @@ async function fetchQuoteMetrics(symbol) {
     return { symbol, trailingPe, dividendYield };
   }
 
-  const url = `${YAHOO_QUOTE_BASE}?symbols=${encodeURIComponent(symbol)}`;
+  const url = PROD_API_BASE
+    ? `${PROD_API_BASE}/api/yahoo-quote/${encodeURIComponent(symbol)}`
+    : `${YAHOO_QUOTE_BASE}?symbols=${encodeURIComponent(symbol)}`;
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`Yahoo quote returned ${response.status} for ${symbol}`);
@@ -322,7 +325,7 @@ async function fetchQuoteMetrics(symbol) {
   const data = await response.json();
   const result = data?.quoteResponse?.result?.[0];
   if (!result) {
-    throw new Error(data?.quoteResponse?.error || `No quote data for ${symbol}`);
+    throw new Error(data?.quoteResponse?.error || data?.error || `No quote data for ${symbol}`);
   }
 
   return {
@@ -491,13 +494,21 @@ async function fetchSeries(key, symbol = activeSymbol) {
     if (data?.error) {
       throw new Error(data.error);
     }
-  } else {
-    const url = `${YAHOO_CHART_BASE}/${encodeURIComponent(symbol)}?range=${config.range}&interval=${config.interval}`;
+  } else if (PROD_API_BASE) {
+    const url = `${PROD_API_BASE}/api/yahoo-chart/${encodeURIComponent(symbol)}?range=${config.range}&interval=${config.interval}`;
     const response = await fetch(url);
     if (!response.ok) {
-      throw new Error(`Yahoo Finance returned ${response.status}`);
+      const payload = await response.json().catch(() => ({}));
+      throw new Error(payload?.error || `Yahoo Finance returned ${response.status}`);
     }
     data = await response.json();
+  } else {
+    const cacheUrl = `${import.meta.env.BASE_URL}chart/${encodeURIComponent(symbol)}-${key}.json`;
+    const cached = await fetch(cacheUrl);
+    if (!cached.ok) {
+      throw new Error('Live quotes are unavailable on the demo site for this symbol.');
+    }
+    data = await cached.json();
   }
 
   const result = data?.chart?.result?.[0];
