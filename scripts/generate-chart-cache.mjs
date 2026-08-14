@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import YahooFinance from 'yahoo-finance2';
@@ -76,13 +76,22 @@ async function fetchChart(symbol, range, interval) {
   };
 }
 
+function cacheKeyForSymbol(symbol) {
+  return String(symbol || '')
+    .trim()
+    .replace(/\^/g, '')
+    .replace(/\./g, '-');
+}
+
 async function main() {
   const symbol = '^GSPC';
+  const cacheKey = cacheKeyForSymbol(symbol);
+  await rm(outDir, { recursive: true, force: true });
   await mkdir(outDir, { recursive: true });
 
   for (const [key, config] of Object.entries(RANGES)) {
     const payload = await fetchChart(symbol, config.range, config.interval);
-    const outFile = path.join(outDir, `${encodeURIComponent(symbol)}-${key}.json`);
+    const outFile = path.join(outDir, `${cacheKey}-${key}.json`);
     await writeFile(outFile, `${JSON.stringify(payload)}\n`, 'utf8');
     console.log(`[build] cached ${symbol} ${key}`);
   }

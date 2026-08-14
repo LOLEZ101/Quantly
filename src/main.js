@@ -37,6 +37,13 @@ function yahooSymbolFor(item) {
   return item.yahooSymbol || normalizeTicker(item.symbol);
 }
 
+function cacheKeyForSymbol(symbol) {
+  return String(symbol || '')
+    .trim()
+    .replace(/\^/g, '')
+    .replace(/\./g, '-');
+}
+
 function buildCategoryIndex(companies) {
   const byTicker = new Map();
   const byCategory = new Map();
@@ -503,7 +510,7 @@ async function fetchSeries(key, symbol = activeSymbol) {
     }
     data = await response.json();
   } else {
-    const cacheUrl = `${import.meta.env.BASE_URL}chart/${encodeURIComponent(symbol)}-${key}.json`;
+    const cacheUrl = `${import.meta.env.BASE_URL}chart/${cacheKeyForSymbol(symbol)}-${key}.json`;
     const cached = await fetch(cacheUrl);
     if (!cached.ok) {
       throw new Error('Live quotes are unavailable on the demo site for this symbol.');
