@@ -24,7 +24,7 @@
             id="search-input"
             class="search-input"
             type="search"
-            placeholder="Search S&P 500 stocks"
+            placeholder="Search ticker or company"
             autocomplete="off"
             spellcheck="false"
             aria-autocomplete="list"
@@ -44,16 +44,79 @@
         <p class="status" id="status" aria-live="polite"></p>
       </header>
 
-      <nav class="ranges" aria-label="Time range">
-        <button type="button" class="range-btn" data-range="1d">1D</button>
-        <button type="button" class="range-btn" data-range="5d">5D</button>
-        <button type="button" class="range-btn" data-range="1mo">1M</button>
-        <button type="button" class="range-btn" data-range="6mo">6M</button>
-        <button type="button" class="range-btn" data-range="ytd">YTD</button>
-        <button type="button" class="range-btn is-active" data-range="1y">1Y</button>
-        <button type="button" class="range-btn" data-range="5y">5Y</button>
-        <button type="button" class="range-btn" data-range="max">Max</button>
-      </nav>
+      <div class="chart-toolbar">
+        <button
+          type="button"
+          class="trendline-btn is-active"
+          id="trendline-toggle"
+          aria-pressed="true"
+          aria-label="Trendline"
+        >
+          <svg class="trendline-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M5 19 L19 5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.25"
+              stroke-dasharray="4 3.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M19 5 L19 9 M19 5 L15 5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <nav
+          class="ranges"
+          id="ranges"
+          role="group"
+          aria-label="Time range"
+          aria-expanded="false"
+          style="--range-index: 5"
+        >
+          <div class="range-slider">
+            <div class="range-track" aria-hidden="true"></div>
+            <div class="range-dots">
+              <button type="button" class="range-dot" data-range="1d" tabindex="-1" aria-label="1 day"></button>
+              <button type="button" class="range-dot" data-range="5d" tabindex="-1" aria-label="5 days"></button>
+              <button type="button" class="range-dot" data-range="1mo" tabindex="-1" aria-label="1 month"></button>
+              <button type="button" class="range-dot" data-range="6mo" tabindex="-1" aria-label="6 months"></button>
+              <button type="button" class="range-dot" data-range="ytd" tabindex="-1" aria-label="Year to date"></button>
+              <button type="button" class="range-dot is-active" data-range="1y" tabindex="-1" aria-label="1 year"></button>
+              <button type="button" class="range-dot" data-range="5y" tabindex="-1" aria-label="5 years"></button>
+              <button type="button" class="range-dot" data-range="max" tabindex="-1" aria-label="MAX"></button>
+            </div>
+            <button
+              type="button"
+              class="range-thumb"
+              id="range-thumb"
+              role="slider"
+              aria-label="Time range"
+              aria-valuemin="0"
+              aria-valuemax="7"
+              aria-valuenow="5"
+              aria-valuetext="1Y"
+            >
+              1Y
+            </button>
+            <div class="range-labels" aria-hidden="true">
+              <span class="range-label" data-range="1d"><span>1D</span></span>
+              <span class="range-label" data-range="5d"><span>5D</span></span>
+              <span class="range-label" data-range="1mo"><span>1M</span></span>
+              <span class="range-label" data-range="6mo"><span>6M</span></span>
+              <span class="range-label" data-range="ytd"><span>YTD</span></span>
+              <span class="range-label is-active" data-range="1y"><span>1Y</span></span>
+              <span class="range-label" data-range="5y"><span>5Y</span></span>
+              <span class="range-label" data-range="max"><span>MAX</span></span>
+            </div>
+          </div>
+        </nav>
+      </div>
 
       <section class="chart-wrap" aria-label="Price chart">
         <canvas id="chart"></canvas>
