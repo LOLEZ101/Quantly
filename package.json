@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Quantly Peer Engine — classification, peers, provenance, and read-only snapshot API",
   "scripts": {
-    "dev": "vite index.source.html",
+    "dev": "vite",
     "build": "node scripts/generate-nasdaq-symbols.mjs && node scripts/generate-chart-cache.mjs && vite build && node scripts/publish-pages-root.mjs",
     "preview": "vite preview",
     "test": "vitest run",

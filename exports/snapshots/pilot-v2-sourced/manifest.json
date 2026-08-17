@@ -40,7 +40,7 @@
   "notes": "Phase-3 source-backed pilot. Uses offline SEC-like fixtures unless live ingestion is enabled. Parent snapshot: snap_pilot_v1.",
   "parent_snapshot_id": "snap_pilot_v1",
   "source_adapter_version": "1.0.0",
-  "normalization_version": "1.0.0",
+  "normalization_version": "1.0.1",
   "fixture_data_version": "1.0.0",
   "processing_run_id": "run_phase3_2026-07-31T000000000Z",
   "source_document_count": 90,

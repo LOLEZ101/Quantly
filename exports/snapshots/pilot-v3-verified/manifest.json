@@ -40,7 +40,7 @@
   "notes": "Phase-3.5 verified offline pilot. Independent corpus (not Phase-2 circular). Peer financial bands derived from companyfacts. valuation/market_behavior gated. Parent: snap_pilot_v2_sourced.",
   "parent_snapshot_id": "snap_pilot_v2_sourced",
   "source_adapter_version": "1.1.0",
-  "normalization_version": "1.0.0",
+  "normalization_version": "1.0.1",
   "fixture_data_version": "1.0.0",
   "processing_run_id": "run_phase35_2026-07-31T120000000Z",
   "source_document_count": 90,

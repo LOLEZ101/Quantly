@@ -7,6 +7,7 @@ const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
 
 async function main() {
+  await cp(path.join(dist, 'index.source.html'), path.join(dist, 'index.html'));
   await cp(path.join(dist, 'index.source.html'), path.join(root, 'index.html'));
   await rm(path.join(root, 'assets'), { recursive: true, force: true });
   await cp(path.join(dist, 'assets'), path.join(root, 'assets'), {

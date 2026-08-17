@@ -9,6 +9,25 @@ import {
   Tooltip,
 } from 'chart.js';
 import quantreeHierarchy from './peer-demo/quantree-hierarchy.json';
+import {
+  formatDividendYield,
+  normalizeDividendYield,
+  rawYahooNumber,
+} from './yahoo/normalize-dividend-yield.js';
+import { formatEarningsYield } from './yahoo/earnings-yield.js';
+import {
+  BAND_LABELS,
+  METRIC_CLASSIFY_OPTIONS,
+  classifyPeerColumn,
+} from './peer-demo/peer-metric-scale.js';
+import {
+  barLayout,
+  barPositionPct,
+  overallLeaderboard,
+  peerBarScale,
+  rankPeerRows,
+  zeroBaselinePct,
+} from './peer-demo/peer-metric-bar.js';
 
 const MAX_CATEGORY_PEERS = 5;
 const MAX_SEARCH_RESULTS = 10;
@@ -44,41 +63,75 @@ function cacheKeyForSymbol(symbol) {
     .replace(/\./g, '-');
 }
 
+function peerGroupKey(sector, industryGroup, category) {
+  return `${sector}\0${industryGroup}\0${category}`;
+}
+
+function flattenHierarchyTree(tree) {
+  const companies = [];
+  if (!tree || typeof tree !== 'object') return companies;
+
+  for (const [sector, groups] of Object.entries(tree)) {
+    if (!groups || typeof groups !== 'object') continue;
+    for (const [industryGroup, niches] of Object.entries(groups)) {
+      if (!niches || typeof niches !== 'object') continue;
+      for (const [category, items] of Object.entries(niches)) {
+        if (!Array.isArray(items)) continue;
+        for (const item of items) {
+          companies.push({
+            ticker: item.t,
+            name: item.n,
+            sector,
+            industry_group: industryGroup,
+            category,
+          });
+        }
+      }
+    }
+  }
+
+  return companies;
+}
+
 function buildCategoryIndex(companies) {
   const byTicker = new Map();
-  const byCategory = new Map();
+  const byPath = new Map();
 
   for (const company of companies) {
     const ticker = normalizeTicker(company.ticker);
+    const industryGroup = company.industry_group || '';
+    const path = peerGroupKey(company.sector, industryGroup, company.category);
     const entry = {
       ticker,
       display_name: company.name,
       sector: company.sector,
+      industry_group: industryGroup,
       category: company.category,
+      path,
     };
     byTicker.set(ticker, entry);
 
-    const list = byCategory.get(company.category) || [];
+    const list = byPath.get(path) || [];
     list.push(entry);
-    byCategory.set(company.category, list);
+    byPath.set(path, list);
   }
 
-  for (const list of byCategory.values()) {
+  for (const list of byPath.values()) {
     list.sort((a, b) => a.ticker.localeCompare(b.ticker));
   }
 
-  return { byTicker, byCategory };
+  return { byTicker, byPath };
 }
 
-const { byTicker: hierarchyByTicker, byCategory: hierarchyByCategory } =
-  buildCategoryIndex(quantreeHierarchy.companies || []);
+const { byTicker: hierarchyByTicker, byPath: hierarchyByPath } =
+  buildCategoryIndex(flattenHierarchyTree(quantreeHierarchy.tree));
 
 function getCategoryPeerGroup(symbol) {
   const ticker = normalizeTicker(symbol);
   const subject = hierarchyByTicker.get(ticker);
   if (!subject) return null;
 
-  const peers = (hierarchyByCategory.get(subject.category) || []).filter(
+  const peers = (hierarchyByPath.get(subject.path) || []).filter(
     (company) => company.ticker !== ticker,
   );
 
@@ -86,6 +139,7 @@ function getCategoryPeerGroup(symbol) {
     subject,
     peers,
     sector: subject.sector,
+    industry_group: subject.industry_group,
     category: subject.category,
   };
 }
@@ -179,6 +233,7 @@ const searchResults = document.getElementById('search-results');
 const peerValueCard = document.getElementById('peer-value-card');
 const peerValueMetrics = document.getElementById('peer-value-metrics');
 const peerValueSector = document.getElementById('peer-value-sector');
+const peerValueGroup = document.getElementById('peer-value-group');
 const peerValueCategory = document.getElementById('peer-value-category');
 
 let chart;
@@ -188,6 +243,8 @@ let activeSymbol = '^GSPC';
 let activeName = 'S&P 500';
 let requestId = 0;
 let peerRequestId = 0;
+let peerMetricIndex = 0;
+let peerChartCache = null;
 let highlightedIndex = -1;
 let currentMatches = [];
 let rangeDragging = false;
@@ -263,164 +320,514 @@ function sparseLabels(labels, maxTicks = 5) {
   return labels.map((label, i) => (keep.has(i) ? label : ''));
 }
 
-function rawYahooNumber(field) {
-  if (field == null) return null;
-  if (typeof field === 'number' && Number.isFinite(field)) return field;
-  if (typeof field === 'object' && typeof field.raw === 'number') return field.raw;
-  return null;
-}
-
-function formatTrailingPe(value) {
+function formatRoc(value) {
   if (value == null || !Number.isFinite(value)) return '—';
-  return `${value.toLocaleString('en-US', {
-    minimumFractionDigits: 1,
-    maximumFractionDigits: 1,
-  })}x`;
-}
-
-function formatDividendYield(value) {
-  if (value == null || !Number.isFinite(value)) return '—';
-  // Yahoo may return a fraction (0.062) or already a percent (6.2).
-  const pct = value > 0 && value < 1 ? value * 100 : value;
+  const pct = value * 100;
   return `${pct.toLocaleString('en-US', {
     minimumFractionDigits: 1,
     maximumFractionDigits: 1,
   })}%`;
 }
 
-async function fetchQuoteMetrics(symbol) {
-  if (import.meta.env.DEV) {
-    const url = `/api/yahoo-metrics/${encodeURIComponent(symbol)}`;
-    const response = await fetch(url);
+const PEER_METRICS = [
+  { key: 'earningsYield', label: 'Earnings Yield', format: formatEarningsYield },
+  { key: 'roc', label: 'Return on Capital', format: formatRoc },
+  { key: 'dividendYield', label: 'Dividend Yield', format: formatDividendYield },
+];
 
+const PEER_VIEWS = [
+  { key: 'overall', label: 'Leaderboard' },
+  ...PEER_METRICS,
+];
+
+const PEER_BAR_BAND_CLASS = {
+  [BAND_LABELS.veryLow]: 'is-very-low',
+  [BAND_LABELS.low]: 'is-low',
+  [BAND_LABELS.typical]: 'is-typical',
+  [BAND_LABELS.high]: 'is-high',
+  [BAND_LABELS.veryHigh]: 'is-very-high',
+  [BAND_LABELS.negative]: 'is-negative',
+};
+
+function rocFromFundamentals(fundamentals) {
+  const roc = fundamentals?.roc;
+  return typeof roc === 'number' && Number.isFinite(roc) ? roc : null;
+}
+
+function metricsFromPayload(symbol, data) {
+  if (data?.error) {
+    throw new Error(data.error);
+  }
+
+  if (data && ('earningsYield' in data || 'trailingPe' in data || data.fundamentals)) {
+    return {
+      symbol,
+      earningsYield: rawYahooNumber(data.earningsYield),
+      dividendYield: rawYahooNumber(data.dividendYield),
+      roc: rocFromFundamentals(data.fundamentals),
+    };
+  }
+
+  const summaryResult = data?.quoteSummary?.result?.[0];
+  if (summaryResult) {
+    const stats = summaryResult.defaultKeyStatistics || {};
+    const summary = summaryResult.summaryDetail || {};
+    const price = summaryResult.price || {};
+    const dividendYield = normalizeDividendYield({
+      summaryDetail: summary,
+      price,
+      stats,
+    });
+    return {
+      symbol,
+      earningsYield: null,
+      dividendYield,
+      roc: rocFromFundamentals(data.fundamentals),
+    };
+  }
+
+  const quoteResult = data?.quoteResponse?.result?.[0];
+  if (quoteResult) {
+    return {
+      symbol,
+      earningsYield: null,
+      dividendYield: rawYahooNumber(quoteResult.dividendYield),
+      roc: rocFromFundamentals(data.fundamentals),
+    };
+  }
+
+  throw new Error(
+    data?.quoteSummary?.error?.description ||
+      data?.quoteResponse?.error ||
+      `No quote data for ${symbol}`,
+  );
+}
+
+async function fetchQuoteMetrics(symbol) {
+  const metricsUrl = import.meta.env.DEV
+    ? `/api/yahoo-metrics/${encodeURIComponent(symbol)}`
+    : PROD_API_BASE
+      ? `${PROD_API_BASE}/api/yahoo-metrics/${encodeURIComponent(symbol)}`
+      : null;
+
+  if (metricsUrl) {
+    const response = await fetch(metricsUrl);
     if (!response.ok) {
       throw new Error(`Yahoo quote metrics returned ${response.status} for ${symbol}`);
     }
-
-    const data = await response.json();
-    if (data?.error) {
-      throw new Error(data.error);
-    }
-
-    const result = data?.quoteSummary?.result?.[0];
-    if (!result) {
-      throw new Error(
-        data?.quoteSummary?.error?.description || `No quote data for ${symbol}`,
-      );
-    }
-
-    const stats = result.defaultKeyStatistics || {};
-    const summary = result.summaryDetail || {};
-    const trailingPe =
-      rawYahooNumber(summary.trailingPE) ?? rawYahooNumber(stats.trailingPE);
-    const dividendYield =
-      rawYahooNumber(summary.dividendYield) ??
-      rawYahooNumber(summary.trailingAnnualDividendYield) ??
-      rawYahooNumber(stats.yield);
-
-    return { symbol, trailingPe, dividendYield };
+    return metricsFromPayload(symbol, await response.json());
   }
 
-  const url = PROD_API_BASE
-    ? `${PROD_API_BASE}/api/yahoo-quote/${encodeURIComponent(symbol)}`
-    : `${YAHOO_QUOTE_BASE}?symbols=${encodeURIComponent(symbol)}`;
+  const url = `${YAHOO_QUOTE_BASE}?symbols=${encodeURIComponent(symbol)}`;
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`Yahoo quote returned ${response.status} for ${symbol}`);
   }
-
-  const data = await response.json();
-  const result = data?.quoteResponse?.result?.[0];
-  if (!result) {
-    throw new Error(data?.quoteResponse?.error || data?.error || `No quote data for ${symbol}`);
-  }
-
-  return {
-    symbol,
-    trailingPe: rawYahooNumber(result.trailingPE),
-    dividendYield: rawYahooNumber(result.dividendYield),
-  };
+  return metricsFromPayload(symbol, await response.json());
 }
 
-function setPeerNarrative(sector, category) {
-  if (peerValueSector) peerValueSector.textContent = sector || '';
+function setPeerNarrative(sector, industryGroup, category) {
   if (peerValueCategory) peerValueCategory.textContent = category || '';
+  if (peerValueGroup) peerValueGroup.textContent = '';
+  if (peerValueSector) peerValueSector.textContent = '';
+}
+
+function resetPeerChartState() {
+  peerMetricIndex = 0;
+  peerChartCache = null;
 }
 
 function hidePeerValueCard() {
   if (!peerValueCard) return;
   peerValueCard.hidden = true;
   peerValueCard.classList.remove('is-coming-soon');
+  resetPeerChartState();
   if (peerValueMetrics) {
     peerValueMetrics.innerHTML =
       '<p class="peer-value-card__loading" id="peer-value-loading">Loading peer stats…</p>';
   }
-  setPeerNarrative('', '');
+  setPeerNarrative('', '', '');
 }
 
-function showComingSoon(sector = '', category = '') {
+function showComingSoon(sector = '', industryGroup = '', category = '') {
   if (!peerValueCard || !peerValueMetrics) return;
   peerValueCard.hidden = false;
   peerValueCard.classList.add('is-coming-soon');
+  resetPeerChartState();
   peerValueMetrics.innerHTML =
     '<p class="peer-value-card__coming-soon">Coming soon</p>';
-  setPeerNarrative(sector, category || 'Peers');
+  setPeerNarrative(sector, industryGroup, category || 'Peers');
 }
 
-function renderPeerMetricRow(company, metrics, isSubject = false) {
-  const article = document.createElement('article');
-  article.className = `peer-metric${isSubject ? ' is-subject' : ''}`;
+function classificationsForPeerMetrics(results) {
+  return Object.fromEntries(
+    PEER_METRICS.map((metric) => [
+      metric.key,
+      classifyPeerColumn(
+        results.map((row) => row.metrics?.[metric.key]),
+        METRIC_CLASSIFY_OPTIONS[metric.key],
+      ),
+    ]),
+  );
+}
 
-  const head = document.createElement('div');
-  head.className = 'peer-metric__head';
-
-  const ticker = document.createElement('span');
-  ticker.className = 'peer-metric__ticker';
-  ticker.textContent = company.ticker;
-
-  const name = document.createElement('span');
-  name.className = 'peer-metric__name';
-  name.textContent = company.display_name;
-
-  head.append(ticker, name);
-
-  if (!isSubject) {
-    article.classList.add('is-clickable');
-    article.tabIndex = 0;
-    article.setAttribute('role', 'button');
-    article.setAttribute(
-      'aria-label',
-      `View ${company.display_name} (${company.ticker})`,
-    );
-    const openPeer = () => {
-      selectConstituent({
-        symbol: company.ticker,
-        name: company.display_name,
-      });
-    };
-    article.addEventListener('click', openPeer);
-    article.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        openPeer();
-      }
-    });
+function renderPeerMetric(classification, formatted, layout, scale) {
+  const wrap = document.createElement('div');
+  wrap.className = 'peer-metric';
+  if (!classification?.label) wrap.classList.add('is-empty');
+  if (
+    classification?.label === 'NEGATIVE' ||
+    classification?.label === 'NO DIVIDEND'
+  ) {
+    wrap.classList.add('is-semantic');
   }
 
-  const stats = document.createElement('ul');
-  stats.className = 'peer-metric__stats';
+  const bar = document.createElement('div');
+  bar.className = 'peer-bar';
+  bar.setAttribute('aria-hidden', 'true');
 
-  const peItem = document.createElement('li');
-  peItem.className = 'peer-metric__stat';
-  peItem.innerHTML = `<span class="peer-metric__label">Trailing P/E</span><span class="peer-metric__value">${formatTrailingPe(metrics?.trailingPe)}</span>`;
+  const zeroPct = zeroBaselinePct(scale);
+  if (zeroPct != null) {
+    const zero = document.createElement('span');
+    zero.className = 'peer-bar__zero';
+    zero.style.left = `${zeroPct}%`;
+    bar.append(zero);
+  }
 
-  const yieldItem = document.createElement('li');
-  yieldItem.className = 'peer-metric__stat';
-  yieldItem.innerHTML = `<span class="peer-metric__label">Dividend yield</span><span class="peer-metric__value">${formatDividendYield(metrics?.dividendYield)}</span>`;
+  if (layout && layout.widthPct > 0) {
+    const fill = document.createElement('span');
+    fill.className = 'peer-bar__fill';
+    const bandClass = PEER_BAR_BAND_CLASS[classification?.label];
+    if (bandClass) fill.classList.add(bandClass);
+    fill.style.left = `${layout.startPct}%`;
+    fill.style.width = `${layout.widthPct}%`;
+    bar.append(fill);
+  }
 
-  stats.append(peItem, yieldItem);
-  article.append(head, stats);
-  return article;
+  const value = document.createElement('span');
+  value.className = 'peer-metric__value';
+  value.textContent = formatted;
+
+  wrap.append(bar, value);
+
+  if (classification?.label && classification?.detail) {
+    const tip = document.createElement('span');
+    tip.className = 'peer-metric__tooltip';
+    tip.setAttribute('role', 'tooltip');
+
+    const tipLabel = document.createElement('span');
+    tipLabel.className = 'peer-metric__tooltip-label';
+    tipLabel.textContent = classification.label;
+
+    const tipDetail = document.createElement('span');
+    tipDetail.className = 'peer-metric__tooltip-detail';
+    tipDetail.textContent = classification.detail;
+
+    tip.append(tipLabel, tipDetail);
+    wrap.append(tip);
+  }
+
+  return wrap;
+}
+
+function chevronIcon(direction) {
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('viewBox', '0 0 24 24');
+  svg.setAttribute('aria-hidden', 'true');
+  svg.setAttribute('focusable', 'false');
+  svg.classList.add('peer-chart-nav__icon');
+  const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  path.setAttribute('fill', 'none');
+  path.setAttribute('stroke', 'currentColor');
+  path.setAttribute('stroke-width', '2.2');
+  path.setAttribute('stroke-linecap', 'round');
+  path.setAttribute('stroke-linejoin', 'round');
+  path.setAttribute(
+    'd',
+    direction === 'prev' ? 'M14.5 6 8.5 12l6 6' : 'M9.5 6l6 6-6 6',
+  );
+  svg.append(path);
+  return svg;
+}
+
+function mountPeerChart() {
+  if (!peerChartCache || !peerValueMetrics) return;
+  const { results, subjectTicker, classifications } = peerChartCache;
+  peerValueMetrics.innerHTML = '';
+  peerValueMetrics.appendChild(
+    renderPeerComparisonTable(results, subjectTicker, classifications),
+  );
+}
+
+function shiftPeerMetric(delta, { focus } = {}) {
+  const next = Math.max(
+    0,
+    Math.min(PEER_VIEWS.length - 1, peerMetricIndex + delta),
+  );
+  if (next === peerMetricIndex || !peerChartCache) return;
+  peerMetricIndex = next;
+  mountPeerChart();
+  if (!focus || !peerValueMetrics) return;
+  const btn = peerValueMetrics.querySelector(`[data-peer-nav="${focus}"]`);
+  if (btn && !btn.disabled) {
+    btn.focus();
+    return;
+  }
+  peerValueMetrics.querySelector('.peer-chart-nav')?.focus();
+}
+
+function renderPeerChartHeader(metric, column) {
+  const header = document.createElement('div');
+  header.className = 'peer-chart-header';
+
+  const title = document.createElement('div');
+  title.className = 'peer-table__metric-name';
+  title.setAttribute('role', 'columnheader');
+  title.setAttribute('aria-live', 'polite');
+  title.textContent = metric.label;
+  if (metric.key === 'overall') {
+    title.setAttribute(
+      'aria-label',
+      'Leaderboard, combined earnings yield, return on capital, and dividend yield ranks',
+    );
+  } else {
+    const center = column.find((row) => row.center != null)?.center;
+    if (center != null) {
+      const medianLabel = metric.format(center);
+      title.title = `Peer median ${medianLabel}`;
+      title.setAttribute(
+        'aria-label',
+        `${metric.label}, peer median ${medianLabel}`,
+      );
+    }
+  }
+  header.append(title);
+
+  const nav = document.createElement('div');
+  nav.className = 'peer-chart-nav';
+  nav.setAttribute('role', 'group');
+  nav.setAttribute('aria-label', 'Peer metric');
+  nav.tabIndex = -1;
+
+  const prev = document.createElement('button');
+  prev.type = 'button';
+  prev.className = 'peer-chart-nav__btn';
+  prev.dataset.peerNav = 'prev';
+  prev.setAttribute('aria-label', 'Previous metric');
+  prev.disabled = peerMetricIndex <= 0;
+  prev.append(chevronIcon('prev'));
+  prev.addEventListener('click', () => shiftPeerMetric(-1, { focus: 'prev' }));
+
+  const next = document.createElement('button');
+  next.type = 'button';
+  next.className = 'peer-chart-nav__btn';
+  next.dataset.peerNav = 'next';
+  next.setAttribute('aria-label', 'Next metric');
+  next.disabled = peerMetricIndex >= PEER_VIEWS.length - 1;
+  next.append(chevronIcon('next'));
+  next.addEventListener('click', () => shiftPeerMetric(1, { focus: 'next' }));
+
+  nav.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      shiftPeerMetric(-1, { focus: 'prev' });
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      shiftPeerMetric(1, { focus: 'next' });
+    }
+  });
+
+  nav.append(prev, next);
+  header.append(nav);
+  return header;
+}
+
+function bindPeerCompanyAction(el, company, isSubject) {
+  el.dataset.ticker = company.ticker;
+  if (isSubject) {
+    el.classList.add('is-subject');
+    return;
+  }
+
+  el.classList.add('is-clickable');
+  el.tabIndex = 0;
+  el.setAttribute(
+    'aria-label',
+    `View ${company.display_name} (${company.ticker})`,
+  );
+  const openPeer = () => {
+    selectConstituent({
+      symbol: company.ticker,
+      name: company.display_name,
+    });
+  };
+  el.addEventListener('click', openPeer);
+  el.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openPeer();
+    }
+  });
+}
+
+function bindPeerHover(table) {
+  const syncHover = (ticker) => {
+    table.querySelectorAll('[data-ticker]').forEach((el) => {
+      el.classList.toggle('is-hover', Boolean(ticker) && el.dataset.ticker === ticker);
+    });
+  };
+
+  table.addEventListener('pointerover', (event) => {
+    const node = event.target.closest('[data-ticker]');
+    syncHover(node?.dataset.ticker || '');
+  });
+  table.addEventListener('pointerleave', () => syncHover(''));
+}
+
+function renderPeerCompany(company, isSubject, rank) {
+  const row = document.createElement('div');
+  row.className = 'peer-table__company';
+  row.setAttribute('role', 'rowheader');
+  bindPeerCompanyAction(row, company, isSubject);
+
+  const ticker = document.createElement('span');
+  ticker.className = 'peer-table__ticker';
+
+  const rankEl = document.createElement('span');
+  rankEl.className = 'peer-table__rank';
+  rankEl.textContent = `${rank}.`;
+
+  const symbol = document.createElement('span');
+  symbol.textContent = company.ticker;
+
+  ticker.append(rankEl, symbol);
+  row.append(ticker);
+  return row;
+}
+
+function renderPeerMedianLine(center, scale) {
+  const pct = barPositionPct(center, scale);
+  if (pct == null) return null;
+
+  const wrap = document.createElement('div');
+  wrap.className = 'peer-bar-median';
+  wrap.setAttribute('aria-hidden', 'true');
+  wrap.style.setProperty('--median-pct', `${pct}%`);
+
+  const line = document.createElement('span');
+  line.className = 'peer-bar-median__line';
+  wrap.append(line);
+  return wrap;
+}
+
+function overallRankDetail(ranks, rankSum) {
+  if (!ranks) return `Combined rank ${rankSum}`;
+  return [
+    `Earnings yield #${ranks.earningsYield}`,
+    `return on capital #${ranks.roc}`,
+    `dividend yield #${ranks.dividendYield}`,
+    `combined rank ${rankSum}`,
+  ].join(', ');
+}
+
+function renderPeerMetricPanel(metric, ranked, column, subjectTicker) {
+  const panel = document.createElement('div');
+  panel.className = 'peer-table__panel';
+
+  const isOverall = metric.key === 'overall';
+  const values = ranked.map((row) =>
+    isOverall ? row.overallScore : row.metrics?.[metric.key],
+  );
+  const scale = peerBarScale(values);
+  const center = column.find((row) => row.center != null)?.center;
+
+  ranked.forEach((row) => {
+    const { company, metrics, sourceIndex, rank } = row;
+    const value = isOverall ? row.overallScore : metrics?.[metric.key];
+    const classification = isOverall
+      ? {
+          ...column[sourceIndex],
+          detail: overallRankDetail(row.ranks, row.rankSum),
+        }
+      : column[sourceIndex];
+    const formatted = isOverall ? String(row.rankSum) : metric.format(value);
+    const cell = document.createElement('div');
+    cell.className = 'peer-table__metric-row';
+    cell.setAttribute('role', 'cell');
+    bindPeerCompanyAction(
+      cell,
+      company,
+      company.ticker === subjectTicker,
+    );
+    const ariaParts = [
+      `Rank ${rank}`,
+      company.ticker,
+      metric.label,
+      classification?.label || 'unavailable',
+      formatted !== '—' ? formatted : null,
+      classification?.detail,
+    ].filter(Boolean);
+    cell.setAttribute('aria-label', ariaParts.join(', '));
+    cell.append(
+      renderPeerMetric(
+        classification,
+        formatted,
+        barLayout(value, scale),
+        scale,
+      ),
+    );
+    panel.append(cell);
+  });
+
+  const medianLine = renderPeerMedianLine(center, scale);
+  if (medianLine) panel.append(medianLine);
+
+  return panel;
+}
+
+function renderPeerComparisonTable(results, subjectTicker, classifications) {
+  const table = document.createElement('div');
+  table.className = 'peer-table';
+  table.setAttribute('role', 'table');
+
+  const metric = PEER_VIEWS[peerMetricIndex] || PEER_VIEWS[0];
+  let ranked;
+  let column;
+  if (metric.key === 'overall') {
+    ranked = overallLeaderboard(results);
+    column = classifyPeerColumn(
+      ranked.map((row) => row.overallScore),
+      { floor: 1, metricNoun: 'leaderboard score' },
+    );
+  } else {
+    ranked = rankPeerRows(results, metric.key);
+    column = classifications[metric.key] || [];
+  }
+
+  const subjectIndex = ranked.findIndex(
+    (row) => row.company.ticker === subjectTicker,
+  );
+  if (subjectIndex >= 0) {
+    table.style.setProperty('--subject-index', String(subjectIndex));
+  }
+
+  table.append(renderPeerChartHeader(metric, column));
+
+  const companies = document.createElement('div');
+  companies.className = 'peer-table__companies';
+  for (const { company, rank } of ranked) {
+    companies.append(
+      renderPeerCompany(company, company.ticker === subjectTicker, rank),
+    );
+  }
+
+  table.append(
+    companies,
+    renderPeerMetricPanel(metric, ranked, column, subjectTicker),
+  );
+
+  bindPeerHover(table);
+  return table;
 }
 
 async function loadPeerValueCard(symbol, displayName) {
@@ -432,10 +839,16 @@ async function loadPeerValueCard(symbol, displayName) {
   }
 
   const id = ++peerRequestId;
+  peerMetricIndex = 0;
+  peerChartCache = null;
   const group = getCategoryPeerGroup(symbol);
 
   if (!group || group.peers.length === 0) {
-    showComingSoon(group?.sector || '', group?.category || '');
+    showComingSoon(
+      group?.sector || '',
+      group?.industry_group || '',
+      group?.category || '',
+    );
     return;
   }
 
@@ -443,14 +856,14 @@ async function loadPeerValueCard(symbol, displayName) {
   peerValueCard.classList.remove('is-coming-soon');
   peerValueMetrics.innerHTML =
     '<p class="peer-value-card__loading">Loading peer stats…</p>';
-  setPeerNarrative(group.sector, group.category);
+  setPeerNarrative(group.sector, group.industry_group, group.category);
 
   const subject = {
     ticker: group.subject.ticker,
     display_name: displayName || group.subject.display_name,
   };
   const peers = group.peers.slice(0, MAX_CATEGORY_PEERS);
-  const companies = [...peers, subject];
+  const companies = [subject, ...peers];
 
   try {
     // Sequential fetches share one Yahoo crumb/session and avoid parallel 429s.
@@ -467,13 +880,9 @@ async function loadPeerValueCard(symbol, displayName) {
 
     if (id !== peerRequestId) return;
 
-    peerValueMetrics.innerHTML = '';
-    results.forEach(({ company, metrics }) => {
-      const isSubject = company.ticker === subject.ticker;
-      peerValueMetrics.appendChild(
-        renderPeerMetricRow(company, metrics, isSubject),
-      );
-    });
+    const classifications = classificationsForPeerMetrics(results);
+    peerChartCache = { results, subjectTicker: subject.ticker, classifications };
+    mountPeerChart();
   } catch (error) {
     if (id !== peerRequestId) return;
     console.error(error);

@@ -2,6 +2,7 @@ import { mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import YahooFinance from 'yahoo-finance2';
+import { chartPointsFromQuotes, period1ForRange } from '../src/yahoo/chart-range.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
@@ -11,15 +12,6 @@ const yahooFinance = new YahooFinance({
   suppressNotices: ['yahooSurvey'],
   queue: { concurrency: 2, interval: 250 },
 });
-
-const RANGE_MS = {
-  '1d': 1 * 24 * 60 * 60 * 1000,
-  '5d': 7 * 24 * 60 * 60 * 1000,
-  '1mo': 31 * 24 * 60 * 60 * 1000,
-  '6mo': 183 * 24 * 60 * 60 * 1000,
-  '1y': 365 * 24 * 60 * 60 * 1000,
-  '5y': 5 * 365 * 24 * 60 * 60 * 1000,
-};
 
 const RANGES = {
   '1d': { range: '1d', interval: '5m', intraday: true },
@@ -32,34 +24,12 @@ const RANGES = {
   max: { range: 'max', interval: '1mo', intraday: false },
 };
 
-function period1ForRange(range) {
-  const now = new Date();
-  if (range === 'ytd') {
-    return new Date(now.getFullYear(), 0, 1);
-  }
-  if (range === 'max') {
-    return new Date('1970-01-01T00:00:00.000Z');
-  }
-  const ms = RANGE_MS[range];
-  if (!ms) {
-    throw new Error(`Unsupported range: ${range}`);
-  }
-  return new Date(now.getTime() - ms);
-}
-
 async function fetchChart(symbol, range, interval) {
   const period1 = period1ForRange(range);
   const chart = await yahooFinance.chart(symbol, { period1, interval });
-
-  const timestamps = [];
-  const closes = [];
-  for (const quote of chart.quotes || []) {
-    if (quote?.date == null || quote.close == null) continue;
-    const t = Math.floor(new Date(quote.date).getTime() / 1000);
-    if (!Number.isFinite(t) || !Number.isFinite(quote.close)) continue;
-    timestamps.push(t);
-    closes.push(quote.close);
-  }
+  const points = chartPointsFromQuotes(chart.quotes, range);
+  const timestamps = points.map((point) => point.t);
+  const closes = points.map((point) => point.close);
 
   return {
     chart: {

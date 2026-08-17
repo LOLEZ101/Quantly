@@ -1,6 +1,18 @@
 import { readFile } from 'node:fs/promises';
 import { defineConfig } from 'vite';
 import YahooFinance from 'yahoo-finance2';
+import { preferredEquityFromPeriods, resolveEarningsYield } from './src/yahoo/earnings-yield.js';
+import {
+  fxYahooSymbolFor,
+  modulesFromQuoteSummaryResponse,
+  rawYahooNumber,
+  resolveDividendYield,
+} from './src/yahoo/normalize-dividend-yield.js';
+import {
+  computeRocFromQuarterly,
+  mergeFundamentalsPeriods,
+} from './src/yahoo/roc-fundamentals.js';
+import { chartPointsFromQuotes, period1ForRange } from './src/yahoo/chart-range.js';
 
 const yahooFinance = new YahooFinance({
   suppressNotices: ['yahooSurvey'],
@@ -17,33 +29,17 @@ let nasdaqSymbolsPromise = null;
 /** @type {Map<string, { data: unknown, fetchedAt: number }>} */
 const quoteCache = new Map();
 /** @type {Map<string, { data: unknown, fetchedAt: number }>} */
+const fundamentalsCache = new Map();
+/** @type {Map<string, { data: unknown, fetchedAt: number }>} */
+const metricsCache = new Map();
+/** @type {Map<string, { data: unknown, fetchedAt: number }>} */
 const chartCache = new Map();
+/** @type {Map<string, { rate: number, fetchedAt: number }>} */
+const fxCache = new Map();
 const QUOTE_TTL_MS = 5 * 60 * 1000;
+const FX_TTL_MS = 60 * 60 * 1000;
 const CHART_TTL_MS = 2 * 60 * 1000;
-
-const RANGE_MS = {
-  '1d': 1 * 24 * 60 * 60 * 1000,
-  '5d': 7 * 24 * 60 * 60 * 1000,
-  '1mo': 31 * 24 * 60 * 60 * 1000,
-  '6mo': 183 * 24 * 60 * 60 * 1000,
-  '1y': 365 * 24 * 60 * 60 * 1000,
-  '5y': 5 * 365 * 24 * 60 * 60 * 1000,
-};
-
-function period1ForRange(range) {
-  const now = new Date();
-  if (range === 'ytd') {
-    return new Date(now.getFullYear(), 0, 1);
-  }
-  if (range === 'max') {
-    return new Date('1970-01-01T00:00:00.000Z');
-  }
-  const ms = RANGE_MS[range];
-  if (!ms) {
-    throw new Error(`Unsupported range: ${range}`);
-  }
-  return new Date(now.getTime() - ms);
-}
+const FUNDAMENTALS_LOOKBACK_MS = 4 * 365 * 24 * 60 * 60 * 1000;
 
 function json(res, statusCode, body) {
   res.statusCode = statusCode;
@@ -143,7 +139,7 @@ async function fetchYahooQuoteSummary(symbol) {
   }
 
   const result = await yahooFinance.quoteSummary(symbol, {
-    modules: ['summaryDetail', 'defaultKeyStatistics'],
+    modules: ['summaryDetail', 'defaultKeyStatistics', 'price', 'financialData'],
   });
 
   const data = {
@@ -152,12 +148,126 @@ async function fetchYahooQuoteSummary(symbol) {
         {
           summaryDetail: result.summaryDetail || {},
           defaultKeyStatistics: result.defaultKeyStatistics || {},
+          price: result.price || {},
+          financialData: result.financialData || {},
         },
       ],
     },
   };
 
   quoteCache.set(cacheKey, { data, fetchedAt: Date.now() });
+  return data;
+}
+
+function quoteModulesFromSummaryData(data) {
+  return modulesFromQuoteSummaryResponse(data);
+}
+
+async function fetchFxRate(currency) {
+  const fxSymbol = fxYahooSymbolFor(currency);
+  if (!fxSymbol) return null;
+
+  const cached = fxCache.get(fxSymbol);
+  if (cached && Date.now() - cached.fetchedAt < FX_TTL_MS) {
+    return cached.rate;
+  }
+
+  try {
+    const quote = await yahooFinance.quote(fxSymbol);
+    const rate = rawYahooNumber(quote?.regularMarketPrice);
+    if (rate == null || rate <= 0) return null;
+    fxCache.set(fxSymbol, { rate, fetchedAt: Date.now() });
+    return rate;
+  } catch (error) {
+    console.warn(`[yahoo] FX fetch failed for ${fxSymbol}:`, error);
+    return null;
+  }
+}
+
+async function resolveSymbolDividendYield(symbol, quoteData) {
+  const { summaryDetail, price, stats } = quoteModulesFromSummaryData(quoteData);
+
+  return resolveDividendYield({
+    symbol,
+    summaryDetail,
+    price,
+    stats,
+    fetchFxRate,
+    fetchQuoteSummary: async (underlyingSymbol) => {
+      const underlyingData = await fetchYahooQuoteSummary(underlyingSymbol);
+      return quoteModulesFromSummaryData(underlyingData);
+    },
+  });
+}
+
+async function fetchYahooFundamentals(symbol) {
+  const cacheKey = symbol.toUpperCase();
+  const cached = fundamentalsCache.get(cacheKey);
+  if (cached && Date.now() - cached.fetchedAt < QUOTE_TTL_MS) {
+    return cached.data;
+  }
+
+  const period1 = new Date(Date.now() - FUNDAMENTALS_LOOKBACK_MS);
+  const financials = await yahooFinance.fundamentalsTimeSeries(symbol, {
+    period1,
+    type: 'quarterly',
+    module: 'financials',
+  });
+  const balanceSheet = await yahooFinance.fundamentalsTimeSeries(symbol, {
+    period1,
+    type: 'quarterly',
+    module: 'balance-sheet',
+  });
+
+  const periods = mergeFundamentalsPeriods([financials, balanceSheet]);
+  const data = {
+    ...computeRocFromQuarterly(periods),
+    preferredEquity: preferredEquityFromPeriods(periods),
+  };
+  fundamentalsCache.set(cacheKey, { data, fetchedAt: Date.now() });
+  return data;
+}
+
+async function fetchYahooMetrics(symbol) {
+  const cacheKey = String(symbol || '').toUpperCase();
+  const cached = metricsCache.get(cacheKey);
+  if (cached && Date.now() - cached.fetchedAt < QUOTE_TTL_MS) {
+    return cached.data;
+  }
+
+  const quoteData = await fetchYahooQuoteSummary(symbol);
+  const {
+    summaryDetail: summary,
+    price,
+    stats,
+    financialData,
+  } = quoteModulesFromSummaryData(quoteData);
+  const dividendYield = await resolveSymbolDividendYield(symbol, quoteData);
+
+  let fundamentals = { roc: null, ebitTtm: null, preferredEquity: null };
+  try {
+    fundamentals = await fetchYahooFundamentals(symbol);
+  } catch (error) {
+    console.warn(`[yahoo] fundamentals failed for ${symbol}:`, error);
+  }
+
+  const earningsYield = await resolveEarningsYield({
+    ebitTtm: fundamentals.ebitTtm,
+    preferredEquity: fundamentals.preferredEquity,
+    price,
+    summaryDetail: summary,
+    stats,
+    financialData,
+    fetchFxRate,
+  });
+
+  const data = {
+    symbol: cacheKey,
+    earningsYield,
+    dividendYield,
+    fundamentals,
+  };
+  metricsCache.set(cacheKey, { data, fetchedAt: Date.now() });
   return data;
 }
 
@@ -174,15 +284,9 @@ async function fetchYahooChart(symbol, range, interval) {
     interval,
   });
 
-  const timestamps = [];
-  const closes = [];
-  for (const quote of chart.quotes || []) {
-    if (quote?.date == null || quote.close == null) continue;
-    const t = Math.floor(new Date(quote.date).getTime() / 1000);
-    if (!Number.isFinite(t) || !Number.isFinite(quote.close)) continue;
-    timestamps.push(t);
-    closes.push(quote.close);
-  }
+  const points = chartPointsFromQuotes(chart.quotes, range);
+  const timestamps = points.map((point) => point.t);
+  const closes = points.map((point) => point.close);
 
   if (!timestamps.length) {
     throw new Error('No price points available for this range');
@@ -204,6 +308,21 @@ async function fetchYahooChart(symbol, range, interval) {
 
   chartCache.set(cacheKey, { data, fetchedAt: Date.now() });
   return data;
+}
+
+function devSourceIndexPlugin() {
+  return {
+    name: 'dev-source-index',
+    configureServer(server) {
+      server.middlewares.use((req, _res, next) => {
+        const [pathname, query = ''] = (req.url || '').split('?');
+        if (pathname === '/' || pathname === '/index.html') {
+          req.url = `/index.source.html${query ? `?${query}` : ''}`;
+        }
+        next();
+      });
+    },
+  };
 }
 
 function yahooFinancePlugin() {
@@ -240,7 +359,7 @@ async function yahooApiMiddleware(req, res, next) {
   if (metricsMatch) {
     try {
       const symbol = decodeURIComponent(metricsMatch[1]);
-      const data = await fetchYahooQuoteSummary(symbol);
+      const data = await fetchYahooMetrics(symbol);
       json(res, 200, data);
     } catch (error) {
       json(res, 502, {
@@ -269,12 +388,15 @@ async function yahooApiMiddleware(req, res, next) {
   next();
 }
 
-export default defineConfig({
-  base: '/StatTest/',
-  plugins: [yahooFinancePlugin()],
+export default defineConfig(({ command }) => ({
+  base: command === 'serve' ? '/' : '/Quantly/',
+  plugins: [devSourceIndexPlugin(), yahooFinancePlugin()],
+  optimizeDeps: {
+    entries: ['index.source.html'],
+  },
   build: {
     rollupOptions: {
       input: 'index.source.html',
     },
   },
-});
+}));
