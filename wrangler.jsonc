@@ -2,5 +2,6 @@
   "name": "stattest-yahoo-proxy",
   "main": "workers/yahoo-proxy/index.js",
   "compatibility_date": "2024-08-01",
+  "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true
 }

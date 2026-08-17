@@ -1,13 +1,15 @@
+import YahooFinance from 'yahoo-finance2';
 import { preferredEquityFromPeriods, resolveEarningsYield } from '../../src/yahoo/earnings-yield.js';
+import { chartPointsFromQuotes, period1ForRange } from '../../src/yahoo/chart-range.js';
 import {
-  fxRateFromQuoteResponse,
   fxYahooSymbolFor,
   modulesFromQuoteSummaryResponse,
+  rawYahooNumber,
   resolveDividendYield,
 } from '../../src/yahoo/normalize-dividend-yield.js';
 import {
   computeRocFromQuarterly,
-  parseYahooTimeseries,
+  mergeFundamentalsPeriods,
 } from '../../src/yahoo/roc-fundamentals.js';
 
 const ALLOWED_ORIGINS = new Set([
@@ -16,31 +18,32 @@ const ALLOWED_ORIGINS = new Set([
   'http://127.0.0.1:5173',
 ]);
 
-const YAHOO_HEADERS = {
-  'User-Agent': 'Mozilla/5.0 (compatible; QuantlyStatTest/1.0)',
-};
+const yahooFinance = new YahooFinance({
+  suppressNotices: ['yahooSurvey'],
+  queue: { concurrency: 2, interval: 250 },
+});
 
-const FUNDAMENTALS_LOOKBACK_SEC = 4 * 365 * 24 * 60 * 60;
+const QUOTE_TTL_MS = 5 * 60 * 1000;
 const FX_TTL_MS = 60 * 60 * 1000;
-const QUOTE_SUMMARY_MODULES = 'summaryDetail,defaultKeyStatistics,price,financialData';
+const CHART_TTL_MS = 2 * 60 * 1000;
+const FUNDAMENTALS_LOOKBACK_MS = 4 * 365 * 24 * 60 * 60 * 1000;
+
 /** @type {Map<string, { data: unknown, fetchedAt: number }>} */
-const quoteSummaryCache = new Map();
+const quoteCache = new Map();
+/** @type {Map<string, { data: unknown, fetchedAt: number }>} */
+const fundamentalsCache = new Map();
+/** @type {Map<string, { data: unknown, fetchedAt: number }>} */
+const metricsCache = new Map();
+/** @type {Map<string, { data: unknown, fetchedAt: number }>} */
+const chartCache = new Map();
 /** @type {Map<string, { rate: number, fetchedAt: number }>} */
 const fxCache = new Map();
-const FUNDAMENTAL_TYPES = [
-  'quarterlyEBIT',
-  'quarterlyOperatingIncome',
-  'quarterlyNetPPE',
-  'quarterlyWorkingCapital',
-  'quarterlyCurrentAssets',
-  'quarterlyCurrentLiabilities',
-  'quarterlyPreferredStockEquity',
-  'quarterlyPreferredStock',
-];
 
 function corsHeaders(request) {
   const origin = request.headers.get('Origin') || '';
-  const allowOrigin = ALLOWED_ORIGINS.has(origin) ? origin : ALLOWED_ORIGINS.values().next().value;
+  const allowOrigin = ALLOWED_ORIGINS.has(origin)
+    ? origin
+    : ALLOWED_ORIGINS.values().next().value;
   return {
     'Access-Control-Allow-Origin': allowOrigin,
     'Access-Control-Allow-Methods': 'GET, OPTIONS',
@@ -58,88 +61,36 @@ function jsonResponse(request, status, body) {
   });
 }
 
-async function fetchYahooJson(url) {
-  const response = await fetch(url, { headers: YAHOO_HEADERS });
-  if (!response.ok) {
-    throw new Error(`Yahoo Finance returned ${response.status}`);
-  }
-  return response.json();
-}
-
-async function fetchYahooFundamentals(symbol) {
-  const period2 = Math.floor(Date.now() / 1000);
-  const period1 = period2 - FUNDAMENTALS_LOOKBACK_SEC;
-  const yahooUrl =
-    `https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/${encodeURIComponent(symbol)}` +
-    `?type=${encodeURIComponent(FUNDAMENTAL_TYPES.join(','))}` +
-    `&period1=${period1}&period2=${period2}`;
-  const data = await fetchYahooJson(yahooUrl);
-  const periods = parseYahooTimeseries(data);
-  return {
-    ...computeRocFromQuarterly(periods),
-    preferredEquity: preferredEquityFromPeriods(periods),
-  };
-}
-
-async function proxyYahooChart(request, symbol, searchParams) {
-  const range = searchParams.get('range') || '1y';
-  const interval = searchParams.get('interval') || '1d';
-  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=${encodeURIComponent(range)}&interval=${encodeURIComponent(interval)}`;
-  const response = await fetch(yahooUrl, {
-    headers: YAHOO_HEADERS,
-  });
-
-  if (!response.ok) {
-    return jsonResponse(request, response.status, {
-      error: `Yahoo Finance returned ${response.status}`,
-    });
-  }
-
-  const data = await response.json();
-  return new Response(JSON.stringify(data), {
-    status: 200,
-    headers: {
-      ...corsHeaders(request),
-      'Content-Type': 'application/json; charset=utf-8',
-    },
-  });
-}
-
-async function proxyYahooQuote(request, symbol) {
-  const yahooUrl = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${encodeURIComponent(symbol)}`;
-  const response = await fetch(yahooUrl, {
-    headers: YAHOO_HEADERS,
-  });
-
-  if (!response.ok) {
-    return jsonResponse(request, response.status, {
-      error: `Yahoo quote returned ${response.status}`,
-    });
-  }
-
-  const data = await response.json();
-  return new Response(JSON.stringify(data), {
-    status: 200,
-    headers: {
-      ...corsHeaders(request),
-      'Content-Type': 'application/json; charset=utf-8',
-    },
-  });
-}
-
 async function fetchYahooQuoteSummary(symbol) {
-  const cacheKey = String(symbol || '').toUpperCase();
-  const cached = quoteSummaryCache.get(cacheKey);
-  if (cached && Date.now() - cached.fetchedAt < FX_TTL_MS) {
+  const cacheKey = symbol.toUpperCase();
+  const cached = quoteCache.get(cacheKey);
+  if (cached && Date.now() - cached.fetchedAt < QUOTE_TTL_MS) {
     return cached.data;
   }
 
-  const yahooUrl =
-    `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${encodeURIComponent(symbol)}` +
-    `?modules=${encodeURIComponent(QUOTE_SUMMARY_MODULES)}`;
-  const data = await fetchYahooJson(yahooUrl);
-  quoteSummaryCache.set(cacheKey, { data, fetchedAt: Date.now() });
+  const result = await yahooFinance.quoteSummary(symbol, {
+    modules: ['summaryDetail', 'defaultKeyStatistics', 'price', 'financialData'],
+  });
+
+  const data = {
+    quoteSummary: {
+      result: [
+        {
+          summaryDetail: result.summaryDetail || {},
+          defaultKeyStatistics: result.defaultKeyStatistics || {},
+          price: result.price || {},
+          financialData: result.financialData || {},
+        },
+      ],
+    },
+  };
+
+  quoteCache.set(cacheKey, { data, fetchedAt: Date.now() });
   return data;
+}
+
+function quoteModulesFromSummaryData(data) {
+  return modulesFromQuoteSummaryResponse(data);
 }
 
 async function fetchFxRate(currency) {
@@ -151,31 +102,76 @@ async function fetchFxRate(currency) {
     return cached.rate;
   }
 
-  const quoteUrl = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${encodeURIComponent(fxSymbol)}`;
-  const quoteData = await fetchYahooJson(quoteUrl);
-  const rate = fxRateFromQuoteResponse(quoteData, fxSymbol);
-  if (rate == null) return null;
-
-  fxCache.set(fxSymbol, { rate, fetchedAt: Date.now() });
-  return rate;
+  try {
+    const quote = await yahooFinance.quote(fxSymbol);
+    const rate = rawYahooNumber(quote?.regularMarketPrice);
+    if (rate == null || rate <= 0) return null;
+    fxCache.set(fxSymbol, { rate, fetchedAt: Date.now() });
+    return rate;
+  } catch {
+    return null;
+  }
 }
 
-async function fetchYahooMetrics(symbol) {
-  const cacheKey = String(symbol || '').toUpperCase();
-  const quoteData = await fetchYahooQuoteSummary(symbol);
-  const { summaryDetail, price, stats, financialData } =
-    modulesFromQuoteSummaryResponse(quoteData);
-  const dividendYield = await resolveDividendYield({
-    symbol: cacheKey,
+async function resolveSymbolDividendYield(symbol, quoteData) {
+  const { summaryDetail, price, stats } = quoteModulesFromSummaryData(quoteData);
+
+  return resolveDividendYield({
+    symbol,
     summaryDetail,
     price,
     stats,
     fetchFxRate,
     fetchQuoteSummary: async (underlyingSymbol) => {
       const underlyingData = await fetchYahooQuoteSummary(underlyingSymbol);
-      return modulesFromQuoteSummaryResponse(underlyingData);
+      return quoteModulesFromSummaryData(underlyingData);
     },
   });
+}
+
+async function fetchYahooFundamentals(symbol) {
+  const cacheKey = symbol.toUpperCase();
+  const cached = fundamentalsCache.get(cacheKey);
+  if (cached && Date.now() - cached.fetchedAt < QUOTE_TTL_MS) {
+    return cached.data;
+  }
+
+  const period1 = new Date(Date.now() - FUNDAMENTALS_LOOKBACK_MS);
+  const financials = await yahooFinance.fundamentalsTimeSeries(symbol, {
+    period1,
+    type: 'quarterly',
+    module: 'financials',
+  });
+  const balanceSheet = await yahooFinance.fundamentalsTimeSeries(symbol, {
+    period1,
+    type: 'quarterly',
+    module: 'balance-sheet',
+  });
+
+  const periods = mergeFundamentalsPeriods([financials, balanceSheet]);
+  const data = {
+    ...computeRocFromQuarterly(periods),
+    preferredEquity: preferredEquityFromPeriods(periods),
+  };
+  fundamentalsCache.set(cacheKey, { data, fetchedAt: Date.now() });
+  return data;
+}
+
+async function fetchYahooMetrics(symbol) {
+  const cacheKey = String(symbol || '').toUpperCase();
+  const cached = metricsCache.get(cacheKey);
+  if (cached && Date.now() - cached.fetchedAt < QUOTE_TTL_MS) {
+    return cached.data;
+  }
+
+  const quoteData = await fetchYahooQuoteSummary(symbol);
+  const {
+    summaryDetail: summary,
+    price,
+    stats,
+    financialData,
+  } = quoteModulesFromSummaryData(quoteData);
+  const dividendYield = await resolveSymbolDividendYield(symbol, quoteData);
 
   let fundamentals = { roc: null, ebitTtm: null, preferredEquity: null };
   try {
@@ -188,29 +184,55 @@ async function fetchYahooMetrics(symbol) {
     ebitTtm: fundamentals.ebitTtm,
     preferredEquity: fundamentals.preferredEquity,
     price,
-    summaryDetail,
+    summaryDetail: summary,
     stats,
     financialData,
     fetchFxRate,
   });
 
-  return {
+  const data = {
     symbol: cacheKey,
     earningsYield,
     dividendYield,
     fundamentals,
   };
+  metricsCache.set(cacheKey, { data, fetchedAt: Date.now() });
+  return data;
 }
 
-async function proxyYahooMetrics(request, symbol) {
-  try {
-    const data = await fetchYahooMetrics(symbol);
-    return jsonResponse(request, 200, data);
-  } catch (error) {
-    return jsonResponse(request, 502, {
-      error: error instanceof Error ? error.message : String(error),
-    });
+async function fetchYahooChart(symbol, range, interval) {
+  const cacheKey = `${symbol.toUpperCase()}|${range}|${interval}`;
+  const cached = chartCache.get(cacheKey);
+  if (cached && Date.now() - cached.fetchedAt < CHART_TTL_MS) {
+    return cached.data;
   }
+
+  const period1 = period1ForRange(range);
+  const chart = await yahooFinance.chart(symbol, { period1, interval });
+  const points = chartPointsFromQuotes(chart.quotes, range);
+  const timestamps = points.map((point) => point.t);
+  const closes = points.map((point) => point.close);
+
+  if (!timestamps.length) {
+    throw new Error('No price points available for this range');
+  }
+
+  const data = {
+    chart: {
+      result: [
+        {
+          meta: chart.meta || { symbol },
+          timestamp: timestamps,
+          indicators: {
+            quote: [{ close: closes }],
+          },
+        },
+      ],
+    },
+  };
+
+  chartCache.set(cacheKey, { data, fetchedAt: Date.now() });
+  return data;
 }
 
 export default {
@@ -224,17 +246,29 @@ export default {
 
     const chartMatch = pathname.match(/^\/api\/yahoo-chart\/([^/]+)\/?$/);
     if (chartMatch) {
-      return proxyYahooChart(request, decodeURIComponent(chartMatch[1]), searchParams);
-    }
-
-    const quoteMatch = pathname.match(/^\/api\/yahoo-quote\/([^/]+)\/?$/);
-    if (quoteMatch) {
-      return proxyYahooQuote(request, decodeURIComponent(quoteMatch[1]));
+      try {
+        const symbol = decodeURIComponent(chartMatch[1]);
+        const range = searchParams.get('range') || '1y';
+        const interval = searchParams.get('interval') || '1d';
+        const data = await fetchYahooChart(symbol, range, interval);
+        return jsonResponse(request, 200, data);
+      } catch (error) {
+        return jsonResponse(request, 502, {
+          error: error instanceof Error ? error.message : String(error),
+        });
+      }
     }
 
     const metricsMatch = pathname.match(/^\/api\/yahoo-metrics\/([^/]+)\/?$/);
     if (metricsMatch) {
-      return proxyYahooMetrics(request, decodeURIComponent(metricsMatch[1]));
+      try {
+        const data = await fetchYahooMetrics(decodeURIComponent(metricsMatch[1]));
+        return jsonResponse(request, 200, data);
+      } catch (error) {
+        return jsonResponse(request, 502, {
+          error: error instanceof Error ? error.message : String(error),
+        });
+      }
     }
 
     if (pathname === '/health') {

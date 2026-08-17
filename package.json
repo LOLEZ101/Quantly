@@ -8,6 +8,8 @@
     "dev": "vite",
     "build": "node scripts/generate-nasdaq-symbols.mjs && node scripts/generate-chart-cache.mjs && vite build && node scripts/publish-pages-root.mjs",
     "preview": "vite preview",
+    "deploy:proxy": "wrangler deploy",
+    "setup:pages-api": "node scripts/set-github-pages-api-base.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:live-sec": "RUN_LIVE_SEC_TESTS=true vitest run tests/phase3/live-sec.test.ts",
@@ -61,6 +63,7 @@
     "typescript": "^7.0.2",
     "vite": "^6.2.0",
     "vitest": "^4.1.10",
+    "wrangler": "^4.123.0",
     "yaml": "^2.9.0"
   }
 }
